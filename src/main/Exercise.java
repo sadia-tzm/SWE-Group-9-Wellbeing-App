@@ -1,3 +1,4 @@
+package main;
 public abstract class Exercise {
 
 	private String exerciseName;

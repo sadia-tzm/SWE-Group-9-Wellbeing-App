@@ -1,3 +1,4 @@
+package main;
 import java.util.*;
 
 public class MentalHealthAmbassador extends User {

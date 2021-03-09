@@ -1,3 +1,4 @@
+package main;
 public class StepExerciseAttempt extends WorkoutExcerciseAttempt {
 
 	private int stepsTaken;

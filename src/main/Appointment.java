@@ -1,3 +1,4 @@
+package main;
 public class Appointment extends TimeSlot {
 
 	MentalHealthAmbassador mentalHealthAmbassador;

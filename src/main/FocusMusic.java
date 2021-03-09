@@ -1,3 +1,4 @@
+package main;
 public class FocusMusic extends MindfulnessExercise {
 
 	/**

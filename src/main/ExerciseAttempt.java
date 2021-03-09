@@ -1,3 +1,7 @@
+package main;
+
+import java.time.LocalDateTime;
+
 public abstract class ExerciseAttempt {
 
 	private LocalDateTime dateCompleted;

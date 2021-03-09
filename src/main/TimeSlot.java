@@ -1,3 +1,4 @@
+package main;
 public class TimeSlot {
 
 	private LocalDateTime dateAndTime;

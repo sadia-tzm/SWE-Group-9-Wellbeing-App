@@ -1,3 +1,7 @@
+package main;
+
+import java.time.LocalDateTime;
+
 public class Calorie extends HealthProperty {
 
 	private int calories;

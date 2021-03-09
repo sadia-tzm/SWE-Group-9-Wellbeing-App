@@ -1,3 +1,4 @@
+package main;
 public abstract class MindfulnessExercise extends Exercise {
 
 	private String soundPath;

@@ -1,3 +1,4 @@
+package main;
 public class BreathingExercise extends MindfulnessExercise {
 
 	private int tempo;

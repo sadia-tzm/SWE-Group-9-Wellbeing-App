@@ -1,3 +1,4 @@
+package main;
 public class SupportQuery extends QueryRole {
 
 	CustomerSupport customerSupport;

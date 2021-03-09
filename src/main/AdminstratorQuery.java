@@ -1,3 +1,4 @@
+package main;
 public class AdminstratorQuery extends QueryRole {
 
 	SystemAdministrator systemAdministrator;
@@ -7,7 +8,7 @@ public class AdminstratorQuery extends QueryRole {
 	 * 
 	 * @param SystemAdministrator
 	 */
-	public boolean startProgress(ssystemAdministrator SystemAdministrator) {
+	public boolean startProgress(SystemAdministrator ssystemAdministrator) {
 		// TODO - implement AdminstratorQuery.startProgress
 		throw new UnsupportedOperationException();
 	}

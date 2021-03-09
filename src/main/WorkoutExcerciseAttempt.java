@@ -1,3 +1,4 @@
+package main;
 public class WorkoutExcerciseAttempt extends ExerciseAttempt {
 
 	WorkoutExercise workoutExercise;
