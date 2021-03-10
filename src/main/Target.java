@@ -1,4 +1,4 @@
-package main;
+package src.main;
 public class Target {
 
 	MentalHealthAmbassador mentalHealthAmbassador;
@@ -8,6 +8,11 @@ public class Target {
 	private int value;
 	private boolean isMet;
 
+	public static void main(String[] args){
+		System.out.println("Hello");
+	} 
+	
+	
 	/**
 	 * 
 	 * @param eexercise
