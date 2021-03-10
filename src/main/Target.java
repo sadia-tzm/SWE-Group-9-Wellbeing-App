@@ -8,9 +8,7 @@ public class Target {
 	private int value;
 	private boolean isMet;
 
-	public static void main(String[] args){
-		System.out.println("Hello");
-	} 
+	public Target()
 	
 	
 	/**
