@@ -2,6 +2,9 @@ package main;
 import java.util.*;
 import java.time.*; 
 
+/**
+ * @author Shannon
+ */
 public abstract class User {
 
 	Collection<Query> queries;
@@ -30,8 +33,14 @@ public abstract class User {
 		String title = "Query from "+getID()+ ": "+date.toString();
 		Query q = new Query(query, title ,LocalDateTime.now());
 		queries.add(q);
+
+		Collection<User> ListOfUsers = Inventory.getInstance().getListOfUsers();
+		ID = ListOfUsers.toArray()[ListOfUsers.size()-1].getID()+1;
 	}
 
+	/**
+	 * getter for user name
+	 */
 	public String getName() {
 		return this.name;
 	}
@@ -44,10 +53,16 @@ public abstract class User {
 		this.name = newName;
 	}
 
+	/**
+	 * getter for user ID
+	 */
 	public String getID() {
 		return this.ID;
 	}
 
+	/**
+	 * getter for user name
+	 */
 	public Security getSecurity() {
 		return this.security;
 	}
