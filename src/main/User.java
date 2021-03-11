@@ -48,11 +48,6 @@ public abstract class User {
 		return this.ID;
 	}
 
-	public String getRole() {
-		// TODO - implement User.getRole
-		throw new UnsupportedOperationException();
-	}
-
 	public Security getSecurity() {
 		return this.security;
 	}
