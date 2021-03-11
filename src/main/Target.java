@@ -1,8 +1,5 @@
 package src.main;
 
-import main.FDMEmployee;
-import main.MentalHealthAmbassador;
-
 public class Target {
 
 	MentalHealthAmbassador mentalHealthAmbassador;
@@ -24,7 +21,7 @@ public class Target {
 	 * @param mmentalHealthAmbassador
 	 */
 
-	public boolean Target(Exercise eexercise, String aattribute, int vvalue, FDMEmployee ffdmEmployee, MentalHealthAmbassador mmentalHealthAmbassador){
+	public Target(Exercise eexercise, String aattribute, int vvalue, FDMEmployee ffdmEmployee, MentalHealthAmbassador mmentalHealthAmbassador){
 		this.mentalHealthAmbassador = mmentalHealthAmbassador;
 		this.fdmEmployee = ffdmEmployee;
 		this.exercise = eexercise;
