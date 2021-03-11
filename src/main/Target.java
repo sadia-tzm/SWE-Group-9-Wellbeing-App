@@ -29,6 +29,7 @@ public class Target {
 		this.value = vvalue;
 		
 		
+		
 	}
 
 	public Exercise getExercise() {
