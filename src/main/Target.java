@@ -24,16 +24,9 @@ public class Target {
 	 * @param mmentalHealthAmbassador
 	 */
 
-	public Target(Exercise eexercise, String aattribute, int vvalue, FDMEmployee ffdmEmployee, MentalHealthAmbassador mmentalHealthAmbassador){
-
+	public boolean Target(Exercise eexercise, String aattribute, int vvalue, FDMEmployee ffdmEmployee, MentalHealthAmbassador mmentalHealthAmbassador){
+		this.
 		
-	}
-
-
-
-	public boolean Target(Exercise eexercise, String aattribute, int vvalue, FDMEmployee ffdmEmployee, MentalHealthAmbassador mmentalHealthAmbassador) {
-		// TODO - implement Target.Target
-		throw new UnsupportedOperationException();
 	}
 
 	public Exercise getExercise() {
