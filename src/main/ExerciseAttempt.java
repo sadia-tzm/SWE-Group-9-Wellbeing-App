@@ -1,21 +1,26 @@
 package main;
 
 import java.time.LocalDateTime;
+import java.time.Duration;
+import java.time.Instant;
 
 public abstract class ExerciseAttempt {
 
 	private LocalDateTime dateCompleted;
-	private int duration;
+	private long duration;
 	private int attemptNumber;
+	private Instant startTime;
+	private Instant endTime;
 
-	/**
-	 * 
-	 * @param ddateCompleted
-	 * @param dduration
-	 * @param aattemptNumber
-	 */
-	public Boolean completeAttempt(LocalDateTime ddateCompleted, int dduration, int aattemptNumber) {
-		// TODO - implement ExerciseAttempt.completeAttempt
+	public ExerciseAttempt() {
+		this.startTime = Instant.now();
+	}
+
+	public Boolean completeAttempt(int dduration, int aattemptNumber) {
+		this.dateCompleted = LocalDateTime.now();
+		this.attemptNumber = aattemptNumber;
+		this.endTime = Instant.now();
+		this.duration = (Duration.between(startTime, endTime)).toMillis();
 		throw new UnsupportedOperationException();
 	}
 
@@ -23,21 +28,12 @@ public abstract class ExerciseAttempt {
 		return this.dateCompleted;
 	}
 
-	public int getDuration() {
+	public long getDuration() {
 		return this.duration;
 	}
 
-	/**
-	 * 
-	 * @param duration
-	 */
-	public boolean editEntry(int duration) {
-		// TODO - implement ExerciseAttempt.editEntry
-		throw new UnsupportedOperationException();
-	}
-
-	public boolean deleteEntry() {
-		// TODO - implement ExerciseAttempt.deleteEntry
+	public boolean editEntry(long dduration) {
+		this.duration = dduration;
 		throw new UnsupportedOperationException();
 	}
 
