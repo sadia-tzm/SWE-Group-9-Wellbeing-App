@@ -1,4 +1,8 @@
 package src.main;
+
+import main.FDMEmployee;
+import main.MentalHealthAmbassador;
+
 public class Target {
 
 	MentalHealthAmbassador mentalHealthAmbassador;
@@ -8,7 +12,7 @@ public class Target {
 	private int value;
 	private boolean isMet;
 
-	public Target()
+
 	
 	
 	/**
@@ -19,6 +23,14 @@ public class Target {
 	 * @param ffdmEmployee
 	 * @param mmentalHealthAmbassador
 	 */
+
+	public Target(Exercise eexercise, String aattribute, int vvalue, FDMEmployee ffdmEmployee, MentalHealthAmbassador mmentalHealthAmbassador){
+
+		
+	}
+
+
+
 	public boolean Target(Exercise eexercise, String aattribute, int vvalue, FDMEmployee ffdmEmployee, MentalHealthAmbassador mmentalHealthAmbassador) {
 		// TODO - implement Target.Target
 		throw new UnsupportedOperationException();
