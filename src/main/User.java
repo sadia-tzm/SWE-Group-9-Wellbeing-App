@@ -1,5 +1,6 @@
 package main;
 import java.util.*;
+import java.time.*; 
 
 public abstract class User {
 
@@ -9,24 +10,26 @@ public abstract class User {
 	private String name;
 
 	/**
-	 * 
-	 * @param nname
-	 * @param password
-	 * @param userName
-	 * @param email
+	 * Constructor for the user class
+	 * @param nname users name
+	 * @param password password login details
+	 * @param userName username
+	 * @param email email address
 	 */
-	public boolean User(String nname, String password, String userName, String email) {
-		// TODO - implement User.User
-		throw new UnsupportedOperationException();
+	public User(String nname, String password, String userName, String email) {
+		this.name = nname;
+		this.security = new Security(password, userName, email);
 	}
 
 	/**
-	 * 
-	 * @param query
+	 * creates new query object and adds the query to the system.
+	 * @param query the text that contains the details of the query, entered by the user.
 	 */
 	public void reportBug(String query) {
-		// TODO - implement User.reportBug
-		throw new UnsupportedOperationException();
+		LocalDateTime date = LocalDateTime.now();
+		String title = "Query from "+getID()+ ": "+date.toString();
+		Query q = new Query(query, title ,LocalDateTime.now());
+		queries.add(q);
 	}
 
 	public String getName() {
@@ -34,22 +37,15 @@ public abstract class User {
 	}
 
 	/**
-	 * 
-	 * @param newName
+	 * This is a setter for the user name
+	 * @param newName The name the user changes to. 
 	 */
 	public boolean changeName(String newName) {
-		// TODO - implement User.changeName
-		throw new UnsupportedOperationException();
+		this.name = newName;
 	}
 
 	public String getID() {
-		// TODO - implement User.getID
-		throw new UnsupportedOperationException();
-	}
-
-	public String getRole() {
-		// TODO - implement User.getRole
-		throw new UnsupportedOperationException();
+		return this.ID;
 	}
 
 	public Security getSecurity() {

@@ -1,4 +1,7 @@
 package main;
+
+import java.time.LocalDateTime;
+
 public class Query {
 
 	User user;
@@ -15,9 +18,13 @@ public class Query {
 	 * @param ddateLogged
 	 * @param qqueryRole
 	 */
-	public void Query(String qqueryText, String qqueryTitle, LocalDateTime ddateLogged, QueryRole qqueryRole) {
-		// TODO - implement Query.Query
-		throw new UnsupportedOperationException();
+	public Query(String qqueryText, String qqueryTitle, LocalDateTime ddateLogged, QueryRole qqueryRole) {
+		this.queryRole = qqueryRole;
+		// this.queryID = ;
+		this.queryTitle = qqueryTitle;
+		this.queryText = qqueryText;
+		this.dateLogged = ddateLogged; 
+		
 	}
 
 	public void changeRole() {
@@ -26,18 +33,15 @@ public class Query {
 	}
 
 	public String getID() {
-		// TODO - implement Query.getID
-		throw new UnsupportedOperationException();
+		return this.queryID;
 	}
 
 	public String getTitle() {
-		// TODO - implement Query.getTitle
-		throw new UnsupportedOperationException();
+		return this.queryTitle;
 	}
 
 	public String getText() {
-		// TODO - implement Query.getText
-		throw new UnsupportedOperationException();
+		return this.queryText;
 	}
 
 	public LocalDateTime getDateLogged() {
