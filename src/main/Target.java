@@ -25,7 +25,12 @@ public class Target {
 	 */
 
 	public boolean Target(Exercise eexercise, String aattribute, int vvalue, FDMEmployee ffdmEmployee, MentalHealthAmbassador mmentalHealthAmbassador){
-		this.
+		this.mentalHealthAmbassador = mmentalHealthAmbassador;
+		this.fdmEmployee = ffdmEmployee;
+		this.exercise = eexercise;
+		this.attribute = aattribute;
+		this.value = vvalue;
+		
 		
 	}
 
