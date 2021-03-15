@@ -2,14 +2,14 @@ package main;
 public class SupportQuery extends QueryRole {
 
 	CustomerSupport customerSupport;
+	private Query query;
 
 	/**
 	 * 
 	 * @param qquery
 	 */
 	public void SupportQuery(Query qquery) {
-		// TODO - implement SupportQuery.SupportQuery
-		throw new UnsupportedOperationException();
+		this.query = qquery;
 	}
 
 	/**
