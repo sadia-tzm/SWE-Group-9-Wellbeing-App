@@ -50,11 +50,12 @@ public class Target {
 	 */
 	public boolean setValue(int newValue) {
 		this.value = newValue;
+		return true;
 	}
 
 	public void targetMet() {
-		// TODO - implement Target.targetMet
-		throw new UnsupportedOperationException();
+		this.isMet = true;
+		
 	}
 
 }

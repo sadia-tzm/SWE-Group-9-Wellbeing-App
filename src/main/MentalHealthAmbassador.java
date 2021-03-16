@@ -20,7 +20,7 @@ public class MentalHealthAmbassador extends User {
 	 * @param email
 	 */
 	public MentalHealthAmbassador(String nname, String ppassword, String uuserName, String eemail) {
-		super.name = nname;
+		super.name =nname;
 		this.password = ppassword;
 		this.userName = uuserName;
 		this.email = eemail; 
