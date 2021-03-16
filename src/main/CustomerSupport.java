@@ -3,6 +3,9 @@ import java.util.*;
 
 public class CustomerSupport extends User {
 
+	private String password;
+	private String userName;
+	private String email;
 	Collection<SupportQuery> supportQueries;
 
 	/**
@@ -12,9 +15,13 @@ public class CustomerSupport extends User {
 	 * @param userName
 	 * @param email
 	 */
-	public boolean CustomerSupport(String nname, String password, String userName, String email) {
-		// TODO - implement CustomerSupport.CustomerSupport
-		throw new UnsupportedOperationException();
+	public CustomerSupport(String nname, String ppassword, String uuserName, String eemail) {
+		super.name = nname;
+		this.password = ppassword;
+		this.userName = uuserName;
+		this.email = eemail;
+
+
 	}
 
 	public List<SupportQuery> checkQueries() {

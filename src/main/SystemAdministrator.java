@@ -3,6 +3,9 @@ import java.util.*;
 
 public class SystemAdministrator extends User {
 
+	private String password;
+	private String userName;
+	private String email;
 	Collection<AdminstratorQuery> administratorQueries;
 
 	/**
@@ -12,9 +15,11 @@ public class SystemAdministrator extends User {
 	 * @param userName
 	 * @param email
 	 */
-	public boolean SystemAdministrator(String nname, String password, String userName, String email) {
-		// TODO - implement SystemAdministrator.SystemAdministrator
-		throw new UnsupportedOperationException();
+	public SystemAdministrator(String nname, String ppassword, String uuserName, String eemail) {
+		super.name = nname;
+		this.password = ppassword;
+		this.userName = uuserName;
+		this.email = eemail;
 	}
 
 	/**

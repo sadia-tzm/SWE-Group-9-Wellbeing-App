@@ -2,15 +2,16 @@ package main;
 public class AdminstratorQuery extends QueryRole {
 
 	SystemAdministrator systemAdministrator;
-	private int status;
+	private Query query;
+	private String progress;
 
 	/**
 	 * 
 	 * @param SystemAdministrator
 	 */
 	public boolean startProgress(SystemAdministrator ssystemAdministrator) {
-		// TODO - implement AdminstratorQuery.startProgress
-		throw new UnsupportedOperationException();
+		this.systemAdministrator = ssystemAdministrator;
+		this.progress = "Starting to Resolve Query";
 	}
 
 	/**
@@ -18,22 +19,21 @@ public class AdminstratorQuery extends QueryRole {
 	 * @param sstatus
 	 */
 	public boolean updateProgress(String sstatus) {
-		// TODO - implement AdminstratorQuery.updateProgress
-		throw new UnsupportedOperationException();
+		this.progress = sstatus;
+		return true;
 	}
 
 	public String getProgress() {
-		// TODO - implement AdminstratorQuery.getProgress
-		throw new UnsupportedOperationException();
+		return this.progress;
 	}
 
 	/**
 	 * 
 	 * @param qquery
+	 * @return 
 	 */
 	public void AdministratorQuery(Query qquery) {
-		// TODO - implement AdminstratorQuery.AdministratorQuery
-		throw new UnsupportedOperationException();
+		this.query = qquery;
 	}
 
 }

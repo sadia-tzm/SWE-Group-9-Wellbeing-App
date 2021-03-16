@@ -8,8 +8,7 @@ public abstract class QueryRole {
 	 * @param qquery
 	 */
 	public void QueryRole(Query qquery) {
-		// TODO - implement QueryRole.QueryRole
-		throw new UnsupportedOperationException();
+		this.query = qquery;
 	}
 
 	public void querySolved() {

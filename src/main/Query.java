@@ -18,8 +18,7 @@ public class Query {
 	 * @param ddateLogged
 	 * @param qqueryRole
 	 */
-	public Query(String qqueryText, String qqueryTitle, LocalDateTime ddateLogged, QueryRole qqueryRole) {
-		this.queryRole = qqueryRole;
+	public Query(String qqueryText, String qqueryTitle, LocalDateTime ddateLogged) {
 		// this.queryID = ;
 		this.queryTitle = qqueryTitle;
 		this.queryText = qqueryText;
