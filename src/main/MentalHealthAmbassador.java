@@ -7,6 +7,11 @@ public class MentalHealthAmbassador extends User {
 	Collection<Appointment> appointments;
 	Collection<Target> targets;
 
+	private String password;
+	private String userName;
+	private String email;
+
+
 	/**
 	 * 
 	 * @param nname
@@ -14,9 +19,13 @@ public class MentalHealthAmbassador extends User {
 	 * @param userName
 	 * @param email
 	 */
-	public boolean MentalHealthAmbassador(String nname, String password, String userName, String email) {
-		// TODO - implement MentalHealthAmbassador.MentalHealthAmbassador
-		throw new UnsupportedOperationException();
+	public MentalHealthAmbassador(String nname, String ppassword, String uuserName, String eemail) {
+		super.name = nname;
+		this.password = ppassword;
+		this.userName = uuserName;
+		this.email = eemail; 
+
+		
 	}
 
 	public List<TimeSlot> getBusyTimeSlots() {
