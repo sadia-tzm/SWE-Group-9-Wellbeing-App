@@ -1,0 +1,16 @@
+
+
+This regards FDMEmployee -> attemptMindfulnessExercise
+                         -> attemptWorkoutExercise
+
+
+attemptMindfulnessExercise:
+
+    for attemptNumber, get attemptNumber of the last item in mindfulnessExerciseAttempts, then + 1
+
+    then check if the mindfulnessExercise from the GUI is of subtype "BreathingExercise".
+    -> if yes then create a new BreathingExerciseAttempt object (but still of type MindfulnessExerciseAttempt)
+    -> if no then just create regular MindfulnessExerciseAttempt
+
+
+got bored of writing but the same thing with WorkoutExerciseAttempt and StepExerciseAttempt
