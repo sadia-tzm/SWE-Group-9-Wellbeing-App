@@ -49,13 +49,13 @@ public class Target {
 	 * @param newValue
 	 */
 	public boolean setValue(int newValue) {
-		// TODO - implement Target.setValue
-		throw new UnsupportedOperationException();
+		this.value = newValue;
+		return true;
 	}
 
 	public void targetMet() {
-		// TODO - implement Target.targetMet
-		throw new UnsupportedOperationException();
+		this.isMet = true;
+		
 	}
 
 }
