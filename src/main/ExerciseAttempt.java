@@ -14,12 +14,14 @@ public abstract class ExerciseAttempt {
 	private int attemptNumber;
 	private Instant startTime;
 	private Instant endTime;
+	private Exercise exercise;
 
 	//-------------------------------------------------------------------------------
 	//gets attemptNumber from the length of the exercise attempt list
-	public ExerciseAttempt(int aattemptNumber) {
+	public ExerciseAttempt(int aattemptNumber, Exercise eexercise) {
 		this.startTime = Instant.now();
 		this.attemptNumber = aattemptNumber;
+		this.exercise = eexercise;
 	}
 
 	//-------------------------------------------------------------------------------
@@ -57,6 +59,10 @@ public abstract class ExerciseAttempt {
 
 	public long getDuration() {
 		return this.duration;
+	}
+
+	public Exercise getExercise() {
+		return this.exercise;
 	}
 
 	//-------------------------------------------------------------------------------

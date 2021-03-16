@@ -8,14 +8,6 @@ public class MindfulnessExerciseAttempt extends ExerciseAttempt {
 		super(aattemptNumber);
 		this.mindfulnessExercise = mmindfulnessExercise;
 	}
-
-	
-
-
-	/**
-	 * 
-	 * @param mmindfulnessExercise
-	 */
 	
 
 }
