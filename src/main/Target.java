@@ -49,8 +49,7 @@ public class Target {
 	 * @param newValue
 	 */
 	public boolean setValue(int newValue) {
-		// TODO - implement Target.setValue
-		throw new UnsupportedOperationException();
+		this.value = newValue;
 	}
 
 	public void targetMet() {
