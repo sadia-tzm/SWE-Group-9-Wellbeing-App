@@ -27,8 +27,7 @@ public class SystemAdministrator extends User {
 	 * @param administratorQuery
 	 */
 	public boolean startWorking(AdministratorQuery administratorQuery) {
-		// TODO - implement SystemAdministrator.startWorking
-		throw new UnsupportedOperationException();
+		administratorQuery.progress = "Started to work on Query";
 	}
 
 }
