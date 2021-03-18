@@ -9,38 +9,20 @@ public class Health {
 	private List<Calorie> calorieHistory;
 	private LocalDateTime recentDateLogged;
 
-	/**
-	 * 
-	 * @param height
-	 * @param weight
-	 */
 	public void Health(Height height, Weight weight) {
+		heightHistory.add(height);
+		weightHistory.add(weight);
+	}
+
+	//Food may be not required!
+	public void logCalories(Calorie calories, int food) {
+		calorieHistory.add(calories);
+	}
+
+	public void logHeight(Height height) {
 		heightHistory.add(height);
 	}
 
-	/**
-	 * 
-	 * @param calories
-	 * @param food
-	 */
-	public void logCalories(int calories, int food) {
-		// TODO - implement Health.logCalories
-		throw new UnsupportedOperationException();
-	}
-
-	/**
-	 * 
-	 * @param height
-	 */
-	public void logHeight(int height) {
-		// TODO - implement Health.logHeight
-		throw new UnsupportedOperationException();
-	}
-
-	/**
-	 * 
-	 * @param weight
-	 */
 	public void logWeight(Weight weight) {
 		weightHistory.add(weight);
 	}
@@ -59,45 +41,29 @@ public class Health {
 	}
 
 	public Height getCurrentHeight() {
-		// TODO - implement Health.getCurrentHeight
-		throw new UnsupportedOperationException();
+		return heightHistory.get(heightHistory.size()-1);
 	}
 
 	public Weight getCurrentWeight() {
-		// TODO - implement Health.getCurrentWeight
-		throw new UnsupportedOperationException();
-	}
+		return weightHistory.get(weightHistory.size()-1);
 
+	}
+	// Pretty complex - requires additional paramaters such as age height and gender
 	public int getBMI() {
 		// TODO - implement Health.getBMI
 		throw new UnsupportedOperationException();
 	}
 
-	/**
-	 * 
-	 * @param calorieEntry
-	 */
-	public boolean deleteCalorieEntry(Calorie calorieEntry) {
-		// TODO - implement Health.deleteCalorieEntry
-		throw new UnsupportedOperationException();
+	public void deleteCalorieEntry(Calorie calorieEntry) {
+		calorieHistory.remove(calorieEntry);
 	}
 
-	/**
-	 * 
-	 * @param heightEntry
-	 */
-	public boolean deleteHeightEntry(Height heightEntry) {
-		// TODO - implement Health.deleteHeightEntry
-		throw new UnsupportedOperationException();
+	public void deleteHeightEntry(Height heightEntry) {
+		heightHistory.remove(heightEntry);
 	}
 
-	/**
-	 * 
-	 * @param weightEntry
-	 */
-	public boolean deleteWeightEntry(Weight weightEntry) {
-		// TODO - implement Health.deleteWeightEntry
-		throw new UnsupportedOperationException();
+	public void deleteWeightEntry(Weight weightEntry) {
+		weightHistory.remove(weightEntry);
 	}
 
 }
