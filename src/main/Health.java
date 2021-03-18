@@ -15,7 +15,7 @@ public class Health {
 	 * @param weight
 	 */
 	public void Health(Height height, Weight weight) {
-
+		heightHistory.add(height);
 	}
 
 	/**
