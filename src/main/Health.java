@@ -1,11 +1,12 @@
 package main;
+import java.time.LocalDateTime;
 import java.util.*;
 
 public class Health {
 
-	Collection<Weight> weightHistory;
-	Collection<Height> heightHistory;
-	Collection<Calorie> calorieHistory;
+	private List<Weight> weightHistory;
+	private List<Height> heightHistory;
+	private List<Calorie> calorieHistory;
 	private LocalDateTime recentDateLogged;
 
 	/**
@@ -14,8 +15,9 @@ public class Health {
 	 * @param weight
 	 */
 	public void Health(Height height, Weight weight) {
-		// TODO - implement Health.Health
-		throw new UnsupportedOperationException();
+		this.weightHistory = new List<Weight>();
+
+
 	}
 
 	/**
@@ -47,18 +49,16 @@ public class Health {
 	}
 
 	public List<Calorie> getCalorieHistory() {
-		// TODO - implement Health.getCalorieHistory
-		throw new UnsupportedOperationException();
+		return this.calorieHistory;
 	}
 
 	public List<Height> getHeightHistory() {
-		// TODO - implement Health.getHeightHistory
-		throw new UnsupportedOperationException();
+		return this.heightHistory;
+
 	}
 
 	public List<Weight> getWeightHistory() {
-		// TODO - implement Health.getWeightHistory
-		throw new UnsupportedOperationException();
+		return this.weightHistory;
 	}
 
 	public Height getCurrentHeight() {
