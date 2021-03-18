@@ -12,7 +12,9 @@ public class FDMEmployee extends User {
 	Health health;
 	Collection<AmbientSounds> ambientSoundExercises;
 	Collection<WorkoutExcerciseAttempt> workoutExcerciseAttempts;
+	Collection<Target> targets;
 	LocalDateTime dateOfBirth;
+
 
 	/**
 	 * 
@@ -20,7 +22,7 @@ public class FDMEmployee extends User {
 	public FDMEmployee(String nname, String password, String userName, String email, LocalDateTime ddate, int height, int weight) {
 		super(nname, password, userName, email);
 		dateOfBirth = ddate;
-		health = new Health(height, weight);
+		health = new Health(height, weight);//health remove void
 	}
 
 	/**
@@ -58,28 +60,28 @@ public class FDMEmployee extends User {
 	 * @param availableMindfulnessExercise
 	 */
 	public void attemptMindfulnessExercise(MindfulnessExercise availableMindfulnessExercise) {
-		MindfulnessExerciseAttempt attempt = new MindfulnessExcerciseAttempt(availableMindfulnessExercise);
+		MindfulnessExerciseAttempt attempt;
+		if (availableMindfulnessExercise instanceof BreathingExercise){
+			attempt = new BreathingExerciseAttempt(mindfulnessExerciseAttempts.toArray()[mindfulnessExerciseAttempts.size()-1].getAttemptNumber()+1, availableMindfulnessExercise);
+		} else {
+			attempt = new MindfulnessExerciseAttempt(mindfulnessExerciseAttempts.toArray()[mindfulnessExerciseAttempts.size()-1].getAttemptNumber()+1, availableMindfulnessExercise);
+		}
 		mindfulnessExerciseAttempts.add(attempt);
 	}
 
 	/**
-	 * 
+	 *
 	 * @param availableWorkoutExercise the excercise the user is attempted / to be added as a reference in the ne wobject
 	 */
 	public void attemptWorkoutExercise(WorkoutExercise availableWorkoutExercise) {
-		WorkoutExerciseAttempt attempt = new WorkoutExcerciseAttempt(availableWorkoutExercise);
-		mindfulnessExerciseAttempts.add(attempt);
+		WorkoutExcerciseAttempt attempt; //const
+		if (availableWorkoutExercise instanceof StepExercise){
+			attempt = new StepExerciseAttempt(workoutExcerciseAttempts.toArray()[workoutExcerciseAttempts.size()-1].getAttemptNumber()+1, availableWorkoutExercise);
+		} else {
+			attempt = new MindfulnessExerciseAttempt(workoutExcerciseAttempts.toArray()[workoutExcerciseAttempts.size()-1].getAttemptNumber()+1, availableWorkoutExercise);
+		}
+		workoutExcerciseAttempts.add(attempt);
 	}
-
-	/**
-	 * 
-	 * @param availableWorkoutExercise the excercise the user is attempted / to be added as a reference in the ne wobject
-	 */
-	public void attemptStep(WorkoutExercise availableWorkoutExercise) {
-		WorkoutExerciseAttempt attempt = new WorkoutExcerciseAttempt(availableWorkoutExercise);
-		mindfulnessExerciseAttempts.add(attempt);
-	}
-
 
 	/**
 	 * 
@@ -88,19 +90,47 @@ public class FDMEmployee extends User {
 	public String viewStatistics() {
 		String stats = "";
 		throw new UnsupportedOperationException();
-		stats += ToString(health.getBMI());
+		stats += Integer.toString(health.getBMI());
 		stats+= " - current BMI \n";
-		stats+= toString(health.getCurrentHeight());
+		stats+= Integer.toString(health.getCurrentHeight().getHeight());//get current height shoulf
 		stats+= " - current height \n";
-		stats+= toString(health.getCurrentWeight());
+		stats+= Integer.toString(health.getCurrentWeight().getWeight());
 		stats+= " - current weight \n";
+		//potential averages or something?
+		 
+		for (MindfulnessExerciseAttempt m : mindfulnessExerciseAttempts) {
+			stats+=("attempt number - " + Integer.toString(m.getAttemptNumber()) +"duration - " + Long.toString(m.getDuration()) +"name - "
+			+ m.getExercise().getName()+ "Date" + m.getDateLogged().toString()+"\n");
+		}
 
+		for (WorkoutExcerciseAttempt w : workoutExcerciseAttempts) {
+			stats+=("attempt number - " + Integer.toString(w.getAttemptNumber()) +"duration - " + Long.toString(w.getDuration()) +"name - "
+			+ w.getExercise().getName()+ "Date" + w.getDateLogged().toString()+);
+			if (w instanceof StepExerciseAttempt){
+				stats+= (Integer.toString(w.getSteps()));//???
+			}
+			stats+="\n";
+		}
+
+		/**
+		 * this.mentalHealthAmbassador = mmentalHealthAmbassador;
+		this.fdmEmployee = ffdmEmployee;
+		this.exercise = eexercise;
+		this.attribute = aattribute;
+		this.value = vvalue;
+		ismet
+		 * */
+		for (Target t : targets) {
+			stats+=("Name - "+t.getExercise().getName()+ "attribute" +t.getAttribute()+ "value " +Integer.toString(t.getValue()));
+			stats+= (t.targetMet(); ? "target Met!" : "target not yet met");//setters for targets
+		}
 
 		//looping attempt ist....
 		//targets acheived 
 		//how am I to get the targets as theres no list....
 		//add list of targers - 
 		//getter for list and setter - add another 
+		System.out.println(stats);
 		return stats;
 	}
 
@@ -108,10 +138,14 @@ public class FDMEmployee extends User {
 	 * deletes the excercise attempt
 	 * @param exerciseAttempt
 	 */
-	public boolean deleteExerciseAttempt(ExerciseAttempt exerciseAttempt) {
+	public void deleteExerciseAttempt(ExerciseAttempt exerciseAttempt) {
 		workoutExcerciseAttempts.remove(exerciseAttempt);
 		mindfulnessExerciseAttempts.remove(exerciseAttempt);
 
+	}
+
+	public Collection<Target> getTargets() {
+		return targets;
 	}
 
 	/**
@@ -120,12 +154,12 @@ public class FDMEmployee extends User {
 	 * @param newDuration the new time the activity actually took 
 	 * @param newSteps if the attempt is a step excercise, this parameter represents the new amount of steps taken.
 	 */
-	public boolean editWorkoutExerciseAttempt(WorkoutExerciseAttempt ExerciseAttempt, long newDuration, int newSteps) {
+	public boolean editWorkoutExerciseAttempt(WorkoutExcerciseAttempt exerciseAttempt, long newDuration, int newSteps) {
 		//change duration????? how can i change duration ithout changing end time.... or should I make a new object with adjusted end time????
-		if(mindfulnessExerciseAttempt instanceof StepExerciseAttempt){
-			mindfulnessExerciseAttempt.editEntry(newDuration, newSteps);
+		if(exerciseAttempt instanceof StepExerciseAttempt){
+			exerciseAttempt.editEntry(newDuration, newSteps);//supposed to be long
 		} else{
-			mindfulnessExerciseAttempt.editEntry(newDuration);
+			exerciseAttempt.editEntry(newDuration, LocalDateTime.now());
 		}
 		
 	}
@@ -135,9 +169,9 @@ public class FDMEmployee extends User {
 	 * @param ExerciseAttempt the activity to be changed
 	 * @param newDuration  the new time the activity actually took 
 	 */
-	public boolean editMindfulnessExercise(MindfulnessExerciseAttempt ExerciseAttempt, long newDuration) {
+	public void editMindfulnessExercise(MindfulnessExerciseAttempt ExerciseAttempt, long newDuration) {//breathing ex didnt seem different
 
-		mindfulnessExerciseAttempt.editEntry(newDuration);
+		ExerciseAttempt.editEntry(newDuration, LocalDateTime.now());
 	}
 
 }
