@@ -15,8 +15,6 @@ public class Health {
 	 * @param weight
 	 */
 	public void Health(Height height, Weight weight) {
-		this.weightHistory = new List<Weight>();
-
 
 	}
 
@@ -43,9 +41,8 @@ public class Health {
 	 * 
 	 * @param weight
 	 */
-	public void logWeight(int weight) {
-		// TODO - implement Health.logWeight
-		throw new UnsupportedOperationException();
+	public void logWeight(Weight weight) {
+		weightHistory.add(weight);
 	}
 
 	public List<Calorie> getCalorieHistory() {
