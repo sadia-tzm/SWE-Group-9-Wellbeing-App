@@ -49,8 +49,9 @@ public abstract class User {
 	 * This is a setter for the user name
 	 * @param newName The name the user changes to. 
 	 */
-	public boolean changeName(String newName) {
+	public void changeName(String newName) {
 		this.name = newName;
+
 	}
 
 	/**
