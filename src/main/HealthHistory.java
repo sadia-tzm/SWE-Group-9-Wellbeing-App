@@ -20,7 +20,7 @@ public class HealthHistory {
 	}
 
 	//Food may be not required!
-	public void logCalories(Calorie calories, int food) {
+	public void logCalories(Calorie calories) {
 		calorieHistory.add(calories);
 	}
 
