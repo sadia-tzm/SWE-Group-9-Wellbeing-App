@@ -1,5 +1,4 @@
 package main;
-import java.time.LocalDateTime;
 import java.util.*;
 
 public class Health {
@@ -7,9 +6,15 @@ public class Health {
 	private List<Weight> weightHistory;
 	private List<Height> heightHistory;
 	private List<Calorie> calorieHistory;
-	private LocalDateTime recentDateLogged;
 
-	public void Health(Height height, Weight weight) {
+	public Health(Height height, Weight weight) {
+		weightHistory = new ArrayList<Weight>();
+		heightHistory = new ArrayList<Height>();
+		calorieHistory = new ArrayList<Calorie>();
+		intialWeight(height, weight);
+	}
+
+	private void intialWeight(Height height, Weight weight) {
 		heightHistory.add(height);
 		weightHistory.add(weight);
 	}
@@ -50,8 +55,7 @@ public class Health {
 	}
 	// Pretty complex - requires additional paramaters such as age height and gender
 	public int getBMI() {
-		// TODO - implement Health.getBMI
-		throw new UnsupportedOperationException();
+		return 1;
 	}
 
 	public void deleteCalorieEntry(Calorie calorieEntry) {
