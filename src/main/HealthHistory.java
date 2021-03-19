@@ -1,13 +1,13 @@
 package main;
 import java.util.*;
 
-public class Health {
+public class HealthHistory {
 
 	private List<Weight> weightHistory;
 	private List<Height> heightHistory;
 	private List<Calorie> calorieHistory;
 
-	public Health(Height height, Weight weight) {
+	public HealthHistory(Height height, Weight weight) {
 		weightHistory = new ArrayList<Weight>();
 		heightHistory = new ArrayList<Height>();
 		calorieHistory = new ArrayList<Calorie>();

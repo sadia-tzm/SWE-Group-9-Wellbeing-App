@@ -1,13 +1,9 @@
 package main;
 public class Height extends HealthProperty {
 
+	private ID dataID;
 	private int height;
 
-	/**
-	 * 
-	 * @param hheight
-	 * @param ddateLogged
-	 */
 	public boolean Height(int hheight, LocalDateTime ddateLogged) {
 		// TODO - implement Height.Height
 		throw new UnsupportedOperationException();
@@ -17,10 +13,6 @@ public class Height extends HealthProperty {
 		return this.height;
 	}
 
-	/**
-	 * 
-	 * @param newHeight
-	 */
 	public boolean setHeight(int newHeight) {
 		// TODO - implement Height.setHeight
 		throw new UnsupportedOperationException();
