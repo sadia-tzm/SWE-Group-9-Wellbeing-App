@@ -1,6 +1,5 @@
 package main;
 
-
 public class Calorie extends HealthProperty {
 
 	private int calories;
