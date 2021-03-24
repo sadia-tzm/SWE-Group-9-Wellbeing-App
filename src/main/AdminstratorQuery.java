@@ -12,6 +12,7 @@ public class AdminstratorQuery extends QueryRole {
 	public boolean startProgress(SystemAdministrator ssystemAdministrator) {
 		this.systemAdministrator = ssystemAdministrator;
 		this.progress = "Starting to Resolve Query";
+		return true;
 	}
 
 	/**

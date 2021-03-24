@@ -31,7 +31,7 @@ public class Security {
 	 * 
 	 * @param String
 	 */
-	public boolean changeUserName(newUserName String) {
+	public boolean changeUserName(String newUserName ) {
 		// TODO - implement Security.changeUserName
 		throw new UnsupportedOperationException();
 	}
@@ -40,7 +40,7 @@ public class Security {
 	 * 
 	 * @param String
 	 */
-	public boolean changePassword(newPassword String) {
+	public boolean changePassword(String newPassword ) {
 		// TODO - implement Security.changePassword
 		throw new UnsupportedOperationException();
 	}
