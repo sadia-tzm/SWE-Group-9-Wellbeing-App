@@ -6,11 +6,11 @@ public abstract class HealthProperty {
 
 	LocalDateTime dateLogged;
 
-	public HealthProperty(LocalDateTime ddateLogged) {
-		this.dateLogged = ddateLogged;
+	public HealthProperty() {
+		this.dateLogged = LocalDateTime.now();
 	}
 
-	public LocalDateTime getDateLogged() {
+    public LocalDateTime getDateLogged() {
 		return this.dateLogged;
 	}
 

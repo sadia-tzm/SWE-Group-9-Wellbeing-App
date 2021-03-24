@@ -1,10 +1,11 @@
 package main;
+
 public class Height extends HealthProperty {
 
 	private int height;
 
-	public Height(LocalDateTime ddateLogged, int hheight) {
-		super(ddateLogged);
+	public Height(int hheight) {
+		super();
 		height = hheight;
 	}
 

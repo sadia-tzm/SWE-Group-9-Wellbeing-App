@@ -1,13 +1,11 @@
 package main;
 
-import java.time.LocalDateTime;
-
 public class Weight extends HealthProperty {
 
 	private int weight;
 
-	public Weight(LocalDateTime ddateLogged, int wweight) {
-		super(ddateLogged);
+	public Weight(int wweight) {
+		super();
 		weight = wweight;
 	}
 

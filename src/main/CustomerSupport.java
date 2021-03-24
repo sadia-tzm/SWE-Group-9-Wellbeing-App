@@ -16,7 +16,7 @@ public class CustomerSupport extends User {
 	 * @param email
 	 */
 	public CustomerSupport(String nname, String ppassword, String uuserName, String eemail) {
-		super.name = nname;
+		super(nname, ppassword, uuserName, eemail);
 		this.password = ppassword;
 		this.userName = uuserName;
 		this.email = eemail;
