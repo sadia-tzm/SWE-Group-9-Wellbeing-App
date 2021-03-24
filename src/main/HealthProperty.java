@@ -1,8 +1,17 @@
 package main;
+
+import java.time.LocalDateTime;
+
 public abstract class HealthProperty {
 
-	public HealthProperty() {
-		
+	LocalDateTime dateLogged;
+
+	public HealthProperty(LocalDateTime ddateLogged) {
+		this.dateLogged = ddateLogged;
+	}
+
+	public LocalDateTime getDateLogged() {
+		return this.dateLogged;
 	}
 
 }

@@ -1,16 +1,20 @@
 package main;
 
+import java.time.LocalDateTime;
+
 public class Calorie extends HealthProperty {
 
 	private int calories;
 	private Food food;
 
-	public Calorie(int ccalories, Food ffood) {
+	public Calorie(LocalDateTime ddateLogged, int ccalories, Food ffood) {
+		super(ddateLogged);
 		calories = ccalories;
 		food = ffood;
 	}
 
-	public Calorie(Food ffood) {
+	public Calorie(LocalDateTime ddateLogged, Food ffood) {
+		super(ddateLogged);
 		calories = ffood.getCalories();
 		food = ffood;
 	}

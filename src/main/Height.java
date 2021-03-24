@@ -3,7 +3,8 @@ public class Height extends HealthProperty {
 
 	private int height;
 
-	public Height(int hheight) {
+	public Height(LocalDateTime ddateLogged, int hheight) {
+		super(ddateLogged);
 		height = hheight;
 	}
 
