@@ -19,7 +19,6 @@ public class HealthHistory {
 		weightHistory.add(weight);
 	}
 
-	//Food may be not required!
 	public void logCalories(Calorie calories) {
 		calorieHistory.add(calories);
 	}
@@ -52,10 +51,6 @@ public class HealthHistory {
 	public Weight getCurrentWeight() {
 		return weightHistory.get(weightHistory.size()-1);
 
-	}
-	// Pretty complex - requires additional paramaters such as age height and gender
-	public int getBMI() {
-		return 1;
 	}
 
 	public void deleteCalorieEntry(Calorie calorieEntry) {
