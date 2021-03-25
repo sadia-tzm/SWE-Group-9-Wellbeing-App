@@ -1,4 +1,5 @@
 package main;
+
 public class Height extends HealthProperty {
 
 	private int height;
