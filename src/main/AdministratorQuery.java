@@ -1,24 +1,20 @@
 package main;
-public class AdminstratorQuery extends QueryRole {
+public class AdministratorQuery extends QueryRole {
 
 	SystemAdministrator systemAdministrator;
 	private Query query;
 	private String progress;
 
-	/**
-	 * 
-	 * @param SystemAdministrator
-	 */
+	public void AdministratorQuery(Query qquery) {
+		this.query = qquery;
+	}
+
 	public boolean startProgress(SystemAdministrator ssystemAdministrator) {
 		this.systemAdministrator = ssystemAdministrator;
 		this.progress = "Starting to Resolve Query";
 		return true;
 	}
 
-	/**
-	 * 
-	 * @param sstatus
-	 */
 	public boolean updateProgress(String sstatus) {
 		this.progress = sstatus;
 		return true;
@@ -26,15 +22,6 @@ public class AdminstratorQuery extends QueryRole {
 
 	public String getProgress() {
 		return this.progress;
-	}
-
-	/**
-	 * 
-	 * @param qquery
-	 * @return 
-	 */
-	public void AdministratorQuery(Query qquery) {
-		this.query = qquery;
 	}
 
 }
