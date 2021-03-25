@@ -11,13 +11,6 @@ public class Query {
 	private String queryText;
 	private LocalDateTime dateLogged;
 
-	/**
-	 * 
-	 * @param qqueryText
-	 * @param qqueryTitle
-	 * @param ddateLogged
-	 * @param qqueryRole
-	 */
 	public Query(String qqueryText, String qqueryTitle, LocalDateTime ddateLogged) {
 		// this.queryID = ;
 		this.queryTitle = qqueryTitle;
