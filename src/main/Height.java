@@ -4,9 +4,8 @@ public class Height extends HealthProperty {
 
 	private int height;
 
-	public Height(int hheight) {
-		super();
-		height = hheight;
+	public Height(int height) {
+		this.height = height;
 	}
 
 	public int getHeight() {

@@ -6,76 +6,45 @@ public class Security {
 	private Boolean unlocked;
 	private String email;
 
-	/**
-	 * 
-	 * @param ppassword
-	 * @param uuserName
-	 * @param eemail
-	 */
-	public boolean Security(String ppassword, String uuserName, String eemail) {
-		// TODO - implement Security.Security
-		throw new UnsupportedOperationException();
+	public Security(String password, String userName, String email) {
+		this.password = password;
+		this.userName = userName;
+		this.unlocked = false;
+		this.email = email;
 	}
 
-	/**
-	 * 
-	 * @param userNameOReemail
-	 * @param ppassword
-	 */
-	public boolean login(String userNameOReemail, String ppassword) {
-		// TODO - implement Security.login
-		throw new UnsupportedOperationException();
+	public void login(String userNameORemail, String password) {
+		if((this.userName.equals(userNameORemail) || this.email.equals(userNameORemail)) && this.password.equals(password)){this.unlocked = true;}
 	}
 
-	/**
-	 * 
-	 * @param String
-	 */
-	public boolean changeUserName(String newUserName ) {
-		// TODO - implement Security.changeUserName
-		throw new UnsupportedOperationException();
+	public void changeUserName(String newUserName) {
+		this.userName = newUserName;
 	}
 
-	/**
-	 * 
-	 * @param String
-	 */
-	public boolean changePassword(String newPassword ) {
-		// TODO - implement Security.changePassword
-		throw new UnsupportedOperationException();
+	public void changePassword(String newPassword) {
+		this.password= newPassword;
 	}
 
-	public boolean getUserName() {
-		// TODO - implement Security.getUserName
-		throw new UnsupportedOperationException();
+	public String getUserName() {
+		return this.userName;
 	}
 
-	/**
-	 * 
-	 * @param eemail
-	 */
-	public void forgotPasswordSendCode(String eemail) {
+	public void forgotPasswordSendCode(String email) {
 		// TODO - implement Security.forgotPasswordSendCode
 		throw new UnsupportedOperationException();
 	}
 
-	/**
-	 * 
-	 * @param code
-	 */
 	public boolean forgotPasswordCheckCode(String code) {
 		// TODO - implement Security.forgotPasswordCheckCode
 		throw new UnsupportedOperationException();
 	}
 
 	public boolean isUnlocked() {
-		// TODO - implement Security.isUnlocked
-		throw new UnsupportedOperationException();
+		return this.unlocked;
 	}
 
-	public boolean logout() {
-		// TODO - implement Security.logout
-		throw new UnsupportedOperationException();
+	public void logout() {
+		this.unlocked = false;
 	}
 
 }
