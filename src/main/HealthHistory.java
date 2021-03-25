@@ -23,7 +23,7 @@ public class HealthHistory {
 	public void logCalories(int calories, String nameOfFood, int weightOfFood) {
 		Food foodItem = new Food(nameOfFood, calories, weightOfFood);
 		foodHistory.add(foodItem);
-		calorieHistory.add(new Calorie(calories, foodItem));
+		calorieHistory.add(new Calorie(foodItem, weightOfFood));
 	}
 
 	public void logCalories(Food food, int weightOfFood) {

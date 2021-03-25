@@ -6,11 +6,6 @@ public class Calorie extends HealthProperty {
 	private Food food;
 
 	//need to calculate weight of food
-	public Calorie(int calories, Food food) {
-		this.calories = calories;
-		this.food = food;
-	}
-
 	public Calorie(Food food, int weightOfFood) {
 		this.calories = food.calculateTotalCalories(weightOfFood);
 		this.food = food;

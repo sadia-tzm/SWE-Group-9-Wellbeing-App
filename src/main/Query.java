@@ -19,15 +19,17 @@ public class Query {
 		
 	}
 
-	public void changeRole(String role) {
-		if(role.equals("SupportQuery")){
-			this.queryRole = new SupportQuery() ;
-		} else if (role.equals("AdminstratorQuery")){
-			this.queryRole = new AdminstratorQuery();
-		} else {
-			// error ? 
-		}
-	}
+	//TODO - complete query class
+
+	// public void changeRole(String role) {
+	// 	if(role.equals("SupportQuery")){
+	// 		this.queryRole = new SupportQuery() ;
+	// 	} else if (role.equals("AdminstratorQuery")){
+	// 		this.queryRole = new AdminstratorQuery();
+	// 	} else {
+	// 		// error ? 
+	// 	}
+	// }
 
 	public String getID() {
 		return this.queryID;
