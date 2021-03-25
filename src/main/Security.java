@@ -1,5 +1,4 @@
 package main;
-import java.util.*;
 public class Security {
 
 	private String userName;
