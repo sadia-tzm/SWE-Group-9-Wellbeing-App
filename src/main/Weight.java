@@ -3,8 +3,8 @@ public class Weight extends HealthProperty {
 
 	private int weight;
 
-	public Weight(int wweight) {
-		weight = wweight;
+	public Weight(int weight) {
+		this.weight = weight;
 	}
 
 	public int getWeight() {

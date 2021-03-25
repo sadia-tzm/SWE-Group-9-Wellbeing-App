@@ -5,14 +5,14 @@ public class Calorie extends HealthProperty {
 	private int calories;
 	private Food food;
 
-	public Calorie(int ccalories, Food ffood) {
-		calories = ccalories;
-		food = ffood;
+	public Calorie(int calories, Food food) {
+		this.calories = calories;
+		this.food = food;
 	}
 
-	public Calorie(Food ffood) {
-		calories = ffood.getCalories();
-		food = ffood;
+	public Calorie(Food food) {
+		this.calories = food.getCalories();
+		this.food = food;
 	}
 
 	public int getCalories() {
