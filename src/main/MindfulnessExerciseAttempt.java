@@ -2,11 +2,15 @@ package main;
 public class MindfulnessExerciseAttempt extends ExerciseAttempt {
 
 
-	MindfulnessExercise mindfulnessExercise;
+	private MindfulnessExercise mindfulnessExercise;
 
 	public MindfulnessExerciseAttempt(int aattemptNumber, MindfulnessExercise mmindfulnessExercise) {
-		super(aattemptNumber);
+		super(aattemptNumber, mmindfulnessExercise);
 		this.mindfulnessExercise = mmindfulnessExercise;
+	}
+
+	public MindfulnessExercise getMindfulnessExercise(){
+		return this.mindfulnessExercise;
 	}
 	
 

@@ -1,7 +1,6 @@
 package main;
 public class BreathingExerciseAttempt extends MindfulnessExerciseAttempt {
 
-
 	private BreathingExercise breathingExercise;
 
 	public BreathingExerciseAttempt(int aattemptNumber, BreathingExercise bbreathingExercise) {
