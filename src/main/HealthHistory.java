@@ -6,6 +6,7 @@ public class HealthHistory {
 	private List<Weight> weightHistory;
 	private List<Height> heightHistory;
 	private List<Calorie> calorieHistory;
+	private List<Food> foodHistory;
 
 	public HealthHistory(int height, int weight) {
 		weightHistory = new ArrayList<Weight>();
@@ -20,7 +21,9 @@ public class HealthHistory {
 	}
 
 	public void logCalories(int calories, String nameOfFood, int weightOfFood) {
-		calorieHistory.add(new Calorie(calories, new Food(nameOfFood, calories, weightOfFood)));
+		Food foodItem = new Food(nameOfFood, calories, weightOfFood);
+		foodHistory.add(foodItem);
+		calorieHistory.add(new Calorie(calories, foodItem));
 	}
 
 	public void logCalories(Food food, int weightOfFood) {
