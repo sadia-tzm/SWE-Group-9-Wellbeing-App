@@ -7,52 +7,75 @@ import jdk.jfr.Enabled;
 
 public class FDMEmployee extends User {
 
+<<<<<<< Updated upstream
+	ArrayList<MindfulnessExerciseAttempt> mindfulnessExerciseAttempts;
+	//ArrayList<Appointment> appointments;
+	HealthHistory health;
+	ArrayList<AmbientSounds> ambientSoundExercises;
+	ArrayList<WorkoutExcerciseAttempt> workoutExcerciseAttempts;
+	ArrayList<Target> targets;
+=======
 	Collection<MindfulnessExerciseAttempt> mindfulnessExerciseAttempts;
 	Collection<Appointment> appointments;
-	Health health;
+	HealthHistory health;
 	Collection<AmbientSounds> ambientSoundExercises;
 	Collection<WorkoutExcerciseAttempt> workoutExcerciseAttempts;
 	Collection<Target> targets;
+>>>>>>> Stashed changes
 	LocalDateTime dateOfBirth;
+	Boolean sex; //true for male
 
 
 	/**
 	 * 
 	 */
-	public FDMEmployee(String nname, String password, String userName, String email, LocalDateTime ddate, int height, int weight) {
+	public FDMEmployee(String nname, Boolean sx, String password, String userName, String email, LocalDateTime ddate, Height height, Weight weight) {
 		super(nname, password, userName, email);
 		dateOfBirth = ddate;
-		health = new Health(height, weight);//health remove void
+		sex = sx;
+		health = new HealthHistory(height, weight);//health remove void
+<<<<<<< Updated upstream
+		mindfulnessExerciseAttempts = new ArrayList<MindfulnessExerciseAttempt>() ;
+		ambientSoundExercises = new ArrayList<AmbientSounds>();
+		workoutExcerciseAttempts = new ArrayList<WorkoutExcerciseAttempt>();
+		targets = new ArrayList<Target>();
 	}
 
-	/**
-	 * 
-	 * @param mentalHealthAmbassador the mental health ambassador that the appointment will be with
-	 * @param booking the timeslot that contains the time that the appointment will be at
-	 */
-	public void bookAppointment(MentalHealthAmbassador mentalHealthAmbassador, TimeSlot booking) {
-		Appointment app = new Appointment(mentalHealthAmbassador, this, booking.getDateandTime());
-		appointments.add(app);
-
-
+=======
 	}
+>>>>>>> Stashed changes
+	// TODO implement appointemnt
+	// /**
+	//  * 
+	//  * @param mentalHealthAmbassador the mental health ambassador that the appointment will be with
+	//  * @param booking the timeslot that contains the time that the appointment will be at
+	//  */
+	// public void bookAppointment(MentalHealthAmbassador mentalHealthAmbassador, TimeSlot booking) {
+	// 	Appointment app = new Appointment(mentalHealthAmbassador, this, booking.getDateandTime());
+	// 	appointments.add(app);
 
-	/**
-	 * cancels an appointment
-	 * @param appointment the appointment to be cancelled.
-	 */
-	public void cancelAppointment(Appointment appointment) {
-		appointments.remove(appointment);
-		Inventory.getInstance().getListOfUsers().remove(appointment);
-	}
+	// }
 
-	/**
-	 * 
-	 * @param appointment the appoiintment to be scheduled.
-	 * @param newbooking the timeslot that contains the time that the appointment will now be at
-	 */
-	public void rescheduleAppointment(Appointment appointment, TimeSlot newbooking) {
-		appointment.setTimeslot(newbooking); // add to appointment / timeslot????
+	// /**
+	//  * cancels an appointment
+	//  * @param appointment the appointment to be cancelled.
+	//  */
+	// public void cancelAppointment(Appointment appointment) {
+	// 	appointments.remove(appointment);
+	// 	Inventory.getInstance().getListOfUsers().remove(appointment);
+	// }
+
+	// /**
+	//  * 
+	//  * @param appointment the appoiintment to be scheduled.
+	//  * @param newbooking the timeslot that contains the time that the appointment will now be at
+	//  */
+	// public void rescheduleAppointment(Appointment appointment, TimeSlot newbooking) {
+	// 	appointment.setTimeslot(newbooking); // add to appointment / timeslot????
+	// }
+
+	public int getBMI() {
+		return 1;
 	}
 
 	/**
@@ -76,9 +99,9 @@ public class FDMEmployee extends User {
 	public void attemptWorkoutExercise(WorkoutExercise availableWorkoutExercise) {
 		WorkoutExcerciseAttempt attempt; //const
 		if (availableWorkoutExercise instanceof StepExercise){
-			attempt = new StepExerciseAttempt(workoutExcerciseAttempts.toArray()[workoutExcerciseAttempts.size()-1].getAttemptNumber()+1, availableWorkoutExercise);
+			attempt = new StepExerciseAttempt(workoutExcerciseAttempts.get(workoutExcerciseAttempts.size()-1).getAttemptNumber()+1, availableWorkoutExercise);
 		} else {
-			attempt = new MindfulnessExerciseAttempt(workoutExcerciseAttempts.toArray()[workoutExcerciseAttempts.size()-1].getAttemptNumber()+1, availableWorkoutExercise);
+			attempt = new WorkoutExerciseAttempt(workoutExcerciseAttempts.get(workoutExcerciseAttempts.size()-1).getAttemptNumber()+1, availableWorkoutExercise);
 		}
 		workoutExcerciseAttempts.add(attempt);
 	}
@@ -90,7 +113,7 @@ public class FDMEmployee extends User {
 	public String viewStatistics() {
 		String stats = "";
 		throw new UnsupportedOperationException();
-		stats += Integer.toString(health.getBMI());
+		stats += Integer.toString(this.getBMI());
 		stats+= " - current BMI \n";
 		stats+= Integer.toString(health.getCurrentHeight().getHeight());//get current height shoulf
 		stats+= " - current height \n";
@@ -107,7 +130,7 @@ public class FDMEmployee extends User {
 			stats+=("attempt number - " + Integer.toString(w.getAttemptNumber()) +"duration - " + Long.toString(w.getDuration()) +"name - "
 			+ w.getExercise().getName()+ "Date" + w.getDateLogged().toString()+);
 			if (w instanceof StepExerciseAttempt){
-				stats+= (Integer.toString(w.getSteps()));//???
+				stats+= (Integer.toString((StepExerciseAttempt) w.getSteps()));//???
 			}
 			stats+="\n";
 		}
@@ -144,7 +167,7 @@ public class FDMEmployee extends User {
 
 	}
 
-	public Collection<Target> getTargets() {
+	public ArrayList<Target> getTargets() {
 		return targets;
 	}
 
