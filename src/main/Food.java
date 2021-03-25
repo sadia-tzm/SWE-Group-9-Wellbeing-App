@@ -7,8 +7,8 @@ public class Food {
 
     public Food(String name, int calories, int weight) {
         this.name = name;
-        this.caloriesPer100g = calories/weight/10;
-        this.weight= weight;
+        this.weight = weight;
+        this.caloriesPer100g = calories/10/this.weight;
     }
 
     public String getName(){
@@ -19,4 +19,7 @@ public class Food {
         return this.caloriesPer100g;
     }
     
+    public int calculateTotalCalories(int weight){
+        return caloriesPer100g * 10 * weight;
+    }
 }
