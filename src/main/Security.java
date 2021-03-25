@@ -1,16 +1,19 @@
 package main;
+import java.util.*;
 public class Security {
 
 	private String userName;
 	private String password;
 	private Boolean unlocked;
 	private String email;
+	private ArrayList<Integer> codes;
 
 	public Security(String password, String userName, String email) {
 		this.password = password;
 		this.userName = userName;
 		this.unlocked = false;
 		this.email = email;
+		this.codes = new ArrayList<Integer>();
 	}
 
 	public void login(String userNameORemail, String password) {
@@ -29,14 +32,16 @@ public class Security {
 		return this.userName;
 	}
 
-	public void forgotPasswordSendCode(String email) {
-		// TODO - implement Security.forgotPasswordSendCode
-		throw new UnsupportedOperationException();
+	public int generateForgotPasswordCode() {
+		int min = 100000, max = 999999, codeToSend = min;
+		while(!(codes.contains(codeToSend))){codeToSend = (int)(Math.random() * (max - min + 1) + min);}
+		codes.add(codeToSend);
+		return codeToSend;
 	}
 
-	public boolean forgotPasswordCheckCode(String code) {
-		// TODO - implement Security.forgotPasswordCheckCode
-		throw new UnsupportedOperationException();
+	public boolean forgotPasswordCheckCode(int code) {
+		if (codes.get(codes.size()-1) == code){ return true;}
+		return false;
 	}
 
 	public boolean isUnlocked() {
