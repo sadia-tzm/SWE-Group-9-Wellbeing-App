@@ -1,21 +1,20 @@
 package main;
+import java.time.LocalDateTime;
+
 public class TimeSlot {
 
 	private LocalDateTime dateAndTime;
 	private int timeSlotID;
 
-	public int getID() {
-		// TODO - implement TimeSlot.getID
-		throw new UnsupportedOperationException();
+	public TimeSlot(LocalDateTime ddateAndTime) {
+		this.dateAndTime = ddateAndTime;
 	}
 
-	/**
-	 * 
-	 * @param ddateAndTime
-	 */
-	public void TimeSlot(LocalDateTime ddateAndTime) {
-		// TODO - implement TimeSlot.TimeSlot
-		throw new UnsupportedOperationException();
-	}
+	//TODO - rest of TimeSlot
+
+	// public int getID() {
+	// }
+
+	
 
 }

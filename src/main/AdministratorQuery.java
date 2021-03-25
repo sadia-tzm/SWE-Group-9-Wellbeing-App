@@ -5,7 +5,7 @@ public class AdministratorQuery extends QueryRole {
 	private Query query;
 	private String progress;
 
-	public void AdministratorQuery(Query qquery) {
+	public AdministratorQuery(Query qquery) {
 		this.query = qquery;
 	}
 

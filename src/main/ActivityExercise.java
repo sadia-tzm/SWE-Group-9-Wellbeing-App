@@ -3,19 +3,16 @@ public class ActivityExercise extends WorkoutExercise {
 
 	private int difficulty;
 
-	public String getDifficulty() {
-		// TODO - implement ActivityExercise.getDifficulty
-		throw new UnsupportedOperationException();
+	public ActivityExercise(String eexerciseName, int ddifficulty) {
+		super(eexerciseName);
+		this.difficulty = ddifficulty;
 	}
 
-	/**
-	 * 
-	 * @param eexerciseName
-	 * @param ddifficulty
-	 */
-	public void ActivityExercise(String eexerciseName, int ddifficulty) {
-		// TODO - implement ActivityExercise.ActivityExercise
-		throw new UnsupportedOperationException();
-	}
+	//TODO - rest of Activity exercise
+
+	// public String getDifficulty() {
+	// }
+
+	
 
 }

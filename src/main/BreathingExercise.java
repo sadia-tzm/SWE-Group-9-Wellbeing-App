@@ -3,19 +3,14 @@ public class BreathingExercise extends MindfulnessExercise {
 
 	private int tempo;
 
+	public BreathingExercise(String eexerciseName, String ssoundPath, int ttempo) {
+		super(eexerciseName, ssoundPath);
+		this.tempo = ttempo;
+	}
+
 	public int getTempo() {
 		return this.tempo;
 	}
 
-	/**
-	 * 
-	 * @param eexerciseName
-	 * @param ssoundPath
-	 * @param ttempo
-	 */
-	public void BreathingExercise(String eexerciseName, String ssoundPath, int ttempo) {
-		// TODO - implement BreathingExercise.BreathingExercise
-		throw new UnsupportedOperationException();
-	}
-
+	//TODO - rest of BreathExercise
 }

@@ -3,9 +3,13 @@ public abstract class Exercise {
 
 	private String exerciseName;
 
-	public String getName() {
-		// TODO - implement Exercise.getName
-		throw new UnsupportedOperationException();
+	public Exercise(String eexerciseName) {
+		this.exerciseName = eexerciseName;
 	}
+
+	//TODO: rest of exercise
+
+	// public String getName() {
+	// }
 
 }

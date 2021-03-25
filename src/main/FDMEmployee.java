@@ -15,21 +15,12 @@ public class FDMEmployee extends User {
 	Collection<Target> targets;
 	LocalDateTime dateOfBirth;
 
-
-	/**
-	 * 
-	 */
 	public FDMEmployee(String nname, String password, String userName, String email, LocalDateTime ddate, int height, int weight) {
 		super(nname, password, userName, email);
 		dateOfBirth = ddate;
 		health = new Health(height, weight);//health remove void
 	}
 
-	/**
-	 * 
-	 * @param mentalHealthAmbassador the mental health ambassador that the appointment will be with
-	 * @param booking the timeslot that contains the time that the appointment will be at
-	 */
 	public void bookAppointment(MentalHealthAmbassador mentalHealthAmbassador, TimeSlot booking) {
 		Appointment app = new Appointment(mentalHealthAmbassador, this, booking.getDateandTime());
 		appointments.add(app);
@@ -37,28 +28,15 @@ public class FDMEmployee extends User {
 
 	}
 
-	/**
-	 * cancels an appointment
-	 * @param appointment the appointment to be cancelled.
-	 */
 	public void cancelAppointment(Appointment appointment) {
 		appointments.remove(appointment);
 		Inventory.getInstance().getListOfUsers().remove(appointment);
 	}
 
-	/**
-	 * 
-	 * @param appointment the appoiintment to be scheduled.
-	 * @param newbooking the timeslot that contains the time that the appointment will now be at
-	 */
 	public void rescheduleAppointment(Appointment appointment, TimeSlot newbooking) {
 		appointment.setTimeslot(newbooking); // add to appointment / timeslot????
 	}
 
-	/**
-	 * 
-	 * @param availableMindfulnessExercise
-	 */
 	public void attemptMindfulnessExercise(MindfulnessExercise availableMindfulnessExercise) {
 		MindfulnessExerciseAttempt attempt;
 		if (availableMindfulnessExercise instanceof BreathingExercise){
