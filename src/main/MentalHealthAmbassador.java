@@ -7,51 +7,19 @@ public class MentalHealthAmbassador extends User {
 	Collection<Appointment> appointments;
 	Collection<Target> targets;
 
-	private String password;
-	private String userName;
-	private String email;
-
-
-	/**
-	 * 
-	 * @param nname
-	 * @param password
-	 * @param userName
-	 * @param email
-	 */
 	public MentalHealthAmbassador(String nname, String ppassword, String uuserName, String eemail) {
-		super.name =nname;
-		this.password = ppassword;
-		this.userName = uuserName;
-		this.email = eemail; 
-
-		
+		super(nname, ppassword, uuserName, eemail);
 	}
 
-	public List<TimeSlot> getBusyTimeSlots() {
-		// TODO - implement MentalHealthAmbassador.getBusyTimeSlots
-		throw new UnsupportedOperationException();
-	}
+	//TODO: the rest of these classes
 
-	/**
-	 * 
-	 * @param property
-	 * @param type
-	 * @param value
-	 * @param fdmEmployee
-	 */
-	public boolean setTarget(String property, String type, int value, FDMEmployee fdmEmployee) {
-		// TODO - implement MentalHealthAmbassador.setTarget
-		throw new UnsupportedOperationException();
-	}
+	// public List<TimeSlot> getBusyTimeSlots() {
+	// }
 
-	/**
-	 * 
-	 * @param ttarget
-	 */
-	public boolean deleteTarget(Target ttarget) {
-		// TODO - implement MentalHealthAmbassador.deleteTarget
-		throw new UnsupportedOperationException();
-	}
+	// public boolean setTarget(String property, String type, int value, FDMEmployee fdmEmployee) {
+	// }
+
+	// public boolean deleteTarget(Target ttarget) {
+	// }
 
 }
