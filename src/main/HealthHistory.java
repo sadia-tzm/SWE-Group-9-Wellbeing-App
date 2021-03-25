@@ -7,9 +7,10 @@ public class HealthHistory {
 	private List<Height> heightHistory;
 	private List<Calorie> calorieHistory;
 
-	public HealthHistory(Height height, Weight weight) {
+	public HealthHistory(int height, int weight) {
 		weightHistory = new ArrayList<Weight>();
 		heightHistory = new ArrayList<Height>();
+		heightHistory.add(new Height(height));
 		calorieHistory = new ArrayList<Calorie>();
 		intialWeight(height, weight);
 	}
