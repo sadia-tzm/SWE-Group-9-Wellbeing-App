@@ -3,9 +3,6 @@ import java.util.*;
 
 public class SystemAdministrator extends User {
 
-	private String password;
-	private String userName;
-	private String email;
 	Collection<AdminstratorQuery> administratorQueries;
 
 	/**
@@ -16,10 +13,7 @@ public class SystemAdministrator extends User {
 	 * @param email
 	 */
 	public SystemAdministrator(String nname, String ppassword, String uuserName, String eemail) {
-		super.name = nname;
-		this.password = ppassword;
-		this.userName = uuserName;
-		this.email = eemail;
+		super(nname, ppassword, uuserName, eemail);
 	}
 
 	/**
