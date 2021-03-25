@@ -2,11 +2,13 @@ package main;
 
 public class Food {
     private String name;
-    private int calories;
+    private int caloriesPer100g;
+    private int weight;
 
-    public Food(String name, int calories) {
+    public Food(String name, int calories, int weight) {
         this.name = name;
-        this.calories = calories;
+        this.caloriesPer100g = calories/weight/10;
+        this.weight= weight;
     }
 
     public String getName(){
@@ -14,7 +16,7 @@ public class Food {
     }
 
     public int getCalories(){
-        return this.calories;
+        return this.caloriesPer100g;
     }
     
 }
