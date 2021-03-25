@@ -10,26 +10,29 @@ public class HealthHistory {
 	public HealthHistory(int height, int weight) {
 		weightHistory = new ArrayList<Weight>();
 		heightHistory = new ArrayList<Height>();
-		heightHistory.add(new Height(height));
 		calorieHistory = new ArrayList<Calorie>();
 		intialWeight(height, weight);
 	}
 
-	private void intialWeight(Height height, Weight weight) {
-		heightHistory.add(height);
-		weightHistory.add(weight);
+	private void intialWeight(int height, int weight) {
+		heightHistory.add(new Height(height));
+		heightHistory.add(new Height(height));
 	}
 
-	public void logCalories(Calorie calories) {
-		calorieHistory.add(calories);
+	public void logCalories(int calories, String nameOfFood, int weightOfFood) {
+		calorieHistory.add(new Calorie(calories, new Food(nameOfFood, calories, weightOfFood)));
 	}
 
-	public void logHeight(Height height) {
-		heightHistory.add(height);
+	public void logCalories(Food food, int weightOfFood) {
+		calorieHistory.add(new Calorie(food, weightOfFood));
 	}
 
-	public void logWeight(Weight weight) {
-		weightHistory.add(weight);
+	public void logHeight(int height) {
+		heightHistory.add(new Height(height));
+	}
+
+	public void logWeight(int weight) {
+		weightHistory.add(new Weight(weight));
 	}
 
 	public List<Calorie> getCalorieHistory() {
@@ -51,7 +54,6 @@ public class HealthHistory {
 
 	public Weight getCurrentWeight() {
 		return weightHistory.get(weightHistory.size()-1);
-
 	}
 
 	public void deleteCalorieEntry(Calorie calorieEntry) {
