@@ -16,7 +16,7 @@ public class HealthHistory {
 
 	private void intialWeight(int height, int weight) {
 		heightHistory.add(new Height(height));
-		heightHistory.add(new Height(height));
+		weightHistory.add(new Weight(weight));
 	}
 
 	public void logCalories(int calories, String nameOfFood, int weightOfFood) {
