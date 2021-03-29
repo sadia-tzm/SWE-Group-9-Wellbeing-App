@@ -15,12 +15,13 @@ public class FDMEmployee extends User {
 	ArrayList<Target> targets;
 	LocalDateTime dateOfBirth;
 	Boolean sex; //true for male
+	private int bmi;
 
 
 	/**
 	 * 
 	 */
-	public FDMEmployee(String nname, Boolean sx, String password, String userName, String email, LocalDateTime ddate, Height height, Weight weight) {
+	public FDMEmployee(String nname, Boolean sx, String password, String userName, String email, LocalDateTime ddate, int height, int weight) {
 		super(nname, password, userName, email);
 		dateOfBirth = ddate;
 		sex = sx;
@@ -61,8 +62,8 @@ public class FDMEmployee extends User {
 	// 	appointment.setTimeslot(newbooking); // add to appointment / timeslot????
 	// }
 
-	public int getBMI() {
-		return 1;
+	public void setBMI() {
+		this.bmi = Math.round(health.getCurrentWeight().getWeight()/(health.getCurrentHeight().getHeight() * health.getCurrentHeight().getHeight()));
 	}
 
 	/**
