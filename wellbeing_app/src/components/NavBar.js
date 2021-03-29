@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import React from 'react';
-import "./NavBar.css";
+import "../stylesheets/NavBar.css";
 import { NavLink } from "react-router-dom";
 
 export default class NavBar extends React.Component {
@@ -36,6 +36,7 @@ export default class NavBar extends React.Component {
                         {/*<i className="fas fa-code"></i> add link in index.html*/}
                     </NavLink>
                     {/* ul --> className="nav-menu" */}
+                    {/* SWAP NAV-MENU ACTIVE AND NAV MENU*/}
                     <ul className={(this.state.isExpanded ? "nav-menu active" : "nav-menu")}>
                         <li className="nav-item">
                             <NavLink exact to="/" activeClassName="active" className="nav-links" /*onClick={this.handleClick}*/>

@@ -1,0 +1,39 @@
+.form{
+    margin: 15vh auto;
+    width: 25vw;
+    height: 55vh;
+    /*background: rgb(224, 255, 255, 0.5);*/
+    background: rgb(189, 237, 255, 0.3);
+    border-radius: 10%;
+}
+
+.input{
+    display: block;
+    margin: 3vh auto;
+    width: 15vw;
+    padding: 2vh;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    font-family: "Cairo", sans-serif;
+}
+
+.heading{
+    text-align: center;
+    padding: 3vh;
+    color:#073f51;
+    font-size: calc(24px + 2vmin);
+}
+
+.submit{
+    display: block;
+    margin: 6vh auto;
+    width: 9vw;
+    padding: 0.8vh;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(7, 63, 81);
+    border: none;
+    border-radius: 5px;
+    font-family: "Cairo", sans-serif;
+}

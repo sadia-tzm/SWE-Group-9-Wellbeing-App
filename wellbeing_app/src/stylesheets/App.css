@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    background-color:#97d7e2;
+    background-image: url('../assets/backgrounds/mainBackground.jpg');
+    background-size: cover;
+}
+
+/* .pages{
+    /*color:#073f51;*/
+    /*text-align: center;*/
+    /*font-size: 3.5rem;*/
+    /*margin-top: 10%;
+} */
