@@ -54,13 +54,13 @@ export default class NavBar extends React.Component {
                             </NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink exact to="/heightweight" activeClassName="active" className="nav-links" /*onClick={this.handleClick}*/>
-                                Height and Weight
+                            <NavLink exact to="/healthinfo" activeClassName="active" className="nav-links" /*onClick={this.handleClick}*/>
+                                Health Info
                             </NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink exact to="/bmi" activeClassName="active" className="nav-links" /*onClick={this.handleClick}*/> 
-                                BMI
+                            <NavLink exact to="/mindfulness" activeClassName="active" className="nav-links" /*onClick={this.handleClick}*/> 
+                                Mindfulness
                             </NavLink>
                         </li>
                     </ul>
