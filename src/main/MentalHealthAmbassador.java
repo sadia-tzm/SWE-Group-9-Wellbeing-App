@@ -3,55 +3,28 @@ import java.util.*;
 
 public class MentalHealthAmbassador extends User {
 
-	Collection<Unavailability> unavailabilities;
-	Collection<Appointment> appointments;
-	Collection<Target> targets;
+	ArrayList<Unavailability> unavailabilities;
+	ArrayList<Appointment> appointments;
+	ArrayList<Target> targets;
 
-	private String password;
-	private String userName;
-	private String email;
+	public MentalHealthAmbassador(String name, String password, String userName, String email) {
+		super(name, password, userName, email);
+		unavailabilities = new ArrayList<Unavailability>();
+		appointments = new ArrayList<Appointment>();
+		targets = new ArrayList<Target>();
+	}
+	//Database related!
+	// public List<TimeSlot> getBusyTimeSlots() {
+	// 	// TODO - implement MentalHealthAmbassador.getBusyTimeSlots
+	// 	throw new UnsupportedOperationException();
+	// }
 
-
-	/**
-	 * 
-	 * @param nname
-	 * @param password
-	 * @param userName
-	 * @param email
-	 */
-	public MentalHealthAmbassador(String nname, String ppassword, String uuserName, String eemail) {
-		super.name =nname;
-		this.password = ppassword;
-		this.userName = uuserName;
-		this.email = eemail; 
-
-		
+	public void setTarget(Exercise exercise, String attribute, int value, FDMEmployee fdmEmployee) {
+		targets.add(new Target(exercise, attribute, value, fdmEmployee, this));
 	}
 
-	public List<TimeSlot> getBusyTimeSlots() {
-		// TODO - implement MentalHealthAmbassador.getBusyTimeSlots
-		throw new UnsupportedOperationException();
+	public void deleteTarget(Target target) {
+		targets.remove(target);
 	}
-
-	/**
-	 * 
-	 * @param property
-	 * @param type
-	 * @param value
-	 * @param fdmEmployee
-	 */
-	public boolean setTarget(String property, String type, int value, FDMEmployee fdmEmployee) {
-		// TODO - implement MentalHealthAmbassador.setTarget
-		throw new UnsupportedOperationException();
-	}
-
-	/**
-	 * 
-	 * @param ttarget
-	 */
-	public boolean deleteTarget(Target ttarget) {
-		// TODO - implement MentalHealthAmbassador.deleteTarget
-		throw new UnsupportedOperationException();
-	}
-
+	
 }

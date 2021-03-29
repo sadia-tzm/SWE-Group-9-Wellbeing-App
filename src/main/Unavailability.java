@@ -1,16 +1,14 @@
 package main;
+
+import java.time.LocalDateTime;
+
 public class Unavailability extends TimeSlot {
 
 	MentalHealthAmbassador mentalHealthAmbassador;
 
-	/**
-	 * 
-	 * @param ddateAndTime
-	 * @param mmentalHealthAmbassador
-	 */
-	public void Unavailability(LocalDateTime ddateAndTime, MentalHealthAmbassador mmentalHealthAmbassador) {
-		// TODO - implement Unavailability.Unavailability
-		throw new UnsupportedOperationException();
+	public  Unavailability(LocalDateTime dateAndTime, MentalHealthAmbassador mentalHealthAmbassador) {
+		super(dateAndTime);
+		this.mentalHealthAmbassador = mentalHealthAmbassador;
 	}
 
 }

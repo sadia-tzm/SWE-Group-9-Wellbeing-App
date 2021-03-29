@@ -4,17 +4,23 @@ import java.time.LocalDateTime;
 public class TimeSlot {
 
 	private LocalDateTime dateAndTime;
-	private int timeSlotID;
+	private boolean busy;
+	// private int timeSlotID;
 
-	public TimeSlot(LocalDateTime ddateAndTime) {
-		this.dateAndTime = ddateAndTime;
+	public TimeSlot(LocalDateTime dateAndTime) {
+		this.dateAndTime = dateAndTime;
+		busy = false;
 	}
 
-	//TODO - rest of TimeSlot
+	public void setBusy(){
+		this.busy = true;
+	}
 
-	// public int getID() {
-	// }
+	public boolean getBusy(){
+		return this.busy;
+	}
 
-	
-
+	public LocalDateTime getDateAndTime(){
+		return this.dateAndTime;
+	}
 }
