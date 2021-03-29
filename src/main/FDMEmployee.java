@@ -66,6 +66,10 @@ public class FDMEmployee extends User {
 		this.bmi = Math.round(health.getCurrentWeight().getWeight()/(health.getCurrentHeight().getHeight() * health.getCurrentHeight().getHeight()));
 	}
 
+	public int getBMI(){
+		return this.bmi;
+	}
+
 	/**
 	 * 
 	 * @param availableMindfulnessExercise
