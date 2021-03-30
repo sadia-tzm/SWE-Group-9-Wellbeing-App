@@ -12,10 +12,10 @@ public class FDMEmployee extends User {
 	HealthHistory health;
 	ArrayList<AmbientSounds> ambientSoundExercises;
 	ArrayList<WorkoutExcerciseAttempt> workoutExcerciseAttempts;
-	ArrayList<Target> targets;
+	//ArrayList<Target> targets;
 	LocalDateTime dateOfBirth;
 	Boolean sex; //true for male
-	private int bmi;
+	//private int bmi;
 
 
 	/**
@@ -30,7 +30,7 @@ public class FDMEmployee extends User {
 		mindfulnessExerciseAttempts = new ArrayList<MindfulnessExerciseAttempt>() ;
 		ambientSoundExercises = new ArrayList<AmbientSounds>();
 		workoutExcerciseAttempts = new ArrayList<WorkoutExcerciseAttempt>();
-		targets = new ArrayList<Target>();
+		//targets = new ArrayList<Target>();
 	}
 
 	// TODO implement appointemnt
@@ -75,9 +75,9 @@ public class FDMEmployee extends User {
 	public void attemptMindfulnessExercise(MindfulnessExercise availableMindfulnessExercise) {
 		MindfulnessExerciseAttempt attempt;
 		if (availableMindfulnessExercise instanceof BreathingExercise){
-			attempt = new BreathingExerciseAttempt(mindfulnessExerciseAttempts.toArray()[mindfulnessExerciseAttempts.size()-1].getAttemptNumber()+1, availableMindfulnessExercise);
+			attempt = new BreathingExerciseAttempt(mindfulnessExerciseAttempts.size()+1, (BreathingExercise)availableMindfulnessExercise);
 		} else {
-			attempt = new MindfulnessExerciseAttempt(mindfulnessExerciseAttempts.toArray()[mindfulnessExerciseAttempts.size()-1].getAttemptNumber()+1, availableMindfulnessExercise);
+			attempt = new MindfulnessExerciseAttempt(mindfulnessExerciseAttempts.size()+1, availableMindfulnessExercise);
 		}
 		mindfulnessExerciseAttempts.add(attempt);
 	}
@@ -88,13 +88,12 @@ public class FDMEmployee extends User {
 	 */
 	public void attemptWorkoutExercise(WorkoutExercise availableWorkoutExercise) {
 		WorkoutExcerciseAttempt attempt; //const
-		if (availableWorkoutExercise instanceof StepExercise){
+		//if (availableWorkoutExercise instanceof StepExercise){
 			//attempt = new StepExerciseAttempt(workoutExcerciseAttempts.get(workoutExcerciseAttempts.size()-1).getAttemptNumber()+1, availableWorkoutExercise);
 		// TODO step ex constructor
-			attempt = new StepExerciseAttempt(availableWorkoutExercise); //step ex constructor
-		} else {
-			attempt = new WorkoutExerciseAttempt(workoutExcerciseAttempts.get(workoutExcerciseAttempts.size()-1).getAttemptNumber()+1, availableWorkoutExercise);
-		}
+			//attempt = new StepExerciseAttempt(availableWorkoutExercise); //step ex constructor
+
+		attempt = new WorkoutExcerciseAttempt(0, availableWorkoutExercise, workoutExcerciseAttempts.size()+1);
 		workoutExcerciseAttempts.add(attempt);
 	}
 
@@ -104,8 +103,8 @@ public class FDMEmployee extends User {
 	 */
 	public String viewStatistics() {
 		String stats = "";
-		throw new UnsupportedOperationException();
-		stats += Integer.toString(this.getBMI());
+		//throw new UnsupportedOperationException();
+		stats += Double.toString(this.getBMI());
 		stats+= " - current BMI \n";
 		stats+= Integer.toString(health.getCurrentHeight().getHeight());//get current height shoulf
 		stats+= " - current height \n";
@@ -115,15 +114,12 @@ public class FDMEmployee extends User {
 
 		for (MindfulnessExerciseAttempt m : mindfulnessExerciseAttempts) {
 			stats+=("attempt number - " + Integer.toString(m.getAttemptNumber()) +"duration - " + Long.toString(m.getDuration()) +"name - "
-			+ m.getExercise().getName()+ "Date" + m.getDateLogged().toString()+"\n");
+			+ m.getExercise().getExerciseName()+ "Date" + m.getDateLogged().toString()+"\n");
 		}
 
 		for (WorkoutExcerciseAttempt w : workoutExcerciseAttempts) {
 			stats+=("attempt number - " + Integer.toString(w.getAttemptNumber()) +"duration - " + Long.toString(w.getDuration()) +"name - "
-			+ w.getExercise().getName()+ "Date" + w.getDateLogged().toString()+);
-			if (w instanceof StepExerciseAttempt){
-				//stats+= (Integer.toString(w.getSteps()));//???
-			}
+			+ w.getExercise().getExerciseName()+ "Date" + w.getDateLogged().toString());
 			stats+="\n";
 		}
 
@@ -160,9 +156,10 @@ public class FDMEmployee extends User {
 
 	}
 
-	public ArrayList<Target> getTargets() {
-		return targets;
-	}
+	// TODO Targets
+	//public ArrayList<Target> getTargets() {
+	//	return targets;
+	//}
 
 	/**
 	 *
@@ -170,14 +167,10 @@ public class FDMEmployee extends User {
 	 * @param newDuration the new time the activity actually took
 	 * @param newSteps if the attempt is a step excercise, this parameter represents the new amount of steps taken.
 	 */
-	public boolean editWorkoutExerciseAttempt(WorkoutExcerciseAttempt exerciseAttempt, long newDuration, int newSteps) {
+	public void editWorkoutExerciseAttempt(WorkoutExcerciseAttempt exerciseAttempt, int newval) {
 		//change duration????? how can i change duration ithout changing end time.... or should I make a new object with adjusted end time????
-		if(exerciseAttempt instanceof StepExerciseAttempt){
-	// TODO exattempt supposed to be long
-			exerciseAttempt.editEntry(newDuration, newSteps);
-		} else{
-			exerciseAttempt.editEntry(newDuration, LocalDateTime.now());
-		}
+
+		exerciseAttempt.editEntry(newval);
 
 	}
 
@@ -187,7 +180,6 @@ public class FDMEmployee extends User {
 	 * @param newDuration  the new time the activity actually took
 	 */
 	public void editMindfulnessExercise(MindfulnessExerciseAttempt ExerciseAttempt, long newDuration) {//breathing ex didnt seem different
-
 		ExerciseAttempt.editEntry(newDuration, LocalDateTime.now());
 	}
 
