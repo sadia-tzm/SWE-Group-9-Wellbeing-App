@@ -7,11 +7,13 @@ public class HealthHistory {
 	private List<Height> heightHistory;
 	private List<Calorie> calorieHistory;
 	private List<Food> foodHistory;
+	private List<Double> bmiHistory;
 
 	public HealthHistory(int height, int weight) {
 		weightHistory = new ArrayList<Weight>();
 		heightHistory = new ArrayList<Height>();
 		calorieHistory = new ArrayList<Calorie>();
+		bmiHistory = new ArrayList<Double>();
 		intialWeight(height, weight);
 	}
 
@@ -24,6 +26,34 @@ public class HealthHistory {
 		Food foodItem = new Food(nameOfFood, calories, weightOfFood);
 		foodHistory.add(foodItem);
 		calorieHistory.add(new Calorie(calories, foodItem));
+	}
+
+	public void setBMI() {
+		heightHistory.get(heightHistory.size()-1);
+		double b = Math.round(((weightHistory.get(weightHistory.size()-1).getWeight()/(heightHistory.get(heightHistory.size()-1).getHeight() * heightHistory.get(heightHistory.size()-1).getHeight())*10)/10.0));
+		bmiHistory.add(b);
+		 //kg /h2
+	}
+
+	public double getCurrentBMI(){
+		return bmiHistory.get(bmiHistory.size()-1);
+	}
+
+	//more nuances to BMI????
+	public String getCurrentBMIStatus(){
+		double BMI = getCurrentBMI();
+		if (BMI < 18.5) {
+            return "Underweight";
+        } else if ((BMI) >= 18.5 || (BMI) <= 24.9) {
+            System.out.println("between 18.5 and 24.9");
+            return "Normal";
+        } else if (BMI >= 25 || BMI <= 29.9) {
+            System.out.println("between 25 and 29.9");
+            return "Overweight";
+        } else {
+            System.out.println("greater than 30");
+            return "Obese";
+        }
 	}
 
 	public void logCalories(Food food, int weightOfFood) {
