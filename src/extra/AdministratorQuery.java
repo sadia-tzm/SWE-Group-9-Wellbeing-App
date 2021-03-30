@@ -1,12 +1,14 @@
 package main;
+
+import java.time.LocalDateTime;
+
 public class AdministratorQuery extends QueryRole {
 
 	SystemAdministrator systemAdministrator;
-	private Query query;
 	private String progress;
 
-	public AdministratorQuery(Query qquery) {
-		this.query = qquery;
+	public AdministratorQuery(String queryText, String queryTitle, LocalDateTime ddateLogged) {
+		query = new Query(queryText,queryTitle,ddateLogged);
 	}
 
 	public boolean startProgress(SystemAdministrator ssystemAdministrator) {

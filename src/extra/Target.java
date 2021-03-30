@@ -10,24 +10,13 @@ public class Target {
 	private boolean isMet;
 
 
-	
-	
-	/**
-	 * 
-	 * @param eexercise
-	 * @param aattribute
-	 * @param vvalue
-	 * @param ffdmEmployee
-	 * @param mmentalHealthAmbassador
-	 */
-
-	public Target(Exercise eexercise, String aattribute, int vvalue, FDMEmployee ffdmEmployee, MentalHealthAmbassador mmentalHealthAmbassador){
-		this.mentalHealthAmbassador = mmentalHealthAmbassador;
-		this.fdmEmployee = ffdmEmployee;
-		this.exercise = eexercise;
-		this.attribute = aattribute;
-		this.value = vvalue;
-		
+	public Target(Exercise exercise, String attribute, int value, FDMEmployee fdmEmployee, MentalHealthAmbassador mentalHealthAmbassador){
+		this.mentalHealthAmbassador = mentalHealthAmbassador;
+		this.fdmEmployee = fdmEmployee;
+		this.exercise = exercise;
+		this.attribute = attribute;
+		this.value = value;
+		isMet = false;
 		
 		
 	}
@@ -44,10 +33,6 @@ public class Target {
 		return this.value;
 	}
 
-	/**
-	 * 
-	 * @param newValue
-	 */
 	public boolean setValue(int newValue) {
 		this.value = newValue;
 		return true;
@@ -55,7 +40,6 @@ public class Target {
 
 	public void targetMet() {
 		this.isMet = true;
-		
 	}
 
 }
