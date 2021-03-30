@@ -8,11 +8,12 @@ public class ActivityExercise extends WorkoutExercise {
 		this.difficulty = ddifficulty;
 	}
 
-	//TODO - rest of Activity exercise
+	public void setDifficulty(int newDifficulty){
+		this.difficulty = newDifficulty;
+	}
 
-	// public String getDifficulty() {
-	// }
-
-	
+	public int getDifficulty(){
+		return this.difficulty;
+	}
 
 }
