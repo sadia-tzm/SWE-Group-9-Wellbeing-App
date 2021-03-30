@@ -1,5 +1,5 @@
 package main;
-public abstract class Exercise {
+public class Exercise {
 
 	private String exerciseName;
 
