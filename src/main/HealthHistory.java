@@ -40,8 +40,7 @@ public class HealthHistory {
 	}
 
 	//more nuances to BMI????
-	public String getCurrentBMIStatus(){
-		double BMI = getCurrentBMI();
+	public String getCurrentBMIStatus(double BMI){
 		if (BMI < 18.5) {
             return "Underweight";
         } else if ((BMI) >= 18.5 || (BMI) <= 24.9) {

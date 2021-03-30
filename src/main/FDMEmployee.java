@@ -99,8 +99,7 @@ public class FDMEmployee extends User {
 	public String viewStatistics() {
 		String stats = "";
 		//throw new UnsupportedOperationException();
-		stats += Double.toString(this.getBMI());
-		stats+= " - current BMI \n";
+		stats+= " - current BMI" +Double.toString(this.health.getCurrentBMI())+ " "+this.health.getCurrentBMIStatus(this.health.getCurrentBMI()) ;
 		stats+= Integer.toString(health.getCurrentHeight().getHeight());//get current height shoulf
 		stats+= " - current height \n";
 		stats+= Integer.toString(health.getCurrentWeight().getWeight());
