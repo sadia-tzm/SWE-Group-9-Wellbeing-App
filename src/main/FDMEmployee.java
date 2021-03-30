@@ -15,7 +15,6 @@ public class FDMEmployee extends User {
 	//ArrayList<Target> targets;
 	LocalDateTime dateOfBirth;
 	Boolean sex; //true for male
-	//private int bmi;
 
 
 	/**
@@ -63,10 +62,6 @@ public class FDMEmployee extends User {
 	// 	appointment.setTimeslot(newbooking); // add to appointment / timeslot????
 	// }
 
-	public double getBMI() {
-		return  Math.round(((health.getCurrentWeight().getWeight()/(health.getCurrentHeight().getHeight() * health.getCurrentHeight().getHeight())*10)/10.0));
-		 //kg /h2
-	}
 
 	/**
 	 *
