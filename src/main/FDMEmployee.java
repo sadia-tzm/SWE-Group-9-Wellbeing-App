@@ -7,21 +7,12 @@ import jdk.jfr.Enabled;
 
 public class FDMEmployee extends User {
 
-<<<<<<< Updated upstream
 	ArrayList<MindfulnessExerciseAttempt> mindfulnessExerciseAttempts;
 	//ArrayList<Appointment> appointments;
 	HealthHistory health;
 	ArrayList<AmbientSounds> ambientSoundExercises;
 	ArrayList<WorkoutExcerciseAttempt> workoutExcerciseAttempts;
 	ArrayList<Target> targets;
-=======
-	Collection<MindfulnessExerciseAttempt> mindfulnessExerciseAttempts;
-	Collection<Appointment> appointments;
-	HealthHistory health;
-	Collection<AmbientSounds> ambientSoundExercises;
-	Collection<WorkoutExcerciseAttempt> workoutExcerciseAttempts;
-	Collection<Target> targets;
->>>>>>> Stashed changes
 	LocalDateTime dateOfBirth;
 	Boolean sex; //true for male
 
@@ -33,17 +24,14 @@ public class FDMEmployee extends User {
 		super(nname, password, userName, email);
 		dateOfBirth = ddate;
 		sex = sx;
-		health = new HealthHistory(height, weight);//health remove void
-<<<<<<< Updated upstream
+		// TODO health constructor
+		health = new HealthHistory(height, weight);//health remove void constructor
 		mindfulnessExerciseAttempts = new ArrayList<MindfulnessExerciseAttempt>() ;
 		ambientSoundExercises = new ArrayList<AmbientSounds>();
 		workoutExcerciseAttempts = new ArrayList<WorkoutExcerciseAttempt>();
 		targets = new ArrayList<Target>();
 	}
 
-=======
-	}
->>>>>>> Stashed changes
 	// TODO implement appointemnt
 	// /**
 	//  * 
@@ -74,8 +62,9 @@ public class FDMEmployee extends User {
 	// 	appointment.setTimeslot(newbooking); // add to appointment / timeslot????
 	// }
 
-	public int getBMI() {
-		return 1;
+	public double getBMI() {
+		return  Math.round(((health.getCurrentWeight().getWeight()/(health.getCurrentHeight().getHeight() * health.getCurrentHeight().getHeight())*10)/10.0));
+		 //kg /h2
 	}
 
 	/**
@@ -99,7 +88,9 @@ public class FDMEmployee extends User {
 	public void attemptWorkoutExercise(WorkoutExercise availableWorkoutExercise) {
 		WorkoutExcerciseAttempt attempt; //const
 		if (availableWorkoutExercise instanceof StepExercise){
-			attempt = new StepExerciseAttempt(workoutExcerciseAttempts.get(workoutExcerciseAttempts.size()-1).getAttemptNumber()+1, availableWorkoutExercise);
+			//attempt = new StepExerciseAttempt(workoutExcerciseAttempts.get(workoutExcerciseAttempts.size()-1).getAttemptNumber()+1, availableWorkoutExercise);
+		// TODO step ex constructor
+			attempt = new StepExerciseAttempt(availableWorkoutExercise); //step ex constructor
 		} else {
 			attempt = new WorkoutExerciseAttempt(workoutExcerciseAttempts.get(workoutExcerciseAttempts.size()-1).getAttemptNumber()+1, availableWorkoutExercise);
 		}
@@ -130,7 +121,7 @@ public class FDMEmployee extends User {
 			stats+=("attempt number - " + Integer.toString(w.getAttemptNumber()) +"duration - " + Long.toString(w.getDuration()) +"name - "
 			+ w.getExercise().getName()+ "Date" + w.getDateLogged().toString()+);
 			if (w instanceof StepExerciseAttempt){
-				stats+= (Integer.toString((StepExerciseAttempt) w.getSteps()));//???
+				//stats+= (Integer.toString(w.getSteps()));//???
 			}
 			stats+="\n";
 		}
@@ -143,10 +134,11 @@ public class FDMEmployee extends User {
 		this.value = vvalue;
 		ismet
 		 * */
-		for (Target t : targets) {
-			stats+=("Name - "+t.getExercise().getName()+ "attribute" +t.getAttribute()+ "value " +Integer.toString(t.getValue()));
-			stats+= (t.targetMet(); ? "target Met!" : "target not yet met");//setters for targets
-		}
+		 // TODO implement targets 
+		// for (Target t : targets) {
+		// 	stats+=("Name - "+t.getExercise().getName()+ "attribute" +t.getAttribute()+ "value " +Integer.toString(t.getValue()));
+		// 	stats+= (t.targetMet(); ? "target Met!" : "target not yet met");//setters for targets
+		// }
 
 		//looping attempt ist....
 		//targets acheived 
@@ -180,7 +172,8 @@ public class FDMEmployee extends User {
 	public boolean editWorkoutExerciseAttempt(WorkoutExcerciseAttempt exerciseAttempt, long newDuration, int newSteps) {
 		//change duration????? how can i change duration ithout changing end time.... or should I make a new object with adjusted end time????
 		if(exerciseAttempt instanceof StepExerciseAttempt){
-			exerciseAttempt.editEntry(newDuration, newSteps);//supposed to be long
+	// TODO exattempt supposed to be long
+			exerciseAttempt.editEntry(newDuration, newSteps);
 		} else{
 			exerciseAttempt.editEntry(newDuration, LocalDateTime.now());
 		}
