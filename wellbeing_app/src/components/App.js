@@ -6,8 +6,6 @@ import Login from './Login';
 import CalorieTracker from './CalorieTracker';
 import HealthInfo from './HealthInfo';
 import Mindfulness from './Mindfulness';
-//import HeightWeight from './HeightWeight';
-//import BMI from './bmi';
 import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
 import "../stylesheets/App.css";
 
