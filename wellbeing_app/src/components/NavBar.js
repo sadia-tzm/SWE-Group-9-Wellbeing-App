@@ -44,6 +44,11 @@ export default class NavBar extends React.Component {
                             </NavLink>
                         </li>
                         <li className="nav-item">
+                            <NavLink exact to="/signup" activeClassName="active" className="nav-links" /*onClick={this.handleClick}*/>
+                                Sign Up
+                            </NavLink>
+                        </li>
+                        <li className="nav-item">
                             <NavLink exact to="/login" activeClassName="active" className="nav-links" /*onClick={this.handleClick}*/>
                                 Login
                             </NavLink>
