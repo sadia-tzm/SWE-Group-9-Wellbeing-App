@@ -1,10 +1,7 @@
 package main;
-public abstract class WorkoutExercise extends Exercise {
+public class WorkoutExercise extends Exercise {
 
-    public WorkoutExercise(String eexerciseName) {
-        super(eexerciseName);
+    public WorkoutExercise(String exerciseName) {
+        super(exerciseName);
 	}
-
-    //TODO rest of workout exercise
-
 }

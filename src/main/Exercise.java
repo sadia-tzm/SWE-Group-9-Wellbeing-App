@@ -1,15 +1,17 @@
 package main;
-public abstract class Exercise {
+public class Exercise {
 
 	private String exerciseName;
 
-	public Exercise(String eexerciseName) {
-		this.exerciseName = eexerciseName;
+	public Exercise(String exerciseName) {
+		this.exerciseName = exerciseName;
 	}
 
-	//TODO: rest of exercise
+	public String getExerciseName() {
+		return this.exerciseName;
+	}
 
-	// public String getName() {
-	// }
-
+	public void setExerciseName(String newExerciseName){
+		this.exerciseName = newExerciseName;
+	}
 }
