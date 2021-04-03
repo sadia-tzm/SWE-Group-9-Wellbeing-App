@@ -1,20 +1,28 @@
 package main;
 
+import java.util.Collection;
+import java.util.List;
+
+import main.extra.Appointment;
+import main.extra.Query;
+
 public class Inventory {
 
-	// Collection<User> listOfUsers;
-	// Collection<Appointment> appointments;
-	// Collection<TimeSlot> weekSchedule;
-	// Collection<WorkoutExercise> availableWorkoutExercises;
-	// Collection<MindfulnessExercise> availableMindfulnessExercises;
-	// Collection<Query> queries;
-	// private static Inventory inventory;
-	// private List<String> workoutDifficulties;
-	// private List<String> statusList;
-	// private List<String> targetAttribute;
+	Collection<User> listOfUsers;
+	Collection<Appointment> appointments;
+	Collection<TimeSlot> weekSchedule;
+	Collection<WorkoutExercise> availableWorkoutExercises;
+	Collection<MindfulnessExercise> availableMindfulnessExercises;
+	Collection<Query> queries;
+	private static Inventory inventory;
+	private List<String> workoutDifficulties;
+	private List<String> statusList;
+	private List<String> targetAttribute;
 
-	// private void Inventory() {
-	// }
+	private void Inventory() {
+	}
+
+	//TODO - complete inventory
 
 	// public static Inventory getInstance() {
 	// }

@@ -1,4 +1,7 @@
-package main;
+package main.extra;
+
+import main.Exercise;
+import main.FDMEmployee;
 
 public class Target {
 

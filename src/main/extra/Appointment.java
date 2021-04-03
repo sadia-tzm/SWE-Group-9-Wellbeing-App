@@ -1,5 +1,8 @@
-package main;
+package main.extra;
 import java.time.LocalDateTime;
+
+import main.FDMEmployee;
+import main.TimeSlot;
 
 public class Appointment extends TimeSlot {
 
