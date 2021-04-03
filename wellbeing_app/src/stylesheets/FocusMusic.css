@@ -1,0 +1,23 @@
+.allVideos{
+    margin-left: 25vw;
+    margin-top: 20px;
+}
+
+.video {
+    margin: 20px 0px;
+}
+
+.videoList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.heading{
+    width: 75vw;
+    color: #073f51;
+    text-align: center;
+    margin: 8px auto;
+    font-size: calc(20px + 2vmin);
+}
+

@@ -1,0 +1,19 @@
+.homeHeading{
+    color: #073f51;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.text{
+    color: #073f51;
+    text-align: center;
+    margin: 25px;
+}
+
+/* .background{
+    background: rgb(189, 237, 255, 0.3);
+    border-radius: 10%;
+    width: 50vw;
+    height: 30vh;
+    margin: auto;
+} */
