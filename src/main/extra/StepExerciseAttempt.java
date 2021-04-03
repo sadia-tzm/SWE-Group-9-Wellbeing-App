@@ -7,8 +7,8 @@ public class StepExerciseAttempt extends WorkoutExcerciseAttempt {
 
 	//private int stepsTaken;
 
-	public StepExerciseAttempt(int ccaloriesBurnt, String eexerciseName, int aattemptNumber, WorkoutExercise wworkoutExercise) {
-		super(ccaloriesBurnt, eexerciseName, aattemptNumber);
+	public StepExerciseAttempt(int ccaloriesBurnt, WorkoutExercise wworkoutExercise, int aattemptNumber) {
+		super(ccaloriesBurnt, wworkoutExercise, aattemptNumber);
 	}
 
 	//TODO - complete step exercise attempt

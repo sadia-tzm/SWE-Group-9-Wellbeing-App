@@ -1,5 +1,11 @@
 package main;
 
+import java.util.Collection;
+import java.util.List;
+
+import main.extra.Appointment;
+import main.extra.Query;
+
 public class Inventory {
 
 	Collection<User> listOfUsers;
@@ -16,7 +22,7 @@ public class Inventory {
 	private void Inventory() {
 	}
 
-	//
+	//TODO - complete inventory
 
 	// public static Inventory getInstance() {
 	// }
