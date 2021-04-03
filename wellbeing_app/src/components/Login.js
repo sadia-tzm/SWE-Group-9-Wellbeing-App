@@ -14,7 +14,7 @@ export default class Login extends React.Component {
   render() {
     return (
       <form className="form">
-        <h5 className="heading">Login</h5>
+        <h5 className="heading1">Login</h5>
         <input className="input"
           type='email'
           name='email'
