@@ -1,6 +1,8 @@
-package main;
+package main.extra;
 
 import java.time.LocalDateTime;
+
+import main.User;
 
 public class Query {
 

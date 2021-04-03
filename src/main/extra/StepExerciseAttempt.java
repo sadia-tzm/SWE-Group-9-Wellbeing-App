@@ -1,10 +1,14 @@
-package main;
+package main.extra;
+
+import main.WorkoutExcerciseAttempt;
+import main.WorkoutExercise;
+
 public class StepExerciseAttempt extends WorkoutExcerciseAttempt {
 
-	private int stepsTaken;
+	//private int stepsTaken;
 
-	public void StepExerciseAttempt(String eexerciseName, WorkoutExercise wworkoutExercise) {
-		super(eexerciseName);
+	public StepExerciseAttempt(int ccaloriesBurnt, String eexerciseName, int aattemptNumber, WorkoutExercise wworkoutExercise) {
+		super(ccaloriesBurnt, eexerciseName, aattemptNumber);
 	}
 
 	//TODO - complete step exercise attempt

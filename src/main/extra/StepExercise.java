@@ -1,4 +1,7 @@
-package main;
+package main.extra;
+
+import main.WorkoutExercise;
+
 public class StepExercise extends WorkoutExercise {
 
 	public StepExercise(String eexerciseName) {

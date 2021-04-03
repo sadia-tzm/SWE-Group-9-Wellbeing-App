@@ -1,5 +1,9 @@
-package main;
+package main.extra;
 import java.util.*;
+
+import main.Exercise;
+import main.FDMEmployee;
+import main.User;
 
 public class MentalHealthAmbassador extends User {
 
@@ -13,10 +17,11 @@ public class MentalHealthAmbassador extends User {
 		appointments = new ArrayList<Appointment>();
 		targets = new ArrayList<Target>();
 	}
+
+	//TODO - complete mentalhealthambassador
+
 	//Database related!
 	// public List<TimeSlot> getBusyTimeSlots() {
-	// 	// TODO - implement MentalHealthAmbassador.getBusyTimeSlots
-	// 	throw new UnsupportedOperationException();
 	// }
 
 	public void setTarget(Exercise exercise, String attribute, int value, FDMEmployee fdmEmployee) {

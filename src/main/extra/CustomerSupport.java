@@ -1,5 +1,7 @@
-package main;
+package main.extra;
 import java.util.*;
+
+import main.User;
 
 public class CustomerSupport extends User {
 
@@ -8,13 +10,7 @@ public class CustomerSupport extends User {
 	private String email;
 	Collection<SupportQuery> supportQueries;
 
-	/**
-	 * 
-	 * @param nname
-	 * @param password
-	 * @param userName
-	 * @param email
-	 */
+
 	public CustomerSupport(String nname, String ppassword, String uuserName, String eemail) {
 		super(nname, ppassword, uuserName, eemail);
 		this.password = ppassword;
@@ -23,10 +19,10 @@ public class CustomerSupport extends User {
 
 
 	}
+	
+	// TODO - rest of CustomerSupport
 
-	public List<SupportQuery> checkQueries() {
-		// TODO - implement CustomerSupport.checkQueries
-		throw new UnsupportedOperationException();
-	}
+	// public List<SupportQuery> checkQueries() {
+	// }
 
 }
