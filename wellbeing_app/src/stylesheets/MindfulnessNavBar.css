@@ -1,4 +1,4 @@
-.navbar{
+.M_navbar{
     background-color: #073f51;
     height: 80%;
     display: flex;
@@ -8,19 +8,22 @@
     position: sticky;
     top: 0;
     z-index: 20;
+    border-top: 3px solid #fffd7a;
+    border-bottom: 3px solid #fffd7a;
+    margin-top: 5px;
 }
 
-.nav-container{
+.M_nav-container{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 80px;
+    height: 55px;
     max-width: 1500px;
 }
 
-.nav-logo{
-    color:#faa7f6;
+.M_nav-logo{
+    color:#ffff66;
     align-items: center;
     margin-left: 20px;
     cursor: pointer;
@@ -29,14 +32,14 @@
     flex-grow: 1;
 }
 
-.nav-menu{
+.M_nav-menu{
     display: flex;
     list-style: none;
     text-align: center;
     margin-right: 2rem;
 }
 
-.nav-links{
+.M_nav-links{
     color:#f7fdfb;
     text-decoration: none;
     padding: 0.5rem 1rem;
@@ -44,16 +47,12 @@
     border-bottom: 3px solid transparent;
 }
 
-.fa-code{
-    margin-left: 1rem;
-}
-
-.nav-item {
+.M_nav-item {
     line-height: 40px;
     margin-right: 1rem;
 }
 
-.nav-item:after {
+.M_nav-item:after {
     content: "";
     display: block;
     height: 3px;
@@ -62,22 +61,20 @@
     transition: width .7s ease, background-color 0.5s ease;
 }
 
-.nav-item:hover:after {
+.M_nav-item:hover:after {
     width: 100%;
     background:#fffd7a;
 }
 
-.nav-item .active{
+.M_nav-item .active{
     color: #fffd7a;
     border: 1px solid #fffd7a;
 }
 
-.nav-icon {
-    display: none;
-}
+/** add bars logo to mindfulnessnavbar.js to get minimised menu */
 
-@media screen and (max-width: 960px) {
-    .nav-menu {
+/* @media screen and (max-width: 960px) {
+    .M_nav-menu {
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -89,7 +86,7 @@
         transition: all .5s ease;
     }
 
-    .nav-menu .active {
+    .M_nav-menu .active {
         background-color: #073f51;
         left: 0px;
         opacity: 1;
@@ -97,19 +94,19 @@
         z-index: 1;
     }
 
-    .nav-item .active {
+    .M_nav-item .active {
         color:#fffd7a;
         border: none;
 
     }
 
-    .nav-links {
+    .M_nav-links {
         padding: 1.5rem;
         width: 100%;
         display: table;
     }
 
-    .nav-icon {
+    .M_nav-icon {
         display: block;
         position: absolute;
         top: 0;
@@ -119,5 +116,5 @@
         cursor: pointer;
         color: #fffd7a;
     }
-}
+} */
 

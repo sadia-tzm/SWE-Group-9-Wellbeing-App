@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import React from 'react';
-import "./NavBar.css";
+import "../stylesheets/NavBar.css";
 import { NavLink } from "react-router-dom";
 
 export default class NavBar extends React.Component {
@@ -36,6 +36,7 @@ export default class NavBar extends React.Component {
                         {/*<i className="fas fa-code"></i> add link in index.html*/}
                     </NavLink>
                     {/* ul --> className="nav-menu" */}
+                    {/* SWAP NAV-MENU ACTIVE AND NAV MENU*/}
                     <ul className={(this.state.isExpanded ? "nav-menu active" : "nav-menu")}>
                         <li className="nav-item">
                             <NavLink exact to="/" activeClassName="active" className="nav-links" /*onClick={this.handleClick}*/>
@@ -53,13 +54,13 @@ export default class NavBar extends React.Component {
                             </NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink exact to="/heightweight" activeClassName="active" className="nav-links" /*onClick={this.handleClick}*/>
-                                Height and Weight
+                            <NavLink exact to="/healthinfo" activeClassName="active" className="nav-links" /*onClick={this.handleClick}*/>
+                                Health Info
                             </NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink exact to="/bmi" activeClassName="active" className="nav-links" /*onClick={this.handleClick}*/> 
-                                BMI
+                            <NavLink exact to="/mindfulness" activeClassName="active" className="nav-links" /*onClick={this.handleClick}*/> 
+                                Mindfulness
                             </NavLink>
                         </li>
                     </ul>

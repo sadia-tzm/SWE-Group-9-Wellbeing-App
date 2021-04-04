@@ -1,0 +1,16 @@
+/* body{
+    background-color:#97d7e2;
+    background-image: url('../assets/backgrounds/loginBackground.jpg');
+    background-size: cover;
+} */
+
+.body{
+    color:#073f51;
+    text-align: center;
+    font-size: calc(36px + 2vmin);
+}
+
+
+.text{
+    /*line-height: 25px;*/
+}
