@@ -39,7 +39,7 @@ export default class HealthInfo extends React.Component {
         />
         </form>
 
-        <Link to="/gvhvhjvbjvvjjhvhjhjhj">s\fdsf\sdf\sdf\sdf\sdf</Link>
+        <Link to="/BMI">s\fdsf\sdf\sdf\sdf\sdf</Link>
       
 
 
