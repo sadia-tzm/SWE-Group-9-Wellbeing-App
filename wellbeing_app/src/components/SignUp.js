@@ -13,19 +13,19 @@ export default class SignUp extends React.Component {
 
   render() {
     return (
-      <form className="form2">
-        <h5 className="heading2">Sign Up</h5>
-        <input className="input2"
+      <form className="form3">
+        <h5 className="heading3">Sign Up</h5>
+        <input className="input3"
           type='email'
           name='email'
           placeholder='Email/Username'
         />
-        <input className="input2"
+        <input className="input3"
           type='password'
           name='pwd'
           placeholder="Password"
         />
-        <input className="submit2"
+        <input className="submit3"
           type="submit"
           value="Sign Up"
         />
