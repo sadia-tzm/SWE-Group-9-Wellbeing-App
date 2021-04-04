@@ -16,3 +16,11 @@ body{
     /*font-size: 3.5rem;*/
     /*margin-top: 10%;
 } */
+
+@media screen and (max-width: 960px) {
+    body {
+        background-color:#97d7e2;
+        background-image: url('../assets/backgrounds/mobileBackground.jpg');
+        background-size: cover; 
+    }
+}

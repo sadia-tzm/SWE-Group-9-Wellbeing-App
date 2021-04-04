@@ -15,16 +15,16 @@ export default class BreathingExercises extends React.Component {
         <div className="allVideos">
           <ul className="videoList">
             <li>
-              <ReactPlayer url="https://www.youtube.com/watch?v=aNXKjGFUlMs" className="video" height="60vh" width="50vw" controls="true" />
+              <ReactPlayer url="https://www.youtube.com/watch?v=aNXKjGFUlMs" className="video" height="60vh" width="55vw" controls="true" />
             </li>
             <li>
-              <ReactPlayer url="https://www.youtube.com/watch?v=uxayUBd6T7M" className="video" height="60vh" width="50vw" controls="true" />
+              <ReactPlayer url="https://www.youtube.com/watch?v=uxayUBd6T7M" className="video" height="60vh" width="55vw" controls="true" />
             </li>
             <li>
-              <ReactPlayer url="https://www.youtube.com/watch?v=iaQed_Xdyvw" className="video" height="60vh" width="50vw" controls="true" />
+              <ReactPlayer url="https://www.youtube.com/watch?v=iaQed_Xdyvw" className="video" height="60vh" width="55vw" controls="true" />
             </li>
             <li>
-              <ReactPlayer url="https://www.youtube.com/watch?v=5DqTuWve9t8" className="video" height="60vh" width="50vw" controls="true" />
+              <ReactPlayer url="https://www.youtube.com/watch?v=5DqTuWve9t8" className="video" height="60vh" width="55vw" controls="true" />
             </li>
           </ul>
         </div>

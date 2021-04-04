@@ -1,5 +1,5 @@
 .allVideos{
-    margin-left: 25vw;
+    margin-left: 22vw;
     margin-top: 20px;
 }
 
@@ -19,5 +19,15 @@
     text-align: center;
     margin: 8px auto;
     font-size: calc(20px + 2vmin);
+}
+
+@media screen and (max-width: 960px){
+    .heading{
+        width: 75vw;
+        color: #073f51;
+        text-align: center;
+        margin: 8px auto;
+        font-size: calc(14px + 2vmin);
+    }
 }
 
