@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import React from 'react';
-import '../stylesheets/BMI.css';
+import '../stylesheets/Bmi.css';
 
 export default class BMI extends React.Component {
 
