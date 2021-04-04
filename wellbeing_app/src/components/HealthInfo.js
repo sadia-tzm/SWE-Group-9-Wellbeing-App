@@ -1,6 +1,11 @@
 import styled from 'styled-components';
 import React from 'react';
 import '../stylesheets/HealthInfo.css';
+import { Link } from "react-router-dom";
+
+
+
+
 
 export default class HealthInfo extends React.Component {
   constructor(props) {
@@ -11,9 +16,6 @@ export default class HealthInfo extends React.Component {
       weight: '',
     };
   }
-
-
-
 
   render() {
     return (
@@ -35,14 +37,23 @@ export default class HealthInfo extends React.Component {
             type="submit"
             value="Calculate BMI"
         />
-            
-          
         </form>
-        
+
+        <Link to="/gvhvhjvbjvvjjhvhjhjhj">s\fdsf\sdf\sdf\sdf\sdf</Link>
+      
+
+
+    
       </div>
     )
   }
 }
+
+
+
+
+
+
 
 
 
