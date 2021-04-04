@@ -15,16 +15,16 @@ export default class GuidedMeditation extends React.Component {
         <div className="allVideos">
           <ul className="videoList">
             <li>
-              <ReactPlayer url="https://www.youtube.com/watch?v=QHkXvPq2pQE" className="video" height="60vh" width="50vw" controls="true" />
+              <ReactPlayer url="https://www.youtube.com/watch?v=QHkXvPq2pQE" className="video" height="60vh" width="55vw" controls="true" />
             </li>
             <li>
-              <ReactPlayer url="https://www.youtube.com/watch?v=BR6yH4S1UMU" className="video" height="60vh" width="50vw" controls="true" />
+              <ReactPlayer url="https://www.youtube.com/watch?v=BR6yH4S1UMU" className="video" height="60vh" width="55vw" controls="true" />
             </li>
             <li>
-              <ReactPlayer url="https://www.youtube.com/watch?v=sG7DBA-mgFY" className="video" height="60vh" width="50vw" controls="true" />
+              <ReactPlayer url="https://www.youtube.com/watch?v=sG7DBA-mgFY" className="video" height="60vh" width="55vw" controls="true" />
             </li>
             <li>
-              <ReactPlayer url="https://www.youtube.com/watch?v=cZJAsW_5SRA" className="video" height="60vh" width="50vw" controls="true" />
+              <ReactPlayer url="https://www.youtube.com/watch?v=cZJAsW_5SRA" className="video" height="60vh" width="55vw" controls="true" />
             </li>
           </ul>
         </div>

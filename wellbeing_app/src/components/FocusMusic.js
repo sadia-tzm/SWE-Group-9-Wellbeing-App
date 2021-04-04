@@ -15,16 +15,16 @@ export default class FocusMusic extends React.Component {
         <div className="allVideos">
           <ul className="videoList">
             <li>
-              <ReactPlayer url="https://www.youtube.com/watch?v=n_wbIhJIQTU" className="video" height="60vh" width="50vw" controls="true" />
+              <ReactPlayer url="https://www.youtube.com/watch?v=n_wbIhJIQTU" className="video" height="60vh" width="55vw" controls="true" />
             </li>
             <li>
-              <ReactPlayer url="https://www.youtube.com/watch?v=di1RycJZH9c" className="video" height="60vh" width="50vw" controls="true" />
+              <ReactPlayer url="https://www.youtube.com/watch?v=di1RycJZH9c" className="video" height="60vh" width="55vw" controls="true" />
             </li>
             <li>
-              <ReactPlayer url="https://www.youtube.com/watch?v=wovOYGm3j1g" className="video" height="60vh" width="50vw" controls="true" />
+              <ReactPlayer url="https://www.youtube.com/watch?v=wovOYGm3j1g" className="video" height="60vh" width="55vw" controls="true" />
             </li>
             <li>
-              <ReactPlayer url="https://www.youtube.com/watch?v=QELY08dm-6g" className="video" height="60vh" width="50vw" controls="true" />
+              <ReactPlayer url="https://www.youtube.com/watch?v=QELY08dm-6g" className="video" height="60vh" width="55vw" controls="true" />
             </li>
           </ul>
         </div>

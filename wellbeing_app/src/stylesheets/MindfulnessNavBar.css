@@ -47,6 +47,10 @@
     border-bottom: 3px solid transparent;
 }
 
+.fa-code{
+    margin-left: 1rem;
+}
+
 .M_nav-item {
     line-height: 40px;
     margin-right: 1rem;
@@ -71,23 +75,27 @@
     border: 1px solid #fffd7a;
 }
 
+.M_nav-icon {
+    display: none;
+}
+
 /** add bars logo to mindfulnessnavbar.js to get minimised menu */
 
-/* @media screen and (max-width: 960px) {
+@media screen and (max-width: 850px) {
     .M_nav-menu {
         display: flex;
         flex-direction: column;
         width: 100%;
         border-top: 1px solid white;
         position: absolute;
-        top: 80px;
+        top: 60px;
         left: -110%;
-        opacity: 1; 
-        transition: all .5s ease;
+        opacity: 1;
+        transition: all 0.5s ease;
     }
 
-    .M_nav-menu .active {
-        background-color: #073f51;
+    .M_nav-menu.active {
+        background:#073f51;
         left: 0px;
         opacity: 1;
         transition: all 0.5s ease;
@@ -97,11 +105,10 @@
     .M_nav-item .active {
         color:#fffd7a;
         border: none;
-
     }
 
     .M_nav-links {
-        padding: 1.5rem;
+        padding: 15px;
         width: 100%;
         display: table;
     }
@@ -111,10 +118,10 @@
         position: absolute;
         top: 0;
         right: 0;
-        transform: translate(-100%, 60%);
-        font-size: 1.8rem;
+        transform: translate(-150%, 60%);
+        font-size: 1.2rem;
         cursor: pointer;
         color: #fffd7a;
     }
-} */
+}
 
