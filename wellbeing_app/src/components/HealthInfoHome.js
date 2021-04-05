@@ -16,32 +16,13 @@ export default class HealthInfoHome extends React.Component {
 
   render() {
     return (
-      <div>
-        <h1 className="homeHeading2">Health Info</h1>
-        <form onSubmit ={this.handleSubmit} className="form2">
-          <h5 className="heading2">Please input the following:</h5>
-          <input className="input2"
-            type='text'
-            name='height'
-            placeholder='Height'
-          />
-          <input className="input2"
-            type='text'
-            name='weight'
-            placeholder="Weight"
-          />
-          <input className="submit2"
-            type="submit"
-            value="Calculate BMI"
-        />
-        </form>
 
-        <Link to="/BMI">WHY DOESNT THIUS WIRKJS OGMdsjk</Link>
-      
-
-
-    
+      <div className="background">
+        <h1 className="homeHeading">Welcome to the Health Info Page!</h1>
+        <br/>
+        <h3 className="text"> Here you will find resources to track<br/>Height, Weight and BMI.</h3>
       </div>
+
     )
   }
 }
