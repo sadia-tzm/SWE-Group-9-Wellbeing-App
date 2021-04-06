@@ -1,0 +1,77 @@
+.form4{
+    margin: 5vh auto;
+    width: 25vw;
+    height: 65vh;
+    background-color: #073f51;
+    border-radius: 10%;
+    border-color: #ffff66;
+    border-style: solid;
+}
+
+.input4{
+    display: block;
+    margin: 3vh auto;
+    width: 15vw;
+    padding: 2vh;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    font-family: "Cairo", sans-serif;
+}
+
+.heading4{
+    text-align: center;
+    padding: 3vh;
+    color:#f7fdfb;
+    font-size: calc(24px + 2vmin);
+}
+
+.submit4{
+    display: block;
+    margin: 6vh auto;
+    width: 9vw;
+    padding: 0.8vh;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(19, 146, 189);
+    border: none;
+    border-radius: 5px;
+    font-family: "Cairo", sans-serif;
+}
+
+@media screen and (max-width: 960px) {
+    .form4{
+        margin: 5vh auto;
+        width: 50vw;
+        height: 65vh;
+        background-color: #073f51;
+        border-radius: 10%;
+        border-color: #ffff66;
+        border-style: solid;
+    }
+
+    .input4{
+        display: block;
+        margin: 3vh auto;
+        width: 25vw;
+        padding: 2vh;
+        font-weight: bold;
+        border: none;
+        border-radius: 6px;
+        font-family: "Cairo", sans-serif;
+    }
+
+    .submit4{
+        display: block;
+        margin: 6vh auto;
+        width: 14vw;
+        padding: 0.8vh;
+        font-weight: bold;
+        color: white;
+        background-color: rgb(19, 146, 189);
+        border: none;
+        border-radius: 5px;
+        font-family: "Cairo", sans-serif;
+    }
+
+}
