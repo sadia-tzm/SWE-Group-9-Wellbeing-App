@@ -1,0 +1,12 @@
+.CalorieHeading{
+    color: #073f51;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.CalorieText{
+    color: #073f51;
+    text-align: center;
+    margin: 25px auto;
+    width: 80vw;
+}

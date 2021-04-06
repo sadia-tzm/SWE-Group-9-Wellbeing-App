@@ -24,3 +24,11 @@ body{
         background-size: cover; 
     }
 }
+
+/* Tring to disable horizontal scrolling for mobile */ 
+
+/* @media screen and (max-width: 500px) {
+    body{
+      overflow-x: hidden;  
+    }
+} */
