@@ -10,7 +10,7 @@ public class Security {
 	public Security(String password, String userName, String email) {
 		this.password = password;
 		this.userName = userName;
-		this.unlocked = false;
+		this.unlocked = true;
 		this.email = email;
 		this.randomCode = this.generateForgotPasswordCode();
 	}
