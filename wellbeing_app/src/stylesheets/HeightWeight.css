@@ -1,12 +1,12 @@
 .grid-container2 {
     display: grid;
     align-content: center;
-    grid-template-columns:auto auto auto;
+    grid-template-columns: auto auto;
     /* 3 columns --> grid-template-columns: auto auto auto */
     grid-gap: 5px;
     background: rgb(153, 228, 255, 0.3);
     padding: 20px;
-    width: auto;
+    width: 80vw;
     margin: 15px auto;
 }
   
@@ -55,6 +55,4 @@
     font-size: calc(16px + 2vmin);
     width: 80vw;
 }
-
-
 
