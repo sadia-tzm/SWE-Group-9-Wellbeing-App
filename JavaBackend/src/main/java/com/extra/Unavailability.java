@@ -1,8 +1,8 @@
-package main.extra;
+package com.extra;
 
 import java.time.LocalDateTime;
 
-import main.TimeSlot;
+import com.TimeSlot;
 
 public class Unavailability extends TimeSlot {
 

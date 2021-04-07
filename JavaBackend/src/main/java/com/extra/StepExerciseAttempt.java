@@ -1,7 +1,7 @@
-package main.extra;
+package com.extra;
 
-import main.WorkoutExcerciseAttempt;
-import main.WorkoutExercise;
+import com.WorkoutExcerciseAttempt;
+import com.WorkoutExercise;
 
 public class StepExerciseAttempt extends WorkoutExcerciseAttempt {
 

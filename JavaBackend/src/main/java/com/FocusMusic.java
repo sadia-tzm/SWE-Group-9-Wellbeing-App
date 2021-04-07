@@ -1,4 +1,4 @@
-package main;
+package com;
 public class FocusMusic extends MindfulnessExercise {
 
 	public FocusMusic(String eexerciseName, String ssoundPath) {

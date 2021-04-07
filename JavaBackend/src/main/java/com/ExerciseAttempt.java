@@ -1,4 +1,4 @@
-package main;
+package com;
 
 import java.time.LocalDateTime;
 import java.time.Duration;

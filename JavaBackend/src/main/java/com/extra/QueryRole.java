@@ -1,4 +1,4 @@
-package main.extra;
+package com.extra;
 public abstract class QueryRole {
 
 	Query query;

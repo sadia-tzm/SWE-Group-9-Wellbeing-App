@@ -1,4 +1,4 @@
-package main.java.main;
+package com;
 public class BreathingExerciseAttempt extends MindfulnessExerciseAttempt {
 
 	private BreathingExercise breathingExercise;

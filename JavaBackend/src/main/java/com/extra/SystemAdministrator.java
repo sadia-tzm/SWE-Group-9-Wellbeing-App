@@ -1,7 +1,7 @@
-package main.extra;
+package com.extra;
 import java.util.*;
 
-import main.User;
+import com.User;
 
 public class SystemAdministrator extends User {
 

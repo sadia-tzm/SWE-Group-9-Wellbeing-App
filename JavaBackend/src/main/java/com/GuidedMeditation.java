@@ -1,4 +1,4 @@
-package main;
+package com;
 public class GuidedMeditation extends MindfulnessExercise {
 
 	public GuidedMeditation(String eexerciseName, String ssoundPath) {

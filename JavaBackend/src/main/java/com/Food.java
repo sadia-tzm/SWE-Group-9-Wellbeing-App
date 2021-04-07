@@ -1,4 +1,4 @@
-package main;
+package com;
 
 public class Food {
     private String name;

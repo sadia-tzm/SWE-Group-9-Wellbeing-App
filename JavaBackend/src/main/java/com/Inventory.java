@@ -1,10 +1,10 @@
-package main;
+package com;
 
 import java.util.Collection;
 import java.util.List;
 
-import main.extra.Appointment;
-import main.extra.Query;
+import com.extra.Appointment;
+import com.extra.Query;
 
 public class Inventory {
 

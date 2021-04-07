@@ -1,7 +1,7 @@
-package main.extra;
+package com.extra;
 
-import main.Exercise;
-import main.FDMEmployee;
+import com.Exercise;
+import com.FDMEmployee;
 
 public class Target {
 

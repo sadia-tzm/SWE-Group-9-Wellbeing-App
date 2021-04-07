@@ -1,3 +1,5 @@
+package com;
+
 public class ActivityExercise extends WorkoutExercise {
 
 	private int difficulty;

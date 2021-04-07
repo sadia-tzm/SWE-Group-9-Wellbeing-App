@@ -1,4 +1,4 @@
-package main.extra;
+package com.extra;
 public class SupportQuery extends QueryRole {
 
 	CustomerSupport customerSupport;

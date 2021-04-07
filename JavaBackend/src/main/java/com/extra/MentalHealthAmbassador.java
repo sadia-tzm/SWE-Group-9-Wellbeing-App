@@ -1,9 +1,9 @@
-package main.extra;
+package com.extra;
 import java.util.*;
 
-import main.Exercise;
-import main.FDMEmployee;
-import main.User;
+import com.Exercise;
+import com.FDMEmployee;
+import com.User;
 
 public class MentalHealthAmbassador extends User {
 
