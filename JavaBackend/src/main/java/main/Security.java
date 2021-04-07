@@ -16,7 +16,7 @@ public class Security {
 	}
 
 	public void login(String userNameORemail, String password) {
-		if((this.userName.equals(userNameORemail) || this.email.equals(userNameORemail)) && this.password.equals(password)) this.unlocked = true;
+		if((this.userName.equals(userNameORemail) || this.email.equalsIgnoreCase(userNameORemail)) && this.password.equals(password)){ this.unlocked = true;}
 	}
 
 	public void changeUserName(String newUserName) {

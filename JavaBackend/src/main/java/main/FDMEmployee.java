@@ -14,16 +14,14 @@ public class FDMEmployee extends User {
 	ArrayList<WorkoutExcerciseAttempt> workoutExcerciseAttempts;
 	//ArrayList<Target> targets;
 	LocalDateTime dateOfBirth;
-	Boolean sex; //true for male
 
 
 	/**
 	 *
 	 */
-	public FDMEmployee(String nname, Boolean sx, String password, String userName, String email, LocalDateTime ddate, int height, int weight) {
+	public FDMEmployee(String nname, String password, String userName, String email, LocalDateTime ddate, int height, int weight) {
 		super(nname, password, userName, email);
 		dateOfBirth = ddate;
-		sex = sx;
 		// TODO health constructor
 		health = new HealthHistory(height, weight);//health remove void constructor
 		mindfulnessExerciseAttempts = new ArrayList<MindfulnessExerciseAttempt>() ;
