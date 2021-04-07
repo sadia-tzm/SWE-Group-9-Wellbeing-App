@@ -60,7 +60,7 @@ public class FDMEmployeeTest {
             
             employee.getSecurity().logout();
             employee.getSecurity().login("username", "wrongpassword");
-            assertEquals(false, employee.getSecurity().isUnlocked(),
+            assertFalse(employee.getSecurity().isUnlocked(),
                     "checks if logged in when wrong password only entered");
         }
 
@@ -69,7 +69,7 @@ public class FDMEmployeeTest {
         void secTestWrongUn() {
             employee.getSecurity().logout();
             employee.getSecurity().login("wrongusername", "password");
-            assertEquals(false, employee.getSecurity().isUnlocked(), "checks if logged in when wrong username entered");
+            assertFalse(employee.getSecurity().isUnlocked(), "checks if logged in when wrong username entered");
         }
 
         @Test
@@ -77,7 +77,7 @@ public class FDMEmployeeTest {
         void secTestWrongUnPw() {
             employee.getSecurity().logout();
             employee.getSecurity().login("wrongusername", "wrongpassword");
-            assertEquals(false, employee.getSecurity().isUnlocked(),
+            assertFalse(employee.getSecurity().isUnlocked(),
                     "checks if logged in when wrong username and password entered");
         }
 
@@ -121,7 +121,6 @@ public class FDMEmployeeTest {
         @DisplayName("Health History Test - creation of class")
         void secTestClassCreation() {
             assertTrue(employee.getHealthHistory() instanceof HealthHistory);// checks that class is created correctly.
-            assertEquals("username", employee.getSecurity().getUserName());
         }
 
     }
