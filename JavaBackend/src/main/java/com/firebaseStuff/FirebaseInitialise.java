@@ -1,4 +1,4 @@
-package main.firebaseStuff;
+package com.firebaseStuff;
 
 
 
