@@ -15,6 +15,7 @@ public class HealthHistory {
 		calorieHistory = new ArrayList<Calorie>();
 		bmiHistory = new ArrayList<Double>();
 		intialWeight(height, weight);
+		setBMI();
 	}
 
 	private void intialWeight(int height, int weight) {
@@ -29,7 +30,6 @@ public class HealthHistory {
 	}
 
 	public void setBMI() {
-		heightHistory.get(heightHistory.size()-1);
 		double b = Math.round(((weightHistory.get(weightHistory.size()-1).getWeight()/(heightHistory.get(heightHistory.size()-1).getHeight() * heightHistory.get(heightHistory.size()-1).getHeight())*10)/10.0));
 		bmiHistory.add(b);
 		 //kg /h2
