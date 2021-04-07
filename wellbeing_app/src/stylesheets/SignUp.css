@@ -1,7 +1,7 @@
 .form3{
-    margin: 15vh auto;
+    margin: 5vh auto;
     width: 25vw;
-    height: 55vh;
+    height: 85vh;
     /*background: rgb(224, 255, 255, 0.5);*/
     background: rgb(189, 237, 255, 0.3);
     border-radius: 10%;
@@ -10,7 +10,7 @@
 .input3{
     display: block;
     margin: 3vh auto;
-    width: 15vw;
+    width: 17vw;
     padding: 2vh;
     font-weight: bold;
     border: none;
@@ -20,14 +20,14 @@
 
 .heading3{
     text-align: center;
-    padding: 3vh;
+    padding: 2vh;
     color:#073f51;
     font-size: calc(24px + 2vmin);
 }
 
 .submit3{
     display: block;
-    margin: 6vh auto;
+    margin: 4vh auto;
     width: 9vw;
     padding: 0.8vh;
     font-weight: bold;
@@ -40,9 +40,10 @@
 
 @media screen and (max-width: 960px) {
     .form3{
-        margin: 15vh auto;
+        margin: 5vh auto;
         width: 50vw;
-        height: 55vh;
+        height: 85vh;
+        /*background: rgb(224, 255, 255, 0.5);*/
         background: rgb(189, 237, 255, 0.3);
         border-radius: 10%;
     }
@@ -60,7 +61,7 @@
 
     .submit3{
         display: block;
-        margin: 6vh auto;
+        margin: 4vh auto;
         width: 14vw;
         padding: 0.8vh;
         font-weight: bold;
