@@ -1,4 +1,3 @@
-package main;
 public class ActivityExercise extends WorkoutExercise {
 
 	private int difficulty;
