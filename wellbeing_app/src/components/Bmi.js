@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import React from 'react';
-import '../stylesheets/BMI.css';
+import '../stylesheets/Bmi.css';
 import { Link } from "react-router-dom";
 
 export default class BMI extends React.Component {
@@ -12,7 +12,7 @@ export default class BMI extends React.Component {
 	}
 
   handleSubmit(event) {
-    alert('A name was submitted: ' + this.state.value);
+    alert('TESTING : ' + this.state.value);
     event.preventDefault();
   }
 
@@ -25,12 +25,12 @@ render() {
         <form onSubmit ={this.handleSubmit} className="form2">
           <h5 className="heading2">Please input the following:</h5>
           <input className="input2"
-            type='text'
+            type='number'
             name='height'
             placeholder='Height'
           />
           <input className="input2"
-            type='text'
+            type='number'
             name='weight'
             placeholder="Weight"
           />

@@ -1,59 +1,60 @@
-.HeightWeightTable{ 
-    border-collapse: collapse;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2%;
-    font-size: 1.5em;
-    font-family: sans-serif;
-    min-width: 400px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+.grid-container2 {
+    display: grid;
+    align-content: center;
+    grid-template-columns:auto auto auto;
+    /* 3 columns --> grid-template-columns: auto auto auto */
+    grid-gap: 5px;
+    background: rgb(153, 228, 255, 0.3);
+    padding: 20px;
+    width: auto;
+    margin: 15px auto;
 }
-
-tr{
-    color: #000000;
-    text-align: left;
-    border-bottom: 1px solid #dddddd;
-}
-
-th{
-    padding: 12px 15px;
-    background-color: #009879;
-}
-
-td{
-    background-color: purple;
-}
-
-.TableHeading{
-    font-size: xx-large;
-    color: rgb(216, 253, 4);
+  
+.grid-container2 > div {
+    background-color: rgba(255, 255, 255, 0.5);
     text-align: center;
-    margin-top: 2%;
+    padding: 5px 0;
 }
 
-
-.TableButton{
-    border: none;
-    background: rgba(0, 109, 252, 0.5);
-    padding: 12px;
-    color: beige;
-    font-weight: bold;
-    border-radius: 10%;
-    width: 75%;
-    font-family: "Cairo", sans-serif;
-    line-height: 120%;
-}
-
-
-.item{
+.heading5{
+    border-bottom: 2px solid darkgrey;
     text-align: center;
-    color:white;
     font-weight: bold;
-    height: 5vh;
-    position: block;
-    width: 12vw;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2%;
+    font-size: calc(18px + 2vmin);
+    width: 40vw;
+    margin: auto;
+    color:  #073f51;
 }
+
+.text5{
+    font-size: 15px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 40vw;
+    margin: auto;
+    font-weight: 500;
+}
+
+.total{
+    font-size: 25px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 40vw;
+    margin: auto;
+    font-weight: 500;
+    border-top: 2px solid darkgrey;
+}
+
+.pagetext{
+    color:  #073f51;
+    text-align: center;
+    margin: 5px auto;
+    padding: 10px;
+    font-size: calc(16px + 2vmin);
+    width: 80vw;
+}
+
+
 

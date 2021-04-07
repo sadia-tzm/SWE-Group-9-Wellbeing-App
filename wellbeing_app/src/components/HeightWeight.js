@@ -6,55 +6,29 @@ export default class HeightWeight extends React.Component {
 
   render() {
     return (
-      <div>
-          <h1 className = "TableHeading">Table</h1>
-            <table className = "HeightWeightTable">
-              <tr>
-                <th>Height (cm)</th>
-                <th>Weight (kg)</th>
-                <th>Date</th>
-              </tr>
-              <tr>
-                <td>190</td>
-                <td>70</td>
-                <td>05/04/21</td>
-              </tr>
-              <tr>
-                <td>190</td>
-                <td>70</td>
-                <td>05/04/21</td>
-              </tr>
-              <tr>
-                <td>190</td>
-                <td>70</td>
-                <td>05/04/21</td>
-              </tr>
-              <tr>
-                <td>190</td>
-                <td>70</td>
-                <td>05/04/21</td>
-              </tr>
-              <tr>
-                <td>190</td>
-                <td>70</td>
-                <td>05/04/21</td>
-              </tr>
-            </table>
-            
-              <div className = "item">
-                <button className = "TableButton">Press me</button>
-                <br></br>
-                <br></br>
-                <button className = "TableButton">Press me</button>
-              </div>
-            
-
-
-    </div>
+        <div>
+            <h3 class="pagetext">Title here</h3>
+            <div class="grid-container2">
+                <div class="heading5">Height (cm)</div>
+                <div class="heading5">Weight (Kg)</div>
+                <div class="heading5">Date</div>
+                <div class="text5">190</div>
+                <div class="text5">70</div>
+                <div class="text5">07/04/21</div>
+                <div class="text5">190</div>
+                <div class="text5">70</div>
+                <div class="text5">07/04/21</div>
+                <div class="text5">190</div>
+                <div class="text5">70</div>
+                <div class="text5">07/04/21</div>
+                <div class="text5">190</div>
+                <div class="text5">70</div>
+                <div class="text5">07/04/21</div>
+            </div>
+        </div>
     )
-  }
 }
-
+}
 
 
 
