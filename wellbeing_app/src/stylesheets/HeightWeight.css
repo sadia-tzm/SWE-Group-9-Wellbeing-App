@@ -16,7 +16,7 @@
     padding: 5px 0;
 }
 
-.heading5{
+.heading6{
     border-bottom: 2px solid darkgrey;
     text-align: center;
     font-weight: bold;
@@ -26,7 +26,7 @@
     color:  #073f51;
 }
 
-.text5{
+.text6{
     font-size: 15px;
     text-align: center;
     border-radius: 5px;
@@ -37,7 +37,7 @@
 }
 
 
-.pagetext{
+.pagetext2{
     color:  #073f51;
     text-align: center;
     margin: 5px auto;
