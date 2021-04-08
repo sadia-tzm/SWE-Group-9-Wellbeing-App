@@ -3,11 +3,11 @@ package com;
 /**
  * @author Shannon
  */
-public abstract class User {
-
-	Security security;
+public class User {
+	
 	private String ID;
 	private String name;
+	Security security;
 
 	public User(String nname, String password, String userName, String email) {
 		this.name = nname;

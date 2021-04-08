@@ -30,11 +30,15 @@ public class HealthHistory {
 
 	public void setBMI() {
 		heightHistory.get(heightHistory.size()-1);
-		double b = Math.round(((weightHistory.get(weightHistory.size()-1).getWeight()/(heightHistory.get(heightHistory.size()-1).getHeight() * heightHistory.get(heightHistory.size()-1).getHeight())*10)/10.0));
+		int weight = weightHistory.get(weightHistory.size()-1).getWeight();
+        int height = heightHistory.get(heightHistory.size()-1).getHeight();
+        // System.out.println(height);
+        // System.out.println(weight);
+        double b = Math.round(((weight/(height*height)*10)/10.0));
 		bmiHistory.add(b);
 		 //kg /h2
 	}
-
+	
 	public double getCurrentBMI(){
 		return bmiHistory.get(bmiHistory.size()-1);
 	}
