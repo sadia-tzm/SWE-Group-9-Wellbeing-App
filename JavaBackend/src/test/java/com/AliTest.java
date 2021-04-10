@@ -42,4 +42,11 @@ public class AliTest {
         employee.health.deleteCalorieEntry(c);
         assertFalse(employee.health.checkEntry(c));
     }
+
+    @Test
+    @DisplayName("Edit Entry Test") 
+    public void testEditEntry(){
+
+    }
+
 }
