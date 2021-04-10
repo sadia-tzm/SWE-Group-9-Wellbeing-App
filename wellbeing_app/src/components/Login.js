@@ -19,11 +19,13 @@ export default class Login extends React.Component {
           type='email'
           name='email'
           placeholder='Email/Username'
+          required
         />
         <input className="input"
           type='password'
           name='pwd'
           placeholder="Password"
+          required
         />
         <input className="submit"
           type="submit"

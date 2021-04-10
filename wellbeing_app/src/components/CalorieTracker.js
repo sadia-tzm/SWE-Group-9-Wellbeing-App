@@ -6,6 +6,7 @@ import AddCalories from './AddCalories';
 import ViewCalories from './ViewCalories';
 import EditCalories from './EditCalories';
 import { NavLink } from "react-router-dom";
+import { Redirect } from "react-router-dom";
 import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
 
 export default class CalorieTracker extends React.Component {
@@ -22,6 +23,7 @@ export default class CalorieTracker extends React.Component {
             <Route exact path="/editcalories" component={EditCalories}/>
           </Switch>
         </div>
+        <Redirect to='calorietrackerhome'/>
       </Router>
     )
   }

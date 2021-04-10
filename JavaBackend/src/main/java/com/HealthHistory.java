@@ -115,4 +115,23 @@ public class HealthHistory {
 		weightHistory.remove(weightEntry);
 	}
 
+	public boolean checkEntry(Weight w){
+		return weightHistory.contains(w);
+	}
+
+	public boolean checkEntry(Height h){
+		return heightHistory.contains(h);
+	}
+
+	public boolean checkEntry(Calorie c){
+		return calorieHistory.contains(c);
+	}
+
+	public boolean checkEntry(Food f){
+		return foodHistory.contains(f);
+	}
+
+	public boolean checkEntry(Double b){
+		return bmiHistory.contains(b);
+	}
 }
