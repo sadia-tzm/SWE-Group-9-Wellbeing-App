@@ -13,7 +13,11 @@ import org.junit.jupiter.api.Nested;
 //import java.util.*;
 import java.time.*;
 
-public class FDMEmployeeTest {
+/**
+ * 
+ * @author Shannon
+ */
+public class TestSet1 {
 
     private FDMEmployee employee;
 
@@ -107,21 +111,75 @@ public class FDMEmployeeTest {
             assertTrue(employee.getSecurity().isUnlocked(),
                     "checks if logged in when correct credentials entered");
         }
+        @Test
+        @DisplayName("Security Test - case sensitive email")
+        void secTestCaseEmailcase() {
+            employee.getSecurity().logout();
+            employee.getSecurity().login("email@e.mail", "password");
+            assertTrue(employee.getSecurity().isUnlocked(),
+                    "checks if logged in when correct credentials entered");
+        }
     }
     @Nested
     @DisplayName("Health History Tests")
     class HealthHist {
 
-        // @BeforeEach
-        // void beforeEach() {
-        //     employee = new FDMEmployee("name", "password", "username", "email@e.mail", LocalDateTime.now(), 200, 100);
-        // }
+        @BeforeEach
+        void beforeEach() {
+             employee = new FDMEmployee("name", "password", "username", "email@e.mail", LocalDateTime.now(), 200, 100);
+             
+        }
 
         @Test
         @DisplayName("Health History Test - creation of class")
-        void secTestClassCreation() {
+        void helTestClassCreation() {
             assertTrue(employee.getHealthHistory() instanceof HealthHistory);// checks that class is created correctly.
         }
+
+        @Test
+        @DisplayName("Health History Test - bmi calc")
+        void helTestBMI() {
+            assertEquals(25.0, employee.getHealthHistory().getCurrentBMI());
+            assertEquals("Overweight", employee.getHealthHistory().getCurrentBMIStatus(employee.getHealthHistory().getCurrentBMI()));
+        }
+
+        @Test
+        @DisplayName("Health History Test - logging a new weight")
+        void helTestlogWeight() {
+            employee.getHealthHistory().logWeight(99);
+            assertEquals(24.8, employee.getHealthHistory().getCurrentBMI());
+            assertEquals(99, employee.getHealthHistory().getWeightHistory().get(employee.getHealthHistory().getWeightHistory().size()-1).getWeight());
+
+            //assertEquals(25.0, employee.getHealthHistory().getCurrentBMI());
+            //assertEquals("Overweight", employee.getHealthHistory().getCurrentBMIStatus(employee.getHealthHistory().getCurrentBMI()));
+        }
+        @Test
+        @DisplayName("Health History Test - logging a new height")
+        void helTestlogHeight() {
+            employee.getHealthHistory().logHeight(201);
+            assertEquals(24.8, employee.getHealthHistory().getCurrentBMI());
+            assertEquals(201, employee.getHealthHistory().getHeightHistory().get(employee.getHealthHistory().getHeightHistory().size()-1).getHeight());
+
+
+        }
+        @Test
+        @DisplayName("Health History Test - logging calorie entry")
+        void helTestlogCal() {
+            employee.getHealthHistory().logCalories(99, "Peanut Butter");
+            assertEquals(24.8, employee.getHealthHistory().getCurrentBMI());
+            assertEquals(99, employee.getHealthHistory().getWeightHistory().get(employee.getHealthHistory().getWeightHistory().size()-1).getWeight());
+
+            //assertEquals(25.0, employee.getHealthHistory().getCurrentBMI());
+            //assertEquals("Overweight", employee.getHealthHistory().getCurrentBMIStatus(employee.getHealthHistory().getCurrentBMI()));
+        }
+        // public void logCalories(int calories, String nameOfFood, int weightOfFood) {
+        //     Food foodItem = new Food(nameOfFood, calories, weightOfFood);
+        //     foodHistory.add(foodItem);
+        //     calorieHistory.add(new Calorie(foodItem, weightOfFood));
+        // }
+
+
+        
 
     }
 

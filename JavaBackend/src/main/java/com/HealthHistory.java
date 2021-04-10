@@ -3,11 +3,11 @@ import java.util.*;
 
 public class HealthHistory {
 
-	private List<Weight> weightHistory;
-	private List<Height> heightHistory;
-	private List<Calorie> calorieHistory;
-	private List<Food> foodHistory;
-	private List<Double> bmiHistory;
+	private ArrayList<Weight> weightHistory;
+	private ArrayList<Height> heightHistory;
+	private ArrayList<Calorie> calorieHistory;
+	private ArrayList<Food> foodHistory;
+	private ArrayList<Double> bmiHistory;
 
 	public HealthHistory(int height, int weight) {
 		weightHistory = new ArrayList<Weight>();
@@ -30,10 +30,22 @@ public class HealthHistory {
 	}
 
 	public void setBMI() {
-		double b = Math.round(((weightHistory.get(weightHistory.size()-1).getWeight()/(heightHistory.get(heightHistory.size()-1).getHeight() * heightHistory.get(heightHistory.size()-1).getHeight())*10)/10.0));
+		
+		double weight = (double)weightHistory.get(weightHistory.size()-1).getWeight();
+		//System.out.println(weight);
+		double  height = (double)heightHistory.get(heightHistory.size()-1).getHeight()/100;
+		//System.out.println(height);
+		double b = (double)Math.round((weight/(height*height)) * 10.0) / 10.0;
+
+
+		//b = b / 10.0;
+		//System.out.println("final - "+b);
+		//System.out.println(b);
 		bmiHistory.add(b);
+		//System.out.println(this.bmiHistory.get(0));
 		 //kg /h2
 	}
+
 
 	public double getCurrentBMI(){
 		return bmiHistory.get(bmiHistory.size()-1);
@@ -61,10 +73,13 @@ public class HealthHistory {
 
 	public void logHeight(int height) {
 		heightHistory.add(new Height(height));
+		this.setBMI();
+		
 	}
 
 	public void logWeight(int weight) {
 		weightHistory.add(new Weight(weight));
+		this.setBMI();
 	}
 
 	public List<Calorie> getCalorieHistory() {
