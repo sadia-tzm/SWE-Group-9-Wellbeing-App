@@ -115,6 +115,25 @@ public class HealthHistory {
 		weightHistory.remove(weightEntry);
 	}
 
+	public void editWeightEntry(Weight w, int amount){
+		w.setWeight(amount);
+	}
+
+	public void editHeightEntry(Height w, int amount){
+		w.setHeight(amount);
+	}
+
+	public void editCalorieEntry(Calorie w, int amount){
+		w.setCalories(amount);
+	}
+
+	public void editCalorieEntry(Calorie w, int amount, Food f){
+		w.setCalories(amount, f);
+	}
+
+	public void editFoodEntry(String s, Food f){
+	}
+
 	public boolean checkEntry(Weight w){
 		return weightHistory.contains(w);
 	}
