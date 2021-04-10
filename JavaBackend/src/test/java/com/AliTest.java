@@ -5,10 +5,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
-//import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.Nested;
-//import java.util.*;
 import java.time.*;
 
 public class AliTest {
@@ -36,5 +33,20 @@ public class AliTest {
         Height h = employee.health.getCurrentHeight();
         employee.health.deleteHeightEntry(employee.health.getCurrentHeight());
         assertFalse(employee.health.checkEntry(h));
+
+
+        //Calorie
+        employee.health.logCalories(new Food("Apple", 300, 0.3), 0.3);
+        Calorie c = employee.health.getCalorieHistory().get(employee.health.getCalorieHistory().size()-1);
+        assertTrue(employee.health.checkEntry(c));
+        employee.health.deleteCalorieEntry(c);
+        assertFalse(employee.health.checkEntry(c));
     }
+
+    @Test
+    @DisplayName("Edit Entry Test") 
+    public void testEditEntry(){
+
+    }
+
 }
