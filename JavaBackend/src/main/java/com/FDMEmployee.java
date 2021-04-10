@@ -175,4 +175,12 @@ public class FDMEmployee extends User {
 		ExerciseAttempt.editEntry(newDuration, LocalDateTime.now());
 	}
 
+	/**
+	 * 
+	 * @return the users health info
+	 */
+	public HealthHistory getHealthHistory() {//breathing ex didnt seem different
+		return this.health;
+	}
+
 }

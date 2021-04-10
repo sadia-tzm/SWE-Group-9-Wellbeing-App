@@ -3,11 +3,11 @@ import java.util.*;
 
 public class HealthHistory {
 
-	private List<Weight> weightHistory;
-	private List<Height> heightHistory;
-	private List<Calorie> calorieHistory;
-	private List<Food> foodHistory;
-	private List<Double> bmiHistory;
+	private ArrayList<Weight> weightHistory;
+	private ArrayList<Height> heightHistory;
+	private ArrayList<Calorie> calorieHistory;
+	private ArrayList<Food> foodHistory;
+	private ArrayList<Double> bmiHistory;
 
 	public HealthHistory(int height, int weight) {
 		weightHistory = new ArrayList<Weight>();
@@ -15,6 +15,7 @@ public class HealthHistory {
 		calorieHistory = new ArrayList<Calorie>();
 		bmiHistory = new ArrayList<Double>();
 		intialWeight(height, weight);
+		setBMI();
 	}
 
 	private void intialWeight(int height, int weight) {
@@ -22,23 +23,30 @@ public class HealthHistory {
 		weightHistory.add(new Weight(weight));
 	}
 
-	public void logCalories(int calories, String nameOfFood, int weightOfFood) {
+	public void logCalories(int calories, String nameOfFood, double weightOfFood) {
 		Food foodItem = new Food(nameOfFood, calories, weightOfFood);
 		foodHistory.add(foodItem);
 		calorieHistory.add(new Calorie(foodItem, weightOfFood));
 	}
 
 	public void setBMI() {
-		heightHistory.get(heightHistory.size()-1);
-		int weight = weightHistory.get(weightHistory.size()-1).getWeight();
-        int height = heightHistory.get(heightHistory.size()-1).getHeight();
-        // System.out.println(height);
-        // System.out.println(weight);
-        double b = Math.round(((weight/(height*height)*10)/10.0));
+		
+		double weight = (double)weightHistory.get(weightHistory.size()-1).getWeight();
+		//System.out.println(weight);
+		double  height = (double)heightHistory.get(heightHistory.size()-1).getHeight()/100;
+		//System.out.println(height);
+		double b = (double)Math.round((weight/(height*height)) * 10.0) / 10.0;
+
+
+		//b = b / 10.0;
+		//System.out.println("final - "+b);
+		//System.out.println(b);
 		bmiHistory.add(b);
+		//System.out.println(this.bmiHistory.get(0));
 		 //kg /h2
 	}
-	
+
+
 	public double getCurrentBMI(){
 		return bmiHistory.get(bmiHistory.size()-1);
 	}
@@ -59,16 +67,19 @@ public class HealthHistory {
         }
 	}
 
-	public void logCalories(Food food, int weightOfFood) {
-		calorieHistory.add(new Calorie(food, weightOfFood));
+	public void logCalories(Food food, double d) {
+		calorieHistory.add(new Calorie(food, d));
 	}
 
 	public void logHeight(int height) {
 		heightHistory.add(new Height(height));
+		this.setBMI();
+		
 	}
 
 	public void logWeight(int weight) {
 		weightHistory.add(new Weight(weight));
+		this.setBMI();
 	}
 
 	public List<Calorie> getCalorieHistory() {
@@ -104,4 +115,42 @@ public class HealthHistory {
 		weightHistory.remove(weightEntry);
 	}
 
+	public void editWeightEntry(Weight w, int amount){
+		w.setWeight(amount);
+	}
+
+	public void editHeightEntry(Height w, int amount){
+		w.setHeight(amount);
+	}
+
+	public void editCalorieEntry(Calorie w, int amount){
+		w.setCalories(amount);
+	}
+
+	public void editCalorieEntry(Calorie w, int amount, Food f){
+		w.setCalories(amount, f);
+	}
+
+	public void editFoodEntry(String s, Food f){
+	}
+
+	public boolean checkEntry(Weight w){
+		return weightHistory.contains(w);
+	}
+
+	public boolean checkEntry(Height h){
+		return heightHistory.contains(h);
+	}
+
+	public boolean checkEntry(Calorie c){
+		return calorieHistory.contains(c);
+	}
+
+	public boolean checkEntry(Food f){
+		return foodHistory.contains(f);
+	}
+
+	public boolean checkEntry(Double b){
+		return bmiHistory.contains(b);
+	}
 }

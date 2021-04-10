@@ -13,10 +13,13 @@ import org.junit.jupiter.api.Nested;
 //import java.util.*;
 import java.time.*;
 
-public class FDMEmployeeTest {
+/**
+ * 
+ * @author Shannon
+ */
+public class TestSet1 {
 
     private FDMEmployee employee;
-    private User user;
 
     @BeforeEach
     public void setUp() throws Exception {
@@ -36,10 +39,10 @@ public class FDMEmployeeTest {
     @DisplayName("Security Based Tests")
     class SecTest {
 
-        @BeforeEach
-        void beforeEach() {
-            employee = new FDMEmployee("name", "password", "username", "email@e.mail", LocalDateTime.now(), 200, 100);
-        }
+        // @BeforeEach
+        // void beforeEach() {
+        //     employee = new FDMEmployee("name", "password", "username", "email@e.mail", LocalDateTime.now(), 200, 100);
+        // }
 
         @Test
         @DisplayName("Security Test - creation of security class/variables")
@@ -61,7 +64,7 @@ public class FDMEmployeeTest {
             
             employee.getSecurity().logout();
             employee.getSecurity().login("username", "wrongpassword");
-            assertEquals(false, employee.getSecurity().isUnlocked(),
+            assertFalse(employee.getSecurity().isUnlocked(),
                     "checks if logged in when wrong password only entered");
         }
 
@@ -70,7 +73,7 @@ public class FDMEmployeeTest {
         void secTestWrongUn() {
             employee.getSecurity().logout();
             employee.getSecurity().login("wrongusername", "password");
-            assertEquals(false, employee.getSecurity().isUnlocked(), "checks if logged in when wrong username entered");
+            assertFalse(employee.getSecurity().isUnlocked(), "checks if logged in when wrong username entered");
         }
 
         @Test
@@ -78,7 +81,7 @@ public class FDMEmployeeTest {
         void secTestWrongUnPw() {
             employee.getSecurity().logout();
             employee.getSecurity().login("wrongusername", "wrongpassword");
-            assertEquals(false, employee.getSecurity().isUnlocked(),
+            assertFalse(employee.getSecurity().isUnlocked(),
                     "checks if logged in when wrong username and password entered");
         }
 
@@ -96,7 +99,7 @@ public class FDMEmployeeTest {
         void secTestCaseUn() {
             employee.getSecurity().logout();
             employee.getSecurity().login("USERNAME", "password");
-            assertEquals(false, employee.getSecurity().isUnlocked(),
+            assertFalse(employee.getSecurity().isUnlocked(),
                     "checks if logged in when wrong username entered(case)");
         }
 
@@ -105,86 +108,79 @@ public class FDMEmployeeTest {
         void secTestCaseEmail() {
             employee.getSecurity().logout();
             employee.getSecurity().login("EMAIL@E.MAIL", "password");
-            assertEquals(true, employee.getSecurity().isUnlocked(),
+            assertTrue(employee.getSecurity().isUnlocked(),
+                    "checks if logged in when correct credentials entered");
+        }
+        @Test
+        @DisplayName("Security Test - case sensitive email")
+        void secTestCaseEmailcase() {
+            employee.getSecurity().logout();
+            employee.getSecurity().login("email@e.mail", "password");
+            assertTrue(employee.getSecurity().isUnlocked(),
                     "checks if logged in when correct credentials entered");
         }
     }
     @Nested
-    @DisplayName("Security Based Tests")
+    @DisplayName("Health History Tests")
     class HealthHist {
 
         @BeforeEach
         void beforeEach() {
-            employee = new FDMEmployee("name", "password", "username", "email@e.mail", LocalDateTime.now(), 200, 100);
+             employee = new FDMEmployee("name", "password", "username", "email@e.mail", LocalDateTime.now(), 200, 100);
+             
         }
 
         @Test
-        @DisplayName("Security Test - creation of security class/variables")
-        void secTestClassCreation() {
-            assertTrue(employee.getSecurity() instanceof Security);// checks that securrity class is created correctly.
-            assertEquals("username", employee.getSecurity().getUserName());
+        @DisplayName("Health History Test - creation of class")
+        void helTestClassCreation() {
+            assertTrue(employee.getHealthHistory() instanceof HealthHistory);// checks that class is created correctly.
         }
 
         @Test
-        @DisplayName("Security Test - logging out changes the unlocked")
-        void secTestLoggedOut() {
-            employee.getSecurity().logout();
-            assertFalse(employee.getSecurity().isUnlocked());// checks loggin out sets the right variable.
+        @DisplayName("Health History Test - bmi calc")
+        void helTestBMI() {
+            assertEquals(25.0, employee.getHealthHistory().getCurrentBMI());
+            assertEquals("Overweight", employee.getHealthHistory().getCurrentBMIStatus(employee.getHealthHistory().getCurrentBMI()));
         }
 
         @Test
-        @DisplayName("Security Test - wrong password")
-        void secTestWrongPw() {
-            
-            employee.getSecurity().logout();
-            employee.getSecurity().login("username", "wrongpassword");
-            assertEquals(false, employee.getSecurity().isUnlocked(),
-                    "checks if logged in when wrong password only entered");
-        }
+        @DisplayName("Health History Test - logging a new weight")
+        void helTestlogWeight() {
+            employee.getHealthHistory().logWeight(99);
+            assertEquals(24.8, employee.getHealthHistory().getCurrentBMI());
+            assertEquals(99, employee.getHealthHistory().getWeightHistory().get(employee.getHealthHistory().getWeightHistory().size()-1).getWeight());
 
-        @Test
-        @DisplayName("Security Test - wrong username")
-        void secTestWrongUn() {
-            employee.getSecurity().logout();
-            employee.getSecurity().login("wrongusername", "password");
-            assertEquals(false, employee.getSecurity().isUnlocked(), "checks if logged in when wrong username entered");
+            //assertEquals(25.0, employee.getHealthHistory().getCurrentBMI());
+            //assertEquals("Overweight", employee.getHealthHistory().getCurrentBMIStatus(employee.getHealthHistory().getCurrentBMI()));
         }
+        @Test
+        @DisplayName("Health History Test - logging a new height")
+        void helTestlogHeight() {
+            employee.getHealthHistory().logHeight(201);
+            assertEquals(24.8, employee.getHealthHistory().getCurrentBMI());
+            assertEquals(201, employee.getHealthHistory().getHeightHistory().get(employee.getHealthHistory().getHeightHistory().size()-1).getHeight());
 
-        @Test
-        @DisplayName("Security Test - wrong credentials")
-        void secTestWrongUnPw() {
-            employee.getSecurity().logout();
-            employee.getSecurity().login("wrongusername", "wrongpassword");
-            assertEquals(false, employee.getSecurity().isUnlocked(),
-                    "checks if logged in when wrong username and password entered");
-        }
 
-        @Test
-        @DisplayName("Security Test - correct credentials")
-        void secTestRightUnPw() {
-            employee.getSecurity().logout();
-            employee.getSecurity().login("username", "password");
-            assertTrue(employee.getSecurity().isUnlocked(),
-                    "checks if logged in when correct credentials entered");
         }
+        @Test
+        @DisplayName("Health History Test - logging calorie entry")
+        void helTestlogCal() {
+            employee.getHealthHistory().logCalories(99, "Peanut Butter");
+            assertEquals(24.8, employee.getHealthHistory().getCurrentBMI());
+            assertEquals(99, employee.getHealthHistory().getWeightHistory().get(employee.getHealthHistory().getWeightHistory().size()-1).getWeight());
 
-        @Test
-        @DisplayName("Security Test - not case sensitive username")
-        void secTestCaseUn() {
-            employee.getSecurity().logout();
-            employee.getSecurity().login("USERNAME", "password");
-            assertEquals(false, employee.getSecurity().isUnlocked(),
-                    "checks if logged in when wrong username entered(case)");
+            //assertEquals(25.0, employee.getHealthHistory().getCurrentBMI());
+            //assertEquals("Overweight", employee.getHealthHistory().getCurrentBMIStatus(employee.getHealthHistory().getCurrentBMI()));
         }
+        // public void logCalories(int calories, String nameOfFood, int weightOfFood) {
+        //     Food foodItem = new Food(nameOfFood, calories, weightOfFood);
+        //     foodHistory.add(foodItem);
+        //     calorieHistory.add(new Calorie(foodItem, weightOfFood));
+        // }
 
-        @Test
-        @DisplayName("Security Test - case sensitive email")
-        void secTestCaseEmail() {
-            employee.getSecurity().logout();
-            employee.getSecurity().login("EMAIL@E.MAIL", "password");
-            assertEquals(true, employee.getSecurity().isUnlocked(),
-                    "checks if logged in when correct credentials entered");
-        }
+
+        
+
     }
 
     // @Test
