@@ -100,23 +100,23 @@ public class HealthHistory {
 		weightHistory.remove(weightEntry);
 	}
 
-	public boolean checkEntry(List<Weight> weightHistory, Weight w){
+	public boolean checkEntry(Weight w){
 		return weightHistory.contains(w);
 	}
 
-	public boolean checkEntry(List<Height> heightHistory, Height h){
+	public boolean checkEntry(Height h){
 		return heightHistory.contains(h);
 	}
 
-	public boolean checkEntry(List<Calorie> calorieHistory, Calorie c){
+	public boolean checkEntry(Calorie c){
 		return calorieHistory.contains(c);
 	}
 
-	public boolean checkEntry(List<Food> foodHistory, Food f){
+	public boolean checkEntry(Food f){
 		return foodHistory.contains(f);
 	}
 
-	public boolean checkEntry(List<Double> bmiHistory, Double b){
+	public boolean checkEntry(Double b){
 		return bmiHistory.contains(b);
 	}
 }
