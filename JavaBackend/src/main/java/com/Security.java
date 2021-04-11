@@ -17,6 +17,10 @@ public class Security {
 		this.randomCode = this.generateForgotPasswordCode();
 	}
 
+	public Security(){
+		//empty constructor for firestore database
+	}
+
 	public void login(String userNameORemail, String password) {
 		if((this.userName.equals(userNameORemail) || this.email.equalsIgnoreCase(userNameORemail)) && this.password.equals(password)){ this.unlocked = true;}
 	}
