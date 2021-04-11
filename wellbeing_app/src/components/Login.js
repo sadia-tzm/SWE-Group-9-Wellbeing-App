@@ -1,7 +1,7 @@
 import React from 'react';
 import '../stylesheets/Login.css'
 
-const Login2 = (props) => {
+const Login = (props) => {
     const {
         email,
         setEmail,
@@ -62,4 +62,4 @@ const Login2 = (props) => {
     )
 };
 
-export default Login2;
+export default Login;
