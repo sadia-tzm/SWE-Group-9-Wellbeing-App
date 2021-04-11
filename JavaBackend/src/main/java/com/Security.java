@@ -1,6 +1,7 @@
 package com;
 public class Security {
 
+	private long id;
 	private String userName;
 	private String password;
 	private Boolean unlocked;
@@ -8,10 +9,11 @@ public class Security {
 	private int randomCode;
 
 	public Security(String password, String userName, String email) {
-		this.password = password;
+		this.id = 0;
 		this.userName = userName;
-		this.unlocked = true;
+		this.password = password;
 		this.email = email;
+		this.unlocked = true;
 		this.randomCode = this.generateForgotPasswordCode();
 	}
 

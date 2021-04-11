@@ -11,11 +11,11 @@ import com.google.firebase.FirebaseOptions;
 
 import com.User;
 
-public class FirebaseInitialise {
+public class FirebaseDatabase {
 
     Firestore db;
 
-    public void initialize(User user) {
+    public void initialize() {
         System.out.println("INIT");
         try {
             FileInputStream serviceAccount =
@@ -27,14 +27,19 @@ public class FirebaseInitialise {
 
             FirebaseApp app = FirebaseApp.initializeApp(options);
             this.db = com.google.firebase.cloud.FirestoreClient.getFirestore(app);
-            ApiFuture<WriteResult> collectionsApiFuture = db.collection("users").document(user.getName()).set(user);
-            System.out.println(collectionsApiFuture.get().getUpdateTime().toString());
         }
         catch (Exception e) {
             e.printStackTrace();
         }
     }
-    public void printItems() {
-        System.out.println("nothing");
+
+    public void setItems(Object object, String name, String collection) {
+        try {
+            ApiFuture<WriteResult> collectionsApiFuture = db.collection(collection).document(name).set(object);
+            System.out.println(collectionsApiFuture.get().getUpdateTime().toString());
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }
