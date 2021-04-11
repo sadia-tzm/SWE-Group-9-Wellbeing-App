@@ -2,24 +2,24 @@ package com;
 
 public class Food {
     private String name;
-    private double caloriesPer100g;
-    private double weight;
+    private int caloriesPer100g;
+    private int weight;
 
-    public Food(String name, int calories, double weight) {
+    public Food(String name, int calories, int weight) {
         this.name = name;
         this.weight = weight;
-        this.caloriesPer100g = Double.valueOf(calories)/10/this.weight;
+        this.caloriesPer100g = calories/10/this.weight;
     }
 
     public String getName(){
         return this.name;
     }
 
-    public double getCalories(){
+    public int getCalories(){
         return this.caloriesPer100g;
     }
     
-    public int calculateTotalCalories(double weight){
-        return (int)(caloriesPer100g * 10 * weight);
+    public int calculateTotalCalories(int weight){
+        return caloriesPer100g * 10 * weight;
     }
 }

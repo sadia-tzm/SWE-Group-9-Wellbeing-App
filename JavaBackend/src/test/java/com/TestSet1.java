@@ -165,9 +165,25 @@ public class TestSet1 {
         @Test
         @DisplayName("Health History Test - logging calorie entry")
         void helTestlogCal() {
-            employee.getHealthHistory().logCalories(99, "Peanut Butter");
-            assertEquals(24.8, employee.getHealthHistory().getCurrentBMI());
-            assertEquals(99, employee.getHealthHistory().getWeightHistory().get(employee.getHealthHistory().getWeightHistory().size()-1).getWeight());
+            employee.getHealthHistory().logCalories(100, "Peanut Butter", 50);
+            //calories, name, weight
+            //logs a new food item so ceck it exists.
+            assertEquals("Peanut Butter", employee.getHealthHistory().getFoodHistory().get(0).getFood().getName());
+            assertEquals(100, employee.getHealthHistory().getFoodHistory().get(0).getCalories());
+
+
+            
+            Food apple = new Food("Apple", 95, 155.0);
+
+            
+            employee.getHealthHistory().logCalories(apple, 150);
+            employee.getHealthHistory().logCalories(apple, 145);
+
+            System.out.println(employee.getHealthHistory().getCalorieHistory().get(0).getFood().getName());
+
+
+            
+
 
             //assertEquals(25.0, employee.getHealthHistory().getCurrentBMI());
             //assertEquals("Overweight", employee.getHealthHistory().getCurrentBMIStatus(employee.getHealthHistory().getCurrentBMI()));

@@ -14,6 +14,7 @@ public class HealthHistory {
 		heightHistory = new ArrayList<Height>();
 		calorieHistory = new ArrayList<Calorie>();
 		bmiHistory = new ArrayList<Double>();
+		foodHistory = new ArrayList<Food>();
 		intialWeight(height, weight);
 		setBMI();
 	}
@@ -93,6 +94,10 @@ public class HealthHistory {
 
 	public List<Weight> getWeightHistory() {
 		return this.weightHistory;
+	}
+
+	public List<Calorie> getFoodHistory() {
+		return this.calorieHistory;
 	}
 
 	public Height getCurrentHeight() {
