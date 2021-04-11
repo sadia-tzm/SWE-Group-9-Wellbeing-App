@@ -23,6 +23,7 @@ const FirstPage = () => {
 
     const handleLogin = () => {
         clearErrors();
+        //email = convertUsernameToEmail();
         fire
             .auth()
             .signInWithEmailAndPassword(email, password)
