@@ -76,6 +76,19 @@
     display: none;
 }
 
+#logoutButton {
+    background-color: #073f51;
+    font-size: 18px;
+    color:#f7fdfb;
+    font-family: "Cairo", sans-serif;
+    text-decoration: none;
+    border: none;
+    /*border: 3px solid red;*/
+    /*height: 25px;*/
+    padding: 0rem 1rem;
+    width: 100%;
+}
+
 @media screen and (max-width: 1050px) {
     .nav-menu {
         display: flex;
