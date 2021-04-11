@@ -3,14 +3,17 @@ package com;
 /**
  * @author Shannon
  */
-public abstract class User {
-
-	Security security;
-	private String ID;
+public class User {
+	
+	private long id;
 	private String name;
+	private String testVal;
+	Security security;
 
 	public User(String nname, String password, String userName, String email) {
+		this.id = 10;
 		this.name = nname;
+		this.testVal = "test";
 		this.security = new Security(password, userName, email);
 	}
 
@@ -33,8 +36,8 @@ public abstract class User {
 	/**
 	 * getter for user ID
 	 */
-	public String getID() {
-		return this.ID;
+	public long getid() {
+		return this.id;
 	}
 
 	/**

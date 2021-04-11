@@ -24,7 +24,7 @@ public class HealthHistory {
 		weightHistory.add(new Weight(weight));
 	}
 
-	public void logCalories(int calories, String nameOfFood, int weightOfFood) {
+	public void logCalories(int calories, String nameOfFood, double weightOfFood) {
 		Food foodItem = new Food(nameOfFood, calories, weightOfFood);
 		foodHistory.add(foodItem);
 		calorieHistory.add(new Calorie(foodItem, weightOfFood));
@@ -68,8 +68,8 @@ public class HealthHistory {
         }
 	}
 
-	public void logCalories(Food food, int weightOfFood) {
-		calorieHistory.add(new Calorie(food, weightOfFood));
+	public void logCalories(Food food, double d) {
+		calorieHistory.add(new Calorie(food, d));
 	}
 
 	public void logHeight(int height) {
@@ -118,6 +118,25 @@ public class HealthHistory {
 
 	public void deleteWeightEntry(Weight weightEntry) {
 		weightHistory.remove(weightEntry);
+	}
+
+	public void editWeightEntry(Weight w, int amount){
+		w.setWeight(amount);
+	}
+
+	public void editHeightEntry(Height w, int amount){
+		w.setHeight(amount);
+	}
+
+	public void editCalorieEntry(Calorie w, int amount){
+		w.setCalories(amount);
+	}
+
+	public void editCalorieEntry(Calorie w, int amount, Food f){
+		w.setCalories(amount, f);
+	}
+
+	public void editFoodEntry(String s, Food f){
 	}
 
 	public boolean checkEntry(Weight w){
