@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import "../stylesheets/NavBar.css";
 import { NavLink } from "react-router-dom";
 
-function NavBar() {
+function NavBar({handleLogout}) {
 
     const [click, setClick] = useState(false);
     const handleClick = () => setClick(!click);
@@ -45,6 +45,12 @@ function NavBar() {
                             <NavLink exact to="/mindfulness" activeClassName="active" className="nav-links" onClick={handleClick}> 
                                 Mindfulness
                             </NavLink>
+                        </li>
+                        <li className="nav-item">
+                            {/* <button className="nav-links" onClick={handleLogout} id="logoutButton">Logout</button> */}
+                            <button activeClassName="active" className="nav-links" id="logoutButton" onClick={handleLogout}> 
+                                Logout
+                            </button>
                         </li>
                     </ul>
                     <div className="nav-icon" onClick={handleClick}>
