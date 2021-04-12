@@ -199,10 +199,6 @@ public class HealthHistory {
 		this.calorieHistory = calorieHistory;
 	}
 
-	public ArrayList<Food> getFoodHistory() {
-		return this.foodHistory;
-	}
-
 	public void setFoodHistory(ArrayList<Food> foodHistory) {
 		this.foodHistory = foodHistory;
 	}
