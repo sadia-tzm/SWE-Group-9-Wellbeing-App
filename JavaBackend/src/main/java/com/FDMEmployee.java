@@ -1,19 +1,16 @@
 package com;
 import java.util.*;
 import java.time.*;
-
-
-import jdk.jfr.Enabled;
+import java.time.format.DateTimeFormatter;
 
 public class FDMEmployee extends User {
 
-	ArrayList<MindfulnessExerciseAttempt> mindfulnessExerciseAttempts;
-	//ArrayList<Appointment> appointments;
-	HealthHistory health;
-	ArrayList<AmbientSounds> ambientSoundExercises;
-	ArrayList<WorkoutExcerciseAttempt> workoutExcerciseAttempts;
-	//ArrayList<Target> targets;
-	LocalDateTime dateOfBirth;
+	private ArrayList<MindfulnessExerciseAttempt> mindfulnessExerciseAttempts;
+	private HealthHistory health;
+	private ArrayList<AmbientSounds> ambientSoundExercises;
+	private ArrayList<WorkoutExcerciseAttempt> workoutExcerciseAttempts;
+	private LocalDateTime dateOfBirth;
+	private static DateTimeFormatter formatter = DateTimeFormatter.ISO_DATE_TIME;
 
 
 	/**
@@ -21,44 +18,14 @@ public class FDMEmployee extends User {
 	 */
 	public FDMEmployee(String nname, String password, String userName, String email, LocalDateTime ddate, int height, int weight) {
 		super(nname, password, userName, email);
-		dateOfBirth = ddate;
+		this.dateOfBirth = ddate;
 		// TODO health constructor
-		health = new HealthHistory(height, weight);//health remove void constructor
-		mindfulnessExerciseAttempts = new ArrayList<MindfulnessExerciseAttempt>() ;
-		ambientSoundExercises = new ArrayList<AmbientSounds>();
-		workoutExcerciseAttempts = new ArrayList<WorkoutExcerciseAttempt>();
+		// this.health = new HealthHistory(height, weight);//health remove void constructor
+		// mindfulnessExerciseAttempts = new ArrayList<MindfulnessExerciseAttempt>() ;
+		// ambientSoundExercises = new ArrayList<AmbientSounds>();
+		// workoutExcerciseAttempts = new ArrayList<WorkoutExcerciseAttempt>();
 		//targets = new ArrayList<Target>();
 	}
-
-	// TODO implement appointemnt
-	// /**
-	//  *
-	//  * @param mentalHealthAmbassador the mental health ambassador that the appointment will be with
-	//  * @param booking the timeslot that contains the time that the appointment will be at
-	//  */
-	// public void bookAppointment(MentalHealthAmbassador mentalHealthAmbassador, TimeSlot booking) {
-	// 	Appointment app = new Appointment(mentalHealthAmbassador, this, booking.getDateandTime());
-	// 	appointments.add(app);
-
-	// }
-
-	// /**
-	//  * cancels an appointment
-	//  * @param appointment the appointment to be cancelled.
-	//  */
-	// public void cancelAppointment(Appointment appointment) {
-	// 	appointments.remove(appointment);
-	// 	Inventory.getInstance().getListOfUsers().remove(appointment);
-	// }
-
-	// /**
-	//  *
-	//  * @param appointment the appoiintment to be scheduled.
-	//  * @param newbooking the timeslot that contains the time that the appointment will now be at
-	//  */
-	// public void rescheduleAppointment(Appointment appointment, TimeSlot newbooking) {
-	// 	appointment.setTimeslot(newbooking); // add to appointment / timeslot????
-	// }
 
 
 	/**
@@ -72,7 +39,7 @@ public class FDMEmployee extends User {
 		} else {
 			attempt = new MindfulnessExerciseAttempt(mindfulnessExerciseAttempts.size()+1, availableMindfulnessExercise);
 		}
-		mindfulnessExerciseAttempts.add(attempt);
+		this.mindfulnessExerciseAttempts.add(attempt);
 	}
 
 	/**
@@ -87,7 +54,7 @@ public class FDMEmployee extends User {
 			//attempt = new StepExerciseAttempt(availableWorkoutExercise); //step ex constructor
 
 		attempt = new WorkoutExcerciseAttempt(0, availableWorkoutExercise, workoutExcerciseAttempts.size()+1);
-		workoutExcerciseAttempts.add(attempt);
+		this.workoutExcerciseAttempts.add(attempt);
 	}
 
 	/**
@@ -143,15 +110,11 @@ public class FDMEmployee extends User {
 	 * @param exerciseAttempt
 	 */
 	public void deleteExerciseAttempt(ExerciseAttempt exerciseAttempt) {
-		workoutExcerciseAttempts.remove(exerciseAttempt);
-		mindfulnessExerciseAttempts.remove(exerciseAttempt);
+		this.workoutExcerciseAttempts.remove(exerciseAttempt);
+		this.mindfulnessExerciseAttempts.remove(exerciseAttempt);
 
 	}
-
-	// TODO Targets
-	//public ArrayList<Target> getTargets() {
-	//	return targets;
-	//}
+	
 
 	/**
 	 *
@@ -182,5 +145,94 @@ public class FDMEmployee extends User {
 	public HealthHistory getHealthHistory() {//breathing ex didnt seem different
 		return this.health;
 	}
+
+
+	//----------------------------------------------------------------------------------------------------------------------------------------
+	//firebase stuff!!
+	
+	public FDMEmployee() {
+		//empty constructor for firebase
+	}
+
+	//the rest are basic getters and setters for all variables that don't have them!
+
+	public ArrayList<MindfulnessExerciseAttempt> getMindfulnessExerciseAttempts() {
+		return this.mindfulnessExerciseAttempts;
+	}
+
+	public void setMindfulnessExerciseAttempts(ArrayList<MindfulnessExerciseAttempt> mindfulnessExerciseAttempts) {
+		this.mindfulnessExerciseAttempts = mindfulnessExerciseAttempts;
+	}
+
+	public HealthHistory getHealth() {
+		return this.health;
+	}
+
+	public void setHealth(HealthHistory health) {
+		this.health = health;
+	}
+
+	public ArrayList<AmbientSounds> getAmbientSoundExercises() {
+		return this.ambientSoundExercises;
+	}
+
+	public void setAmbientSoundExercises(ArrayList<AmbientSounds> ambientSoundExercises) {
+		this.ambientSoundExercises = ambientSoundExercises;
+	}
+
+	public ArrayList<WorkoutExcerciseAttempt> getWorkoutExcerciseAttempts() {
+		return this.workoutExcerciseAttempts;
+	}
+
+	public void setWorkoutExcerciseAttempts(ArrayList<WorkoutExcerciseAttempt> workoutExcerciseAttempts) {
+		this.workoutExcerciseAttempts = workoutExcerciseAttempts;
+	}
+
+	public String getDateOfBirth() {
+		return this.dateOfBirth.format(formatter);
+	}
+
+	public void setDateOfBirth(String dateOfBirth) {
+		this.dateOfBirth = LocalDateTime.parse(dateOfBirth, formatter);
+	}
+
+	//----------------------------------------------------------------------------------------------------------------------------------------
+
+
+	
+	// TODO implement appointemnt
+	// /**
+	//  *
+	//  * @param mentalHealthAmbassador the mental health ambassador that the appointment will be with
+	//  * @param booking the timeslot that contains the time that the appointment will be at
+	//  */
+	// public void bookAppointment(MentalHealthAmbassador mentalHealthAmbassador, TimeSlot booking) {
+	// 	Appointment app = new Appointment(mentalHealthAmbassador, this, booking.getDateandTime());
+	// 	appointments.add(app);
+
+	// }
+
+	// /**
+	//  * cancels an appointment
+	//  * @param appointment the appointment to be cancelled.
+	//  */
+	// public void cancelAppointment(Appointment appointment) {
+	// 	appointments.remove(appointment);
+	// 	Inventory.getInstance().getListOfUsers().remove(appointment);
+	// }
+
+	// /**
+	//  *
+	//  * @param appointment the appoiintment to be scheduled.
+	//  * @param newbooking the timeslot that contains the time that the appointment will now be at
+	//  */
+	// public void rescheduleAppointment(Appointment appointment, TimeSlot newbooking) {
+	// 	appointment.setTimeslot(newbooking); // add to appointment / timeslot????
+	// }
+
+	// TODO Targets
+	//public ArrayList<Target> getTargets() {
+	//	return targets;
+	//}
 
 }
