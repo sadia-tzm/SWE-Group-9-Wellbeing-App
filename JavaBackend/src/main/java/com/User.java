@@ -16,7 +16,7 @@ public class User {
 	}
 
 	public User() {
-		//empty user constructor for firestore database
+		//empty constructor for firestore database
 	}
 
 	/**

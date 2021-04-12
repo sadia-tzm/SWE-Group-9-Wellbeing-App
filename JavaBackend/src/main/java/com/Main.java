@@ -2,13 +2,12 @@ package com;
 
 import com.firebaseStuff.FirebaseDatabase;
 import com.google.cloud.firestore.DocumentSnapshot;
-
 import java.util.concurrent.TimeUnit;
 
 public class Main{
     public static void main(String[] args) throws InterruptedException {
         System.out.println("Running");
-        FirebaseDatabase testFirebase = new FirebaseDatabase();
+        FirebaseDatabase testFirebase = FirebaseDatabase.fbdbGetInstance();
         User tempUser = new User("testUser11", "123", "testUsername", "email@mail.com");
         TimeUnit.SECONDS.sleep(1);
         //---------------------------------set item

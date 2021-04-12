@@ -1,7 +1,6 @@
 package com.firebaseStuff;
 
 import java.io.FileInputStream;
-
 import com.google.api.core.ApiFuture;
 import com.google.auth.oauth2.GoogleCredentials;
 import com.google.cloud.firestore.DocumentSnapshot;
@@ -10,43 +9,60 @@ import com.google.cloud.firestore.WriteResult;
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.FirebaseOptions;
 
-
-//This is the database object that will communicate with the frontend
 /**
+ * FirebaseDatabase is the database class that will communicate with the frontend.
+ * As a singleton class, you must instantiate it like so:
+ * <p>
+ * {@code FirebaseDatabase fbdb = FirebaseDatabase.fbdbGetInstance();}
+ * </p>
  * @author Ollie
  */
 public class FirebaseDatabase {
 
-    //this is the real-time database we'll access
-    Firestore db;
+    //this is the singleton root and the firestore database
+    private static FirebaseDatabase fbdb = null;
+    private Firestore db;
     //------------------------------------------------------------------------
     /**
-    This initialises the connection to the database
+     * This initialises the connection to the database
+     * @author Ollie
     */
-    public FirebaseDatabase() {
+    private FirebaseDatabase() {
         System.out.println("Database: INIT");
-        try {
-            FileInputStream serviceAccount =
-                new FileInputStream("ServiceAccountKey.json");
-            
-            FirebaseOptions options = new FirebaseOptions.Builder()
-                .setCredentials(GoogleCredentials.fromStream(serviceAccount))
-                .build();
+            try {
+                FileInputStream serviceAccount =
+                    new FileInputStream("ServiceAccountKey.json");
+                
+                FirebaseOptions options = new FirebaseOptions.Builder()
+                    .setCredentials(GoogleCredentials.fromStream(serviceAccount))
+                    .build();
 
-            FirebaseApp app = FirebaseApp.initializeApp(options);
-            this.db = com.google.firebase.cloud.FirestoreClient
-                .getFirestore(app);
-        }
-        catch (Exception e) {
-            e.printStackTrace();
-        }
+                FirebaseApp app = FirebaseApp.initializeApp(options);
+                this.db = com.google.firebase.cloud.FirestoreClient
+                    .getFirestore(app);
+            }
+            catch (Exception e) {
+                e.printStackTrace();
+            }
+    }
+    //------------------------------------------------------------------------
+    /**
+     * This initialises the connection to the database
+     * @author Ollie
+     * @return fdbd (singleton instantiation of {@code FirebaseDatabase})
+    */
+    public static FirebaseDatabase fbdbGetInstance() {
+        if (fbdb == null)
+            fbdb = new FirebaseDatabase();
+        return fbdb;
     }
     //------------------------------------------------------------------------
     /**
      * This adds/updates an item in the database
+     * @author Ollie
      * @param collection the collection in the database (e.g "user")
      * @param id the ID of the document in the database
-     * @param object the object appending
+     * @param object the object that's being transferred to the database
     */
     public void setItems(String collection, String id, Object object) {
         try {
@@ -60,6 +76,13 @@ public class FirebaseDatabase {
             e.printStackTrace();
         }
     }
+    //------------------------------------------------------------------------
+    /**
+     * This deletes an item from the database
+     * @author Ollie
+     * @param collection the collection in the database (e.g "user")
+     * @param id the ID of the document in the database
+    */
     public void deleteItems(String collection, String id) {
         try {
             ApiFuture<WriteResult> collectionsApiFuture =
@@ -72,6 +95,18 @@ public class FirebaseDatabase {
             e.printStackTrace();
         }
     }
+    //------------------------------------------------------------------------
+    /**
+     * This gets an item from the database. With the returned value, you 
+     * will need to use the following line of code to get the new class:
+     * <p>
+     * {@code RandomClass randomObject = document.toObject(RandomClass.class);}
+     * </p>
+     * @author Ollie
+     * @param collection the collection in the database (e.g "user")
+     * @param id the ID of the document in the database
+     * @param object the object that's being transferred to the database
+    */
     public DocumentSnapshot getItems(String collection, String id) {
         try {
             ApiFuture<DocumentSnapshot> collectionsApiFuture =
