@@ -19,12 +19,12 @@ public class FDMEmployee extends User {
 	public FDMEmployee(String nname, String password, String userName, String email, LocalDateTime ddate, int height, int weight) {
 		super(nname, password, userName, email);
 		this.dateOfBirth = ddate;
-		// TODO health constructor
-		// this.health = new HealthHistory(height, weight);//health remove void constructor
-		// mindfulnessExerciseAttempts = new ArrayList<MindfulnessExerciseAttempt>() ;
-		// ambientSoundExercises = new ArrayList<AmbientSounds>();
-		// workoutExcerciseAttempts = new ArrayList<WorkoutExcerciseAttempt>();
-		//targets = new ArrayList<Target>();
+		this.health = new HealthHistory(height, weight);
+		mindfulnessExerciseAttempts = new ArrayList<MindfulnessExerciseAttempt>() ;
+		ambientSoundExercises = new ArrayList<AmbientSounds>();
+		workoutExcerciseAttempts = new ArrayList<WorkoutExcerciseAttempt>();
+		//TODO targets
+		// targets = new ArrayList<Target>();
 	}
 
 
@@ -62,21 +62,22 @@ public class FDMEmployee extends User {
 	 * returns a set of statistics for the employee
 	 */
 	public String viewStatistics() {
-		String stats = "";
+		String stats = "\n";
 		//throw new UnsupportedOperationException();
-		stats+= " - current BMI" +Double.toString(this.health.getCurrentBMI())+ " "+this.health.getCurrentBMIStatus(this.health.getCurrentBMI()) ;
-		stats+= Integer.toString(health.getCurrentHeight().getHeight());//get current height shoulf
-		stats+= " - current height \n";
+		stats+= Double.toString(this.health.getCurrentBMI());
+		stats+= " - current BMI: " + this.health.getCurrentBMIStatus(this.health.getCurrentBMI())+"\n";
+		stats+= Integer.toString(health.getCurrentHeight().getHeight());//get current height shoul
+		stats+= " - current height\n";
 		stats+= Integer.toString(health.getCurrentWeight().getWeight());
-		stats+= " - current weight \n";
+		stats+= " - current weight\n";
 		//potential averages or something?
 
-		for (MindfulnessExerciseAttempt m : mindfulnessExerciseAttempts) {
+		if (mindfulnessExerciseAttempts != null) for (MindfulnessExerciseAttempt m : mindfulnessExerciseAttempts) {
 			stats+=("attempt number - " + Integer.toString(m.getAttemptNumber()) +"duration - " + Long.toString(m.getDuration()) +"name - "
 			+ m.getExercise().getExerciseName()+ "Date" + m.getDateLogged().toString()+"\n");
 		}
 
-		for (WorkoutExcerciseAttempt w : workoutExcerciseAttempts) {
+		if (workoutExcerciseAttempts != null) for (WorkoutExcerciseAttempt w : workoutExcerciseAttempts) {
 			stats+=("attempt number - " + Integer.toString(w.getAttemptNumber()) +"duration - " + Long.toString(w.getDuration()) +"name - "
 			+ w.getExercise().getExerciseName()+ "Date" + w.getDateLogged().toString());
 			stats+="\n";
@@ -164,11 +165,7 @@ public class FDMEmployee extends User {
 		this.mindfulnessExerciseAttempts = mindfulnessExerciseAttempts;
 	}
 
-	public HealthHistory getHealth() {
-		return this.health;
-	}
-
-	public void setHealth(HealthHistory health) {
+	public void setHealthHistory(HealthHistory health) {
 		this.health = health;
 	}
 

@@ -41,11 +41,11 @@ public class Food {
         this.name = name;
     }
 
-    public double getCaloriesPer100g() {
+    public int getCaloriesPer100g() {
         return this.caloriesPer100g;
     }
 
-    public void setCaloriesPer100g(double caloriesPer100g) {
+    public void setCaloriesPer100g(int caloriesPer100g) {
         this.caloriesPer100g = caloriesPer100g;
     }
 
