@@ -20,6 +20,7 @@ import java.time.*;
 public class TestSet1 {
 
     private FDMEmployee employee;
+    private Food apple;
 
     @BeforeEach
     public void setUp() throws Exception {
@@ -39,11 +40,6 @@ public class TestSet1 {
     @DisplayName("Security Based Tests")
     class SecTest {
 
-        // @BeforeEach
-        // void beforeEach() {
-        //     employee = new FDMEmployee("name", "password", "username", "email@e.mail", LocalDateTime.now(), 200, 100);
-        // }
-
         @Test
         @DisplayName("Security Test - creation of security class/variables")
         void secTestClassCreation() {
@@ -61,11 +57,10 @@ public class TestSet1 {
         @Test
         @DisplayName("Security Test - wrong password")
         void secTestWrongPw() {
-            
+
             employee.getSecurity().logout();
             employee.getSecurity().login("username", "wrongpassword");
-            assertFalse(employee.getSecurity().isUnlocked(),
-                    "checks if logged in when wrong password only entered");
+            assertFalse(employee.getSecurity().isUnlocked(), "checks if logged in when wrong password only entered");
         }
 
         @Test
@@ -90,8 +85,7 @@ public class TestSet1 {
         void secTestRightUnPw() {
             employee.getSecurity().logout();
             employee.getSecurity().login("username", "password");
-            assertTrue(employee.getSecurity().isUnlocked(),
-                    "checks if logged in when correct credentials entered");
+            assertTrue(employee.getSecurity().isUnlocked(), "checks if logged in when correct credentials entered");
         }
 
         @Test
@@ -99,8 +93,7 @@ public class TestSet1 {
         void secTestCaseUn() {
             employee.getSecurity().logout();
             employee.getSecurity().login("USERNAME", "password");
-            assertFalse(employee.getSecurity().isUnlocked(),
-                    "checks if logged in when wrong username entered(case)");
+            assertFalse(employee.getSecurity().isUnlocked(), "checks if logged in when wrong username entered(case)");
         }
 
         @Test
@@ -108,26 +101,27 @@ public class TestSet1 {
         void secTestCaseEmail() {
             employee.getSecurity().logout();
             employee.getSecurity().login("EMAIL@E.MAIL", "password");
-            assertTrue(employee.getSecurity().isUnlocked(),
-                    "checks if logged in when correct credentials entered");
+            assertTrue(employee.getSecurity().isUnlocked(), "checks if logged in when correct credentials entered");
         }
+
         @Test
         @DisplayName("Security Test - case sensitive email")
         void secTestCaseEmailcase() {
             employee.getSecurity().logout();
             employee.getSecurity().login("email@e.mail", "password");
-            assertTrue(employee.getSecurity().isUnlocked(),
-                    "checks if logged in when correct credentials entered");
+            assertTrue(employee.getSecurity().isUnlocked(), "checks if logged in when correct credentials entered");
         }
     }
+
     @Nested
     @DisplayName("Health History Tests")
     class HealthHist {
 
         @BeforeEach
         void beforeEach() {
-             employee = new FDMEmployee("name", "password", "username", "email@e.mail", LocalDateTime.now(), 200, 100);
-             
+            employee = new FDMEmployee("name", "password", "username", "email@e.mail", LocalDateTime.now(), 200, 100);
+            apple = new Food("Apple", 95, 155.0);
+
         }
 
         @Test
@@ -138,63 +132,51 @@ public class TestSet1 {
 
         @Test
         @DisplayName("Health History Test - bmi calc")
-        void helTestBMI() {
+        void helTestBMI() {//check BMI calculated correctly and right textual description returned. 
             assertEquals(25.0, employee.getHealthHistory().getCurrentBMI());
-            assertEquals("Overweight", employee.getHealthHistory().getCurrentBMIStatus(employee.getHealthHistory().getCurrentBMI()));
+            assertEquals("Overweight",
+                    employee.getHealthHistory().getCurrentBMIStatus(employee.getHealthHistory().getCurrentBMI()));
         }
 
         @Test
         @DisplayName("Health History Test - logging a new weight")
         void helTestlogWeight() {
-            employee.getHealthHistory().logWeight(99);
-            assertEquals(24.8, employee.getHealthHistory().getCurrentBMI());
-            assertEquals(99, employee.getHealthHistory().getWeightHistory().get(employee.getHealthHistory().getWeightHistory().size()-1).getWeight());
+            employee.getHealthHistory().logWeight(99);//enter a new weight
+            assertEquals(24.8, employee.getHealthHistory().getCurrentBMI());//checks BMI has changed
+            assertEquals(99, employee.getHealthHistory().getWeightHistory()
+                    .get(employee.getHealthHistory().getWeightHistory().size() - 1).getWeight());//checks logged value is in the array 
 
-            //assertEquals(25.0, employee.getHealthHistory().getCurrentBMI());
-            //assertEquals("Overweight", employee.getHealthHistory().getCurrentBMIStatus(employee.getHealthHistory().getCurrentBMI()));
         }
+
         @Test
         @DisplayName("Health History Test - logging a new height")
         void helTestlogHeight() {
-            employee.getHealthHistory().logHeight(201);
-            assertEquals(24.8, employee.getHealthHistory().getCurrentBMI());
-            assertEquals(201, employee.getHealthHistory().getHeightHistory().get(employee.getHealthHistory().getHeightHistory().size()-1).getHeight());
-
+            employee.getHealthHistory().logHeight(201);//enter a new height
+            assertEquals(24.8, employee.getHealthHistory().getCurrentBMI());//checks BMI changed
+            assertEquals(201, employee.getHealthHistory().getHeightHistory()
+                    .get(employee.getHealthHistory().getHeightHistory().size() - 1).getHeight());//checks logged height is acutally entered
 
         }
+
         @Test
-        @DisplayName("Health History Test - logging calorie entry")
+        @DisplayName("Health History Test - logging calorie entries")
         void helTestlogCal() {
-            employee.getHealthHistory().logCalories(99, "Peanut Butter");
-            assertEquals(24.8, employee.getHealthHistory().getCurrentBMI());
-            assertEquals(99, employee.getHealthHistory().getWeightHistory().get(employee.getHealthHistory().getWeightHistory().size()-1).getWeight());
+            employee.getHealthHistory().logCalories(100, "Peanut Butter", 50);//creating new custom food and logging calories from there
 
-            //assertEquals(25.0, employee.getHealthHistory().getCurrentBMI());
-            //assertEquals("Overweight", employee.getHealthHistory().getCurrentBMIStatus(employee.getHealthHistory().getCurrentBMI()));
+            assertEquals("Peanut Butter", employee.getHealthHistory().getFoodHistory().get(0).getName());
+            assertEquals(200, employee.getHealthHistory().getFoodHistory().get(0).getCalories());
+            assertEquals(100, employee.getHealthHistory().getCalorieHistory().get(0).getCalories());
+
+            
+            employee.getHealthHistory().logCalories(apple, 150);//logging from existing food class
+            employee.getHealthHistory().logCalories(apple, 145);
+
+            assertEquals("Apple", employee.getHealthHistory().getCalorieHistory().get(1).getFood().getName());
+            assertEquals("Apple", employee.getHealthHistory().getCalorieHistory().get(2).getFood().getName());
+            assertEquals(92, employee.getHealthHistory().getCalorieHistory().get(1).getCalories());
+            assertEquals(89, employee.getHealthHistory().getCalorieHistory().get(2).getCalories());
         }
-        // public void logCalories(int calories, String nameOfFood, int weightOfFood) {
-        //     Food foodItem = new Food(nameOfFood, calories, weightOfFood);
-        //     foodHistory.add(foodItem);
-        //     calorieHistory.add(new Calorie(foodItem, weightOfFood));
-        // }
-
-
-        
 
     }
 
-    // @Test
-    // void whenDivideByZero_thenAssertException() {
-    // assertThrows(ArithmeticException.class, () ->
-    // SimpleCalculator.divideNumbers(10, 0));
-    // }
-
-    // @RepeatedTest(5)
-    // @DisplayName("Ensure correct handling of zero")
-    // public void testMultiplyWithZero() {
-    // assertEquals(0, calculator.multiply(0,5), "Multiple with zero should be
-    // zero");
-    // assertEquals(0, calculator.multiply(5,0), "Multiple with zero should be
-    // zero");
-    // }
 }

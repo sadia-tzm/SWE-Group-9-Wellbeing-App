@@ -1,16 +1,6 @@
 # SFE_Group_9
 Mindfulness Application for FDM Employees
 <br/>
-<h1>To-do-backend</h1>
-<ul>
-  <li>Exercises</li>
-  <li>Security</li>
-  <li>FDM Employee</li>
-  <li>Database</li>
-  <li>Simple API</li>
-</ul>
-<h1>To-do-frontend</h1>
-<ul>
-  <li>Routing</li>
-  <li>Visual clean-up</li>
+<h1>Find to-do's in issues (and please update anything that needs to be done there too)</h1>
+Mustafa will be looking at this github repository so we need to try and clean it up and make it look good if possible!!
 </ul>
