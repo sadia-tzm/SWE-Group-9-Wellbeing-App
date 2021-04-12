@@ -21,7 +21,7 @@ function NavBar({handleLogout}) {
                                 Home
                             </NavLink>
                         </li>
-                        <li className="nav-item">
+                        {/* <li className="nav-item">
                             <NavLink exact to="/signup" activeClassName="active" className="nav-links" onClick={handleClick}>
                                 Sign Up
                             </NavLink>
@@ -30,7 +30,7 @@ function NavBar({handleLogout}) {
                             <NavLink exact to="/login" activeClassName="active" className="nav-links" onClick={handleClick}>
                                 Login
                             </NavLink>
-                        </li>
+                        </li> */}
                         <li className="nav-item">
                             <NavLink exact to="/calorietracker" activeClassName="active" className="nav-links" onClick={handleClick}>
                                 Calorie Tracker

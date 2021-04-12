@@ -4,7 +4,6 @@
     font-size: calc(36px + 2vmin);
 }
 
-
 .text{
-    /*line-height: 25px;*/
+    font-size: calc(18px + 2vmin);
 }

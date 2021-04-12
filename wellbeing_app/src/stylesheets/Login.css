@@ -32,6 +32,11 @@
     border: none;
     border-radius: 5px;
     font-family: "Cairo", sans-serif;
+    font-size: 14px;
+}
+
+.button_L:hover {
+    color: lightgrey;
 }
 
 .heading_L {
