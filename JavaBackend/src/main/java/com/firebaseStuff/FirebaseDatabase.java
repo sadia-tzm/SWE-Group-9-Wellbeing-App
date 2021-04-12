@@ -66,6 +66,9 @@ public class FirebaseDatabase {
     */
     public void setItems(String collection, String id, Object object) {
         try {
+            System.out.println(collection);
+            System.out.println(id);
+            System.out.println(object);
             ApiFuture<WriteResult> collectionsApiFuture =
                 db.collection(collection).document(id).set(object);
             System.out.println("Set "+id+

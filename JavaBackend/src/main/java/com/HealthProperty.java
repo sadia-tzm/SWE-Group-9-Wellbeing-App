@@ -4,9 +4,9 @@ import java.time.LocalDateTime;
 
 public abstract class HealthProperty {
 
-	long ID;
+	private long ID;
 
-	LocalDateTime dateLogged;
+	private LocalDateTime dateLogged;
 
 	public HealthProperty() {
 		//initialise ID from healthHistory->variableHistory
@@ -15,6 +15,20 @@ public abstract class HealthProperty {
 
     public LocalDateTime getDateLogged() {
 		return this.dateLogged;
+	}
+
+	//----------------------------------------------------------------------------------------------------------------------------------------
+	//firebase stuff!!
+
+	public long getID() {
+		return this.ID;
+	}
+
+	public void setID(long ID) {
+		this.ID = ID;
+	}
+	public void setDateLogged(LocalDateTime dateLogged) {
+		this.dateLogged = dateLogged;
 	}
 
 }

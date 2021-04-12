@@ -182,4 +182,39 @@ public class HealthHistory {
 	public boolean checkEntry(Double b) {
 		return bmiHistory.contains(b);
 	}
+
+	//----------------------------------------------------------------------------------------------------------------------------------------
+	//firebase stuff!!
+
+	public HealthHistory() {}//empty constructor for firebase
+
+	//basic getters and setters for those that don't have them
+	public void setWeightHistory(ArrayList<Weight> weightHistory) {
+		this.weightHistory = weightHistory;
+	}
+	public void setHeightHistory(ArrayList<Height> heightHistory) {
+		this.heightHistory = heightHistory;
+	}
+	public void setCalorieHistory(ArrayList<Calorie> calorieHistory) {
+		this.calorieHistory = calorieHistory;
+	}
+
+	public ArrayList<Food> getFoodHistory() {
+		return this.foodHistory;
+	}
+
+	public void setFoodHistory(ArrayList<Food> foodHistory) {
+		this.foodHistory = foodHistory;
+	}
+
+	public ArrayList<Double> getBmiHistory() {
+		return this.bmiHistory;
+	}
+
+	public void setBmiHistory(ArrayList<Double> bmiHistory) {
+		this.bmiHistory = bmiHistory;
+	}
+
+	//----------------------------------------------------------------------------------------------------------------------------------------
+
 }

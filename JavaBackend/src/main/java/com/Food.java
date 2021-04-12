@@ -31,4 +31,29 @@ public class Food {
 
         return (int) Math.ceil((((double)this.caloriesPer100g/(double)100) * w));
     }
+
+    //----------------------------------------------------------------------------------------------------------------------------------------
+	//firebase stuff!!
+
+    public Food() {
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public double getCaloriesPer100g() {
+        return this.caloriesPer100g;
+    }
+
+    public void setCaloriesPer100g(double caloriesPer100g) {
+        this.caloriesPer100g = caloriesPer100g;
+    }
+
+    public double getWeight() {
+        return this.weight;
+    }
+
+    public void setWeight(double weight) {
+        this.weight = weight;
+    }
 }
