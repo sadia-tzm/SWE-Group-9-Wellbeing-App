@@ -1,10 +1,6 @@
 package com;
 
 import com.firebaseStuff.FirebaseDatabase;
-import com.google.cloud.firestore.DocumentSnapshot;
-
-import java.time.LocalDateTime;
-import java.util.concurrent.TimeUnit;
 
 public class Main{
     public static void main(String[] args) throws InterruptedException {
@@ -24,12 +20,11 @@ public class Main{
         // newEmployee.viewStatistics();
 
         testFirebase.eventTrigger();
-        while (inventory.getCurrentTask() == null){
-            System.out.println("Current task: "+inventory.getCurrentTask());
+        while (true) {
+            if (inventory.getCurrentTask() != null) {
+                inventory.completeTask();
+            }
             Thread.sleep(500);
         }
-        //System.out.println("Can it trigger comments after?");
-
-        
     }
 }

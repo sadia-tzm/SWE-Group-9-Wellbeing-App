@@ -27,9 +27,6 @@ public class Calorie extends HealthProperty {
 		this.calories = newCalories;
 		this.food = newfood;
 	}
-
-	public void setCalories(int newCalories) {
-		this.calories = newCalories;
 	//firebase stuff!!
 
 	public Calorie() {
