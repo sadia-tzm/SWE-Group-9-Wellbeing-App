@@ -12,21 +12,31 @@ const Login = (props) => {
         hasAccount,
         setHasAccount,
         emailError,
-        passwordError
+        passwordError,
+        username,
+        setUsername,
+        height,
+        setHeight,
+        weight,
+        setWeight,
+        userID,
+        setID,
+        IDcount,
+        setIDcount
     } = props;
 
-    return ( 
+    return (
         <section className="login">
             <div className="form_L">
                 <h5 className="heading_L">Welcome</h5>
-                { /* <label>Username</label> */ } 
+                { /* <label>Username</label> */}
                 <input className="input_L"
-                    type="text" 
-                    autoFocus 
+                    type="text"
+                    autoFocus
                     required
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    placeholder="Username" 
+                    placeholder="Email"
                 />
                 <p className="errorMsg_L">{emailError}</p>
                 {/* <label>Password</label> */}
@@ -34,7 +44,7 @@ const Login = (props) => {
                     type="password"
                     required
                     value={password}
-                    onChange={(e) => setPassword(e.target.value)} 
+                    onChange={(e) => setPassword(e.target.value)}
                     placeholder="Password"
                 />
                 <p className="errorMsg_L">{passwordError}</p>
@@ -49,6 +59,27 @@ const Login = (props) => {
                         </>
                     ) : (
                         <>
+                            <input className="input_L"
+                                type="username"
+                                required
+                                value={username}
+                                onChange={(e) => setUsername(e.target.value)}
+                                placeholder="Username"
+                            />
+                            <input className="input_L"
+                                type="height"
+                                required
+                                value={height}
+                                onChange={(e) => setHeight(e.target.value)}
+                                placeholder="Height"
+                            />
+                            <input className="input_L"
+                                type="weight"
+                                required
+                                value={weight}
+                                onChange={(e) => setWeight(e.target.value)}
+                                placeholder="Weight"
+                            />
                             <button onClick={handleSignup} className="button_L">Sign up</button>
                             <p className="text_L">
                                 Have an account?

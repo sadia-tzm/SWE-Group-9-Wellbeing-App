@@ -23,9 +23,9 @@ export default class AddCalories extends React.Component {
     add_calories = e => {
         e.preventDefault();
         const db = firebase.firestore();
-        db.settings({
+        /*db.settings({
             timestampsInSnapshots: true
-        });
+        });*/
         const addCaloriesRef = db.collection("sadiaTest").add({
             food: this.state.food,
             weight: this.state.weight,
