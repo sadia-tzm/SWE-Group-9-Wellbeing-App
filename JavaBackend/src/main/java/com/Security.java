@@ -17,10 +17,6 @@ public class Security {
 		this.randomCode = this.generateForgotPasswordCode();
 	}
 
-	public Security(){
-		//empty constructor for firestore database
-	}
-
 	public void login(String userNameORemail, String password) {
 		if((this.userName.equals(userNameORemail) || this.email.equalsIgnoreCase(userNameORemail)) && this.password.equals(password)){ this.unlocked = true;}
 	}
@@ -56,5 +52,52 @@ public class Security {
 	public void logout() {
 		this.unlocked = false;
 	}
+
+	//---------------------------------------------------------------------------------------------------------------------------------------
+	//firestore stuff
+	public Security(){
+		//empty constructor for firestore database
+	}
+
+	public long getId() {
+		return this.id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+
+	public String getPassword() {
+		return this.password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	public void setUnlocked(Boolean unlocked) {
+		this.unlocked = unlocked;
+	}
+
+	public String getEmail() {
+		return this.email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public int getRandomCode() {
+		return this.randomCode;
+	}
+
+	public void setRandomCode(int randomCode) {
+		this.randomCode = randomCode;
+	}
+	//---------------------------------------------------------------------------------------------------------------------------------------
+
 
 }
