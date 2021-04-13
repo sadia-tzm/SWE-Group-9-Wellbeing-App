@@ -73,7 +73,6 @@ public class HealthHistory {
 
 	public List<Height> getHeightHistory() {
 		return this.heightHistory;
-
 	}
 
 	public List<Weight> getWeightHistory() {
@@ -86,6 +85,10 @@ public class HealthHistory {
 
 	public Weight getCurrentWeight() {
 		return weightHistory.get(weightHistory.size()-1);
+	}
+
+	public Calorie getLastCalorieEntry(){
+		return calorieHistory.get(this.calorieHistory.size()-1);
 	}
 
 	public void deleteCalorieEntry(Calorie calorieEntry) {

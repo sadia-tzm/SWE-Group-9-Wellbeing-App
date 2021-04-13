@@ -24,4 +24,8 @@ public class Calorie extends HealthProperty {
 		this.food = newfood;
 	}
 
+	public void setCalories(int newCalories) {
+		this.calories = newCalories;
+	}
+
 }

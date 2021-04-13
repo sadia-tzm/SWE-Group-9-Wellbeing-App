@@ -46,7 +46,28 @@ public class AliTest {
     @Test
     @DisplayName("Edit Entry Test") 
     public void testEditEntry(){
+        //Weight
+        int w = employee.health.getCurrentWeight().getWeight();
+        employee.health.editWeightEntry(employee.health.getCurrentWeight(), 96);;
+        assertFalse(w==employee.health.getCurrentWeight().getWeight());
 
+        //Height
+        int h = employee.health.getCurrentHeight().getHeight();
+        employee.health.editHeightEntry(employee.health.getCurrentHeight(), 190);
+        assertFalse(h == employee.health.getCurrentHeight().getHeight());
+        
+        //Calorie
+        employee.health.logCalories(new Food("Apple", 300, 0.3), 0.3);
+        int c = employee.health.getLastCalorieEntry().getCalories();
+        employee.health.editCalorieEntry(employee.health.getLastCalorieEntry(), 100);
+        assertFalse(c == employee.health.getLastCalorieEntry().getCalories());
+
+        //Calorie Otherway
+        employee.health.logCalories(new Food("Aple", 300, 0.3), 0.3);
+        Food f = new Food("Apple",300,0.3);
+        String name = employee.health.getLastCalorieEntry().getFood().getName();
+        employee.health.editCalorieEntry(employee.health.getLastCalorieEntry(), 300, f);
+        assertFalse(name.equals(employee.health.getLastCalorieEntry().getFood().getName()));
     }
 
 }
