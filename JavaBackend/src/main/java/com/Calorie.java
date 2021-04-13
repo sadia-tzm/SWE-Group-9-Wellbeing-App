@@ -28,12 +28,13 @@ public class Calorie extends HealthProperty {
 		this.food = newfood;
 	}
 
-	//----------------------------------------------------------------------------------------------------------------------------------------
+	public void setCalories(int newCalories) {
+		this.calories = newCalories;
 	//firebase stuff!!
 
 	public Calorie() {
 	}
-	
+    
 	public void setFood(Food food) {
 		this.food = food;
 	}
