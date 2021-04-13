@@ -1,10 +1,9 @@
-.body{
+.body_H{
     color:#073f51;
     text-align: center;
     font-size: calc(36px + 2vmin);
 }
 
-
-.text{
-    /*line-height: 25px;*/
+.text_H{
+    font-size: calc(18px + 2vmin);
 }

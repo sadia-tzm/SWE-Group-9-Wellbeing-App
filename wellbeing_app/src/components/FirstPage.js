@@ -10,6 +10,11 @@ const FirstPage = () => {
     const [emailError, setEmailError] = useState("");
     const [passwordError, setPasswordError] = useState("");
     const [hasAccount, setHasAccount] = useState(false);
+    const [username, setUsername] = useState("");
+    const [height, setHeight] = useState("");
+    const [weight, setWeight] = useState("");
+    const [userID, setID] = useState("");
+    const [IDcount, setIDcount] = useState(0);
 
     const clearInputs = () => {
         setEmail('');
@@ -57,7 +62,20 @@ const FirstPage = () => {
                         break;
                 }
             });
-
+        const db = fire.firestore();
+        setIDcount(IDcount+1);
+        var IDstring = IDcount.toString();
+        const signUpInfo = db.collection("signUpTest").doc(IDstring).set({
+            email: {email},
+            password: {password},
+            username: {username},
+            userID: {IDstring},
+            height: {height},
+            weight: {weight}
+        });
+        setUsername('');
+        setHeight('');
+        setWeight('');
     }
 
     const handleLogout = () => {
@@ -69,6 +87,7 @@ const FirstPage = () => {
             if (user) {
                 clearInputs();
                 setUser(user);
+                //const id = fire.auth().currentUser.uid;
             } else {
                 setUser("");
             }
@@ -82,7 +101,13 @@ const FirstPage = () => {
     return (
         <div className="App">
             {user ? (
-                <App handleLogout={handleLogout} />
+                <App 
+                    handleLogout={handleLogout}
+                    userID={userID}
+                    setID={setID}
+                    IDcount={IDcount}
+                    setIDcount={setIDcount}
+                />
             ) : (
                 <Login
                     email={email}
@@ -95,6 +120,16 @@ const FirstPage = () => {
                     setHasAccount={setHasAccount}
                     emailError={emailError}
                     passwordError={passwordError}
+                    username={username}
+                    setUsername={setUsername}
+                    height={height}
+                    setHeight={setHeight}
+                    weight={weight}
+                    setWeight={setWeight}
+                    userID={userID}
+                    setID={setID}
+                    IDcount={IDcount}
+                    setIDcount={setIDcount}
                 />
             )}
         </div>
