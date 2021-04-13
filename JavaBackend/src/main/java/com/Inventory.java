@@ -49,7 +49,9 @@ public class Inventory {
 	}
 
 	public void completeTask() {
-		switch(this.currentTask) {
+		String task = this.currentTask;
+		this.currentTask = null;
+		switch(task) {
 			case "setupAccount":
 				setupAccount();
 				break;
@@ -84,14 +86,8 @@ public class Inventory {
 				break;
 		}
 	}
-
-	private void nullCurrentTask(){
-		this.currentTask = null;
-	}
-
 	
 	private void setupAccount(){
-		nullCurrentTask();
 		DocumentSnapshot document = fbdb.getItems("communications", "setupAccount");
 		SetupAccount fdmEmployeeData = document.toObject(SetupAccount.class);
 		createFDMEmployee(fdmEmployeeData.getName(), fdmEmployeeData.getUsername(), fdmEmployeeData.getEmail(), 
@@ -151,7 +147,6 @@ public class Inventory {
 
 	private String dateToString(LocalDateTime date) {
 		return date.format(formatter);
-
 	}
 
 	private LocalDateTime stringToDate(String date) {
