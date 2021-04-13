@@ -1,6 +1,9 @@
 package com.firebaseStuff;
 
 import java.io.FileInputStream;
+import java.util.concurrent.TimeUnit;
+
+import com.Inventory;
 import com.google.api.core.ApiFuture;
 import com.google.auth.oauth2.GoogleCredentials;
 import com.google.cloud.firestore.DocumentSnapshot;
@@ -8,6 +11,14 @@ import com.google.cloud.firestore.Firestore;
 import com.google.cloud.firestore.WriteResult;
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.FirebaseOptions;
+
+
+import com.google.cloud.firestore.EventListener;
+import com.google.cloud.firestore.FirestoreException;
+import com.google.cloud.firestore.QuerySnapshot;
+import javax.annotation.Nullable;
+
+
 
 /**
  * FirebaseDatabase is the database class that will communicate with the frontend.
@@ -21,7 +32,7 @@ public class FirebaseDatabase {
 
     //this is the singleton root and the firestore database
     private static FirebaseDatabase fbdb = null;
-    private Firestore db;
+    private static Firestore db;
     //------------------------------------------------------------------------
     /**
      * This initialises the connection to the database
@@ -38,7 +49,7 @@ public class FirebaseDatabase {
                     .build();
 
                 FirebaseApp app = FirebaseApp.initializeApp(options);
-                this.db = com.google.firebase.cloud.FirestoreClient
+                db = com.google.firebase.cloud.FirestoreClient
                     .getFirestore(app);
             }
             catch (Exception e) {
@@ -128,5 +139,30 @@ public class FirebaseDatabase {
             e.printStackTrace();
         }  
         return null;
+    }
+    
+    public void eventTrigger() throws InterruptedException{
+        db.collection("communications")
+            .whereEqualTo("start", true)
+            .addSnapshotListener(new EventListener<QuerySnapshot>() {
+            @Override
+            public void onEvent(@Nullable QuerySnapshot snapshots,
+                                @Nullable FirestoreException e) {
+                if (e != null) {
+                    System.err.println("Listen failed:" + e);
+                    return;
+                }
+
+                for (DocumentSnapshot doc : snapshots.getDocuments()) {
+                    if (doc.getId() != null) {
+                        System.out.println("Current comms happening: " + doc.getId());
+                        Inventory inventory = Inventory.getInstance();
+                        inventory.setCurrentTask(doc.getId());
+                        break;
+                    }
+                }
+            }
+            });
+        return;
     }
 }   
