@@ -2,12 +2,33 @@ import styled from 'styled-components';
 import React from 'react';
 import '../stylesheets/ViewCalories.css';
 
+
+
+
 export default class ViewCalories extends React.Component {
+
+ 
+    
+   
+
+  
+    
+    
 
     render() {
         return (
             <div>
                 <h3 class="pagetext">View your Calorie Intake! Keep going, you're on the right track!</h3>
+
+                 <input className="input4"
+                    type='date'
+                    name='date'
+                    placeholder = "Date"
+                    
+                />
+
+
+                
                 <div class="grid-container">
                     <div class="heading5">Food</div>
                     <div class="heading5">Calories (kcal)</div>
@@ -30,8 +51,6 @@ export default class ViewCalories extends React.Component {
         )
     }
 }
-
-
 
 
 

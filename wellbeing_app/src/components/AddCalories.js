@@ -4,6 +4,10 @@ import '../stylesheets/AddCalories.css';
 import firebase from "../fire";
 import { Redirect } from "react-router-dom";
 
+
+
+
+
 export default class AddCalories extends React.Component {
     constructor(props){
         super(props);
@@ -19,6 +23,8 @@ export default class AddCalories extends React.Component {
             [e.target.name]: e.target.value
         });
     }
+
+
 
     add_calories = e => {
         e.preventDefault();
@@ -47,13 +53,17 @@ export default class AddCalories extends React.Component {
         return (
             <form className="form4" onSubmit={this.add_calories}>
                 <h5 className="heading4">Add Calories</h5>
-                <input className="input4"
-                    type='text'
-                    name='food'
-                    placeholder='Food'
-                    onChange={this.updateInput}
-                    value={this.state.food}
-                />
+                <input list ="food" className="input4"  placeholder ="Food"/>
+
+                    
+                    <datalist id="food">
+                        <option value="Apple"/>
+                        <option value="Banana"/>
+                        <option value="Pear"/>
+                        <option value="Orange"/>
+                        <option value="Apricot"/>
+                    </datalist>
+                
                 <input className="input4"
                     type='number'
                     name='weight'
@@ -68,11 +78,18 @@ export default class AddCalories extends React.Component {
                     onChange={this.updateInput}
                     value={this.state.calories}
                 />
+                <input className="input4"
+                    type='date'
+                    name='date'
+                    placeholder = "Date"
+                    
+                />
                 <input className="submit4"
                     type="submit"
                     value="Submit"
                 />
             </form>
+            
         )
     }
 }
