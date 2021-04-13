@@ -3,7 +3,7 @@ import React from 'react';
 import '../stylesheets/AddCalories.css';
 import firebase from "../fire";
 import { Redirect } from "react-router-dom";
-import Select from 'react-select';
+
 
 
 
@@ -79,9 +79,9 @@ export default class AddCalories extends React.Component {
                     value={this.state.calories}
                 />
                 <input className="input4"
-                    type='Time'
-                    name='time'
-                    placeholder = "Time"
+                    type='date'
+                    name='date'
+                    placeholder = "Date"
                     
                 />
                 <input className="submit4"
