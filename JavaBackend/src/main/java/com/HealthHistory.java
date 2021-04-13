@@ -77,10 +77,10 @@ public class HealthHistory {
 	public String getCurrentBMIStatus(double BMI) {
 		if (BMI < 18.5) {
 			return "Underweight";
-		} else if ((BMI) >= 18.5 || (BMI) <= 24.9) {
+		} else if ((BMI) >= 18.5 && (BMI) < 25) {
 			System.out.println("between 18.5 and 24.9");
 			return "Normal";
-		} else if (BMI >= 25 || BMI <= 29.9) {
+		} else if (BMI >= 25.0 && BMI < 30) {
 			System.out.println("between 25 and 29.9");
 			return "Overweight";
 		} else {
