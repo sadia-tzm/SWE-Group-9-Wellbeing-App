@@ -14,12 +14,27 @@ public class Inventory {
 	Collection<WorkoutExercise> availableWorkoutExercises;
 	Collection<MindfulnessExercise> availableMindfulnessExercises;
 	Collection<Query> queries;
-	private static Inventory inventory;
+	private static Inventory inventory = null;
 	private List<String> workoutDifficulties;
 	private List<String> statusList;
 	private List<String> targetAttribute;
+	private String currentTask;
 
 	private void Inventory() {
+		this.currentTask = null;
+	}
+	public static Inventory getInstance() {
+        if (inventory == null)
+			inventory = new Inventory();
+        return inventory;
+    }
+
+	public String getCurrentTask() {
+		return this.currentTask;
+	}
+
+	public void setCurrentTask(String currentTask) {
+		this.currentTask = currentTask;
 	}
 
 	//TODO - complete inventory
@@ -60,5 +75,9 @@ public class Inventory {
 
 	// public boolean setTargetProperties(List<String> newTargetProperties) {
 	// }
+
+
+	
+
 
 }

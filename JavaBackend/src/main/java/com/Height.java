@@ -16,4 +16,8 @@ public class Height extends HealthProperty {
 		this.height = newHeight;
 	}
 
+	//----------------------------------------------------------------------------------------------------------------------------------------
+	//firebase stuff!!
+	public Height() {
+	}
 }

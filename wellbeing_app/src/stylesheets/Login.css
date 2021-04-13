@@ -1,13 +1,16 @@
-.form{
+.login {
+    font-family: "Cairo", sans-serif;
+  } 
+
+.form_L {
     margin: 15vh auto;
-    width: 25vw;
-    height: 55vh;
-    /*background: rgb(224, 255, 255, 0.5);*/
-    background: rgb(189, 237, 255, 0.3);
+    width: 30vw;
+    height: 75vh;
+    background: rgb(189, 237, 255, 0.5);
     border-radius: 10%;
 }
 
-.input{
+.input_L {
     display: block;
     margin: 3vh auto;
     width: 15vw;
@@ -18,16 +21,9 @@
     font-family: "Cairo", sans-serif;
 }
 
-.heading1{
-    text-align: center;
-    padding: 3vh;
-    color:#073f51;
-    font-size: calc(24px + 2vmin);
-}
-
-.submit{
+.button_L {
     display: block;
-    margin: 6vh auto;
+    margin: 4vh auto 4vh auto;
     width: 9vw;
     padding: 0.8vh;
     font-weight: bold;
@@ -36,18 +32,77 @@
     border: none;
     border-radius: 5px;
     font-family: "Cairo", sans-serif;
+    font-size: 14px;
+}
+
+.button_L:hover {
+    color: lightgrey;
+}
+
+.heading_L {
+    text-align: center;
+    padding: 3vh 0 1vh 0;
+    color: #073f51;
+    font-size: calc(24px + 2vmin);
+}
+
+.btnContainer {
+    width: 30vw;
+    margin: auto;
+    /*padding: 24px 0;*/
+    /* border: 1px solid red; */
+    background: rgb(189, 237, 255, 0.5);
+    border-radius: 10%;
+    padding-bottom: 20px;
+}
+
+.text_L {
+    text-align: center;
+    color: #073f51;
+    font-weight: bold;
+    border: 1px solid rgb(167, 175, 177);
+    background:rgb(167, 175, 177, 0.5);
+    width: 20vw;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#span_L {
+    background-color: #073f51;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    margin-left: 10px;
+    padding: 3px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 400ms ease-in-out;
+    font-size: 16px;
+}
+
+#span_L:hover {
+    color: lightgrey;
+}
+
+.errorMsg_L {
+    color: #073f51;
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold;
+    width: 22vw;
+    margin: 0 auto;
 }
 
 @media screen and (max-width: 960px) {
-    .form{
+    .form_L {
         margin: 15vh auto;
         width: 50vw;
-        height: 55vh;
-        background: rgb(189, 237, 255, 0.3);
+        height: 75vh;
+        background: rgb(189, 237, 255, 0.5);
         border-radius: 10%;
     }
-
-    .input{
+    .input_L {
         display: block;
         margin: 3vh auto;
         width: 25vw;
@@ -57,8 +112,14 @@
         border-radius: 6px;
         font-family: "Cairo", sans-serif;
     }
-
-    .submit{
+    .errorMsg_L {
+        color: #073f51;
+        font-size: 14px;
+        text-align: center;
+        font-weight: bold;
+        width: 50vw;
+    }
+    .submit_L {
         display: block;
         margin: 6vh auto;
         width: 14vw;
@@ -71,4 +132,14 @@
         font-family: "Cairo", sans-serif;
     }
 
+    .text_L {
+        text-align: center;
+        color: #073f51;
+        font-weight: bold;
+        border: 2px solid rgb(167, 175, 177);
+        width: 30vw;
+        margin: auto;
+        padding: 10px;
+        border-radius: 10px;
+    }
 }

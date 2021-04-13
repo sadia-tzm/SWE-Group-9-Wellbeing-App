@@ -16,4 +16,8 @@ public class Weight extends HealthProperty {
 		this.weight = newWeight;
 	}
 
+	//----------------------------------------------------------------------------------------------------------------------------------------
+	//firebase stuff!!
+	public Weight() {
+	}
 }
