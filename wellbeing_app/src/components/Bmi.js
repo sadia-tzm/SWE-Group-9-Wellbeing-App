@@ -34,6 +34,8 @@ render() {
             name='weight'
             placeholder="Weight"
           />
+          
+
           <input className="submit2"
             type="submit"
             value="Calculate BMI"
@@ -43,7 +45,6 @@ render() {
 
 
 
-        <Link to="/heightweight">WHY DOESNT THIUS WIRKJS OGMdsjk</Link>
     </div>
     )
 	}  
