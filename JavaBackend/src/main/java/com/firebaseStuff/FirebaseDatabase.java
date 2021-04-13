@@ -1,7 +1,6 @@
 package com.firebaseStuff;
 
 import java.io.FileInputStream;
-import java.util.concurrent.TimeUnit;
 
 import com.Inventory;
 import com.google.api.core.ApiFuture;
@@ -140,7 +139,7 @@ public class FirebaseDatabase {
         }  
         return null;
     }
-    
+
     public void eventTrigger() throws InterruptedException{
         db.collection("communications")
             .whereEqualTo("start", true)
@@ -163,6 +162,5 @@ public class FirebaseDatabase {
                 }
             }
             });
-        return;
     }
 }   
