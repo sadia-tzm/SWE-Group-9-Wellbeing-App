@@ -6,7 +6,7 @@ import java.time.format.DateTimeFormatter;
 public class FDMEmployee extends User {
 
 	private ArrayList<MindfulnessExerciseAttempt> mindfulnessExerciseAttempts;
-	private HealthHistory health;
+	HealthHistory health;
 	private ArrayList<AmbientSounds> ambientSoundExercises;
 	private ArrayList<WorkoutExcerciseAttempt> workoutExcerciseAttempts;
 	private LocalDateTime dateOfBirth;

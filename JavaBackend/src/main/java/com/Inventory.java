@@ -28,13 +28,13 @@ public class Inventory {
 	private FDMEmployee currentFDMEmployee;
 	private static DateTimeFormatter formatter = DateTimeFormatter.ISO_DATE_TIME;
 
-	private void Inventory() throws InterruptedException{
+	private Inventory() throws InterruptedException{
 		this.fbdb = FirebaseDatabase.fbdbGetInstance();
 		this.fbdb.eventTrigger();
 		this.currentTask = null;
 	}
 
-	public static Inventory getInstance() {
+	public static Inventory getInstance() throws InterruptedException {
         if (inventory == null)
 			inventory = new Inventory();
         return inventory;
@@ -94,7 +94,9 @@ public class Inventory {
 		nullCurrentTask();
 		DocumentSnapshot document = fbdb.getItems("communications", "setupAccount");
 		SetupAccount fdmEmployeeData = document.toObject(SetupAccount.class);
-		createFDMEmployee(fdmEmployeeData.getName(), String userName, String email, LocalDateTime ddate, int height, int weight);
+		createFDMEmployee(fdmEmployeeData.getName(), fdmEmployeeData.getUsername(), fdmEmployeeData.getEmail(), 
+			fdmEmployeeData.getId(), stringToDate(fdmEmployeeData.getDob()), fdmEmployeeData.getHeight(), fdmEmployeeData.getWeight());
+		normalResponse();
 	}
 
 	private void login(){
@@ -137,14 +139,14 @@ public class Inventory {
 
 	}
 
-	private void createFDMEmployee(String nname, String password, String userName, String email, LocalDateTime ddate, int height, int weight) {
-		FDMEmployee fdmEmployee = new FDMEmployee(nname, password, userName, email, ddate, height, weight);
+	private void createFDMEmployee(String nname, String userName, String email, String iid, LocalDateTime ddate, int height, int weight) {
+		FDMEmployee fdmEmployee = new FDMEmployee(nname, userName, email, iid, ddate, height, weight);
 		this.currentFDMEmployee = fdmEmployee;
 		updateCurrentEmployee();
 	}
 
 	private void updateCurrentEmployee() {
-		this.fbdb.setItems("employees", this.currentFDMEmployee.getSecurity().getUserName(), this.currentFDMEmployee);
+		this.fbdb.setItems("employees", this.currentFDMEmployee.getId(), this.currentFDMEmployee);
 	}
 
 	private String dateToString(LocalDateTime date) {
@@ -154,6 +156,11 @@ public class Inventory {
 
 	private LocalDateTime stringToDate(String date) {
 		return LocalDateTime.parse(date, formatter);
+	}
+
+	private void normalResponse() {
+		this.fbdb.addToResponse("confirmation", true);
+		this.fbdb.sendResponse();
 	}
 
 	//TODO - complete inventory

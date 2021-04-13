@@ -1,6 +1,9 @@
 package com.firebaseStuff;
 
 import java.io.FileInputStream;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.concurrent.ExecutionException;
 
 import com.Inventory;
 import com.google.api.core.ApiFuture;
@@ -32,6 +35,7 @@ public class FirebaseDatabase {
     //this is the singleton root and the firestore database
     private static FirebaseDatabase fbdb = null;
     private static Firestore db;
+    private Map<String, Object> docData = new HashMap<>();
     //------------------------------------------------------------------------
     /**
      * This initialises the connection to the database
@@ -155,12 +159,31 @@ public class FirebaseDatabase {
                 for (DocumentSnapshot doc : snapshots.getDocuments()) {
                     if (doc.getId() != null) {
                         System.out.println("Current comms happening: " + doc.getId());
-                        Inventory inventory = Inventory.getInstance();
-                        inventory.setCurrentTask(doc.getId());
-                        break;
+                        Inventory inventory;
+                        try {
+                            inventory = Inventory.getInstance();
+                            inventory.setCurrentTask(doc.getId());
+                            break;
+                        } catch (InterruptedException e1) {
+                            e1.printStackTrace();
+                        }
                     }
                 }
             }
             });
+    }
+
+    public void addToResponse(String field, Object item) {
+        this.docData.put(field, item);
+    }
+
+    public void sendResponse() {
+        ApiFuture<WriteResult> future = db.collection("communications").document("response").set(this.docData);
+        this.docData = new HashMap<>();
+        try {
+            System.out.println("Update time : " + future.get().getUpdateTime());
+        } catch (InterruptedException | ExecutionException e) {
+            e.printStackTrace();
+        }
     }
 }   

@@ -124,14 +124,17 @@ public class HealthHistory {
 	}
 
 	public Height getCurrentHeight() {
+		if (heightHistory.size() == 0) return null;
 		return heightHistory.get(heightHistory.size() - 1);
 	}
 
 	public Weight getCurrentWeight() {
+		if (weightHistory.size() == 0) return null;
 		return weightHistory.get(weightHistory.size() - 1);
 	}
 
 	public Calorie getLastCalorieEntry(){
+		if (calorieHistory.size() == 0) return null;
 		return calorieHistory.get(this.calorieHistory.size()-1);
 	}
 
