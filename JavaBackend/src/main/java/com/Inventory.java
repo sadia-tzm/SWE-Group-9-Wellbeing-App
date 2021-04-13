@@ -28,8 +28,9 @@ public class Inventory {
 	private FDMEmployee currentFDMEmployee;
 	private static DateTimeFormatter formatter = DateTimeFormatter.ISO_DATE_TIME;
 
-	private void Inventory() {
+	private void Inventory() throws InterruptedException{
 		this.fbdb = FirebaseDatabase.fbdbGetInstance();
+		this.fbdb.eventTrigger();
 		this.currentTask = null;
 	}
 
@@ -93,8 +94,7 @@ public class Inventory {
 		nullCurrentTask();
 		DocumentSnapshot document = fbdb.getItems("communications", "setupAccount");
 		SetupAccount fdmEmployeeData = document.toObject(SetupAccount.class);
-		createFDMEmployee(String nname, String password, String userName, String email, LocalDateTime ddate, int height, int weight)
-		
+		createFDMEmployee(fdmEmployeeData.getName(), String userName, String email, LocalDateTime ddate, int height, int weight);
 	}
 
 	private void login(){
@@ -137,6 +137,25 @@ public class Inventory {
 
 	}
 
+	private void createFDMEmployee(String nname, String password, String userName, String email, LocalDateTime ddate, int height, int weight) {
+		FDMEmployee fdmEmployee = new FDMEmployee(nname, password, userName, email, ddate, height, weight);
+		this.currentFDMEmployee = fdmEmployee;
+		updateCurrentEmployee();
+	}
+
+	private void updateCurrentEmployee() {
+		this.fbdb.setItems("employees", this.currentFDMEmployee.getSecurity().getUserName(), this.currentFDMEmployee);
+	}
+
+	private String dateToString(LocalDateTime date) {
+		return date.format(formatter);
+
+	}
+
+	private LocalDateTime stringToDate(String date) {
+		return LocalDateTime.parse(date, formatter);
+	}
+
 	//TODO - complete inventory
 
 	// public static Inventory getInstance() {
@@ -176,31 +195,7 @@ public class Inventory {
 	// public boolean setTargetProperties(List<String> newTargetProperties) {
 	// }
 
-	private void createFDMEmployee(String nname, String password, String userName, String email, LocalDateTime ddate, int height, int weight) {
-		FDMEmployee fdmEmployee = new FDMEmployee(nname, password, userName, email, ddate, height, weight);
-		this.currentFDMEmployee = fdmEmployee;
-		updateCurrentEmployee();
-	}
-
-	private void updateCurrentEmployee() {
-		this.fbdb.setItems("employees", this.currentFDMEmployee.getSecurity().getUserName(), this.currentFDMEmployee);
-	}
-
-	// public String getDateOfBirth() {
-	// 	return this.dateOfBirth.format(formatter);
-	// }
-
-	// public void setDateOfBirth(String dateOfBirth) {
-	// 	this.dateOfBirth = LocalDateTime.parse(dateOfBirth, formatter);
-	// }
-	private String dateToString(LocalDateTime date) {
-		return date.format(formatter);
-
-	}
-
-	private LocalDateTime stringToDate(String date) {
-		return LocalDateTime.parse(date, formatter);
-	}
+	
 
 
 	
