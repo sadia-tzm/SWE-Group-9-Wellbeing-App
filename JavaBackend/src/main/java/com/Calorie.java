@@ -32,7 +32,7 @@ public class Calorie extends HealthProperty {
 
 	public Calorie() {
 	}
-	
+    
 	public void setFood(Food food) {
 		this.food = food;
 	}
