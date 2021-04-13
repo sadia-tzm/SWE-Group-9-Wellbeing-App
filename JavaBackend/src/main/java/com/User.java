@@ -36,7 +36,7 @@ public abstract class User {
 	/**
 	 * getter for user ID
 	 */
-	public String getid() {
+	public String getId() {
 		return this.id;
 	}
 
@@ -44,10 +44,6 @@ public abstract class User {
 	//firebase stuff
 	public User() {
 		//empty constructor for firestore database
-	}
-
-	public String getId() {
-		return this.id;
 	}
 
 	public void setId(String id) {
