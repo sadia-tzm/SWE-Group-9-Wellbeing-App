@@ -156,11 +156,24 @@ public class Inventory {
 		DocumentSnapshot document = this.fbdb.getItems("communications", "logMindfulAttempts");
 		LogMindfulAttempt logAttempt = document.toObject(LogMindfulAttempt.class);
 		//DocumentSnapshot employeeDocument = this.fbdb.getItems("employees", fdmEmployeeData.getEmail());
+		if (this.currentFDMEmployee != null) {
+			this.currentFDMEmployee.attemptMindfulnessExercise();
+		}
 	}
 
 	private void getMindfulHistory() {
-		DocumentSnapshot document = this.fbdb.getItems("communications", "getMindfulHistory");
-		GetMindfulHistory mindHistory = document.toObject(GetMindfulHistory.class);
+		
+		ArrayList<MindfulnessExerciseAttempt> allattempts = this.currentFDMEmployee.getMindfulnessExerciseAttempts();
+		ArrayList<Integer> attemptno = new ArrayList<Integer>();
+		ArrayList<String> dates = new ArrayList<String>();
+		for (MindfulnessExerciseAttempt m : allattempts){
+			attemptno.add(m.getAttemptNumber());
+			dates.add(dateToString(m.getDateCompleted()));
+		}
+		fbdb.addToResponse("attemptNos", attemptno);
+		fbdb.addToResponse("attemptDates", dates);
+		finalResponse(true);
+		
 	}
 
 	private void getBMI() {
