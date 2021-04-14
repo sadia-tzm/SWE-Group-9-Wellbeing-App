@@ -48,7 +48,7 @@ const FirstPage = () => {
                 }
             });
         const db = fire.firestore();
-        const updateDB = db.collection("communications").doc("setupAccount").set({
+        const updateDB = db.collection("communications").doc("login").set({
             start: false
         })
         const signUpInfo = db.collection("communications").doc("login").set({
