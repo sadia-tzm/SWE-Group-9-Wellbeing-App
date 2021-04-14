@@ -76,8 +76,8 @@ const FirstPage = () => {
             // userID: {IDstring},
             // userID: {username},
             id: email,
-            height: height,
-            weight: weight,
+            height: parseInt(height, 10),
+            weight: parseInt(weight, 10),
             name: name,
             dob: dob,
             start: true
