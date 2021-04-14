@@ -169,7 +169,7 @@ getMindfulHistory {
 		
 	description: past mindfulness excercise attempts
 }
-logMindfulAttempt{
+logMindfulAttempt {
 	send:
 		boolean start
 		String Type
