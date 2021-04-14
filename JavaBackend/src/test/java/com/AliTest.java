@@ -7,6 +7,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import java.time.*;
+import java.util.ArrayList;
 
 public class AliTest {
 
@@ -86,4 +87,22 @@ public class AliTest {
         assertFalse(name.equals(employee.getHealthHistory().getLastCalorieEntry().getFood().getName()));
     }
 
+    @Test
+    @DisplayName("Search Food")
+    public void testSearchFood() throws InterruptedException{
+        Inventory inventory = Inventory.getInstance();
+        inventory.addManyFood();
+        System.out.println("Initialised food objects");
+        assertFalse((inventory.searchFood("Canned Grapes")).equals(null));
+    }
+
+    @Test
+    @DisplayName("Searchable Suggestion Food")
+    public void testSearchableFoodSuggestion() throws InterruptedException{
+        Inventory inventory = Inventory.getInstance();
+        inventory.addManyFood();
+        System.out.println("Initialised food objects");
+        ArrayList<Food> a = inventory.searchFoodSuggestor("fro");
+        assertTrue(a.size()==5);
+    }
 }

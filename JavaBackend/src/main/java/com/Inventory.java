@@ -4,9 +4,11 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Comparator;
 
 import com.extra.Appointment;
 import com.extra.Query;
@@ -129,8 +131,41 @@ public class Inventory {
 		}
 	}
 
-	private void searchFood() {
+	public Food searchFood(String nameToSearch) {
+		int mid = searchableFood.size()-1/2; int first = 0; int last = searchableFood.size()-1;
+		while (first<=last){
+			mid = (first +last)/2;
+			if(searchableFood.get(mid).getName().compareTo(nameToSearch)<0){first = mid+1;}
+			else if(searchableFood.get(mid).getName().compareTo(nameToSearch)>0){last = mid -1;}
+			else return searchableFood.get(mid);
+		}
+		return null;
+		
+	}
 
+	public static Comparator<Food> FoodNameComparator = new Comparator<Food>() {
+		public int compare(Food f1, Food f2) {
+		   String FoodName1 = f1.getName();
+		   String FoodName2 = f2.getName();
+		   return FoodName1.compareTo(FoodName2);
+		}
+	};
+
+	public ArrayList<Food> searchFoodSuggestor(String nameToSearch){
+		nameToSearch = nameToSearch.toLowerCase();
+		ArrayList<Food> searchAbleFoodSuggestor = new ArrayList<Food>();
+		int counter =0; int counter2 =0;
+		while(counter2< searchableFood.size() && counter<20){
+			for(int i=0; i<searchableFood.size();i++){
+				if(searchableFood.get(i).getName().toLowerCase().startsWith(nameToSearch)){
+					searchAbleFoodSuggestor.add(searchableFood.get(i)); 
+					counter+=1;
+				}
+				counter2+=1;
+				if(counter == 20){break;}
+			}
+		}
+		return searchAbleFoodSuggestor;
 	}
 
 	private void getTotalCalories() {
@@ -2417,6 +2452,7 @@ public class Inventory {
 			put("Zucchini", 17);
 		}};
 		map.forEach((name, calories) -> addNewFood(name, calories));
+		this.searchableFood.sort(FoodNameComparator);
 	}
 
 	public long findFoodData(String foodName, ArrayList<Food> allFood) {
