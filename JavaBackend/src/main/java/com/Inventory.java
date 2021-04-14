@@ -134,8 +134,24 @@ public class Inventory {
 	}
 
 	private void getTotalCalories() {
-		DocumentSnapshot document = this.fbdb.getItems("communications", "addCalories");
-		AddCalories calorieInfo = document.toObject(AddCalories.class);
+		HealthHistory health = this.currentFDMEmployee.getHealthHistory();
+		ArrayList<String> food = new ArrayList<String>();
+		ArrayList<String> dates = new ArrayList<String>();
+		ArrayList<Integer> calories = new ArrayList<Integer>();
+		ArrayList<Integer> ids = new ArrayList<Integer>();
+		for (Calorie calorie : health.getCalorieHistory()) {
+			food.add(calorie.getFood().getName());
+			dates.add(calorie.getDateLogged());
+			calories.add(calorie.getCalories());
+			ids.add((int)(long)calorie.getId());
+		}
+		String overallStats = "This is work in progress, not a priority atm";
+		fbdb.addToResponse("food", food);
+		fbdb.addToResponse("dates", dates);
+		fbdb.addToResponse("calories", calories);
+		fbdb.addToResponse("ids", ids);
+		fbdb.addToResponse("overallStats", overallStats);
+		finalResponse(true);
 	}
 
 	private void editCalories() {
