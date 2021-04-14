@@ -6,8 +6,8 @@ import java.time.format.DateTimeFormatter;
 public abstract class HealthProperty {
 
 	private long id;
-
 	private LocalDateTime dateLogged;
+	
 	private static DateTimeFormatter formatter = DateTimeFormatter.ISO_DATE_TIME;
 
 	public HealthProperty(long id) {
