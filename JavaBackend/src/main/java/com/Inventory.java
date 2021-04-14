@@ -164,15 +164,22 @@ public class Inventory {
 		DocumentSnapshot document = this.fbdb.getItems("communications", "editCalories");
 		EditCalories calorieInfo = document.toObject(EditCalories.class);
 		if (this.currentFDMEmployee != null) {
-			
-			//TODO - 
-
+			//TODO - search calories
 		}
-
 	}
 
 	private void updateBMI() {
-		
+		if (this.currentFDMEmployee != null) {
+			DocumentSnapshot document = this.fbdb.getItems("communications", "updateBMI");
+			UpdateBMI bmiInfo = document.toObject(UpdateBMI.class);
+			HealthHistory health = this.currentFDMEmployee.getHealthHistory();
+			Height currentH = health.getCurrentHeight();
+			Weight currentW = health.getCurrentWeight();
+			if (currentH.getHeight() != bmiInfo.getHeight()) health.logHeight(bmiInfo.getHeight());
+			if (currentW.getWeight() != bmiInfo.getWeight()) health.logHeight(bmiInfo.getWeight());
+			updateCurrentEmployee();
+		}
+		finalResponse(true);
 	}
 
 	private void logMindfulAttempt() {
@@ -202,7 +209,6 @@ public class Inventory {
 	}
 
 	private void getBMI() {
-
 
 	}
 
@@ -2521,11 +2527,4 @@ public class Inventory {
 
 	// public boolean setTargetProperties(List<String> newTargetProperties) {
 	// }
-
-
-
-
-
-
-
 }
