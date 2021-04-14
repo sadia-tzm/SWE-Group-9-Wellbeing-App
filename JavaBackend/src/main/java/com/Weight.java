@@ -4,7 +4,8 @@ public class Weight extends HealthProperty {
 
 	private int weight;
   
-	public Weight(int weight) {
+	public Weight(long id, int weight) {
+		super(id);
 		this.weight = weight;
 	}
 
@@ -19,5 +20,6 @@ public class Weight extends HealthProperty {
 	//----------------------------------------------------------------------------------------------------------------------------------------
 	//firebase stuff!!
 	public Weight() {
+		super(0);
 	}
 }
