@@ -15,6 +15,8 @@ const FirstPage = () => {
     const [weight, setWeight] = useState("");
     const [userID, setID] = useState("");
     const [IDcount, setIDcount] = useState(0);
+    const [name, setName] = useState("");
+    const [dob, setDOB] = useState("");
 
     const clearInputs = () => {
         setEmail('');
@@ -65,13 +67,15 @@ const FirstPage = () => {
         const db = fire.firestore();
         setIDcount(IDcount+1);
         var IDstring = IDcount.toString();
-        const signUpInfo = db.collection("signUpTest").doc(IDstring).set({
+        const signUpInfo = db.collection("signupTest2").doc(IDstring).set({
             email: {email},
             password: {password},
             username: {username},
             userID: {IDstring},
             height: {height},
-            weight: {weight}
+            weight: {weight},
+            name: {name},
+            dob: {dob}
         });
         setUsername('');
         setHeight('');
@@ -130,6 +134,10 @@ const FirstPage = () => {
                     setID={setID}
                     IDcount={IDcount}
                     setIDcount={setIDcount}
+                    name={name}
+                    setName={setName}
+                    dob={dob}
+                    setDOB={setDOB}
                 />
             )}
         </div>
