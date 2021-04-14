@@ -206,18 +206,4 @@ public class FirebaseDatabase {
         }
         return null;
     }
-
-    public void downloadFoodData(){
-        ApiFuture<QuerySnapshot> future = db.collection("food").get();
-        List<QueryDocumentSnapshot> documents;
-        try {
-            documents = future.get().getDocuments();
-            Inventory inventory = Inventory.getInstance();
-            for (QueryDocumentSnapshot document : documents) {
-                inventory.addNewFood(document.toObject(Food.class));
-            }
-        } catch (InterruptedException | ExecutionException e) {
-            e.printStackTrace();
-        }
-    }
 }   
