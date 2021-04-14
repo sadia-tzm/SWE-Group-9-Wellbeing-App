@@ -6,7 +6,8 @@ public class WorkoutExcerciseAttempt extends ExerciseAttempt {
 	private int caloriesBurnt;
 
 	public WorkoutExcerciseAttempt(int caloriesBurnt, WorkoutExercise wworkoutExercise, int attemptNumber) {
-		super(attemptNumber, wworkoutExercise);
+		//super(attemptNumber, wworkoutExercise);
+		super(attemptNumber);
 		this.caloriesBurnt = caloriesBurnt;
 	}
 

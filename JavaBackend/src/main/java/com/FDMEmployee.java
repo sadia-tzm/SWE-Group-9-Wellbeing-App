@@ -33,56 +33,56 @@ public class FDMEmployee extends User {
 	 *
 	 * @param availableMindfulnessExercise
 	 */
-	public void attemptMindfulnessExercise(MindfulnessExercise availableMindfulnessExercise) {
+	public void attemptMindfulnessExercise(String availableMindfulnessExercise) {
 		MindfulnessExerciseAttempt attempt;
-		if (availableMindfulnessExercise instanceof BreathingExercise){
-			attempt = new BreathingExerciseAttempt(mindfulnessExerciseAttempts.size()+1, (BreathingExercise)availableMindfulnessExercise);
+		if (availableMindfulnessExercise.equals("breathing")){
+			attempt = new BreathingExerciseAttempt(mindfulnessExerciseAttempts.size()+1);
 		} else {
-			attempt = new MindfulnessExerciseAttempt(mindfulnessExerciseAttempts.size()+1, availableMindfulnessExercise);
+			attempt = new MindfulnessExerciseAttempt(mindfulnessExerciseAttempts.size()+1);
 		}
 		this.mindfulnessExerciseAttempts.add(attempt);
 	}
 
-	/**
-	 *
-	 * @param availableWorkoutExercise the excercise the user is attempted / to be added as a reference in the ne wobject
-	 */
-	public void attemptWorkoutExercise(WorkoutExercise availableWorkoutExercise) {
-		WorkoutExcerciseAttempt attempt; //const
-		//if (availableWorkoutExercise instanceof StepExercise){
-			//attempt = new StepExerciseAttempt(workoutExcerciseAttempts.get(workoutExcerciseAttempts.size()-1).getAttemptNumber()+1, availableWorkoutExercise);
-		// TODO step ex constructor
-			//attempt = new StepExerciseAttempt(availableWorkoutExercise); //step ex constructor
+	// /**
+	//  *
+	//  * @param availableWorkoutExercise the excercise the user is attempted / to be added as a reference in the ne wobject
+	//  */
+	// public void attemptWorkoutExercise(WorkoutExercise availableWorkoutExercise) {
+	// 	WorkoutExcerciseAttempt attempt; //const
+	// 	//if (availableWorkoutExercise instanceof StepExercise){
+	// 		//attempt = new StepExerciseAttempt(workoutExcerciseAttempts.get(workoutExcerciseAttempts.size()-1).getAttemptNumber()+1, availableWorkoutExercise);
+	// 	// TODO step ex constructor
+	// 		//attempt = new StepExerciseAttempt(availableWorkoutExercise); //step ex constructor
 
-		attempt = new WorkoutExcerciseAttempt(0, availableWorkoutExercise, workoutExcerciseAttempts.size()+1);
-		this.workoutExcerciseAttempts.add(attempt);
-	}
+	// 	attempt = new WorkoutExcerciseAttempt(0, availableWorkoutExercise, workoutExcerciseAttempts.size()+1);
+	// 	this.workoutExcerciseAttempts.add(attempt);
+	// }
 
 	/**
 	 *
 	 * returns a set of statistics for the employee
 	 */
 	public String viewStatistics() {
-		String stats = "\n";
-		//throw new UnsupportedOperationException();
-		stats+= Double.toString(this.health.getCurrentBMI());
-		stats+= " - current BMI: " + this.health.getCurrentBMIStatus(this.health.getCurrentBMI())+"\n";
-		stats+= Integer.toString(health.getCurrentHeight().getHeight());//get current height shoul
-		stats+= " - current height\n";
-		stats+= Integer.toString(health.getCurrentWeight().getWeight());
-		stats+= " - current weight\n";
-		//potential averages or something?
+		 String stats = "\n";
+		// //throw new UnsupportedOperationException();
+		// stats+= Double.toString(this.health.getCurrentBMI());
+		// stats+= " - current BMI: " + this.health.getCurrentBMIStatus(this.health.getCurrentBMI())+"\n";
+		// stats+= Integer.toString(health.getCurrentHeight().getHeight());//get current height shoul
+		// stats+= " - current height\n";
+		// stats+= Integer.toString(health.getCurrentWeight().getWeight());
+		// stats+= " - current weight\n";
+		// //potential averages or something?
 
-		if (mindfulnessExerciseAttempts != null) for (MindfulnessExerciseAttempt m : mindfulnessExerciseAttempts) {
-			stats+=("attempt number - " + Integer.toString(m.getAttemptNumber()) +"duration - " + Long.toString(m.getDuration()) +"name - "
-			+ m.getExercise().getExerciseName()+ "Date" + m.getDateLogged().toString()+"\n");
-		}
+		// if (mindfulnessExerciseAttempts != null) for (MindfulnessExerciseAttempt m : mindfulnessExerciseAttempts) {
+		// 	stats+=("attempt number - " + Integer.toString(m.getAttemptNumber()) +"duration - " + Long.toString(m.getDuration()) +"name - "
+		// 	+ m.getExercise().getExerciseName()+ "Date" + m.getDateLogged().toString()+"\n");
+		// }
 
-		if (workoutExcerciseAttempts != null) for (WorkoutExcerciseAttempt w : workoutExcerciseAttempts) {
-			stats+=("attempt number - " + Integer.toString(w.getAttemptNumber()) +"duration - " + Long.toString(w.getDuration()) +"name - "
-			+ w.getExercise().getExerciseName()+ "Date" + w.getDateLogged().toString());
-			stats+="\n";
-		}
+		// if (workoutExcerciseAttempts != null) for (WorkoutExcerciseAttempt w : workoutExcerciseAttempts) {
+		// 	stats+=("attempt number - " + Integer.toString(w.getAttemptNumber()) +"duration - " + Long.toString(w.getDuration()) +"name - "
+		// 	+ w.getExercise().getExerciseName()+ "Date" + w.getDateLogged().toString());
+		// 	stats+="\n";
+		// }
 
 		/**
 		 * this.mentalHealthAmbassador = mmentalHealthAmbassador;
