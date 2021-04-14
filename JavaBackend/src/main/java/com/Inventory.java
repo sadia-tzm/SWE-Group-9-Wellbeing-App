@@ -182,20 +182,9 @@ public class Inventory {
 		tempFood.setName(name);
 		tempFood.setWeight(100);
 		searchableFood.add(tempFood);
-		fbdb.setItems("food", tempFood.getName(), tempFood);
 	}
 
-	public void addNewFood(Food food) {
-		searchableFood.add(food);
-	}
-
-	public void downloadFoodData(){
-		System.out.println("DOWNLOADING FOOD DATA!!");
-		fbdb.downloadFoodData();
-		System.out.println("DOWNLOADED!!");
-	}
-
-	private void addManyFood() {
+	public void addManyFood() {
 		Map<String, Integer> map = new HashMap<String, Integer>(){{
 			put("1000 Island Dressing", 370);
 			put("3 Musketeers", 400);
