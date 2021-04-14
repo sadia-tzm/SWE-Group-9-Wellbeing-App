@@ -48,7 +48,7 @@ const FirstPage = () => {
                 }
             });
         const db = fire.firestore();
-        const updateDB = db.collection("communications").doc("login").set({
+        const updateDB1 = db.collection("communications").doc("login").set({
             start: false
         })
         const signUpInfo = db.collection("communications").doc("login").set({
@@ -62,6 +62,9 @@ const FirstPage = () => {
             .onSnapshot((doc) => {
                 console.log("Current data: ", doc.data());
             });
+        const updateDB3 = db.collection("communications").doc("login").set({
+            start: false
+        })
     };
 
     const handleSignup = () => {
@@ -110,6 +113,9 @@ const FirstPage = () => {
             .onSnapshot((doc) => {
                 console.log("Current data: ", doc.data());
             });
+        const updateDB2 = db.collection("communications").doc("login").set({
+            start: false
+        })
     }
 
     const handleLogout = () => {
