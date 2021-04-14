@@ -18,6 +18,7 @@ login {
 		
 	recieve:
 		boolean confirmation
+		String task
 		
 	description: when logging in
 }
@@ -34,6 +35,7 @@ setupAccount {
 
 	recieve:
 		boolean confirmation
+		String task
 		
 	description: when signing up
 }
@@ -46,6 +48,7 @@ findEmail {
 	recieve:
 		boolean confirmation
 		String email
+		String task
 		
 	description: when user enters username instead of email on login
 }
@@ -60,6 +63,7 @@ addCalories {
 		
 	recieve:
 		boolean confirmation
+		String task
 		
 	description: when user enters the calories for a food
 }
@@ -72,6 +76,7 @@ searchFood {
 	recieve:
 		boolean confirmation
 		ArrayList<String> food
+		String task
 		
 	description: when user searches for food, give them options for food already there
 }
@@ -84,8 +89,10 @@ getTotalCalories {
 		boolean confirmation
 		ArrayList<String> food
 		ArrayList<String> dates
+		ArrayList<int> calories
 		ArrayList<int> ids
 		String overallStats
+		String task
 		
 	description: send all the intake information with daily, weekly, and overall statistics for the user
 }
@@ -101,6 +108,7 @@ editCalories {
 
 	recieve:
 		boolean confirmation
+		String task
 		
 	description: changing some of the fields from calories, similar to addCalories
 }
@@ -113,6 +121,7 @@ updateBMI {
 		
 	recieve:
 		boolean confirmation
+		String task
 		
 	description: updates the height and weight. only logs as new if there's an actual change
 }
@@ -127,6 +136,7 @@ getBMI {
 		String bmiType
 		int height
 		int weight
+		String task
 		
 	description: gets the current BMI of the user
 }
@@ -142,6 +152,7 @@ getBMIHistory {
 		ArrayList<int> bmi
 		ArrayList<String> dates
 		String overallStats
+		String task
 		
 	description: gets the historical height, weight, and BMI of the user with dates
 }
@@ -174,6 +185,7 @@ logout {
 		
 	recieve:
 		boolean confirmation
+		String task
 		
 	description: updates the backend that it's logging out, so it can take the focus off the current user
 }

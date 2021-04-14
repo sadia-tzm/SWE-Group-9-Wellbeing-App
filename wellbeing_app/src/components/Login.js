@@ -79,7 +79,7 @@ const Login = (props) => {
                             />
                             <label className="inputLabel">Date of Birth</label>
                             <input className="input_L" id="dob"
-                                type="date"
+                                type="datetime-local"
                                 required
                                 value={dob}
                                 onChange={(e) => setDOB(e.target.value)}
