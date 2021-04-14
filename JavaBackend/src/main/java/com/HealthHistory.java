@@ -40,7 +40,7 @@ public class HealthHistory {
 		// System.out.println(foodItem.getCalories());
 		foodHistory.add(foodItem);
 		int size = calorieHistory.size();
-		long id = (size != 0) ? calorieHistory.get(size).getId()+1 : 0;
+		long id = (size != 0) ? calorieHistory.get(size-1).getId()+1 : 0;
 		calorieHistory.add(new Calorie(id, foodItem, weightOfFood));
 	}
 	/**
@@ -50,7 +50,7 @@ public class HealthHistory {
 	 */
 	public void logCalories(Food food, double weight) {
 		int size = calorieHistory.size();
-		long id = (size != 0) ? calorieHistory.get(size).getId()+1 : 0;
+		long id = (size != 0) ? calorieHistory.get(size-1).getId()+1 : 0;
 		calorieHistory.add(new Calorie(id, food, weight));
 	}
 	/**
@@ -99,7 +99,7 @@ public class HealthHistory {
 	 */
 	public void logHeight(int height) {
 		int size = heightHistory.size();
-		long id = (size != 0) ? heightHistory.get(size).getId()+1 : 0;
+		long id = (size != 0) ? heightHistory.get(size-1).getId()+1 : 0;
 		heightHistory.add(new Height(id, height));
 		this.setBMI();
 
@@ -110,7 +110,7 @@ public class HealthHistory {
 	 */
 	public void logWeight(int weight) {
 		int size = weightHistory.size();
-		long id = (size != 0) ? weightHistory.get(size).getId()+1 : 0;
+		long id = (size != 0) ? weightHistory.get(size-1).getId()+1 : 0;
 		weightHistory.add(new Weight(id, weight));
 		this.setBMI();
 	}
