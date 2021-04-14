@@ -67,19 +67,26 @@ const FirstPage = () => {
         const db = fire.firestore();
         setIDcount(IDcount+1);
         var IDstring = IDcount.toString();
-        const signUpInfo = db.collection("signupTest2").doc(IDstring).set({
-            email: {email},
-            password: {password},
-            username: {username},
-            userID: {IDstring},
-            height: {height},
-            weight: {weight},
-            name: {name},
-            dob: {dob}
+        const signUpInfo = db.collection("communications").doc("setupAccount").set({
+        /* const signUpInfo = db.collection("signupTest2").doc(username).set({ */
+            email: email,
+            //password: {password},
+            username: username,
+            // userID: {IDstring},
+            // userID: {username},
+            id: email,
+            height: height,
+            weight: weight,
+            name: name,
+            dob: dob,
+            start: true
         });
         setUsername('');
         setHeight('');
         setWeight('');
+        setID('');
+        setName('');
+        setDOB('');
     }
 
     const handleLogout = () => {
@@ -111,6 +118,8 @@ const FirstPage = () => {
                     setID={setID}
                     IDcount={IDcount}
                     setIDcount={setIDcount}
+                    email={email}
+                    username={username}
                 />
             ) : (
                 <Login
