@@ -164,6 +164,7 @@ public class Inventory {
 		DocumentSnapshot document = this.fbdb.getItems("communications", "editCalories");
 		EditCalories calorieInfo = document.toObject(EditCalories.class);
 		if (this.currentFDMEmployee != null) {
+			
 			//TODO - 
 
 		}
@@ -175,12 +176,14 @@ public class Inventory {
 	}
 
 	private void logMindfulAttempt() {
-		DocumentSnapshot document = this.fbdb.getItems("communications", "logMindfulAttempts");
+		DocumentSnapshot document = this.fbdb.getItems("communications", "logMindfulAttempt");
 		LogMindfulAttempt logAttempt = document.toObject(LogMindfulAttempt.class);
 		//DocumentSnapshot employeeDocument = this.fbdb.getItems("employees", fdmEmployeeData.getEmail());
 		if (this.currentFDMEmployee != null) {
 			this.currentFDMEmployee.attemptMindfulnessExercise();
+			updateCurrentEmployee();
 		}
+		finalResponse(true);
 	}
 
 	private void getMindfulHistory() {
@@ -190,7 +193,7 @@ public class Inventory {
 		ArrayList<String> dates = new ArrayList<String>();
 		for (MindfulnessExerciseAttempt m : allattempts){
 			attemptno.add(m.getAttemptNumber());
-			dates.add(dateToString(m.getDateCompleted()));
+			dates.add(m.getDateCompleted());
 		}
 		fbdb.addToResponse("attemptNos", attemptno);
 		fbdb.addToResponse("attemptDates", dates);
@@ -199,6 +202,7 @@ public class Inventory {
 	}
 
 	private void getBMI() {
+
 
 	}
 

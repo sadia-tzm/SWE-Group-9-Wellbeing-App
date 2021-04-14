@@ -8,10 +8,6 @@ public class LogMindfulAttempt {
     public LogMindfulAttempt() {
     }
 
-    public boolean isStart() {
-        return this.start;
-    }
-
     public boolean getStart() {
         return this.start;
     }

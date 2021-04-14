@@ -1,8 +1,7 @@
 package com;
 
 import java.time.LocalDateTime;
-import java.time.Duration;
-import java.time.Instant;
+import java.time.format.DateTimeFormatter;
 
 public abstract class ExerciseAttempt {
 
@@ -15,6 +14,7 @@ public abstract class ExerciseAttempt {
 	//private Instant startTime;
 	//private Instant endTime;
 	//private Exercise exercise;
+	private static DateTimeFormatter formatter = DateTimeFormatter.ISO_DATE_TIME;
 
 	//-------------------------------------------------------------------------------
 	//gets attemptNumber from the length of the exercise attempt list
@@ -47,8 +47,8 @@ public abstract class ExerciseAttempt {
 	//-------------------------------------------------------------------------------
 	//getters:
 
-	public LocalDateTime getDateCompleted() {
-		return this.dateCompleted;
+	public String getDateCompleted() {
+		return this.dateCompleted.format(formatter);
 	}
 
 	public int getAttemptNumber() {
@@ -66,8 +66,8 @@ public abstract class ExerciseAttempt {
 	// public Exercise getExercise() {
 	// 	return this.exercise;
 	// }
-	public void setDateCompleted(LocalDateTime dateCompleted) {
-		this.dateCompleted = dateCompleted;
+	public void setDateCompleted(String dateCompleted) {
+		this.dateCompleted = LocalDateTime.parse(dateCompleted, formatter);
 	}
 	// public void setDateLogged(LocalDateTime dateLogged) {
 	// 	this.dateLogged = dateLogged;
