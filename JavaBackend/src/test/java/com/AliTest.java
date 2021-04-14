@@ -14,7 +14,7 @@ public class AliTest {
 
     @BeforeEach
     public void setUp() throws Exception {
-        employee = new FDMEmployee("name", "password", "username", "email@e.mail", LocalDateTime.now(), 200, 100);
+        employee = new FDMEmployee("name", "username", "email@e.mail", LocalDateTime.no`w(), 200, 100);
     }
 
     @Test
