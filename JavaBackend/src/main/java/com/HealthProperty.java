@@ -20,6 +20,10 @@ public abstract class HealthProperty {
 		return this.dateLogged.format(formatter);
 	}
 
+	public LocalDateTime findDate() {
+		return this.dateLogged;
+	}
+
 	//----------------------------------------------------------------------------------------------------------------------------------------
 	//firebase stuff!!
 

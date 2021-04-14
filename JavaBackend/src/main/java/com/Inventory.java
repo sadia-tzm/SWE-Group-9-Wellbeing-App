@@ -137,7 +137,7 @@ public class Inventory {
 		}
 	}
 
-	public Food searchFood(String nameToSearch) {
+	public Food findFood(String nameToSearch) {
 		int mid = searchableFood.size()-1/2; int first = 0; int last = searchableFood.size()-1;
 		while (first<=last){
 			mid = (first +last)/2;
@@ -146,7 +146,9 @@ public class Inventory {
 			else return searchableFood.get(mid);
 		}
 		return null;
-		
+	}
+
+	public void searchFood() {
 	}
 
 	public static Comparator<Food> FoodNameComparator = new Comparator<Food>() {
@@ -210,8 +212,9 @@ public class Inventory {
 			HealthHistory health = this.currentFDMEmployee.getHealthHistory();
 			Height currentH = health.getCurrentHeight();
 			Weight currentW = health.getCurrentWeight();
-			if (currentH.getHeight() != bmiInfo.getHeight()) health.logHeight(bmiInfo.getHeight());
-			if (currentW.getWeight() != bmiInfo.getWeight()) health.logHeight(bmiInfo.getWeight());
+			if (currentH.getHeight() != bmiInfo.getHeight() || currentW.getWeight() != bmiInfo.getWeight()) {
+				health.logHeightAndWeight(bmiInfo.getHeight(), bmiInfo.getWeight());
+			}
 			updateCurrentEmployee();
 		}
 		finalResponse(true);
@@ -229,26 +232,66 @@ public class Inventory {
 	}
 
 	private void getMindfulHistory() {
-		
-		ArrayList<MindfulnessExerciseAttempt> allattempts = this.currentFDMEmployee.getMindfulnessExerciseAttempts();
-		ArrayList<Integer> attemptno = new ArrayList<Integer>();
-		ArrayList<String> dates = new ArrayList<String>();
-		for (MindfulnessExerciseAttempt m : allattempts){
-			attemptno.add(m.getAttemptNumber());
-			dates.add(m.getDateCompleted());
+		if (this.currentFDMEmployee != null) {
+			ArrayList<MindfulnessExerciseAttempt> allattempts = this.currentFDMEmployee.getMindfulnessExerciseAttempts();
+			ArrayList<Integer> attemptno = new ArrayList<Integer>();
+			ArrayList<String> dates = new ArrayList<String>();
+			for (MindfulnessExerciseAttempt m : allattempts){
+				attemptno.add(m.getAttemptNumber());
+				dates.add(m.getDateCompleted());
+			}
+			fbdb.addToResponse("attemptNos", attemptno);
+			fbdb.addToResponse("attemptDates", dates);
 		}
-		fbdb.addToResponse("attemptNos", attemptno);
-		fbdb.addToResponse("attemptDates", dates);
 		finalResponse(true);
-		
 	}
 
 	private void getBMI() {
-
+		if (this.currentFDMEmployee != null) {
+			HealthHistory health = this.currentFDMEmployee.getHealthHistory();
+			int height = health.getCurrentHeight().getHeight();
+			int weight = health.getCurrentWeight().getWeight();
+			Double bmi = health.getCurrentBMI();
+			String bmiType = health.getCurrentBMIStatus(bmi);
+			fbdb.addToResponse("height", height);
+			fbdb.addToResponse("weight", weight);
+			fbdb.addToResponse("bmi", bmi);
+			fbdb.addToResponse("bmiType", bmiType);
+		}
+		finalResponse(true);
 	}
 
 	private void getBMIHistory() {
+		if (this.currentFDMEmployee != null) {
+			HealthHistory health = this.currentFDMEmployee.getHealthHistory();
+			ArrayList<Integer> heights = new ArrayList<Integer>();
+			ArrayList<Integer> weights = new ArrayList<Integer>();
+			ArrayList<Double> bmis = new ArrayList<Double>();
+			ArrayList<String> dates = new ArrayList<String>();
+			//TODO overallStats of healthHistory
+			String overallStats = "WIP, not a priority atm";
 
+			List<Height> listOfHeights = health.getHeightHistory();
+			List<Weight> listOfWeights = health.getWeightHistory();
+			Integer currentHeight;
+			Integer currentWeight;
+			Double currentBMI;
+			for (int n = 0; n < listOfHeights.size(); n++) {
+				currentHeight = listOfHeights.get(n).getHeight();
+				currentWeight = listOfWeights.get(n).getWeight();
+				heights.add(currentHeight);
+				weights.add(currentWeight);
+				currentBMI = (Math.round((currentWeight/((currentHeight/100)*(currentHeight/100)))*10.0)/10.0);
+				bmis.add(currentBMI);
+				dates.add(listOfHeights.get(n).getDateLogged());
+			}
+			fbdb.addToResponse("heights", heights);
+			fbdb.addToResponse("weights", weights);
+			fbdb.addToResponse("bmis", bmis);
+			fbdb.addToResponse("dates", dates);
+			fbdb.addToResponse("overallStats", overallStats);
+		}
+		finalResponse(true);
 	}
 
 	private void logout() {
