@@ -2,7 +2,7 @@ package com.firebaseStuff;
 
 public class Login {
     boolean start;
-    String id;
+    String email;
 
     public boolean getStart() {
         return this.start;
@@ -12,11 +12,11 @@ public class Login {
         this.start = start;
     }
 
-    public String getId() {
-        return this.id;
+    public String getEmail() {
+        return this.email;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setEmail(String email) {
+        this.email = email;
     }
 }

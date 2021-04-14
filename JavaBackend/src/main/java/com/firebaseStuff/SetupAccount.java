@@ -8,7 +8,6 @@ public class SetupAccount {
     private int weight;
     private String dob;
     private String name;
-    private String id;
 
     public boolean getStart() {
         return this.start;
@@ -66,16 +65,5 @@ public class SetupAccount {
     public void setName(String name) {
         this.name = name;
     }
-
-
-    public String getId() {
-        return this.id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
-
     
 }
