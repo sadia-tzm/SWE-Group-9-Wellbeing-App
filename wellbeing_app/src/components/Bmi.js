@@ -32,8 +32,8 @@ export default class BMI extends React.Component {
     e.preventDefault();
     const db = firebase.firestore();
     const bmiRef = db.collection("communications").doc("updateBMI").set({
-      height: this.state.height,
-      weight: this.state.weight,
+      height: parseInt(this.state.height, 10),
+      weight: parseInt(this.state.weight, 10),
       // date: this.state.date.toString(),
       start: true
     });
