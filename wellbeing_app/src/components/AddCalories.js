@@ -34,11 +34,12 @@ export default class AddCalories extends React.Component {
         /*db.settings({
             timestampsInSnapshots: true
         });*/
+        const date = new Date(this.state.date);
         const addCaloriesRef = db.collection("communications").doc("addCalories").set({
             food: this.state.food,
             weight: parseInt(this.state.weight, 10),
             calories: parseInt(this.state.calories, 10),
-            date: this.state.date.toString(),
+            date: date.toISOString(),
             start: true
         });
         this.setState({
@@ -91,7 +92,7 @@ export default class AddCalories extends React.Component {
                     value={this.state.calories}
                 />
                 <input className="input4"
-                    type='date'
+                    type='datetime-local'
                     name='date'
                     placeholder = "Date"
                     onChange={this.updateInput}
