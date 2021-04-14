@@ -10,5 +10,4 @@ public class GetTotalCalories {
     public void setStart(boolean start) {
         this.start = start;
     }
-    
 }
