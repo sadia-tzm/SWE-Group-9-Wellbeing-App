@@ -6,15 +6,6 @@ public class AddCalories {
     int weight;
     int calories;
     String date;
-    String task;
-
-    public String getTask() {
-        return this.task;
-    }
-
-    public void setTask(String task) {
-        this.task = task;
-    }
 
     public boolean getStart() {
         return this.start;

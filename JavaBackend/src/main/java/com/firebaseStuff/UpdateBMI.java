@@ -4,15 +4,6 @@ public class UpdateBMI {
     boolean start;
     int height;
     int weight;
-    String task;
-
-    public String getTask() {
-        return this.task;
-    }
-
-    public void setTask(String task) {
-        this.task = task;
-    }
 
     public boolean getStart() {
         return this.start;
