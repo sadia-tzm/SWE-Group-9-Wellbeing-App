@@ -53,8 +53,8 @@ public class Inventory {
 	}
 
 	public void completeTask() {
-		this.fbdb.updateStartFalse(task);
-		switch(task) {
+		this.fbdb.updateStartFalse(this.currentTask);
+		switch(this.currentTask) {
 			case "setupAccount":
 				setupAccount();
 				break;
