@@ -5,7 +5,6 @@ public class Main{
         Inventory inventory = Inventory.getInstance();
         inventory.addManyFood();
         System.out.println("Initialised food objects");
-
         while (true) {
             if (inventory.getCurrentTask() != null) {
                 inventory.completeTask();
