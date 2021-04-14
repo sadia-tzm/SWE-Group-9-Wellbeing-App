@@ -162,18 +162,20 @@ getMindfulHistory {
 		boolean start
 		
 	recieve:
+		String task
 		boolean confirmation
 		ArrayList<MindfulnessExerciseAttempt> mindfulnessExerciseAttempts
 		
 	description: past mindfulness excercise attempts
 }
-LogMindfulAttempt{
+logMindfulAttempt{
 	send:
 		boolean start
 		String Type
 		String Date
 		
 	recieve:
+		String task
 		boolean confirmation
 		
 	description: adds new mindfulness excercise attempt

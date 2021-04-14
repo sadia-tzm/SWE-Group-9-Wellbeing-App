@@ -57,6 +57,12 @@ public class Inventory {
 		this.currentTask = null;
 		this.fbdb.updateStartFalse(task);
 		switch(task) {
+			case "logMindfulAttempt":
+				logMindfulAttempt();
+				break;
+			case "getMindfulHistory":
+				getMindfulHistory();
+				break;
 			case "setupAccount":
 				setupAccount();
 				break;
@@ -145,12 +151,15 @@ public class Inventory {
 
 	}
 
-	private void LogMindfulAttempt(String Type) {
-		DocumentSnapshot document = this.fbdb.getItems("communications", "LogMindfulAttempts");
+	private void logMindfulAttempt() {
+		DocumentSnapshot document = this.fbdb.getItems("communications", "logMindfulAttempts");
+		LogMindfulAttempt logAttempt = document.toObject(LogMindfulAttempt.class);
+		//DocumentSnapshot employeeDocument = this.fbdb.getItems("employees", fdmEmployeeData.getEmail());
 	}
 
 	private void getMindfulHistory() {
 		DocumentSnapshot document = this.fbdb.getItems("communications", "getMindfulHistory");
+		GetMindfulHistory mindHistory = document.toObject(GetMindfulHistory.class);
 	}
 
 	private void getBMI() {
