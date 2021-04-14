@@ -47,6 +47,21 @@ const FirstPage = () => {
                         break;
                 }
             });
+        const db = fire.firestore();
+        const updateDB = db.collection("communications").doc("login").set({
+            start: false
+        })
+        const signUpInfo = db.collection("communications").doc("login").set({
+            email: email,
+            start: true
+        });
+        // const responseRef = db.collection("communications").doc("response").set({
+        //     confirmation: false
+        // })
+        db.collection("communications").doc("response")
+            .onSnapshot((doc) => {
+                console.log("Current data: ", doc.data());
+            });
     };
 
     const handleSignup = () => {
@@ -66,20 +81,22 @@ const FirstPage = () => {
                 }
             });
         const db = fire.firestore();
-        setIDcount(IDcount+1);
-        var IDstring = IDcount.toString();
+        // setIDcount(IDcount+1);
+        // var IDstring = IDcount.toString();
+        const updateDB = db.collection("communications").doc("setupAccount").update({
+            start: false
+        })
+        const date = new Date(dob);
         const signUpInfo = db.collection("communications").doc("setupAccount").set({
-        /* const signUpInfo = db.collection("signupTest2").doc(username).set({ */
+            /* const signUpInfo = db.collection("signupTest2").doc(username).set({ */
             email: email,
             //password: {password},
             username: username,
-            // userID: {IDstring},
-            // userID: {username},
-            // id: email,
+            // userID: {IDstring}, // userID: {username}, // id: email,
             height: parseInt(height, 10),
             weight: parseInt(weight, 10),
             name: name,
-            dob: dob,
+            dob: date.toISOString(),
             start: true
         });
         setUsername('');
@@ -89,6 +106,10 @@ const FirstPage = () => {
         setName('');
         setDOB('');
         // setStart(false);
+        db.collection("communications").doc("response")
+            .onSnapshot((doc) => {
+                console.log("Current data: ", doc.data());
+            });
     }
 
     const handleLogout = () => {
@@ -114,7 +135,7 @@ const FirstPage = () => {
     return (
         <div className="App">
             {user ? (
-                <App 
+                <App
                     handleLogout={handleLogout}
                     userID={userID}
                     setID={setID}
