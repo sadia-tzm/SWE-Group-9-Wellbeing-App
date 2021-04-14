@@ -14,7 +14,7 @@ this format goes like:
 login {
 	send:
 		boolean start
-		String id
+		String email
 		
 	recieve:
 		boolean confirmation
@@ -25,7 +25,6 @@ login {
 setupAccount {
 	send:
 		boolean start
-		String id
 		String email
 		String username
 		String name

@@ -98,15 +98,15 @@ public class Inventory {
 	private void setupAccount() {
 		DocumentSnapshot document = this.fbdb.getItems("communications", "setupAccount");
 		SetupAccount fdmEmployeeData = document.toObject(SetupAccount.class);
-		createFDMEmployee(fdmEmployeeData.getName(), fdmEmployeeData.getUsername(), fdmEmployeeData.getEmail(), 
-			fdmEmployeeData.getId(), stringToDate(fdmEmployeeData.getDob()), fdmEmployeeData.getHeight(), fdmEmployeeData.getWeight());
+		createFDMEmployee(fdmEmployeeData.getName(), fdmEmployeeData.getUsername(), fdmEmployeeData.getEmail(),
+			stringToDate(fdmEmployeeData.getDob()), fdmEmployeeData.getHeight(), fdmEmployeeData.getWeight());
 		normalResponse();
 	}
 
 	private void login() {
 		DocumentSnapshot document = this.fbdb.getItems("communications", "login");
 		Login fdmEmployeeData = document.toObject(Login.class);
-		DocumentSnapshot employeeDocument = this.fbdb.getItems("employees", fdmEmployeeData.getId());
+		DocumentSnapshot employeeDocument = this.fbdb.getItems("employees", fdmEmployeeData.getEmail());
 		this.currentFDMEmployee = employeeDocument.toObject(FDMEmployee.class);
 		normalResponse();
 	}
@@ -153,14 +153,14 @@ public class Inventory {
 
 	}
 
-	private void createFDMEmployee(String nname, String userName, String email, String iid, LocalDateTime ddate, int height, int weight) {
-		FDMEmployee fdmEmployee = new FDMEmployee(nname, userName, email, iid, ddate, height, weight);
+	private void createFDMEmployee(String nname, String userName, String email, LocalDateTime ddate, int height, int weight) {
+		FDMEmployee fdmEmployee = new FDMEmployee(nname, userName, email, ddate, height, weight);
 		this.currentFDMEmployee = fdmEmployee;
 		updateCurrentEmployee();
 	}
 
 	private void updateCurrentEmployee() {
-		this.fbdb.setItems("employees", this.currentFDMEmployee.getId(), this.currentFDMEmployee);
+		this.fbdb.setItems("employees", this.currentFDMEmployee.getEmail(), this.currentFDMEmployee);
 	}
 
 	private String dateToString(LocalDateTime date) {

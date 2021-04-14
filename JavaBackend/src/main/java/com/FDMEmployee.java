@@ -16,9 +16,9 @@ public class FDMEmployee extends User {
 	/**
 	 *
 	 */
-	public FDMEmployee(String nname, String userName, String email, String iid, LocalDateTime ddate, int height, int weight) {
+	public FDMEmployee(String nname, String userName, String email, LocalDateTime ddate, int height, int weight) {
 		//String nname, String ppassword, String uuserName, String eemail, String iid
-		super(nname, userName, email, iid);
+		super(nname, userName, email);
 		this.dateOfBirth = ddate;
 		this.health = new HealthHistory(height, weight);
 		mindfulnessExerciseAttempts = new ArrayList<MindfulnessExerciseAttempt>() ;
