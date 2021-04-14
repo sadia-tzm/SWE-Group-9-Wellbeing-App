@@ -164,11 +164,12 @@ getMindfulHistory {
 	recieve:
 		String task
 		boolean confirmation
-		ArrayList<MindfulnessExerciseAttempt> mindfulnessExerciseAttempts
+		ArrayList<Integer> attemptNos
+		ArrayList<String> attemptDates
 		
 	description: past mindfulness excercise attempts
 }
-logMindfulAttempt{
+logMindfulAttempt {
 	send:
 		boolean start
 		String Type

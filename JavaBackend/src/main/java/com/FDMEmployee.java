@@ -33,13 +33,9 @@ public class FDMEmployee extends User {
 	 *
 	 * @param availableMindfulnessExercise
 	 */
-	public void attemptMindfulnessExercise(String availableMindfulnessExercise) {
+	public void attemptMindfulnessExercise() {
 		MindfulnessExerciseAttempt attempt;
-		if (availableMindfulnessExercise.equals("breathing")){
-			attempt = new BreathingExerciseAttempt(mindfulnessExerciseAttempts.size()+1);
-		} else {
-			attempt = new MindfulnessExerciseAttempt(mindfulnessExerciseAttempts.size()+1);
-		}
+		attempt = new MindfulnessExerciseAttempt(mindfulnessExerciseAttempts.size()+1);
 		this.mindfulnessExerciseAttempts.add(attempt);
 	}
 
