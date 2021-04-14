@@ -5,13 +5,11 @@ package com;
  */
 public abstract class User {
 	
-	private String id;
 	private String userName;
 	private String email;
 	private String name;
 
-	public User(String nname, String uuserName, String eemail, String iid) {
-		this.id = iid;
+	public User(String nname, String uuserName, String eemail) {
 		this.name = nname;
 		this.userName = uuserName;
 		this.email = eemail;
@@ -33,21 +31,10 @@ public abstract class User {
 
 	}
 
-	/**
-	 * getter for user ID
-	 */
-	public String getId() {
-		return this.id;
-	}
-
 	//---------------------------------------------------------------------------------------------
 	//firebase stuff
 	public User() {
 		//empty constructor for firestore database
-	}
-
-	public void setId(String id) {
-		this.id = id;
 	}
 
 	public String getUserName() {
