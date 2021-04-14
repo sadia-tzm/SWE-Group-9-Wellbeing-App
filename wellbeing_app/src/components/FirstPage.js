@@ -88,6 +88,7 @@ const FirstPage = () => {
         setID('');
         setName('');
         setDOB('');
+        // setStart(false);
     }
 
     const handleLogout = () => {
