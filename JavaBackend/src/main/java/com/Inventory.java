@@ -14,7 +14,7 @@ import com.firebaseStuff.*;
 import com.google.cloud.firestore.DocumentSnapshot;
 
 public class Inventory {
-	
+
 	private static Inventory inventory = null;
 	private Collection<User> listOfUsers;
 	private Collection<Appointment> appointments;
@@ -55,6 +55,12 @@ public class Inventory {
 	public void completeTask() {
 		this.fbdb.updateStartFalse(this.currentTask);
 		switch(this.currentTask) {
+			case "logMindfulAttempt":
+				logMindfulAttempt();
+				break;
+			case "getMindfulHistory":
+				getMindfulHistory();
+				break;
 			case "setupAccount":
 				setupAccount();
 				break;
@@ -94,7 +100,7 @@ public class Inventory {
 				break;
 		}
 	}
-	
+
 	private void setupAccount() {
 		DocumentSnapshot document = this.fbdb.getItems("communications", "setupAccount");
 		SetupAccount fdmEmployeeData = document.toObject(SetupAccount.class);
@@ -160,6 +166,17 @@ public class Inventory {
 
 	private void updateBMI() {
 
+	}
+
+	private void logMindfulAttempt() {
+		DocumentSnapshot document = this.fbdb.getItems("communications", "logMindfulAttempts");
+		LogMindfulAttempt logAttempt = document.toObject(LogMindfulAttempt.class);
+		//DocumentSnapshot employeeDocument = this.fbdb.getItems("employees", fdmEmployeeData.getEmail());
+	}
+
+	private void getMindfulHistory() {
+		DocumentSnapshot document = this.fbdb.getItems("communications", "getMindfulHistory");
+		GetMindfulHistory mindHistory = document.toObject(GetMindfulHistory.class);
 	}
 
 	private void getBMI() {
@@ -2482,10 +2499,10 @@ public class Inventory {
 	// public boolean setTargetProperties(List<String> newTargetProperties) {
 	// }
 
-	
 
 
-	
+
+
 
 
 }
