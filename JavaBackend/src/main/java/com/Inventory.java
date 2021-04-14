@@ -161,11 +161,17 @@ public class Inventory {
 	}
 
 	private void editCalories() {
+		DocumentSnapshot document = this.fbdb.getItems("communications", "editCalories");
+		EditCalories calorieInfo = document.toObject(EditCalories.class);
+		if (this.currentFDMEmployee != null) {
+			//TODO - 
+
+		}
 
 	}
 
 	private void updateBMI() {
-
+		
 	}
 
 	private void logMindfulAttempt() {
