@@ -1,2225 +1,2225 @@
-Acai Juice	100ml	58 cal
-Aloe Vera	100ml	44 cal
-Apple Juice	100ml	46 cal
-Apricot Nectar	100ml	56 cal
-Banana Juice	100ml	50 cal
-Blackberry Juice	100ml	48 cal
-Boysenberry Juice	100ml	54 cal
-Capri-Sun	100ml	41 cal
-Carrot Juice	100ml	40 cal
-Chamomile Tea	100ml	0 cal
-Cherry Juice	100ml	45 cal
-Clamato	100ml	60 cal
-Coconut Milk	100ml	233 cal
-Coconut Water	100ml	19 cal
-Concord Grape	100ml	71 cal
-Cranberry Apple Juice	100ml	67 cal
-Cranberry Grape Juice	100ml	71 cal
-Cranberry Juice	100ml	46 cal
-Cucumber Juice	100ml	10 cal
-Currant Juice	100ml	48 cal
-Energy-Drink	100ml	87 cal
-Fruitopia	100ml	110 cal
-Grape Juice	100ml	60 cal
-Grapefruit Juice	100ml	46 cal
-Lemon Juice	100ml	21 cal
-Lemonade	100ml	50 cal
-Lime Juice	100ml	21 cal
-Limeade	100ml	128 cal
-Mango Lassi	100ml	66 cal
-Nestea	100ml	21 cal
-Orange Juice	100ml	46 cal
-Papaya Juice	100ml	58 cal
-Passion Fruit Juice	100ml	48 cal
-Peach Juice	100ml	54 cal
-Peach Nectar	100ml	54 cal
-Pear Juice	100ml	60 cal
-Pear Nectar	100ml	60 cal
-Pineapple Juice	100ml	53 cal
-Pineapple Orange Juice	100ml	50 cal
-Plum Juice	100ml	71 cal
-Pomegranate Juice	100ml	66 cal
-Sauerkraut Juice	100ml	14 cal
-Tangerine Juice	100ml	43 cal
-Tomato Juice	100ml	17 cal
-Vegetable Juice	100ml	21 cal
-White Grape Juice	100ml	75 cal
-Absinthe	100ml	348 cal
-Advocaat	100ml	283 cal
-Amaretto	100ml	310 cal
-Applejack	100ml	233 cal
-Asti	100ml	138 cal
-Baileys	100ml	327 cal
-Bailey’s Irish Cream	100ml	327 cal
-Beer	100ml	43 cal
-Blue Curacao	100ml	243 cal
-Bourbon	100ml	233 cal
-Brandy	100ml	213 cal
-Canadian Whiskey	100ml	216 cal
-Chambord	100ml	348 cal
-Champagne	100ml	75 cal
-Cider	100ml	49 cal
-Cognac	100ml	235 cal
-Cointreau	100ml	320 cal
-Drambuie	100ml	358 cal
-Frangelico	100ml	238 cal
-Gin	100ml	263 cal
-Glenfiddich	100ml	230 cal
-Grand Marnier	100ml	253 cal
-Irish Whiskey	100ml	233 cal
-Jack Daniel’s	100ml	146 cal
-Jagermeister	100ml	250 cal
-Jim Beam	100ml	222 cal
-Kahlua	100ml	180 cal
-Liqueur	100ml	250 cal
-Liquor	100ml	250 cal
-Midori	100ml	267 cal
-Prosecco	100ml	66 cal
-Punch	100ml	62 cal
-Red Wine	100ml	85 cal
-Rose Wine	100ml	71 cal
-Rum	100ml	231 cal
-Sambuca	100ml	333 cal
-Sangria	100ml	96 cal
-Scotch	100ml	222 cal
-Sherry	100ml	116 cal
-Sloe Gin	100ml	332 cal
-Southern Comfort	100ml	247 cal
-Tequila	100ml	110 cal
-Triple Sec	100ml	153 cal
-Vermouth	100ml	130 cal
-Vodka	100ml	231 cal
-Whisky	100ml	250 cal
-White Wine	100ml	82 cal
-Wine	100ml	83 cal
-Agar-Agar	100g	26 cal
-Agave Syrup	100ml	310 cal
-All Purpose Flour	100ml	364 cal
-Almond Extract	100ml	258 cal
-Almonds	100g	529 cal
-Apple Pie Filling	100g	100 cal
-Baking Powder	100g	53 cal
-Baking Soda	100g	0 cal
-Bread Flour	100g	361 cal
-Brittle	100g	592 cal
-Brown Sugar	100g	395 cal
-Buttermilk	100ml	62 cal
-Butterscotch Chips	100g	539 cal
-Cake Flour	100g	362 cal
-Candied Orange Peel	100g	97 cal
-Cane Sugar	100g	387 cal
-Chocolate Chips	100g	467 cal
-Chocolate Sprinkles	100g	500 cal
-Cocoa Powder	100g	228 cal
-Coconut Flakes	100g	456 cal
-Coconut Milk	100ml	50 cal
-Corn Flour	100g	361 cal
-Corn Syrup	100ml	281 cal
-Cornmeal	100g	362 cal
-Cornstarch	100g	381 cal
-Couverture	100g	600 cal
-Cream Cheese	100g	54 cal
-Cream of Tartar	100g	258 cal
-Crystallized Ginger	100g	335 cal
-Custard Powder	100g	337 cal
-Dark Rum	100ml	216 cal
-Dextrose	100g	375 cal
-Dried Apricots	100g	241 cal
-Dried Cranberries	100g	308 cal
-Dried Figs	100g	249 cal
-Dried Prunes	100g	107 cal
-Duck Egg	100g	185 cal
-Egg	100g	97 cal
-Egg Nog	100g	88 cal
-Egg White	100g	13 cal
-Egg Yolk	100g	322 cal
-Evaporated Milk	100g	134 cal
-Flour	100g	364 cal
-Fructose	100g	368 cal
-Gelatin	100g	335 cal
-Glucose	100g	286 cal
-Glucose Syrup	100g	387 cal
-Granulated Sugar	100g	387 cal
-Ground Cinnamon	100g	247 cal
-Hazelnuts	100g	628 cal
-Heavy Cream	100g	345 cal
-Jaggery	100g	383 cal
-Lemon Pie Filling	100g	143 cal
-Malt Powder	100g	361 cal
-Malted Milk	100g	405 cal
-Maltitol	100g	210 cal
-Maltodextrin	100g	375 cal
-Maltose	100g	344 cal
-Maple Syrup	100ml	270 cal
-Molasses	100g	290 cal
-Nonpareils	100g	475 cal
-Peppermint Extract	100ml	0 cal
-Poppy Seeds	100g	525 cal
-Powdered Milk	100g	496 cal
-Powdered Sugar	100g	389 cal
-Protein Powder	100g	411 cal
-Raisins	100g	474 cal
-Rice Milk	100ml	49 cal
-Rock Sugar	100g	625 cal
-Rolled Oats	100g	384 cal
-Rum	100ml	246 cal
-Semolina Flour	100g	350 cal
-Sesame Seeds	100g	573 cal
-Shredded Coconut	100g	501 cal
-Sorbitol	100g	375 cal
-Soy Milk	100ml	41 cal
-Soy Protein Powder	100g	338 cal
-Sprinkles	100g	500 cal
-Starch	100g	381 cal
-Strawberry Preserves	100g	278 cal
-Sucrose	100g	387 cal
-Sugar	100g	405 cal
-Sunflower Seeds	100g	117 cal
-Sweetened Condensed Milk	100ml	321 cal
-Sweetener	100g	360 cal
-Unsalted Butter	100g	717 cal
-Vanilla Extract	100ml	288 cal
-Vanilla Sugar	100g	357 cal
-Vegetable Oil	100g	884 cal
-Vegetable Shortening	100g	884 cal
-Walnuts	100g	131 cal
-Whole Milk	100ml	61 cal
-Whole Wheat Flour	100g	340 cal
-Xylitol	100g	240 cal
-Yeast (dry)	100g	325 cal
-Beef	100g	171 cal
-Beef Brisket	100g	137 cal
-Beef Fillet	100g	189 cal
-Beef Goulash	100g	123 cal
-Beef Minute Steak	100g	133 cal
-Beef Neck	100g	213 cal
-Beef Pancreas	100g	271 cal
-Beef Patty	100g	247 cal
-Beef Prime Rib	100g	404 cal
-Beef Ribs	100g	196 cal
-Beef Sirloin	100g	182 cal
-Beef Suet	100g	854 cal
-Beef Tallow	100g	902 cal
-Beef Thymus	100g	319 cal
-Beef Tripe	100g	94 cal
-Chuck Roast	100g	141 cal
-Chuck Steak	100g	137 cal
-Filet Mignon	100g	207 cal
-Flank Steak	100g	194 cal
-Ground Beef	100g	241 cal
-Ground Chuck	100g	250 cal
-Ground Round	100g	212 cal
-Minced Veal	100g	143 cal
-Porterhouse Steak	100g	247 cal
-Rib Eye Steak	100g	217 cal
-Roast Beef	100g	187 cal
-Rump Steak	100g	171 cal
-Skirt Steak	100g	205 cal
-Stew Beef	100g	191 cal
-Strip Steak	100g	117 cal
-T-Bone-Steak	100g	221 cal
-Veal	100g	282 cal
-Veal Breast	100g	282 cal
-Veal Leg	100g	211 cal
-Veal Roast Beef	100g	175 cal
-Veal Shank	100g	177 cal
-Veal Shoulder	100g	183 cal
-Veal Sirloin	100g	204 cal
-Veal Tenderloin	100g	217 cal
-Ale	100ml	35 cal
-Altbier	100ml	43 cal
-Bass	100ml	45 cal
-Beck’s	100ml	39 cal
-Beer	100ml	43 cal
-Blue Moon	100ml	48 cal
-Bock Beer	100ml	50 cal
-Buckler (N.A.)	100ml	21 cal
-Bud Ice	100ml	35 cal
-Bud Light	100ml	29 cal
-Bud Light Chelada	100ml	43 cal
-Bud Light Lime	100ml	34 cal
-Bud Select	100ml	28 cal
-Bud Select 55	100ml	15 cal
-Budweiser	100ml	41 cal
-Budweiser Chelada	100ml	52 cal
-Busch	100ml	37 cal
-Busch Light	100ml	27 cal
-Busch N.A.	100ml	17 cal
-Carlsberg	100ml	32 cal
-Clausthaler (N.A.)	100ml	26 cal
-Colt 45	100ml	44 cal
-Coors	100ml	42 cal
-Coors Light	100ml	29 cal
-Coors N.A.	100ml	18 cal
-Corona	100ml	42 cal
-Dark Beer	100ml	46 cal
-Genesee Cream Ale	100ml	46 cal
-Ginger Beer	100ml	42 cal
-Guinness	100ml	35 cal
-Heineken	100ml	35 cal
-Honey Brown	100ml	42 cal
-Hurricane High Gravity	100ml	39 cal
-IPA	100ml	51 cal
-Keystone Ice	100ml	40 cal
-Keystone Light	100ml	29 cal
-Koelsch	100ml	43 cal
-Labatt	100ml	43 cal
-Lager Beer	100ml	43 cal
-Land Shark	100ml	42 cal
-Light Beer	100ml	29 cal
-Lowenbrau	100ml	45 cal
-Malt Beer	100ml	37 cal
-Michelob Amber Bock	100ml	47 cal
-Michelob Lager	100ml	44 cal
-Michelob Light	100ml	32 cal
-Michelob Ultra	100ml	27 cal
-Michelob Ultra Amber	100ml	26 cal
-Michelob Ultra Lime Cactus	100ml	27 cal
-Miller Chill	100ml	31 cal
-Miller Genuine Draft	100ml	40 cal
-Miller High Life	100ml	40 cal
-Miller High Life Light	100ml	31 cal
-Miller Lite	100ml	27 cal
-Milwaukee’s Best	100ml	36 cal
-Milwaukee’s Best Light	100ml	28 cal
-Molson	100ml	42 cal
-Natural Ice	100ml	44 cal
-Natural Light	100ml	27 cal
-Newcastle	100ml	39 cal
-Non-alcoholic Beer	100ml	37 cal
-Old Milwaukee	100ml	41 cal
-Old Milwaukee N.A.	100ml	16 cal
-Olde English	100ml	45 cal
-O’Doul’s (N.A.)	100ml	19 cal
-Pabst Blue Ribbon	100ml	41 cal
-Pale Ale	100ml	42 cal
-Pilsner	100ml	43 cal
-Porter	100ml	54 cal
-Redbridge (Gluten-free)	100ml	45 cal
-Rolling Rock	100ml	37 cal
-Rolling Rock Light	100ml	30 cal
-Root Beer	100ml	41 cal
-Samuel Adams	100ml	45 cal
-Shock Top	100ml	47 cal
-Shock Top Raspberry Wheat	100ml	50 cal
-Sierra Nevada Strong	100ml	62 cal
-Sparks	100ml	74 cal
-St. Pauli Girl	100ml	42 cal
-Steel Reserve	100ml	63 cal
-Stout	100ml	51 cal
-Stout Beer	100ml	51 cal
-Strong Beer	100ml	55 cal
-Tilt	100ml	64 cal
-Wheat Beer	100ml	45 cal
-Angel Food Cake	100g	258 cal
-Apple Cake	100g	252 cal
-Apple Cobbler	100g	198 cal
-Apple Crisp	100g	156 cal
-Apple Crumble	100g	156 cal
-Apple Pie	100g	237 cal
-Apple Strudel	100g	274 cal
-Apple Turnover	100g	348 cal
-Applesauce Cake	100g	358 cal
-Baked Alaska	100g	247 cal
-Bakewell Tart	100g	430 cal
-Banoffee Pie	100g	395 cal
-Birthday Cake	100g	465 cal
-Black and White Cookie	100g	381 cal
-Black Forest Cake	100g	264 cal
-Blueberry Cobbler	100g	234 cal
-Blueberry Muffin	100g	377 cal
-Blueberry Pie	100g	232 cal
-Bundt Cake	100g	370 cal
-Buttermilk Pie	100g	380 cal
-Caramel Cake	100g	475 cal
-Carrot Cake	100g	408 cal
-Cheesecake	100g	321 cal
-Cherry Pie	100g	260 cal
-Chess Pie	100g	411 cal
-Chocolate Cake	100g	389 cal
-Chocolate Cream Pie	100g	304 cal
-Chocolate Mousse Cake	100g	260 cal
-Chocolate Mousse Pie	100g	260 cal
-Chocolate Muffin	100g	420 cal
-Coconut Cake	100g	356 cal
-Coffee Cake	100g	331 cal
-Cream Puff	100g	334 cal
-Crumb Cake	100g	441 cal
-Cupcake	100g	305 cal
-Danish Pastry	100g	374 cal
-Donut	100g	403 cal
-Doughnut	100g	403 cal
-Flan	100g	145 cal
-Flourless Chocolate Cake	100g	509 cal
-French Cruller	100g	412 cal
-Fruit Cake	100g	324 cal
-Funnel Cake	100g	307 cal
-German Chocolate Cake	100g	370 cal
-Gingerbread	100g	356 cal
-Ice Cream Cake	100g	200 cal
-Key Lime Pie	100g	359 cal
-King Cake	100g	377 cal
-Layer Cake	100g	402 cal
-Lemon Cake	100g	352 cal
-Lemon Meringue Pie	100g	268 cal
-Madeira Cake	100g	394 cal
-Marble Cake	100g	339 cal
-Meringue	100g	285 cal
-Opera Cake	100g	320 cal
-Paczki	100g	336 cal
-Pancake	100g	227 cal
-Panettone	100g	360 cal
-Pavlova	100g	294 cal
-Peach Cobbler	100g	65 cal
-Peach Pie	100g	223 cal
-Pecan Pie	100g	407 cal
-Pineapple Upside-Down Cake	100g	319 cal
-Plum Cake	100g	109 cal
-Poppy-Seed Cake	100g	394 cal
-Pound Cake	100g	390 cal
-Profiterole	100g	334 cal
-Puff Pastry	100g	558 cal
-Pumpkin Bread	100g	298 cal
-Pumpkin Cheesecake	100g	340 cal
-Pumpkin Pie	100g	243 cal
-Raspberry Pie	100g	240 cal
-Red Velvet Cake	100g	367 cal
-Rhubarb Pie	100g	245 cal
-Rum Cake	100g	351 cal
-Sacher Torte	100g	352 cal
-Sponge Cake	100g	289 cal
-Strawberry Cheesecake	100g	327 cal
-Strawberry Pie	100g	230 cal
-Strawberry Rhubarb Pie	100g	281 cal
-Sweet Potato Pie	100g	260 cal
-Swiss Roll	100g	439 cal
-Tarte Tatin	100g	210 cal
-Tiramisu	100g	283 cal
-Tiramisu Cake	100g	291 cal
-Treacle Tart	100g	369 cal
-Tres Leches Cake	100g	246 cal
-Trifle	100g	180 cal
-Victoria Sponge Cake	100g	257 cal
-Waffles	100g	312 cal
-Wedding Cake	100g	381 cal
-3 Musketeers	100g	400 cal
-After Eight	100g	452 cal
-Airheads	100g	375 cal
-Almond Roca	100g	571 cal
-Angel Delight	100g	451 cal
-Animal Crackers	100g	446 cal
-Baby Ruth	100g	469 cal
-Butterfinger	100g	450 cal
-Buttermilk Pancakes	100g	238 cal
-Candy Apple	100g	152 cal
-Candy Cane	100g	423 cal
-Candy canes	100g	423 cal
-Candy Corn	100g	360 cal
-Candy Floss	100g	400 cal
-Caramel Popcorn	100g	376 cal
-Caramel squares	100g	367 cal
-Celebrations	100g	490 cal
-Cheez-It’s	100g	533 cal
-Chocolate	100g	529 cal
-Chocolate Bar	100g	533 cal
-Chocolate Chips	100g	493 cal
-Cookies	100g	488 cal
-Cotton Candy	100g	643 cal
-Eggy Bread	100g	196 cal
-Fairy Cakes	100g	440 cal
-Ferrero Rocher	100g	576 cal
-Flapjack	100g	486 cal
-Fortune Cookies	100g	214 cal
-Granola Bars	100g	452 cal
-Gumdrops	100g	321 cal
-Gummi Bears	100g	316 cal
-Hanuta	100g	541 cal
-Hershey Kisses	100g	471 cal
-Jelly Beans	100g	354 cal
-Jelly Belly	100g	354 cal
-Jolly Ranchers	100g	385 cal
-Jordan Almonds	100g	429 cal
-Kit Kat	100g	521 cal
-Laffy Taffy	100g	372 cal
-Licorice	100g	375 cal
-LifeSavers	100g	500 cal
-Lindt Chocolate	100g	548 cal
-Liquorice	100g	375 cal
-Lollipop	100g	392 cal
-M&M’s	100g	479 cal
-Maltesers	100g	498 cal
-Mars Bar	100g	448 cal
-Marshmallows	100g	318 cal
-Marzipan	100g	411 cal
-Mike and Ike	100g	360 cal
-Milk Duds	100g	422 cal
-Milky Way	100g	449 cal
-PayDay	100g	462 cal
-Peanut Bar	100g	533 cal
-Peanut Brittle	100g	183 cal
-Peanut Butter Bars	100g	379 cal
-Peanut Butter Cookies	100g	475 cal
-Peppermint bark	100g	500 cal
-Pez	100g	427 cal
-Pop Rocks	100g	358 cal
-Popcorn	100g	582 cal
-Pumpkin Seeds	100g	560 cal
-Reeses Peanut Butter Cups	100g	536 cal
-Rice Pudding	100g	134 cal
-Roasted Almonds	100g	452 cal
-Rolo	100g	474 cal
-Semolina	100g	340 cal
-Skittles	100g	405 cal
-Smarties	100g	357 cal
-Smores	100g	500 cal
-Snickers	100g	484 cal
-Sour Patch Kids	100g	363 cal
-Speculoos	100g	469 cal
-Spritz Cookies	100g	500 cal
-S’mores	100g	500 cal
-Take 5	100g	476 cal
-Toblerone	100g	525 cal
-Trifle	100g	186 cal
-Twix	100g	495 cal
-Waffles	100g	272 cal
-Whoopie Pie	100g	400 cal
-Applesauce	100g	62 cal
-Canned Apricots	100g	48 cal
-Canned Blackberries	100g	92 cal
-Canned Blueberries	100g	88 cal
-Canned Cherries	100g	54 cal
-Canned Cranberries	100g	178 cal
-Canned Crushed Pineapple	100g	53 cal
-Canned Figs	100g	107 cal
-Canned Fruit Cocktail	100g	81 cal
-Canned Fruit Salad	100g	50 cal
-Canned Gooseberries	100g	73 cal
-Canned Grapefruit	100g	37 cal
-Canned Grapes	100g	76 cal
-Canned Mandarin Oranges	100g	71 cal
-Canned Mango	100g	65 cal
-Canned Mangosteen	100g	73 cal
-Canned Mixed Fruit	100g	71 cal
-Canned Morello Cherries	100g	81 cal
-Canned Oranges	100g	62 cal
-Canned Peaches	100g	54 cal
-Canned Pears	100g	35 cal
-Canned Pineapple	100g	60 cal
-Canned Plums	100g	58 cal
-Canned Raspberries	100g	91 cal
-Canned Sliced Pineapple	100g	53 cal
-Canned Sour Cherries	100g	114 cal
-Canned Strawberries	100g	92 cal
-Canned Tangerines	100g	61 cal
-Dried Fruit	100g	243 cal
-Amaranth	100g	371 cal
-Barley	100g	354 cal
-Barley Groats	100g	100 cal
-Brown Rice	100g	388 cal
-Buckwheat	100g	343 cal
-Buckwheat Groats	100g	346 cal
-Corn Waffles	100g	274 cal
-Cornmeal	100g	362 cal
-Cornstarch	100g	381 cal
-Couscous	100g	376 cal
-Cracker	100g	502 cal
-Durum Wheat Semolina	100g	397 cal
-Flaxseed	100g	534 cal
-Freekeh	100g	520 cal
-Gluten	100g	370 cal
-Grissini	100g	408 cal
-Kamut	100g	337 cal
-Millet	100g	378 cal
-Millet Flour	100g	372 cal
-Millet Gruel	100g	46 cal
-Oat Bran	100g	246 cal
-Pearl Barley	100g	352 cal
-Polenta	100g	366 cal
-Prawn Crackers	100g	527 cal
-Pretzel Sticks	100g	380 cal
-Quinoa	100g	368 cal
-Rusk	100g	410 cal
-Rye Bran	100g	281 cal
-Sago	100g	354 cal
-Savoury Biscuits	100g	347 cal
-Shortbread	100g	502 cal
-Spelt	100g	338 cal
-Spelt Bran	100g	177 cal
-Spelt Semolina	100g	360 cal
-Sunflower Seeds	100g	584 cal
-Tortilla	100g	237 cal
-Tortilla Chips	100g	499 cal
-Wheat Bran	100g	216 cal
-Wheat Germ	100g	382 cal
-Wheat Gluten	100g	325 cal
-Wheat Semolina	100g	360 cal
-Wheat Starch	100g	351 cal
-Whole Grain Wheat	100g	339 cal
-Wholegrain Oat	100g	375 cal
-American Cheese	100g	148 cal
-Applewood	100g	410 cal
-Asiago Cheese	100g	392 cal
-Babybel	100g	333 cal
-Blue Cheese	100g	353 cal
-Brie	100g	334 cal
-Camembert	100g	300 cal
-Cheddar	100g	403 cal
-Cheese Fondue	100g	228 cal
-Cheese Spread	100g	290 cal
-Cheese Whiz	100g	276 cal
-Chester	100g	387 cal
-Colby Cheese	100g	394 cal
-Colby-Jack Cheese	100g	394 cal
-Cottage Cheese	100g	98 cal
-Dutch Cheese	100g	393 cal
-Edam Cheese	100g	357 cal
-Emmentaler	100g	357 cal
-Feta	100g	264 cal
-Fontina	100g	389 cal
-Fresh Mozzarella	100g	280 cal
-Gjetost	100g	466 cal
-Goat Cheese	100g	364 cal
-Gorgonzola	100g	350 cal
-Gouda	100g	356 cal
-Grated Parmesan	100g	431 cal
-Grilled Cheese	100g	350 cal
-Gruyere	100g	413 cal
-Halloumi	100g	321 cal
-Havarti	100g	371 cal
-Italian Cheese	100g	397 cal
-Jarlsberg	100g	352 cal
-Maasdam Cheese	100g	344 cal
-Manchego Cheese	100g	320 cal
-Monterey	100g	373 cal
-Monterey Jack Cheese	100g	373 cal
-Mozzarella	100g	280 cal
-Muenster Cheese	100g	368 cal
-Neufchatel	100g	253 cal
-Parmesan	100g	431 cal
-Pecorino	100g	387 cal
-Provolone	100g	351 cal
-Raclette Cheese	100g	357 cal
-Ricotta	100g	174 cal
-Romano	100g	387 cal
-Roquefort	100g	369 cal
-Sheep Cheese	100g	364 cal
-Soft Cheese	100g	268 cal
-Stilton Cheese	100g	393 cal
-String Cheese	100g	250 cal
-Swiss Cheese	100g	380 cal
-White Cheddar	100g	403 cal
-Wisconsin Cheese	100g	389 cal
-Baked Ham	100g	343 cal
-Beef Salami	100g	375 cal
-Boiled Ham	100g	126 cal
-Bologna	100g	247 cal
-Bresaola	100g	178 cal
-Capicola	100g	110 cal
-Chicken Breast Fillet	100g	79 cal
-Chopped Ham	100g	180 cal
-Chorizo	100g	455 cal
-Corned Beef	100g	251 cal
-Dutch Loaf	100g	268 cal
-Ham	100g	145 cal
-Ham Sausage	100g	164 cal
-Head Cheese	100g	157 cal
-Hickory Ham	100g	188 cal
-Honey Ham	100g	122 cal
-Liverwurst	100g	326 cal
-Olive Loaf	100g	232 cal
-Oven-Roasted Turkey Breast	100g	104 cal
-Parma Ham	100g	345 cal
-Pastrami	100g	133 cal
-Pepperoni	100g	494 cal
-Pimento Loaf	100g	265 cal
-Pork Roast	100g	247 cal
-Prosciutto	100g	195 cal
-Roast Beef	100g	267 cal
-Salami	100g	336 cal
-Serrano Ham	100g	300 cal
-Smoked Ham	100g	107 cal
-Smoked Turkey Breast	100g	104 cal
-Summer Sausage	100g	298 cal
-Tongue	100g	284 cal
-Turkey Breast	100g	104 cal
-Turkey Ham	100g	126 cal
-Turkey Salami	100g	152 cal
-Chive Cream Cheese	100g	342 cal
-Cottage Cheese	100g	98 cal
-Cream Cheese	100g	342 cal
-Cream Cheese with Herbs	100g	342 cal
-Feta Cream Cheese	100g	342 cal
-Garlic Cream Cheese	100g	342 cal
-Goat Cheese	100g	364 cal
-Horseradish	100g	48 cal
-Mascarpone	100g	450 cal
-Obatzda	100g	303 cal
-Olive Cream Cheese	100g	342 cal
-Pesto Cream Cheese	100g	342 cal
-Philadelphia Cream Cheese	100g	342 cal
-Pineapple Cream Cheese	100g	342 cal
-Salmon Cream Cheese	100g	342 cal
-Vegetable Cream Cheese	100g	342 cal
-Walnut Cream Cheese	100g	342 cal
-Baby Back Ribs	100g	259 cal
-Bacon and Eggs	100g	252 cal
-Baked Beans	100g	94 cal
-Baked Chicken	100g	164 cal
-BBQ Ribs	100g	255 cal
-Beef Stew	100g	95 cal
-Biryani	100g	176 cal
-Black Pudding	100g	253 cal
-Black Rice	100g	323 cal
-BLT	100g	247 cal
-Brown Rice	100g	362 cal
-Burrito	100g	163 cal
-Butter Chicken	100g	140 cal
-California Roll	100g	93 cal
-Chicken Caesar Salad	100g	127 cal
-Chicken Fried Steak	100g	151 cal
-Chicken Marsala	100g	96 cal
-Chicken Parmesan	100g	110 cal
-Chicken Pot Pie	100g	223 cal
-Chicken Tikka Masala	100g	81 cal
-Chili con Carne	100g	105 cal
-Chimichanga	100g	232 cal
-Cobb Salad	100g	118 cal
-Collard Greens	100g	28 cal
-Corn Dog	100g	250 cal
-Corned Beef Hash	100g	164 cal
-Cottage Pie	100g	139 cal
-Dal	100g	330 cal
-Deviled Eggs	100g	201 cal
-Dim Sum	100g	193 cal
-Dosa	100g	66 cal
-Enchiladas	100g	168 cal
-Fajita	100g	117 cal
-Fish and Chips	100g	195 cal
-Fried Rice	100g	186 cal
-Fried Shrimp	100g	277 cal
-Grilled Cheese Sandwich	100g	288 cal
-Ham and Cheese Sandwich	100g	241 cal
-Hummus	100g	177 cal
-Jambalaya	100g	100 cal
-Kebab	100g	215 cal
-Lasagne	100g	132 cal
-Mac and Cheese	100g	370 cal
-Macaroni and Cheese	100g	370 cal
-Mashed Potatoes	100g	83 cal
-Meat Pie	100g	242 cal
-Meatloaf	100g	254 cal
-Naan	100g	310 cal
-Orange Chicken	100g	259 cal
-Pad Thai	100g	150 cal
-Paella	100g	156 cal
-Paratha	100g	325 cal
-Pea Soup	100g	75 cal
-Peanut Butter Sandwich	100g	408 cal
-Peking Duck	100g	225 cal
-Philly Cheese Steak	100g	250 cal
-Pizza	100g	267 cal
-Pork Chop	100g	225 cal
-Potato Salad	100g	143 cal
-Pulled Pork Sandwich	100g	211 cal
-Ramen	100g	447 cal
-Ravioli	100g	203 cal
-Reuben Sandwich	100g	208 cal
-Roast Beef	100g	111 cal
-Roast Dinner	100g	198 cal
-Samosa	100g	214 cal
-Sausage Roll	100g	350 cal
-Sausage Rolls	100g	297 cal
-Shepherds Pie	100g	70 cal
-Shrimp Cocktail	100g	464 cal
-Sloppy Joe	100g	71 cal
-Sloppy Joes	100g	154 cal
-Spaghetti Bolognese	100g	132 cal
-Spring Roll	100g	250 cal
-Spring Rolls	100g	250 cal
-Taco	100g	217 cal
-Tandoori Chicken	100g	113 cal
-Yorkshire Pudding	100g	553 cal
-Arby’s Grand Turkey Club	100g	210 cal
-Arby’s Reuben	100g	208 cal
-Arby’s Roast Beef Classic	100g	234 cal
-Arby’s Roast Beef Max	100g	234 cal
-BBQ Rib	100g	212 cal
-Bean Burrito	100g	200 cal
-Big N’ Tasty	100g	223 cal
-Bratwurst	100g	333 cal
-Burger King Angry Whopper	100g	255 cal
-Burger King Double Whopper	100g	239 cal
-Burger King Double Whopper with Cheese	100g	249 cal
-Burger King Original Chicken Sandwich	100g	301 cal
-Burger King Premium Alaskan Fish Sandwich	100g	259 cal
-Burger King Triple Whopper	100g	269 cal
-Burger King Whopper	100g	231 cal
-Burger King Whopper Jr.	100g	234 cal
-Burger King Whopper with Cheese	100g	241 cal
-Cheeseburger	100g	263 cal
-Chicken Breast	100g	163 cal
-Chicken Fajita	100g	147 cal
-Chicken McNuggets	100g	302 cal
-Chicken Nuggets	100g	296 cal
-Chicken Pizziola	100g	141 cal
-Chicken Sandwich	100g	241 cal
-Chicken Teriyaki Sandwich	100g	138 cal
-Chicken Wings	100g	324 cal
-Chop Suey	100g	172 cal
-Curly Fries	100g	311 cal
-Double Cheeseburger	100g	267 cal
-Egg Roll	100g	250 cal
-Falafel	100g	335 cal
-Filet-o-Fish	100g	282 cal
-Fish and Chips	100g	195 cal
-Fish Sandwich	100g	273 cal
-French Fries	100g	312 cal
-Grilled Chicken Salad	100g	88 cal
-Ham Sandwich	100g	241 cal
-Hamburger	100g	254 cal
-Hot Dog	100g	269 cal
-Italian BMT	100g	183 cal
-Lasagna	100g	132 cal
-McDonald’s Big Mac	100g	256 cal
-McDonald’s Cheeseburger	100g	263 cal
-McDonald’s Chicken Nuggets	100g	297 cal
-McDonald’s Double Cheeseburger	100g	282 cal
-McDonald’s Filet-o-Fish	100g	275 cal
-McDonald’s McChicken	100g	251 cal
-McDonald’s McDouble	100g	252 cal
-McDonald’s McMuffi Egg	100g	225 cal
-McDonald’s McRib	100g	265 cal
-McDonald’s Mighty Wings	100g	308 cal
-McRib	100g	265 cal
-Meatball Sandwich	100g	161 cal
-Nachos with Cheese	100g	306 cal
-Onion Rings	100g	411 cal
-Poutine	100g	227 cal
-Smoked Salmon	100g	158 cal
-Spicy Italian	100g	219 cal
-Subway Club Sandwich	100g	131 cal
-Tortilla Wrap	100g	271 cal
-Tuna	100g	86 cal
-Turkey	100g	104 cal
-Veggie Burger	100g	181 cal
-Veggie Delight	100g	138 cal
-Veggie Patty	100g	390 cal
-Wendy’s Baconator	100g	304 cal
-Wendy’s Jr. Bacon Cheeseburger	100g	261 cal
-Wendy’s Jr. Cheeseburger	100g	225 cal
-Wendy’s Son of Baconator	100g	321 cal
-Whopper	100g	231 cal
-Zinger	100g	256 cal
-Zinger Burger	100g	256 cal
-Anchovy	100g	131 cal
-Bluefish	100g	159 cal
-Bream	100g	135 cal
-Butterfish	100g	187 cal
-Calamari	100g	175 cal
-Carp	100g	162 cal
-Caviar	100g	264 cal
-Clam	100g	148 cal
-Cod	100g	105 cal
-Crawfish	100g	82 cal
-Crayfish	100g	87 cal
-Eel	100g	236 cal
-Fish Fingers	100g	290 cal
-Fish Sticks	100g	290 cal
-Flounder	100g	86 cal
-Grouper	100g	118 cal
-Haddock	100g	90 cal
-Hake	100g	71 cal
-Halibut	100g	111 cal
-Herring	100g	203 cal
-Hoki	100g	121 cal
-Kipper	100g	217 cal
-Ling	100g	109 cal
-Lobster	100g	89 cal
-Mackerel	100g	262 cal
-Milkfish	100g	190 cal
-Monkfish	100g	97 cal
-Mullet	100g	150 cal
-Mussel	100g	172 cal
-Octopus	100g	164 cal
-Pickerel	100g	111 cal
-Pickled Herring	100g	262 cal
-Pike	100g	113 cal
-Plaice	100g	91 cal
-Pollack	100g	111 cal
-Red Snapper	100g	128 cal
-Redfish	100g	94 cal
-Rollmops	100g	171 cal
-Salmon	100g	206 cal
-Sardines	100g	208 cal
-Scallops	100g	111 cal
-Scampi	100g	84 cal
-Sea Bass	100g	124 cal
-Shad	100g	252 cal
-Shark	100g	130 cal
-Smelt	100g	124 cal
-Sole	100g	86 cal
-Squid	100g	92 cal
-Sturgeon	100g	135 cal
-Sushi	100g	150 cal
-Swordfish	100g	172 cal
-Triggerfish	100g	93 cal
-Trout	100g	190 cal
-Tuna	100g	132 cal
-Tuna Salad	100g	187 cal
-Turbot	100g	122 cal
-Wahoo	100g	167 cal
-Whitefish	100g	172 cal
-Whiting	100g	116 cal
-Zander	100g	84 cal
-Acai	100g	70 cal
-Apple	100g	52 cal
-Applesauce	100g	68 cal
-Apricot	100g	48 cal
-Avocado	100g	160 cal
-Banana	100g	89 cal
-Blackberries	100g	43 cal
-Blood Oranges	100g	50 cal
-Blueberries	100g	57 cal
-Cantaloupe	100g	34 cal
-Cherries	100g	50 cal
-Clementine	100g	47 cal
-Cranberries	100g	46 cal
-Currants	100g	56 cal
-Custard Apple	100g	101 cal
-Dates	100g	282 cal
-Figs	100g	74 cal
-Fruit salad	100g	50 cal
-Grapes	100g	69 cal
-Greengage	100g	41 cal
-Guava	100g	68 cal
-Jackfruit	100g	95 cal
-Jujube	100g	79 cal
-Kiwi	100g	61 cal
-Lemon	100g	29 cal
-Lime	100g	30 cal
-Lychees	100g	66 cal
-Mandarin Oranges	100g	53 cal
-Mango	100g	60 cal
-Minneola	100g	64 cal
-Mulberries	100g	43 cal
-Nectarine	100g	44 cal
-Olives	100g	115 cal
-Orange	100g	47 cal
-Papaya	100g	43 cal
-Passion Fruit	100g	97 cal
-Peach	100g	39 cal
-Pear	100g	57 cal
-Persimmon	100g	127 cal
-Physalis	100g	49 cal
-Pineapple	100g	50 cal
-Plantains	100g	122 cal
-Plum	100g	46 cal
-Pomegranate	100g	83 cal
-Quince	100g	57 cal
-Raisins	100g	299 cal
-Rambutan	100g	82 cal
-Raspberries	100g	52 cal
-Rhubarb	100g	21 cal
-Starfruit	100g	31 cal
-Strawberries	100g	32 cal
-Tamarind	100g	239 cal
-Tangerine	100g	53 cal
-Watermelon	100g	30 cal
-Almond Extract	100ml	374 cal
-Anise	100g	337 cal
-Anise Seed	100g	337 cal
-Arrowroot	100g	65 cal
-Arugula	100g	25 cal
-Balsamic Vinegar	100ml	88 cal
-Basil	100g	233 cal
-Black Pepper	100g	251 cal
-Black Sesame Seeds	100g	573 cal
-Broth	100g	100 cal
-Capers	100g	23 cal
-Caraway Seeds	100g	333 cal
-Cardamom	100g	311 cal
-Cassava	100g	160 cal
-Cayenne Pepper	100g	318 cal
-Chard	100g	19 cal
-Chicory Greens	100g	23 cal
-Chicory Roots	100g	72 cal
-Chili	100g	282 cal
-Chili Powder	100g	282 cal
-Chives	100g	30 cal
-Cider Vinegar	100ml	21 cal
-Cilantro	100g	23 cal
-Cinnamon	100g	247 cal
-Cloves	100g	274 cal
-Coriander	100g	23 cal
-Cream of Tartar	100g	258 cal
-Cress	100g	32 cal
-Crystallized Ginger	100g	335 cal
-Cumin	100g	375 cal
-Cumin Seed	100g	375 cal
-Curry	100g	325 cal
-Dandelion	100g	45 cal
-Dill	100g	43 cal
-Dill Weed	100g	43 cal
-Fennel	100g	31 cal
-Fennel Seed	100g	345 cal
-Fenugreek	100g	323 cal
-Garlic	100g	149 cal
-Garlic Powder	100g	331 cal
-Garlic Salt	100g	0 cal
-Ginger	100g	80 cal
-Grape Leaves	100g	93 cal
-Ground Ginger	100g	335 cal
-Horseradish	100g	48 cal
-Hot Pepper	100g	318 cal
-Iodized Salt	100g	0 cal
-Jalapeno	100g	13 cal
-Juniper	100g	45 cal
-Lemon Grass	100g	99 cal
-Licorice	100g	375 cal
-Maggi	100ml	104 cal
-Marjoram	100g	271 cal
-Minced Onion	100g	40 cal
-Mint	100g	70 cal
-Mustard Seed	100g	508 cal
-Nutmeg	100g	525 cal
-Okra	100g	33 cal
-Onion	100g	40 cal
-Onion Powder	100g	341 cal
-Orange Peel	100g	97 cal
-Oregano	100g	265 cal
-Paprika	100g	282 cal
-Parsley	100g	36 cal
-Parsnip	100g	75 cal
-Pepper	100g	251 cal
-Poppy Seed	100g	525 cal
-Poultry Seasoning	100g	307 cal
-Pumpkin Pie Spice	100g	342 cal
-Red Pepper	100g	251 cal
-Red Wine Vinegar	100g	19 cal
-Rosemary	100g	131 cal
-Saffron	100g	310 cal
-Sage	100g	315 cal
-Salt	100g	0 cal
-Savory	100g	272 cal
-Sea Salt	100g	0 cal
-Serrano Pepper	100g	32 cal
-Sesame Seeds	100g	573 cal
-Stevia	100g	0 cal
-Tamarind	100g	239 cal
-Taro	100g	112 cal
-Tarragon	100g	295 cal
-Thyme	100g	276 cal
-Turmeric	100g	354 cal
-Vanilla Bean	100g	250 cal
-Vanilla Extract	100ml	288 cal
-Vinegar	100ml	18 cal
-White Pepper	100g	296 cal
-Yam	100g	118 cal
-Baskin-Robbins	100g	239 cal
-Ben and Jerry’s	100g	228 cal
-Butter Pecan Ice Cream	100g	248 cal
-Carvel	100g	212 cal
-Chocolate Chip Ice Cream	100g	215 cal
-Chocolate Ice Cream	100g	216 cal
-Ciao Bella	100g	109 cal
-Coffee Ice Cream	100g	236 cal
-Cold Stone Creamery	100g	232 cal
-Cookie Dough Ice Cream	100g	200 cal
-Crunchie McFlurry	100g	174 cal
-Dairy Milk McFlurry	100g	186 cal
-Dippin Dots	100g	224 cal
-Double Rainbow	100g	257 cal
-Drumsticks	100g	255 cal
-French Vanilla Ice Cream	100g	201 cal
-Friendly’s	100g	212 cal
-Healthy Choice	100g	125 cal
-Hot Fudge Sundae	100g	186 cal
-Ice Cream Sandwich	100g	237 cal
-Ice Cream Sundae	100g	142 cal
-Ice Milk	100g	159 cal
-Magnolia	100g	230 cal
-Magnum	100g	300 cal
-Magnum Almond	100g	315 cal
-Magnum Double Caramel	100g	355 cal
-Magnum Double Chocolate	100g	380 cal
-Magnum Gold	100g	341 cal
-Magnum White	100g	297 cal
-McFlurry	100g	153 cal
-McFlurry Oreo	100g	186 cal
-Mini Milk	100g	120 cal
-Mint Chocolate Chip Ice Cream	100g	239 cal
-Rocky Road Ice Cream	100g	257 cal
-Schwan’s	100g	246 cal
-Smarties McFlurry	100g	198 cal
-Snickers Ice Cream	100g	360 cal
-Soft Serve	100g	222 cal
-Solero	100g	100 cal
-Strawberry Ice Cream	100g	236 cal
-Strawberry Sundae	100g	158 cal
-Sundae	100g	215 cal
-Turkey Hill	100g	271 cal
-Vanilla Cone	100g	162 cal
-Vanilla Ice Cream	100g	201 cal
-Azuki Bean	100g	124 cal
-Bamboo Shoots	100g	27 cal
-Bean Curd	100g	76 cal
-Bean Sprouts	100g	30 cal
-Bengal Gram	100g	364 cal
-Black Beans	100g	341 cal
-Black Chickpeas	100g	364 cal
-Black Gram	100g	341 cal
-Brown Lentil	100g	353 cal
-Butternut	100g	612 cal
-Chickpeas	100g	364 cal
-Chili Bean	100g	97 cal
-Dal	100g	230 cal
-Deep-Fried Tofu	100g	271 cal
-Extra-Firm Tofu	100g	91 cal
-Firm Tofu	100g	70 cal
-Flageolet	100g	85 cal
-Fried Bean Curd	100g	271 cal
-Green Beans	100g	31 cal
-Green Gram	100g	347 cal
-Green Lentil	100g	257 cal
-Kidney Beans	100g	337 cal
-Lentils	100g	353 cal
-Lima Beans	100g	71 cal
-Marron	100g	210 cal
-Miso	100g	199 cal
-Mung Beans	100g	12 cal
-Natto	100g	212 cal
-Navy Bean	100g	337 cal
-Okara	100g	77 cal
-Okra	100g	33 cal
-Peanuts	100g	567 cal
-Peas	100g	42 cal
-Pecan	100g	691 cal
-Pinto Beans	100g	347 cal
-Puy Lentils	100g	345 cal
-Rajma	100g	140 cal
-Red Beans	100g	124 cal
-Red Kidney Bean	100g	337 cal
-Red Lentils	100g	329 cal
-Refried Beans	100g	91 cal
-Roasted Soybeans	100g	471 cal
-Silken Tofu	100g	55 cal
-Soft Tofu	100g	61 cal
-Soy Cheese	100g	235 cal
-Soy Mayonnaise	100g	322 cal
-Soy Nut Butter	100g	562 cal
-Soy Nuts	100g	471 cal
-Soy Yogurt	100g	66 cal
-Soya Cheese	100g	235 cal
-Soybeans	100g	147 cal
-Soynut Butter	100g	562 cal
-Sugar Peas	100g	42 cal
-Sweet Peas	100g	48 cal
-Tempeh	100g	193 cal
-Textured Soy Protein	100g	571 cal
-Textured Vegetable Protein	100g	333 cal
-Tofu	100g	76 cal
-White Beans	100g	336 cal
-Yam Bean	100g	38 cal
-Yellow Lentils	100g	304 cal
-Yuba	100g	176 cal
-Alligator	100g	232 cal
-Beef	100g	248 cal
-Beef Brisket	100g	242 cal
-Beef Jerky	100g	410 cal
-Beef Ribs	100g	238 cal
-Beef Tenderloin	100g	218 cal
-Chicken	100g	219 cal
-Chicken Breast	100g	172 cal
-Chicken Drumstick	100g	185 cal
-Chicken Fat	100g	898 cal
-Chicken Giblets	100g	158 cal
-Chicken Gizzards	100g	146 cal
-Chicken Leg	100g	174 cal
-Chicken Liver	100g	167 cal
-Chicken Meat	100g	172 cal
-Chicken Thigh	100g	229 cal
-Chicken Wing	100g	266 cal
-Chuck Steak	100g	277 cal
-Cubed Steak	100g	199 cal
-Duck	100g	337 cal
-Filet Mignon	100g	267 cal
-Flank Steak	100g	194 cal
-Flat Iron Steak	100g	137 cal
-Ground Beef	100g	246 cal
-Ground Round	100g	246 cal
-Ham	100g	163 cal
-New York Strip Steak	100g	199 cal
-Ostrich	100g	145 cal
-Pork	100g	196 cal
-Pork Baby Back Ribs	100g	212 cal
-Pork Chops	100g	196 cal
-Pork Country-Style Ribs	100g	247 cal
-Pork Loin	100g	204 cal
-Pork Roast	100g	254 cal
-Pork Steaks	100g	196 cal
-Roast Beef	100g	140 cal
-Round Steak	100g	182 cal
-Schnitzel	100g	156 cal
-Spare Ribs	100g	238 cal
-Standing Rib Roast	100g	333 cal
-T-Bone Steak	100g	202 cal
-Turkey	100g	189 cal
-Turkey Breast	100g	135 cal
-Turkey Legs	100g	208 cal
-Turkey Steak	100g	189 cal
-Turkey Wings	100g	221 cal
-Almond Milk	100ml	17 cal
-Buttermilk	100ml	62 cal
-Chocolate Mousse	100g	225 cal
-Coconut Milk	100ml	230 cal
-Coffee Creamer	100g	195 cal
-Condensed Milk	100g	321 cal
-Cottage Cheese	100g	98 cal
-Cream	100g	242 cal
-Creme Fraiche	100g	393 cal
-Curd	100g	98 cal
-Custard	100g	122 cal
-Evaporated Milk	100g	135 cal
-Goat Milk	100g	69 cal
-Hot Chocolate	100ml	89 cal
-Kefir	100ml	55 cal
-Lactose-free Milk	100ml	52 cal
-Lassi	100ml	75 cal
-Milk	100ml	61 cal
-Plain Yogurt	100g	61 cal
-Powdered Milk	100g	496 cal
-Quark	100g	145 cal
-Rice Milk	100ml	49 cal
-Rice Pudding	100g	118 cal
-Semi-skimmed Milk	100ml	50 cal
-Semolina Pudding	100g	67 cal
-Skim Milk	100ml	35 cal
-Sour Cream	100g	181 cal
-Soy Milk	100ml	45 cal
-Sweetened Condensed Milk	100ml	321 cal
-Tzatziki	100g	117 cal
-Whipped Cream	100g	257 cal
-Whole Milk	100ml	61 cal
-Yogurt	100g	61 cal
-ACE Drink	100ml	44 cal
-Apple Spritzer	100ml	24 cal
-Chai	100ml	0 cal
-Chai Tea	100ml	0 cal
-Chocolate Milk	100ml	89 cal
-Chocolate Milkshake	100ml	125 cal
-Club Mate	100ml	30 cal
-Coca Cola	100ml	42 cal
-Coffee	100ml	1 cal
-Coke Zero	100ml	1 cal
-Cola	100ml	42 cal
-Crystal Light	100ml	263 cal
-Diet Coke	100ml	1 cal
-Egg Cream	100ml	94 cal
-Egg Nog	100ml	88 cal
-Elderflower Cordial	100ml	29 cal
-Evian	100ml	0 cal
-Gatorade	100ml	23 cal
-Ginger Tea	100ml	0 cal
-Hawaiian Punch	100ml	31 cal
-Hi-C	100ml	49 cal
-Horchata	100ml	54 cal
-Hot Chocolate	100ml	89 cal
-Ice Tea	100ml	27 cal
-Iced Tea	100ml	27 cal
-Karamalz	100ml	37 cal
-Kombucha	100ml	13 cal
-Kool-Aid	100ml	26 cal
-Lassi	100ml	104 cal
-Latte Macchiato	100ml	57 cal
-Lemonade	100ml	42 cal
-Malt Beer	100ml	37 cal
-Milk	100ml	61 cal
-Milkshake (dry)	100g	329 cal
-Milo	100g	409 cal
-Nectar	100ml	53 cal
-Nestea	100ml	36 cal
-Non-alcoholic Beer	100ml	37 cal
-Powerade	100ml	16 cal
-Slurpee	100ml	4 cal
-Slush Puppie	100ml	50 cal
-Smoothie	100ml	37 cal
-Soy Milk	100ml	45 cal
-Strawberry Milkshake	100ml	113 cal
-Tang	100g	381 cal
-Tap Water	100ml	0 cal
-Tea	100ml	1 cal
-Vanilla Milkshake	100ml	149 cal
-Volvic	100ml	0 cal
-Water	100ml	0 cal
-Yerba Mate	100ml	62 cal
-Acorn	100g	387 cal
-Alfalfa Sprouts	100g	23 cal
-Almonds	100g	575 cal
-Beechnut	100g	576 cal
-Brazil Nuts	100g	656 cal
-Breadfruit	100g	191 cal
-Butternut	100g	612 cal
-Cashew	100g	553 cal
-Chestnut	100g	213 cal
-Chia Seeds	100g	486 cal
-Coconut	100g	354 cal
-Cotton Seeds	100g	506 cal
-Flaxseed	100g	534 cal
-Ginkgo Nuts	100g	182 cal
-Goa Bean	100g	409 cal
-Hazelnut	100g	628 cal
-Hickory Nuts	100g	657 cal
-Lima Beans	100g	71 cal
-Lotus Seed	100g	89 cal
-Macadamia Nuts	100g	718 cal
-Peanuts	100g	567 cal
-Peas	100g	81 cal
-Pecan Nuts	100g	691 cal
-Pecans	100g	691 cal
-Pili Nuts	100g	719 cal
-Pine Nuts	100g	673 cal
-Pinto Beans	100g	347 cal
-Pistachios	100g	562 cal
-Poppy Seeds	100g	525 cal
-Pumpkin Seeds	100g	559 cal
-Radish Seeds	100g	43 cal
-Safflower Seeds	100g	517 cal
-Sesame Seeds	100g	573 cal
-Smoked Almonds	100g	575 cal
-Soy Beans	100g	147 cal
-Sunflower Seeds	100g	584 cal
-Sweet Chestnut	100g	194 cal
-Walnuts	100g	654 cal
-Watermelon	100g	30 cal
-Bran Flakes	100g	356 cal
-Cap’n Crunch	100g	404 cal
-Cheerios	100g	347 cal
-Chex	100g	387 cal
-Chocolate Cheerios	100g	367 cal
-Chocos	100g	380 cal
-Cinnamon Toast Crunch	100g	433 cal
-Coco Pops	100g	376 cal
-Cocoa Krispies	100g	386 cal
-Cocoa Pebbles	100g	367 cal
-Cocoa Puffs	100g	400 cal
-Cookie Crisp	100g	400 cal
-Corn Flakes	100g	357 cal
-Corn Pops	100g	377 cal
-Count Chocula	100g	407 cal
-Cracklin Oat Bran	100g	402 cal
-Cream of Wheat	100g	364 cal
-Crunchy Nut	100g	600 cal
-Crunchy Nut Cornflakes	100g	600 cal
-Fiber One	100g	267 cal
-Froot Loops	100g	379 cal
-Frosted Cheerios	100g	393 cal
-Frosted Flakes	100g	367 cal
-Frosted Mini-Wheats	100g	353 cal
-Frosties	100g	367 cal
-Fruity Pebbles	100g	400 cal
-Golden Grahams	100g	400 cal
-Grape-Nuts	100g	362 cal
-Honey Nut Cheerios	100g	393 cal
-Honey Smacks	100g	370 cal
-Honeycomb	100g	397 cal
-Just Right	100g	391 cal
-Kashi	100g	377 cal
-Kelloggs Corn Flakes	100g	357 cal
-Kix	100g	367 cal
-Krave	100g	372 cal
-Life Cereal	100g	375 cal
-Lucky Charms	100g	406 cal
-Malt-O-Meal	100g	51 cal
-Mini-Wheats	100g	353 cal
-Muesli	100g	336 cal
-Multigrain Cheerios	100g	380 cal
-Nutri-Grain	100g	351 cal
-Oatibix	100g	421 cal
-Oatmeal	100g	375 cal
-Peanut Butter Toast Crunch	100g	431 cal
-Post Raisin Bran	100g	322 cal
-Post Shredded Wheat	100g	347 cal
-Puff	100g	367 cal
-Puffed Rice	100g	383 cal
-Puffed Wheat	100g	367 cal
-Quaker Grits	100g	344 cal
-Quaker Oatmeal	100g	375 cal
-Quaker Oatmeal Squares	100g	400 cal
-Raisin Bran	100g	322 cal
-Raisin Bran Crunch	100g	355 cal
-Raisin Bran Crunch	100g	355 cal
-Raisin Nut Bran	100g	367 cal
-Ready Brek	100g	359 cal
-Rice Chex	100g	387 cal
-Rice Krispies	100g	394 cal
-Scooters	100g	367 cal
-Shredded Wheat	100g	340 cal
-Shreddies	100g	351 cal
-Smart Start	100g	371 cal
-Special K	100g	377 cal
-Special K Chocolatey Delight	100g	388 cal
-Special K Protein Plus	100g	375 cal
-Special K Red Berries	100g	345 cal
-Sugar Puffs	100g	379 cal
-Toasties	100g	361 cal
-Trix	100g	400 cal
-Weet-Bix	100g	353 cal
-Weetabix	100g	358 cal
-Weetos	100g	378 cal
-Wheaties	100g	367 cal
-Beef Brain	100g	196 cal
-Beef Heart	100g	165 cal
-Beef Kidney	100g	158 cal
-Beef Liver	100g	191 cal
-Beef Lung	100g	120 cal
-Beef Melt	100g	271 cal
-Beef Tongue	100g	284 cal
-Calf Brain	100g	136 cal
-Calf Liver	100g	192 cal
-Calf Lung	100g	104 cal
-Calf Melt	100g	256 cal
-Chicken Giblets	100g	277 cal
-Chicken Heart	100g	185 cal
-Chicken Liver	100g	172 cal
-Chicken Stomach	100g	148 cal
-Chitterlings	100g	233 cal
-Duck Liver	100g	136 cal
-Goose Liver	100g	133 cal
-Hog Maws	100g	157 cal
-Pig Brain	100g	138 cal
-Pig Heart	100g	148 cal
-Pig Kidney	100g	151 cal
-Pig Lung	100g	99 cal
-Pork Liver	100g	165 cal
-Pork Melt	100g	219 cal
-Pork Tongue	100g	271 cal
-Turkey Giblets	100g	173 cal
-Turkey Heart	100g	174 cal
-Turkey Liver	100g	189 cal
-Turkey Stomach	100g	148 cal
-Veal Heart	100g	186 cal
-Veal Kidney	100g	163 cal
-Veal Tongue	100g	202 cal
-Almond Oil	100ml	882 cal
-Avocado Oil	100ml	857 cal
-Butter	100g	720 cal
-Canola Oil	100ml	884 cal
-Coconut Oil	100ml	857 cal
-Cod Liver Oil	100ml	1000 cal
-Corn Oil	100ml	800 cal
-Cottonseed Oil	100ml	882 cal
-Flaxseed Oil	100ml	884 cal
-Ghee	100g	120 cal
-Goose Fat	100g	898 cal
-Grape Seed Oil	100ml	884 cal
-Hemp Oil	100ml	807 cal
-Herring Oil	100ml	902 cal
-I can\’t believe it\’s not Butter	100g	357 cal
-Lard	100g	902 cal
-Macadamia Oil	100ml	819 cal
-Margarine	100g	717 cal
-Mustard Oil	100ml	884 cal
-Olive Oil	100ml	884 cal
-Palm Oil	100ml	882 cal
-Peanut Oil	100ml	857 cal
-Real Butter	100g	720 cal
-Rice Bran Oil	100ml	889 cal
-Safflower Oil	100ml	857 cal
-Sardine Oil	100ml	902 cal
-Sesame Oil	100ml	884 cal
-Soybean Oil	100ml	889 cal
-Sunflower Oil	100ml	884 cal
-Walnut Oil	100ml	889 cal
-Cannelloni	100g	146 cal
-Capellini	100g	353 cal
-Cappelletti	100g	164 cal
-Cellophane Noodles	100g	351 cal
-Cheese Tortellini	100g	291 cal
-Dampfnudel	100g	274 cal
-Dumpling Dough	100g	99 cal
-Durum Wheat Semolina	100g	397 cal
-Egg Noodles	100g	384 cal
-Farfalle	100g	358 cal
-Fettuccine	100g	353 cal
-Fusilli	100g	352 cal
-Glass Noodles	100g	192 cal
-Lasagne Sheets	100g	271 cal
-Linguine	100g	357 cal
-Low Carb Pasta	100g	282 cal
-Macaroni	100g	370 cal
-Manicotti	100g	357 cal
-Mostaccioli	100g	184 cal
-Orecchiette	100g	370 cal
-Orzo	100g	357 cal
-Penne	100g	351 cal
-Penne Rigate	100g	370 cal
-Pierogi	100g	200 cal
-Ravioli	100g	77 cal
-Rigatoni	100g	353 cal
-Rotini	100g	353 cal
-Shells	100g	353 cal
-Shirataki Noodles	100g	18 cal
-Soy Noodles	100g	216 cal
-Spaetzle	100g	368 cal
-Spaghetti	100g	370 cal
-Spinach Tortellini	100g	314 cal
-Spirelli	100g	367 cal
-Tagliatelle	100g	370 cal
-Tortellini	100g	291 cal
-Vermicelli	100g	368 cal
-Whole Grain Noodles	100g	347 cal
-Whole Grain Spaghetti	100g	351 cal
-Ziti	100g	352 cal
-Apple Pie	100g	237 cal
-Apple Turnover	100g	348 cal
-Bagel	100g	257 cal
-Baguette	100g	274 cal
-Banana Bread	100g	326 cal
-Banana Nut Bread	100g	326 cal
-Beer Bread	100g	227 cal
-Biscuit	100g	269 cal
-Black Bread	100g	250 cal
-Bran Muffins	100g	270 cal
-Bread Pudding	100g	153 cal
-Breadsticks	100g	400 cal
-Brioche	100g	346 cal
-Brown Bread	100g	246 cal
-Brownies	100g	405 cal
-Bun	100g	316 cal
-Cannoli	100g	254 cal
-Caramel Cake	100g	385 cal
-Challah	100g	283 cal
-Chapati	100g	240 cal
-Ciabatta	100g	271 cal
-Cinnamon Bun	100g	436 cal
-Coffee Cake	100g	418 cal
-Conchas/Mexican Sweet Bread	100g	353 cal
-Cornbread	100g	179 cal
-Crepes	100g	224 cal
-Croissant	100g	406 cal
-Crumpet	100g	178 cal
-Cupcakes	100g	305 cal
-Donut/Doughnut	100g	421 cal
-Dosa	100g	209 cal
-Empanada	100g	335 cal
-English Muffin	100g	227 cal
-Flatbread	100g	311 cal
-Focaccia	100g	249 cal
-Garlic Bread	100g	350 cal
-Hot Dog Buns	100g	279 cal
-Italian Bread	100g	271 cal
-Latkes	100g	189 cal
-Matzo Bread	100g	351 cal
-Monkey Bread	100g	290 cal
-Muffin	100g	296 cal
-Multi-Grain Bread	100g	265 cal
-Naan	100g	275 cal
-Oatmeal Cookies	100g	450 cal
-Oatmeal Raisin Cookies	100g	435 cal
-Pan de Sal	100g	293 cal
-Pancake	100g	233 cal
-Pandesal	100g	293 cal
-Panettone	100g	318 cal
-Pide	100g	268 cal
-Pie	100g	237 cal
-Pita Bread	100g	275 cal
-Potato Bread	100g	266 cal
-Pretzel	100g	338 cal
-Pretzel Roll	100g	338 cal
-Puff Pastry	100g	558 cal
-Pumpernickel	100g	250 cal
-Raisin Bread	100g	274 cal
-Roll	100g	316 cal
-Roti	100g	264 cal
-Rye Bread	100g	259 cal
-Sandwich	100g	304 cal
-Sandwich Bread	100g	251 cal
-Scone	100g	362 cal
-Shortcrust Pastry	100g	544 cal
-Soda Bread	100g	290 cal
-Soufflé	100g	204 cal
-Sourdough Bread	100g	289 cal
-Spanakopita	100g	246 cal
-Spice Cake	100g	332 cal
-Sweet Rolls	100g	333 cal
-Swiss Roll	100g	313 cal
-Toast	100g	261 cal
-Tortilla	100g	297 cal
-Tortilla Bread	100g	265 cal
-White Bread	100g	238 cal
-Whole Wheat Bread	100g	247 cal
-BBQ Chicken Pizza	100g	234 cal
-BBQ Pizza	100g	224 cal
-Beef Pizza	100g	304 cal
-Bianca Pizza	100g	246 cal
-Buffalo Chicken Pizza	100g	252 cal
-Calabrese Pizza	100g	235 cal
-Calzone	100g	231 cal
-Capricciosa Pizza	100g	260 cal
-Cheese Pizza	100g	267 cal
-Chicken Pizza	100g	234 cal
-Deep Dish Pizza	100g	265 cal
-Dominos Philly Cheese Steak Pizza	100g	224 cal
-Four Cheese Pizza	100g	221 cal
-Goat Cheese Pizza	100g	219 cal
-Grilled Pizza	100g	226 cal
-Hawaiian Pizza	100g	115 cal
-Margherita Pizza	100g	275 cal
-Mozzarella Pizza	100g	249 cal
-Mushroom Pizza	100g	212 cal
-Napoli Pizza	100g	202 cal
-New York Style Pizza	100g	169 cal
-Pepperoni Pizza	100g	255 cal
-Pizza Dough	100g	228 cal
-Pizza Hut Stuffed Crust Pizza	100g	255 cal
-Pizza Hut Supreme Pizza	100g	248 cal
-Pizza Rolls	100g	247 cal
-Quattro Formaggi Pizza	100g	248 cal
-Red Pepper Pizza	100g	192 cal
-Salami Pizza	100g	255 cal
-Sausage Pizza	100g	246 cal
-Seafood Pizza	100g	245 cal
-Shrimp Pizza	100g	209 cal
-Sicilian Pizza	100g	241 cal
-Spinach Feta Pizza	100g	242 cal
-Spinach Pizza	100g	234 cal
-Stuffed Crust Pizza	100g	255 cal
-Tarte Flambée	100g	253 cal
-Thin Crust Pizza	100g	261 cal
-Tuna Pizza	100g	254 cal
-Vegetable Pizza	100g	256 cal
-Vegetarian Pizza	100g	256 cal
-Veggie Pizza	100g	231 cal
-White Pizza	100g	246 cal
-Bacon	100g	407 cal
-Brawn	100g	309 cal
-Canadian-Style Bacon	100g	107 cal
-Chitterlings	100g	233 cal
-Ground Pork	100g	263 cal
-Hog Maws	100g	250 cal
-Lard	100g	898 cal
-Meatloaf	100g	89 cal
-Parma Ham	100g	261 cal
-Pig Ear	100g	166 cal
-Pig Fat	100g	638 cal
-Pig’s Tail	100g	396 cal
-Pig’s Trotter	100g	243 cal
-Pork Bacon	100g	407 cal
-Pork Belly	100g	518 cal
-Pork Blade Steak	100g	232 cal
-Pork Chop	100g	123 cal
-Pork Country-Style Ribs	100g	133 cal
-Pork Crown Roast	100g	212 cal
-Pork Cutlet	100g	131 cal
-Pork Cutlets	100g	131 cal
-Pork Leg	100g	201 cal
-Pork Loin	100g	143 cal
-Pork Meatloaf	100g	243 cal
-Pork Ragout	100g	73 cal
-Pork Rib Roast	100g	159 cal
-Pork Ribs	100g	292 cal
-Pork Roast	100g	194 cal
-Pork Sausage	100g	339 cal
-Pork Shank	100g	172 cal
-Pork Shoulder	100g	269 cal
-Pork Shoulder Blade	100g	232 cal
-Pork Stomach	100g	250 cal
-Rack of Pork	100g	241 cal
-Salt Meat	100g	286 cal
-Salt Pork	100g	286 cal
-Serrano Ham	100g	339 cal
-Spare Ribs	100g	396 cal
-Spareribs	100g	238 cal
-All-blue Potatoes	100g	61 cal
-Baked Potato	100g	93 cal
-Boiled Potatoes	100g	87 cal
-Cassava	100g	160 cal
-Croquettes	100g	127 cal
-Dumpling Dough	100g	124 cal
-Dumplings	100g	124 cal
-French Fingerling Potatoes	100g	82 cal
-French Fries	100g	312 cal
-Fried Potatoes	100g	312 cal
-Gnocchi	100g	133 cal
-Japanese Sweet Potatoes	100g	87 cal
-Marrow Dumplings	100g	424 cal
-Mashed Potatoes	100g	89 cal
-Norland Red Potatoes	100g	89 cal
-Omelette	100g	154 cal
-Potato	100g	77 cal
-Potato Dumpling	100g	124 cal
-Potato Fritter	100g	185 cal
-Potato Gratin	100g	132 cal
-Potato Pancakes	100g	268 cal
-Potato Salad	100g	143 cal
-Potato Starch	100g	331 cal
-Potato Sticks	100g	522 cal
-Potato Waffles	100g	167 cal
-Potato Wedges	100g	123 cal
-Potatoes au Gratin	100g	132 cal
-Purple Majesty Potatoes	100g	72 cal
-Red Gold Potatoes	100g	89 cal
-Red Potatoes	100g	89 cal
-Roast Potatoes	100g	149 cal
-Rosemary Potatoes	100g	93 cal
-Russet Potatoes	100g	97 cal
-Russian Banana Potatoes	100g	67 cal
-Rösti	100g	138 cal
-Sweet Potato	100g	92 cal
-White Potatoes	100g	94 cal
-Yams	100g	116 cal
-Yukon Gold Potatoes	100g	82 cal
-Capon	100g	229 cal
-Chicken	100g	219 cal
-Chicken Breast	100g	172 cal
-Chicken Drumsticks	100g	185 cal
-Chicken Gizzards	100g	154 cal
-Chicken Legs	100g	174 cal
-Chicken Thighs	100g	229 cal
-Chicken Wings	100g	266 cal
-Cornish Hens	100g	259 cal
-Dove	100g	213 cal
-Duck	100g	337 cal
-Duck Breast	100g	201 cal
-Emu	100g	152 cal
-Goose	100g	305 cal
-Guinea-Fowl	100g	158 cal
-Ostrich	100g	145 cal
-Ostrich Meat	100g	145 cal
-Pheasant	100g	239 cal
-Pheasant Breast	100g	133 cal
-Pheasant Leg	100g	239 cal
-Pigeon	100g	142 cal
-Poularde	100g	200 cal
-Quail	100g	227 cal
-Quail Breast	100g	123 cal
-Rhea	100g	160 cal
-Turkey	100g	189 cal
-Turkey Breast	100g	135 cal
-Turkey Cutlet	100g	189 cal
-Turkey Drumsticks	100g	208 cal
-Turkey Legs	100g	208 cal
-Turkey Steak	100g	189 cal
-Turkey Wings	100g	221 cal
-Wild Duck	100g	211 cal
-1000 Island Dressing	100ml	370 cal
-Ajvar	100ml	18 cal
-Arrabiata Sauce	100g	36 cal
-Balsamic Vinaigrette Dressing	100ml	290 cal
-Barbecue Sauce	100g	150 cal
-Bechamel Sauce	100g	225 cal
-Bernaise Sauce	100g	414 cal
-Blue Cheese Dressing	100ml	533 cal
-Bolognese	100g	106 cal
-Buttermilk Ranch Dressing	100ml	533 cal
-Caesar Dressing	100ml	429 cal
-Catalina Dressing	100ml	282 cal
-Chasseur Sauce	100g	45 cal
-Chili Sauce	100g	112 cal
-Cream Sauce	100g	180 cal
-Curry Ketchup	100g	124 cal
-Curry Sauce	100g	26 cal
-French Dressing	100ml	60 cal
-Gravy	100g	53 cal
-Greek Dressing	100ml	467 cal
-Hamburger Sauce	100g	383 cal
-Harissa	100g	52 cal
-Hollandaise Sauce	100g	535 cal
-Honey Mustard Dressing	100ml	464 cal
-Horseradish	100g	48 cal
-Italian Dressing	100ml	293 cal
-Ketchup	100g	100 cal
-Mayonnaise	100g	692 cal
-Mustard	100g	60 cal
-Mustard Sauce	100g	645 cal
-Orange Sauce	100g	179 cal
-Pesto	100g	458 cal
-Ranch Dressing	100ml	510 cal
-Remoulade Sauce	100g	635 cal
-Russian Dressing	100ml	400 cal
-Salad Dressing	100ml	449 cal
-Sambal Oelek	100g	21 cal
-Sesame Ginger Dressing	100ml	464 cal
-Sesame Paste	100g	595 cal
-Sour Cream	100g	217 cal
-Sour Cream Sauce	100g	60 cal
-Soy Sauce	100ml	67 cal
-Sweet and Sour Sauce	100g	179 cal
-Tabasco	100g	70 cal
-Teriyaki Sauce	100g	89 cal
-Thai Curry Paste	100g	155 cal
-Tomato Paste	100g	82 cal
-Tomato Puree	100g	38 cal
-Tomato Sauce	100g	24 cal
-Tzatziki	100g	94 cal
-Vinaigrette	100ml	120 cal
-Worcestershire Sauce	100ml	78 cal
-Yogurt Dressing	100ml	45 cal
-Zesty Italian Dressing	100ml	267 cal
-Andouille	100g	232 cal
-Bacon	100g	407 cal
-Black Pudding	100g	379 cal
-Blood Sausage	100g	379 cal
-Bockwurst	100g	301 cal
-Boiled Ham	100g	104 cal
-Bologna	100g	247 cal
-Boudin	100g	194 cal
-Bratwurst	100g	297 cal
-Brawn	100g	157 cal
-Breakfast Sausage Links	100g	339 cal
-Cheese Pastry	100g	374 cal
-Chicken Breast	100g	79 cal
-Chicken Meat	100g	79 cal
-Chicken Salad	100g	81 cal
-Chorizo	100g	455 cal
-Cooked Ham	100g	133 cal
-Corned Beef	100g	153 cal
-Cumberland Sausage	100g	250 cal
-Frankfurters	100g	305 cal
-Garlic Sausage	100g	169 cal
-Hot Dogs	100g	278 cal
-Hot Sausage	100g	259 cal
-Italian Sausage	100g	149 cal
-Jerky	100g	410 cal
-Kielbasa	100g	309 cal
-Knackwurst	100g	307 cal
-Landjaeger	100g	352 cal
-Linguica	100g	282 cal
-Liver Pate	100g	319 cal
-Liverwurst	100g	326 cal
-Luncheon Meat	100g	117 cal
-Mettwurst	100g	310 cal
-Mortadella	100g	311 cal
-Pastrami	100g	133 cal
-Pepperoni	100g	494 cal
-Polish Sausage	100g	301 cal
-Pork	100g	247 cal
-Pork Roll	100g	302 cal
-Prosciutto	100g	195 cal
-Ring Bologna	100g	286 cal
-Salami	100g	336 cal
-Sausage	100g	230 cal
-Smoked Sausage	100g	301 cal
-Souse	100g	157 cal
-Spam	100g	315 cal
-Weisswurst	100g	313 cal
-American Cheese	100g	148 cal
-Applewood	100g	410 cal
-Bergkäse	100g	418 cal
-Butter Cheese	100g	388 cal
-Cheddar	100g	403 cal
-Cheese Platter	100g	357 cal
-Cheese Slices	100g	356 cal
-Colby Cheese	100g	394 cal
-Colby-Jack Cheese	100g	394 cal
-Cold Pack Cheese	100g	246 cal
-Edam	100g	357 cal
-Edam Cheese	100g	357 cal
-Emmental	100g	357 cal
-Emmentaler	100g	357 cal
-Esrom (Cheese)	100g	322 cal
-Fol Epi	100g	388 cal
-Fresh Mozzarella	100g	280 cal
-Gouda	100g	356 cal
-Gouda Cheese	100g	356 cal
-Havarti	100g	371 cal
-Lacy Swiss Cheese	100g	321 cal
-Leerdammer	100g	284 cal
-Leerdammer Cheese	100g	284 cal
-Maasdam Cheese	100g	344 cal
-Monterey Jack Cheese	100g	373 cal
-Mozzarella	100g	280 cal
-Muenster Cheese	100g	368 cal
-Pepper Cheese	100g	100 cal
-Sandwich Cheese	100g	148 cal
-Smoked Cheese	100g	410 cal
-Tilsit	100g	340 cal
-White American	100g	148 cal
-White Cheddar	100g	403 cal
-Young Gouda	100g	356 cal
-7up	100ml	44 cal
-Barq’s	100ml	46 cal
-Bitter Lemon	100ml	34 cal
-Canada Dry Ginger Ale	100ml	41 cal
-Cherry Coke	100ml	44 cal
-Coke	100ml	42 cal
-Coke Zero	100ml	0 cal
-Diet Cherry Coke	100ml	1 cal
-Diet Coke	100ml	1 cal
-Diet Dr. Pepper	100ml	0 cal
-Diet Pepsi	100ml	0 cal
-Diet Sunkist	100ml	0 cal
-Dr. Brown’s	100ml	53 cal
-Dr. Pepper	100ml	27 cal
-Fanta	100ml	39 cal
-Fanta Zero	100ml	0 cal
-Five Alive	100ml	35 cal
-Fresca	100ml	0 cal
-Full Throttle	100ml	110 cal
-Fuze	100ml	20 cal
-Fuze Tea	100ml	25 cal
-Gatorade	100ml	25 cal
-Ginger Ale	100ml	35 cal
-Ice Tea	100ml	27 cal
-Jolt Cola	100ml	44 cal
-Kool-Aid	100ml	26 cal
-Lemonade	100ml	42 cal
-Mello Yello	100ml	49 cal
-Minute Maid	100ml	46 cal
-Minute Maid Light	100ml	2 cal
-Mug Root Beer	100ml	42 cal
-Orange Soda	100ml	48 cal
-Pepsi	100ml	44 cal
-Pibb Xtra	100ml	40 cal
-Powerade	100ml	120 cal
-Schweppes Ginger Ale	100ml	38 cal
-Soda	100ml	53 cal
-Sprite	100ml	37 cal
-Sprite Zero	100ml	0 cal
-Squirt	100ml	44 cal
-Sunkist	100ml	25 cal
-Surge	100ml	48 cal
-TaB	100ml	0 cal
-Tonic Water	100ml	35 cal
-Vanilla Coke	100ml	45 cal
-Alphabet Soup	100g	25 cal
-Bean Stew	100g	133 cal
-Beef Bouillon	100g	3 cal
-Beef Noodle Soup	100g	34 cal
-Beef Soup	100g	33 cal
-Bouillon	100g	16 cal
-Broccoli Cheese Soup	100g	87 cal
-Broccoli Soup	100g	87 cal
-Cabbage Soup	100g	28 cal
-Carrot Ginger Soup	100g	25 cal
-Carrot Soup	100g	25 cal
-Chicken Bouillon	100g	4 cal
-Chicken Broth	100g	16 cal
-Chicken Gumbo Soup	100g	23 cal
-Chicken Noodle Soup	100g	25 cal
-Chicken Stock	100g	16 cal
-Chicken Vegetable Soup	100g	31 cal
-Chicken with Rice Soup	100g	24 cal
-Cream of Asparagus Soup	100g	35 cal
-Cream of Broccoli Soup	100g	45 cal
-Cream of Celery Soup	100g	37 cal
-Cream of Chicken Soup	100g	48 cal
-Cream of Mushroom Soup	100g	39 cal
-Cream of Onion Soup	100g	44 cal
-Cream of Potato Soup	100g	30 cal
-Creamy Chicken Noodle Soup	100g	23 cal
-French Onion Soup	100g	23 cal
-Golden Mushroom Soup	100g	65 cal
-Goulash	100g	1009 cal
-Instant Ramen	100g	436 cal
-Lentil Soup	100g	56 cal
-Lobster Bisque Soup	100g	100 cal
-Meatball Soup	100g	49 cal
-Minestrone	100g	34 cal
-Mushroom Soup	100g	35 cal
-Noodle Soup	100g	34 cal
-Onion Soup	100g	23 cal
-Oxtail Soup	100g	28 cal
-Pea Soup	100g	75 cal
-Potato Soup	100g	80 cal
-Pumpkin Soup	100g	29 cal
-Ramen	100g	436 cal
-Scotch Broth	100g	33 cal
-Succotash	100g	115 cal
-Thai Soup	100g	60 cal
-Tomato Rice Soup	100g	47 cal
-Tomato Soup	100g	30 cal
-Vegetable Beef Soup	100g	31 cal
-Vegetable Broth	100g	5 cal
-Vegetable Soup	100g	28 cal
-Vegetable Stock	100g	5 cal
-Wedding Soup	100g	53 cal
-Almond Butter	100g	614 cal
-Apple Butter	100g	173 cal
-Applesauce	100g	68 cal
-Apricot Jam	100g	250 cal
-Blackberry Jam	100g	250 cal
-Blackcurrant Jam	100g	250 cal
-Blueberry Jam	100g	250 cal
-Cheese Spread	100g	290 cal
-Cherry Jam	100g	250 cal
-Chocolate Philadelphia	100g	287 cal
-Chocolate Spread	100g	541 cal
-Cream Cheese	100g	342 cal
-Egg	100g	97 cal
-Grape Jelly	100g	255 cal
-Honey	100g	304 cal
-Jelly	100g	278 cal
-Jif Peanut Butter	100g	580 cal
-Liverwurst	100g	305 cal
-Margarine	100g	717 cal
-Marmite	100g	225 cal
-Marshmallow Fluff	100g	666 cal
-Nutella	100g	544 cal
-Olive Spread	100g	550 cal
-Peanut Butter	100g	589 cal
-Peter Pan Peanut Butter	100g	609 cal
-Philadelphia Cream Cheese	100g	342 cal
-Plum Jam	100g	250 cal
-Pâté (720), Pate	100g	319 cal
-Salted Butter	100g	717 cal
-Skippy Peanut Butter	100g	594 cal
-Smuckers Strawberry Jam	100g	250 cal
-Strawberry Jam	100g	250 cal
-Strawberry Jelly	100g	250 cal
-Sunbutter	100g	617 cal
-Sunflower Butter	100g	617 cal
-Tapenade	100g	233 cal
-Unsalted Butter	100g	717 cal
-Vegemite	100g	180 cal
-Wild Honey	100g	286 cal
-Acerola	100g	32 cal
-Asian Pear	100g	42 cal
-Avocado	100g	160 cal
-Banana	100g	89 cal
-Breadfruit	100g	103 cal
-Cantaloupe Melon	100g	34 cal
-Casaba Melon	100g	28 cal
-Cherimoya	100g	75 cal
-Dragon Fruit	100g	60 cal
-Durian	100g	147 cal
-Feijoa	100g	55 cal
-Galia Melon	100g	23 cal
-Grapefruit	100g	42 cal
-Guava	100g	68 cal
-Honeydew	100g	36 cal
-Jackfruit	100g	95 cal
-Kiwi	100g	61 cal
-Kumquat	100g	71 cal
-Lychee	100g	66 cal
-Mandarin Oranges	100g	53 cal
-Mango	100g	60 cal
-Mangosteen	100g	73 cal
-Maracuya	100g	97 cal
-Maraschino Cherries	100g	165 cal
-Muskmelon	100g	34 cal
-Noni	100g	53 cal
-Passion Fruit	100g	97 cal
-Pineapple	100g	50 cal
-Pink Grapefruit	100g	42 cal
-Plantain	100g	122 cal
-Pomegranate	100g	83 cal
-Pomelo	100g	38 cal
-Prickly Pear	100g	41 cal
-Rambutan	100g	82 cal
-Sapodilla	100g	83 cal
-Soursop Fruit	100g	66 cal
-Star Fruit	100g	31 cal
-Tamarind	100g	239 cal
-Watermelon	100g	30 cal
-Almond Oil	100ml	882 cal
-Apricot Kernel Oil	100ml	889 cal
-Argan Oil	100ml	896 cal
-Avocado Oil	100ml	857 cal
-Babassu Oil	100ml	884 cal
-Canola Oil	100ml	884 cal
-Coconut Oil	100ml	857 cal
-Corn Oil	100ml	800 cal
-Cottonseed Oil	100ml	882 cal
-Flaxseed Oil	100ml	884 cal
-Grape Seed Oil	100ml	884 cal
-Hazelnut Oil	100ml	889 cal
-Linseed Oil	100ml	837 cal
-Menhaden Oil	100ml	911 cal
-Mustard Oil	100ml	884 cal
-Oat Oil	100ml	884 cal
-Olive Oil	100ml	800 cal
-Palm Kernel Oil	100ml	882 cal
-Palm Oil	100ml	882 cal
-Peanut Oil	100ml	857 cal
-Poppy Seed Oil	100ml	884 cal
-Pumpkin Seed Oil	100ml	880 cal
-Rice Bran Oil	100ml	889 cal
-Safflower Oil	100ml	857 cal
-Salmon Oil	100ml	911 cal
-Sesame Oil	100ml	889 cal
-Shea Oil	100ml	884 cal
-Soy Oil	100ml	882 cal
-Sunflower Oil	100ml	884 cal
-Tomato Seed Oil	100ml	884 cal
-Vegetable Oil	100ml	800 cal
-Walnut Oil	100ml	889 cal
-Wheat Germ Oil	100ml	929 cal
-Artichoke	100g	47 cal
-Arugula	100g	25 cal
-Asparagus	100g	20 cal
-Aubergine	100g	25 cal
-Beetroot	100g	43 cal
-Bell Pepper	100g	20 cal
-Black Olives	100g	115 cal
-Broccoli	100g	34 cal
-Brussels Sprouts	100g	43 cal
-Cabbage	100g	25 cal
-Capsicum	100g	27 cal
-Carrot	100g	41 cal
-Cauliflower	100g	25 cal
-Celery	100g	16 cal
-Chard	100g	19 cal
-Cherry Tomato	100g	100 cal
-Chicory	100g	72 cal
-Chinese Cabbage	100g	16 cal
-Chives	100g	30 cal
-Collard Greens	100g	32 cal
-Corn	100g	365 cal
-Courgette	100g	17 cal
-Creamed Spinach	100g	74 cal
-Cucumber	100g	16 cal
-Eggplant	100g	25 cal
-Endive	100g	17 cal
-Fennel	100g	31 cal
-Garlic	100g	149 cal
-Gherkin	100g	14 cal
-Gourd	100g	14 cal
-Green Beans	100g	31 cal
-Green Olives	100g	115 cal
-Green Onion	100g	32 cal
-Horseradish	100g	48 cal
-Kale	100g	49 cal
-Kohlrabi	100g	27 cal
-Kumara	100g	86 cal
-Leek	100g	61 cal
-Lettuce	100g	15 cal
-Mushrooms	100g	22 cal
-Mustard Greens	100g	27 cal
-Nori	100g	35 cal
-Okra	100g	33 cal
-Olives	100g	115 cal
-Onion	100g	40 cal
-Parsnips	100g	75 cal
-Peas	100g	81 cal
-Pepper	100g	27 cal
-Potato	100g	77 cal
-Pumpkin	100g	26 cal
-Radishes	100g	16 cal
-Red Cabbage	100g	31 cal
-Rutabaga	100g	38 cal
-Shallots	100g	72 cal
-Spinach	100g	23 cal
-Squash	100g	45 cal
-Sweet Potato	100g	86 cal
-Tomato	100g	18 cal
-Turnip Greens	100g	20 cal
-Turnips	100g	28 cal
-Wasabi	100g	109 cal
-Winter Squash	100g	34 cal
-Zucchini	100g	17 cal
-Alligator	100g	104 cal
-Alligator Meat	100g	232 cal
-Antelope Meat	100g	150 cal
-Bear Meat	100g	259 cal
-Beaver Meat	100g	212 cal
-Bison	100g	171 cal
-Bison Meat	100g	171 cal
-Bison Sirloin	100g	171 cal
-Buffalo	100g	131 cal
-Buffalo Meat	100g	131 cal
-Caribou	100g	159 cal
-Goose	100g	238 cal
-Goose Meat	100g	238 cal
-Lamb	100g	202 cal
-Lamb Meat	100g	202 cal
-Mallard Duck Meat	100g	211 cal
-Mallard Meat	100g	211 cal
-Moose	100g	134 cal
-Moose Meat	100g	134 cal
-Mutton	100g	234 cal
-Mutton Meat	100g	234 cal
-Ostrich	100g	175 cal
-Ostrich Meat	100g	175 cal
-Pheasant	100g	239 cal
-Pheasant Meat	100g	239 cal
-Rabbit	100g	197 cal
-Racoon	100g	255 cal
-Racoon Meat	100g	255 cal
-Reindeer	100g	200 cal
-Reindeer Meat	100g	200 cal
-Squirrel	100g	173 cal
-Squirrel Meat	100g	173 cal
-Venison	100g	164 cal
-Venison Sirloin	100g	158 cal
-Wild Boar	100g	160 cal
-Wild Boar Meat	100g	160 cal
-Cabernet Sauvignon	100ml	77 cal
-Cava	100ml	76 cal
-Champagne	100ml	76 cal
-Chardonnay	100ml	85 cal
-Chenin Blanc	100ml	80 cal
-Chocolate Wine	100ml	256 cal
-Dry Red Wine	100ml	85 cal
-Gamay	100ml	78 cal
-Malbec	100ml	82 cal
-Malbec Wine	100ml	82 cal
-Marsala Wine	100ml	100 cal
-Merlot	100ml	83 cal
-Merlot Wine	100ml	83 cal
-Moscato Wine	100ml	76 cal
-Mulled Wine	100ml	196 cal
-Pinot Gris	100ml	83 cal
-Pinot Noir	100ml	75 cal
-Plum Wine	100ml	163 cal
-Port Wine	100ml	160 cal
-Prosecco	100ml	71 cal
-Red Wine	100ml	85 cal
-Red Wines	100ml	85 cal
-Riesling	100ml	80 cal
-Riesling Wine	100ml	80 cal
-Rose Wine	100ml	71 cal
-Sangria	100ml	132 cal
-Sauvignon Blanc	100ml	81 cal
-Sherry	100ml	116 cal
-Shiraz	100ml	71 cal
-Sparkling Wine	100ml	190 cal
-Sweet Red Wine	100ml	81 cal
-Sweet White Wine	100ml	82 cal
-Sweet Wines	100ml	83 cal
-Vermouth	100ml	108 cal
-White Wine	100ml	82 cal
-White Zinfandel	100ml	88 cal
-Wine	100ml	83 cal
-Yellow Tail Wine	100ml	71 cal
-Zinfandel	100ml	88 cal
-Activia	100g	74 cal
-Activia Lemon	100g	100 cal
-Activia Strawberry	100g	97 cal
-Aloe Vera Yogurt	100g	85 cal
-Ayran	100ml	42 cal
-Bircher Muesli Yogurt	100g	109 cal
-Blueberry Yogurt	100g	105 cal
-Cherry Yogurt	100g	97 cal
-Chocolate Yogurt	100g	128 cal
-Cream Yogurt	100g	124 cal
-Creamy Yogurt	100g	90 cal
-Diet Yogurt	100g	54 cal
-Fruit Yogurt	100g	97 cal
-Greek Yogurt	100g	53 cal
-Low-Fat Yogurt	100g	63 cal
-Mocca Yogurt	100g	100 cal
-Organic Yogurt	100g	75 cal
-Peach Yogurt	100g	97 cal
-Plain Yogurt	100g	61 cal
-Probiotic Yogurt	100g	80 cal
-Skim Milk Yogurt	100g	56 cal
-Stracciatella Yogurt	100g	139 cal
-Strawberry Yogurt	100g	100 cal
-Vanilla Yogurt	100g	101 cal
-Yogurt	100g	61 cal
-Yogurt Corner	100g	119 cal
-Yoplait Boston Cream Pie	100g	90 cal
-Yoplait French Vanilla	100g	100 cal
-Yoplait Greek Blueberry	100g	100 cal
-Yoplait Greek Coconut	100g	100 cal
-Yoplait Greek Strawberry	100g	100 cal
-Yoplait Greek Vanilla	100g	100 cal
-Yoplait Harvest Peach	100g	100 cal
-Yoplait Key Lime Pie	100g	100 cal
-Yoplait Mango	100g	100 cal
-Yoplait Mixed Berry	100g	100 cal
-Yoplait Pina Colada	100g	100 cal
-Yoplait Strawberry	100g	100 cal
-Yoplait Strawberry Banana	100g	100 cal
-Yoplait Strawberry Cheesecake	100g	100 cal
+put("1000 Island Dressing", 370);
+put("3 Musketeers", 400);
+put("7up", 44);
+put("ACE Drink", 44);
+put("Absinthe", 348);
+put("Acai Juice", 58);
+put("Acai", 70);
+put("Acerola", 32);
+put("Acorn", 387);
+put("Activia Lemon", 100);
+put("Activia Strawberry", 97);
+put("Activia", 74);
+put("Advocaat", 283);
+put("After Eight", 452);
+put("Agar-Agar", 26);
+put("Agave Syrup", 310);
+put("Airheads", 375);
+put("Ajvar", 18);
+put("Ale", 35);
+put("Alfalfa Sprouts", 23);
+put("All Purpose Flour", 364);
+put("All-blue Potatoes", 61);
+put("Alligator Meat", 232);
+put("Alligator", 104);
+put("Alligator", 232);
+put("Almond Butter", 614);
+put("Almond Extract", 258);
+put("Almond Extract", 374);
+put("Almond Milk", 17);
+put("Almond Oil", 882);
+put("Almond Oil", 882);
+put("Almond Roca", 571);
+put("Almonds", 529);
+put("Almonds", 575);
+put("Aloe Vera Yogurt", 85);
+put("Aloe Vera", 44);
+put("Alphabet Soup", 25);
+put("Altbier", 43);
+put("Amaranth", 371);
+put("Amaretto", 310);
+put("American Cheese", 148);
+put("American Cheese", 148);
+put("Anchovy", 131);
+put("Andouille", 232);
+put("Angel Delight", 451);
+put("Angel Food Cake", 258);
+put("Animal Crackers", 446);
+put("Anise Seed", 337);
+put("Anise", 337);
+put("Antelope Meat", 150);
+put("Apple Butter", 173);
+put("Apple Cake", 252);
+put("Apple Cobbler", 198);
+put("Apple Crisp", 156);
+put("Apple Crumble", 156);
+put("Apple Juice", 46);
+put("Apple Pie Filling", 100);
+put("Apple Pie", 237);
+put("Apple Pie", 237);
+put("Apple Spritzer", 24);
+put("Apple Strudel", 274);
+put("Apple Turnover", 348);
+put("Apple Turnover", 348);
+put("Apple", 52);
+put("Applejack", 233);
+put("Applesauce Cake", 358);
+put("Applesauce", 62);
+put("Applesauce", 68);
+put("Applesauce", 68);
+put("Applewood", 410);
+put("Applewood", 410);
+put("Apricot Jam", 250);
+put("Apricot Kernel Oil", 889);
+put("Apricot Nectar", 56);
+put("Apricot", 48);
+put("Arby’s Grand Turkey Club", 210);
+put("Arby’s Reuben", 208);
+put("Arby’s Roast Beef Classic", 234);
+put("Arby’s Roast Beef Max", 234);
+put("Argan Oil", 896);
+put("Arrabiata Sauce", 36);
+put("Arrowroot", 65);
+put("Artichoke", 47);
+put("Arugula", 25);
+put("Arugula", 25);
+put("Asiago Cheese", 392);
+put("Asian Pear", 42);
+put("Asparagus", 20);
+put("Asti", 138);
+put("Aubergine", 25);
+put("Avocado Oil", 857);
+put("Avocado Oil", 857);
+put("Avocado", 160);
+put("Avocado", 160);
+put("Ayran", 42);
+put("Azuki Bean", 124);
+put("BBQ Chicken Pizza", 234);
+put("BBQ Pizza", 224);
+put("BBQ Rib", 212);
+put("BBQ Ribs", 255);
+put("BLT", 247);
+put("Babassu Oil", 884);
+put("Baby Back Ribs", 259);
+put("Baby Ruth", 469);
+put("Babybel", 333);
+put("Bacon and Eggs", 252);
+put("Bacon", 407);
+put("Bacon", 407);
+put("Bagel", 257);
+put("Baguette", 274);
+put("Baileys", 327);
+put("Bailey’s Irish Cream", 327);
+put("Baked Alaska", 247);
+put("Baked Beans", 94);
+put("Baked Chicken", 164);
+put("Baked Ham", 343);
+put("Baked Potato", 93);
+put("Bakewell Tart", 430);
+put("Baking Powder", 53);
+put("Baking Soda", 0);
+put("Balsamic Vinaigrette Dressing", 290);
+put("Balsamic Vinegar", 88);
+put("Bamboo Shoots", 27);
+put("Banana Bread", 326);
+put("Banana Juice", 50);
+put("Banana Nut Bread", 326);
+put("Banana", 89);
+put("Banana", 89);
+put("Banoffee Pie", 395);
+put("Barbecue Sauce", 150);
+put("Barley Groats", 100);
+put("Barley", 354);
+put("Barq’s", 46);
+put("Basil", 233);
+put("Baskin-Robbins", 239);
+put("Bass", 45);
+put("Bean Burrito", 200);
+put("Bean Curd", 76);
+put("Bean Sprouts", 30);
+put("Bean Stew", 133);
+put("Bear Meat", 259);
+put("Beaver Meat", 212);
+put("Bechamel Sauce", 225);
+put("Beck’s", 39);
+put("Beechnut", 576);
+put("Beef Bouillon", 3);
+put("Beef Brain", 196);
+put("Beef Brisket", 137);
+put("Beef Brisket", 242);
+put("Beef Fillet", 189);
+put("Beef Goulash", 123);
+put("Beef Heart", 165);
+put("Beef Jerky", 410);
+put("Beef Kidney", 158);
+put("Beef Liver", 191);
+put("Beef Lung", 120);
+put("Beef Melt", 271);
+put("Beef Minute Steak", 133);
+put("Beef Neck", 213);
+put("Beef Noodle Soup", 34);
+put("Beef Pancreas", 271);
+put("Beef Patty", 247);
+put("Beef Pizza", 304);
+put("Beef Prime Rib", 404);
+put("Beef Ribs", 196);
+put("Beef Ribs", 238);
+put("Beef Salami", 375);
+put("Beef Sirloin", 182);
+put("Beef Soup", 33);
+put("Beef Stew", 95);
+put("Beef Suet", 854);
+put("Beef Tallow", 902);
+put("Beef Tenderloin", 218);
+put("Beef Thymus", 319);
+put("Beef Tongue", 284);
+put("Beef Tripe", 94);
+put("Beef", 171);
+put("Beef", 248);
+put("Beer Bread", 227);
+put("Beer", 43);
+put("Beer", 43);
+put("Beetroot", 43);
+put("Bell Pepper", 20);
+put("Ben and Jerry’s", 228);
+put("Bengal Gram", 364);
+put("Bergkäse", 418);
+put("Bernaise Sauce", 414);
+put("Bianca Pizza", 246);
+put("Big N’ Tasty", 223);
+put("Bircher Muesli Yogurt", 109);
+put("Birthday Cake", 465);
+put("Biryani", 176);
+put("Biscuit", 269);
+put("Bison Meat", 171);
+put("Bison Sirloin", 171);
+put("Bison", 171);
+put("Bitter Lemon", 34);
+put("Black Beans", 341);
+put("Black Bread", 250);
+put("Black Chickpeas", 364);
+put("Black Forest Cake", 264);
+put("Black Gram", 341);
+put("Black Olives", 115);
+put("Black Pepper", 251);
+put("Black Pudding", 253);
+put("Black Pudding", 379);
+put("Black Rice", 323);
+put("Black Sesame Seeds", 573);
+put("Black and White Cookie", 381);
+put("Blackberries", 43);
+put("Blackberry Jam", 250);
+put("Blackberry Juice", 48);
+put("Blackcurrant Jam", 250);
+put("Blood Oranges", 50);
+put("Blood Sausage", 379);
+put("Blue Cheese Dressing", 533);
+put("Blue Cheese", 353);
+put("Blue Curacao", 243);
+put("Blue Moon", 48);
+put("Blueberries", 57);
+put("Blueberry Cobbler", 234);
+put("Blueberry Jam", 250);
+put("Blueberry Muffin", 377);
+put("Blueberry Pie", 232);
+put("Blueberry Yogurt", 105);
+put("Bluefish", 159);
+put("Bock Beer", 50);
+put("Bockwurst", 301);
+put("Boiled Ham", 104);
+put("Boiled Ham", 126);
+put("Boiled Potatoes", 87);
+put("Bologna", 247);
+put("Bologna", 247);
+put("Bolognese", 106);
+put("Boudin", 194);
+put("Bouillon", 16);
+put("Bourbon", 233);
+put("Boysenberry Juice", 54);
+put("Bran Flakes", 356);
+put("Bran Muffins", 270);
+put("Brandy", 213);
+put("Bratwurst", 297);
+put("Bratwurst", 333);
+put("Brawn", 157);
+put("Brawn", 309);
+put("Brazil Nuts", 656);
+put("Bread Flour", 361);
+put("Bread Pudding", 153);
+put("Breadfruit", 103);
+put("Breadfruit", 191);
+put("Breadsticks", 400);
+put("Breakfast Sausage Links", 339);
+put("Bream", 135);
+put("Bresaola", 178);
+put("Brie", 334);
+put("Brioche", 346);
+put("Brittle", 592);
+put("Broccoli Cheese Soup", 87);
+put("Broccoli Soup", 87);
+put("Broccoli", 34);
+put("Broth", 100);
+put("Brown Bread", 246);
+put("Brown Lentil", 353);
+put("Brown Rice", 362);
+put("Brown Rice", 388);
+put("Brown Sugar", 395);
+put("Brownies", 405);
+put("Brussels Sprouts", 43);
+put("Buckler (N.A.)", 21);
+put("Buckwheat Groats", 346);
+put("Buckwheat", 343);
+put("Bud Ice", 35);
+put("Bud Light Chelada", 43);
+put("Bud Light Lime", 34);
+put("Bud Light", 29);
+put("Bud Select 55", 15);
+put("Bud Select", 28);
+put("Budweiser Chelada", 52);
+put("Budweiser", 41);
+put("Buffalo Chicken Pizza", 252);
+put("Buffalo Meat", 131);
+put("Buffalo", 131);
+put("Bun", 316);
+put("Bundt Cake", 370);
+put("Burger King Angry Whopper", 255);
+put("Burger King Double Whopper with Cheese", 249);
+put("Burger King Double Whopper", 239);
+put("Burger King Original Chicken Sandwich", 301);
+put("Burger King Premium Alaskan Fish Sandwich", 259);
+put("Burger King Triple Whopper", 269);
+put("Burger King Whopper Jr.", 234);
+put("Burger King Whopper with Cheese", 241);
+put("Burger King Whopper", 231);
+put("Burrito", 163);
+put("Busch Light", 27);
+put("Busch N.A.", 17);
+put("Busch", 37);
+put("Butter Cheese", 388);
+put("Butter Chicken", 140);
+put("Butter Pecan Ice Cream", 248);
+put("Butter", 720);
+put("Butterfinger", 450);
+put("Butterfish", 187);
+put("Buttermilk Pancakes", 238);
+put("Buttermilk Pie", 380);
+put("Buttermilk Ranch Dressing", 533);
+put("Buttermilk", 62);
+put("Buttermilk", 62);
+put("Butternut", 612);
+put("Butternut", 612);
+put("Butterscotch Chips", 539);
+put("Cabbage Soup", 28);
+put("Cabbage", 25);
+put("Cabernet Sauvignon", 77);
+put("Caesar Dressing", 429);
+put("Cake Flour", 362);
+put("Calabrese Pizza", 235);
+put("Calamari", 175);
+put("Calf Brain", 136);
+put("Calf Liver", 192);
+put("Calf Lung", 104);
+put("Calf Melt", 256);
+put("California Roll", 93);
+put("Calzone", 231);
+put("Camembert", 300);
+put("Canada Dry Ginger Ale", 41);
+put("Canadian Whiskey", 216);
+put("Canadian-Style Bacon", 107);
+put("Candied Orange Peel", 97);
+put("Candy Apple", 152);
+put("Candy Cane", 423);
+put("Candy Corn", 360);
+put("Candy Floss", 400);
+put("Candy canes", 423);
+put("Cane Sugar", 387);
+put("Canned Apricots", 48);
+put("Canned Blackberries", 92);
+put("Canned Blueberries", 88);
+put("Canned Cherries", 54);
+put("Canned Cranberries", 178);
+put("Canned Crushed Pineapple", 53);
+put("Canned Figs", 107);
+put("Canned Fruit Cocktail", 81);
+put("Canned Fruit Salad", 50);
+put("Canned Gooseberries", 73);
+put("Canned Grapefruit", 37);
+put("Canned Grapes", 76);
+put("Canned Mandarin Oranges", 71);
+put("Canned Mango", 65);
+put("Canned Mangosteen", 73);
+put("Canned Mixed Fruit", 71);
+put("Canned Morello Cherries", 81);
+put("Canned Oranges", 62);
+put("Canned Peaches", 54);
+put("Canned Pears", 35);
+put("Canned Pineapple", 60);
+put("Canned Plums", 58);
+put("Canned Raspberries", 91);
+put("Canned Sliced Pineapple", 53);
+put("Canned Sour Cherries", 114);
+put("Canned Strawberries", 92);
+put("Canned Tangerines", 61);
+put("Cannelloni", 146);
+put("Cannoli", 254);
+put("Canola Oil", 884);
+put("Canola Oil", 884);
+put("Cantaloupe Melon", 34);
+put("Cantaloupe", 34);
+put("Capellini", 353);
+put("Capers", 23);
+put("Capicola", 110);
+put("Capon", 229);
+put("Cappelletti", 164);
+put("Capri-Sun", 41);
+put("Capricciosa Pizza", 260);
+put("Capsicum", 27);
+put("Cap’n Crunch", 404);
+put("Caramel Cake", 385);
+put("Caramel Cake", 475);
+put("Caramel Popcorn", 376);
+put("Caramel squares", 367);
+put("Caraway Seeds", 333);
+put("Cardamom", 311);
+put("Caribou", 159);
+put("Carlsberg", 32);
+put("Carp", 162);
+put("Carrot Cake", 408);
+put("Carrot Ginger Soup", 25);
+put("Carrot Juice", 40);
+put("Carrot Soup", 25);
+put("Carrot", 41);
+put("Carvel", 212);
+put("Casaba Melon", 28);
+put("Cashew", 553);
+put("Cassava", 160);
+put("Cassava", 160);
+put("Catalina Dressing", 282);
+put("Cauliflower", 25);
+put("Cava", 76);
+put("Caviar", 264);
+put("Cayenne Pepper", 318);
+put("Celebrations", 490);
+put("Celery", 16);
+put("Cellophane Noodles", 351);
+put("Chai Tea", 0);
+put("Chai", 0);
+put("Challah", 283);
+put("Chambord", 348);
+put("Chamomile Tea", 0);
+put("Champagne", 75);
+put("Champagne", 76);
+put("Chapati", 240);
+put("Chard", 19);
+put("Chard", 19);
+put("Chardonnay", 85);
+put("Chasseur Sauce", 45);
+put("Cheddar", 403);
+put("Cheddar", 403);
+put("Cheerios", 347);
+put("Cheese Fondue", 228);
+put("Cheese Pastry", 374);
+put("Cheese Pizza", 267);
+put("Cheese Platter", 357);
+put("Cheese Slices", 356);
+put("Cheese Spread", 290);
+put("Cheese Spread", 290);
+put("Cheese Tortellini", 291);
+put("Cheese Whiz", 276);
+put("Cheeseburger", 263);
+put("Cheesecake", 321);
+put("Cheez-It’s", 533);
+put("Chenin Blanc", 80);
+put("Cherimoya", 75);
+put("Cherries", 50);
+put("Cherry Coke", 44);
+put("Cherry Jam", 250);
+put("Cherry Juice", 45);
+put("Cherry Pie", 260);
+put("Cherry Tomato", 100);
+put("Cherry Yogurt", 97);
+put("Chess Pie", 411);
+put("Chester", 387);
+put("Chestnut", 213);
+put("Chex", 387);
+put("Chia Seeds", 486);
+put("Chicken Bouillon", 4);
+put("Chicken Breast Fillet", 79);
+put("Chicken Breast", 163);
+put("Chicken Breast", 172);
+put("Chicken Breast", 172);
+put("Chicken Breast", 79);
+put("Chicken Broth", 16);
+put("Chicken Caesar Salad", 127);
+put("Chicken Drumstick", 185);
+put("Chicken Drumsticks", 185);
+put("Chicken Fajita", 147);
+put("Chicken Fat", 898);
+put("Chicken Fried Steak", 151);
+put("Chicken Giblets", 158);
+put("Chicken Giblets", 277);
+put("Chicken Gizzards", 146);
+put("Chicken Gizzards", 154);
+put("Chicken Gumbo Soup", 23);
+put("Chicken Heart", 185);
+put("Chicken Leg", 174);
+put("Chicken Legs", 174);
+put("Chicken Liver", 167);
+put("Chicken Liver", 172);
+put("Chicken Marsala", 96);
+put("Chicken McNuggets", 302);
+put("Chicken Meat", 172);
+put("Chicken Meat", 79);
+put("Chicken Noodle Soup", 25);
+put("Chicken Nuggets", 296);
+put("Chicken Parmesan", 110);
+put("Chicken Pizza", 234);
+put("Chicken Pizziola", 141);
+put("Chicken Pot Pie", 223);
+put("Chicken Salad", 81);
+put("Chicken Sandwich", 241);
+put("Chicken Stock", 16);
+put("Chicken Stomach", 148);
+put("Chicken Teriyaki Sandwich", 138);
+put("Chicken Thigh", 229);
+put("Chicken Thighs", 229);
+put("Chicken Tikka Masala", 81);
+put("Chicken Vegetable Soup", 31);
+put("Chicken Wing", 266);
+put("Chicken Wings", 266);
+put("Chicken Wings", 324);
+put("Chicken with Rice Soup", 24);
+put("Chicken", 219);
+put("Chicken", 219);
+put("Chickpeas", 364);
+put("Chicory Greens", 23);
+put("Chicory Roots", 72);
+put("Chicory", 72);
+put("Chili Bean", 97);
+put("Chili Powder", 282);
+put("Chili Sauce", 112);
+put("Chili con Carne", 105);
+put("Chili", 282);
+put("Chimichanga", 232);
+put("Chinese Cabbage", 16);
+put("Chitterlings", 233);
+put("Chitterlings", 233);
+put("Chive Cream Cheese", 342);
+put("Chives", 30);
+put("Chives", 30);
+put("Chocolate Bar", 533);
+put("Chocolate Cake", 389);
+put("Chocolate Cheerios", 367);
+put("Chocolate Chip Ice Cream", 215);
+put("Chocolate Chips", 467);
+put("Chocolate Chips", 493);
+put("Chocolate Cream Pie", 304);
+put("Chocolate Ice Cream", 216);
+put("Chocolate Milk", 89);
+put("Chocolate Milkshake", 125);
+put("Chocolate Mousse Cake", 260);
+put("Chocolate Mousse Pie", 260);
+put("Chocolate Mousse", 225);
+put("Chocolate Muffin", 420);
+put("Chocolate Philadelphia", 287);
+put("Chocolate Spread", 541);
+put("Chocolate Sprinkles", 500);
+put("Chocolate Wine", 256);
+put("Chocolate Yogurt", 128);
+put("Chocolate", 529);
+put("Chocos", 380);
+put("Chop Suey", 172);
+put("Chopped Ham", 180);
+put("Chorizo", 455);
+put("Chorizo", 455);
+put("Chuck Roast", 141);
+put("Chuck Steak", 137);
+put("Chuck Steak", 277);
+put("Ciabatta", 271);
+put("Ciao Bella", 109);
+put("Cider Vinegar", 21);
+put("Cider", 49);
+put("Cilantro", 23);
+put("Cinnamon Bun", 436);
+put("Cinnamon Toast Crunch", 433);
+put("Cinnamon", 247);
+put("Clam", 148);
+put("Clamato", 60);
+put("Clausthaler (N.A.)", 26);
+put("Clementine", 47);
+put("Cloves", 274);
+put("Club Mate", 30);
+put("Cobb Salad", 118);
+put("Coca Cola", 42);
+put("Coco Pops", 376);
+put("Cocoa Krispies", 386);
+put("Cocoa Pebbles", 367);
+put("Cocoa Powder", 228);
+put("Cocoa Puffs", 400);
+put("Coconut Cake", 356);
+put("Coconut Flakes", 456);
+put("Coconut Milk", 230);
+put("Coconut Milk", 233);
+put("Coconut Milk", 50);
+put("Coconut Oil", 857);
+put("Coconut Oil", 857);
+put("Coconut Water", 19);
+put("Coconut", 354);
+put("Cod Liver Oil", 1000);
+put("Cod", 105);
+put("Coffee Cake", 331);
+put("Coffee Cake", 418);
+put("Coffee Creamer", 195);
+put("Coffee Ice Cream", 236);
+put("Coffee", 1);
+put("Cognac", 235);
+put("Cointreau", 320);
+put("Coke Zero", 0);
+put("Coke Zero", 1);
+put("Coke", 42);
+put("Cola", 42);
+put("Colby Cheese", 394);
+put("Colby Cheese", 394);
+put("Colby-Jack Cheese", 394);
+put("Colby-Jack Cheese", 394);
+put("Cold Pack Cheese", 246);
+put("Cold Stone Creamery", 232);
+put("Collard Greens", 28);
+put("Collard Greens", 32);
+put("Colt 45", 44);
+put("Conchas/Mexican Sweet Bread", 353);
+put("Concord Grape", 71);
+put("Condensed Milk", 321);
+put("Cooked Ham", 133);
+put("Cookie Crisp", 400);
+put("Cookie Dough Ice Cream", 200);
+put("Cookies", 488);
+put("Coors Light", 29);
+put("Coors N.A.", 18);
+put("Coors", 42);
+put("Coriander", 23);
+put("Corn Dog", 250);
+put("Corn Flakes", 357);
+put("Corn Flour", 361);
+put("Corn Oil", 800);
+put("Corn Oil", 800);
+put("Corn Pops", 377);
+put("Corn Syrup", 281);
+put("Corn Waffles", 274);
+put("Corn", 365);
+put("Cornbread", 179);
+put("Corned Beef Hash", 164);
+put("Corned Beef", 153);
+put("Corned Beef", 251);
+put("Cornish Hens", 259);
+put("Cornmeal", 362);
+put("Cornmeal", 362);
+put("Cornstarch", 381);
+put("Cornstarch", 381);
+put("Corona", 42);
+put("Cottage Cheese", 98);
+put("Cottage Cheese", 98);
+put("Cottage Cheese", 98);
+put("Cottage Pie", 139);
+put("Cotton Candy", 643);
+put("Cotton Seeds", 506);
+put("Cottonseed Oil", 882);
+put("Cottonseed Oil", 882);
+put("Count Chocula", 407);
+put("Courgette", 17);
+put("Couscous", 376);
+put("Couverture", 600);
+put("Cracker", 502);
+put("Cracklin Oat Bran", 402);
+put("Cranberries", 46);
+put("Cranberry Apple Juice", 67);
+put("Cranberry Grape Juice", 71);
+put("Cranberry Juice", 46);
+put("Crawfish", 82);
+put("Crayfish", 87);
+put("Cream Cheese with Herbs", 342);
+put("Cream Cheese", 342);
+put("Cream Cheese", 342);
+put("Cream Cheese", 54);
+put("Cream Puff", 334);
+put("Cream Sauce", 180);
+put("Cream Yogurt", 124);
+put("Cream of Asparagus Soup", 35);
+put("Cream of Broccoli Soup", 45);
+put("Cream of Celery Soup", 37);
+put("Cream of Chicken Soup", 48);
+put("Cream of Mushroom Soup", 39);
+put("Cream of Onion Soup", 44);
+put("Cream of Potato Soup", 30);
+put("Cream of Tartar", 258);
+put("Cream of Tartar", 258);
+put("Cream of Wheat", 364);
+put("Cream", 242);
+put("Creamed Spinach", 74);
+put("Creamy Chicken Noodle Soup", 23);
+put("Creamy Yogurt", 90);
+put("Creme Fraiche", 393);
+put("Crepes", 224);
+put("Cress", 32);
+put("Croissant", 406);
+put("Croquettes", 127);
+put("Crumb Cake", 441);
+put("Crumpet", 178);
+put("Crunchie McFlurry", 174);
+put("Crunchy Nut Cornflakes", 600);
+put("Crunchy Nut", 600);
+put("Crystal Light", 263);
+put("Crystallized Ginger", 335);
+put("Crystallized Ginger", 335);
+put("Cubed Steak", 199);
+put("Cucumber Juice", 10);
+put("Cucumber", 16);
+put("Cumberland Sausage", 250);
+put("Cumin Seed", 375);
+put("Cumin", 375);
+put("Cupcake", 305);
+put("Cupcakes", 305);
+put("Curd", 98);
+put("Curly Fries", 311);
+put("Currant Juice", 48);
+put("Currants", 56);
+put("Curry Ketchup", 124);
+put("Curry Sauce", 26);
+put("Curry", 325);
+put("Custard Apple", 101);
+put("Custard Powder", 337);
+put("Custard", 122);
+put("Dairy Milk McFlurry", 186);
+put("Dal", 230);
+put("Dal", 330);
+put("Dampfnudel", 274);
+put("Dandelion", 45);
+put("Danish Pastry", 374);
+put("Dark Beer", 46);
+put("Dark Rum", 216);
+put("Dates", 282);
+put("Deep Dish Pizza", 265);
+put("Deep-Fried Tofu", 271);
+put("Deviled Eggs", 201);
+put("Dextrose", 375);
+put("Diet Cherry Coke", 1);
+put("Diet Coke", 1);
+put("Diet Coke", 1);
+put("Diet Dr. Pepper", 0);
+put("Diet Pepsi", 0);
+put("Diet Sunkist", 0);
+put("Diet Yogurt", 54);
+put("Dill Weed", 43);
+put("Dill", 43);
+put("Dim Sum", 193);
+put("Dippin Dots", 224);
+put("Dominos Philly Cheese Steak Pizza", 224);
+put("Donut", 403);
+put("Donut/Doughnut", 421);
+put("Dosa", 209);
+put("Dosa", 66);
+put("Double Cheeseburger", 267);
+put("Double Rainbow", 257);
+put("Doughnut", 403);
+put("Dove", 213);
+put("Dr. Brown’s", 53);
+put("Dr. Pepper", 27);
+put("Dragon Fruit", 60);
+put("Drambuie", 358);
+put("Dried Apricots", 241);
+put("Dried Cranberries", 308);
+put("Dried Figs", 249);
+put("Dried Fruit", 243);
+put("Dried Prunes", 107);
+put("Drumsticks", 255);
+put("Dry Red Wine", 85);
+put("Duck Breast", 201);
+put("Duck Egg", 185);
+put("Duck Liver", 136);
+put("Duck", 337);
+put("Duck", 337);
+put("Dumpling Dough", 124);
+put("Dumpling Dough", 99);
+put("Dumplings", 124);
+put("Durian", 147);
+put("Durum Wheat Semolina", 397);
+put("Durum Wheat Semolina", 397);
+put("Dutch Cheese", 393);
+put("Dutch Loaf", 268);
+put("Edam Cheese", 357);
+put("Edam Cheese", 357);
+put("Edam", 357);
+put("Eel", 236);
+put("Egg Cream", 94);
+put("Egg Nog", 88);
+put("Egg Nog", 88);
+put("Egg Noodles", 384);
+put("Egg Roll", 250);
+put("Egg White", 13);
+put("Egg Yolk", 322);
+put("Egg", 97);
+put("Egg", 97);
+put("Eggplant", 25);
+put("Eggy Bread", 196);
+put("Elderflower Cordial", 29);
+put("Emmental", 357);
+put("Emmentaler", 357);
+put("Emmentaler", 357);
+put("Empanada", 335);
+put("Emu", 152);
+put("Enchiladas", 168);
+put("Endive", 17);
+put("Energy-Drink", 87);
+put("English Muffin", 227);
+put("Esrom (Cheese)", 322);
+put("Evaporated Milk", 134);
+put("Evaporated Milk", 135);
+put("Evian", 0);
+put("Extra-Firm Tofu", 91);
+put("Fairy Cakes", 440);
+put("Fajita", 117);
+put("Falafel", 335);
+put("Fanta Zero", 0);
+put("Fanta", 39);
+put("Farfalle", 358);
+put("Feijoa", 55);
+put("Fennel Seed", 345);
+put("Fennel", 31);
+put("Fennel", 31);
+put("Fenugreek", 323);
+put("Ferrero Rocher", 576);
+put("Feta Cream Cheese", 342);
+put("Feta", 264);
+put("Fettuccine", 353);
+put("Fiber One", 267);
+put("Figs", 74);
+put("Filet Mignon", 207);
+put("Filet Mignon", 267);
+put("Filet-o-Fish", 282);
+put("Firm Tofu", 70);
+put("Fish Fingers", 290);
+put("Fish Sandwich", 273);
+put("Fish Sticks", 290);
+put("Fish and Chips", 195);
+put("Fish and Chips", 195);
+put("Five Alive", 35);
+put("Flageolet", 85);
+put("Flan", 145);
+put("Flank Steak", 194);
+put("Flank Steak", 194);
+put("Flapjack", 486);
+put("Flat Iron Steak", 137);
+put("Flatbread", 311);
+put("Flaxseed Oil", 884);
+put("Flaxseed Oil", 884);
+put("Flaxseed", 534);
+put("Flaxseed", 534);
+put("Flounder", 86);
+put("Flour", 364);
+put("Flourless Chocolate Cake", 509);
+put("Focaccia", 249);
+put("Fol Epi", 388);
+put("Fontina", 389);
+put("Fortune Cookies", 214);
+put("Four Cheese Pizza", 221);
+put("Frangelico", 238);
+put("Frankfurters", 305);
+put("Freekeh", 520);
+put("French Cruller", 412);
+put("French Dressing", 60);
+put("French Fingerling Potatoes", 82);
+put("French Fries", 312);
+put("French Fries", 312);
+put("French Onion Soup", 23);
+put("French Vanilla Ice Cream", 201);
+put("Fresca", 0);
+put("Fresh Mozzarella", 280);
+put("Fresh Mozzarella", 280);
+put("Fried Bean Curd", 271);
+put("Fried Potatoes", 312);
+put("Fried Rice", 186);
+put("Fried Shrimp", 277);
+put("Friendly’s", 212);
+put("Froot Loops", 379);
+put("Frosted Cheerios", 393);
+put("Frosted Flakes", 367);
+put("Frosted Mini-Wheats", 353);
+put("Frosties", 367);
+put("Fructose", 368);
+put("Fruit Cake", 324);
+put("Fruit Yogurt", 97);
+put("Fruit salad", 50);
+put("Fruitopia", 110);
+put("Fruity Pebbles", 400);
+put("Full Throttle", 110);
+put("Funnel Cake", 307);
+put("Fusilli", 352);
+put("Fuze Tea", 25);
+put("Fuze", 20);
+put("Galia Melon", 23);
+put("Gamay", 78);
+put("Garlic Bread", 350);
+put("Garlic Cream Cheese", 342);
+put("Garlic Powder", 331);
+put("Garlic Salt", 0);
+put("Garlic Sausage", 169);
+put("Garlic", 149);
+put("Garlic", 149);
+put("Gatorade", 23);
+put("Gatorade", 25);
+put("Gelatin", 335);
+put("Genesee Cream Ale", 46);
+put("German Chocolate Cake", 370);
+put("Ghee", 120);
+put("Gherkin", 14);
+put("Gin", 263);
+put("Ginger Ale", 35);
+put("Ginger Beer", 42);
+put("Ginger Tea", 0);
+put("Ginger", 80);
+put("Gingerbread", 356);
+put("Ginkgo Nuts", 182);
+put("Gjetost", 466);
+put("Glass Noodles", 192);
+put("Glenfiddich", 230);
+put("Glucose Syrup", 387);
+put("Glucose", 286);
+put("Gluten", 370);
+put("Gnocchi", 133);
+put("Goa Bean", 409);
+put("Goat Cheese Pizza", 219);
+put("Goat Cheese", 364);
+put("Goat Cheese", 364);
+put("Goat Milk", 69);
+put("Golden Grahams", 400);
+put("Golden Mushroom Soup", 65);
+put("Goose Fat", 898);
+put("Goose Liver", 133);
+put("Goose Meat", 238);
+put("Goose", 238);
+put("Goose", 305);
+put("Gorgonzola", 350);
+put("Gouda Cheese", 356);
+put("Gouda", 356);
+put("Gouda", 356);
+put("Goulash", 1009);
+put("Gourd", 14);
+put("Grand Marnier", 253);
+put("Granola Bars", 452);
+put("Granulated Sugar", 387);
+put("Grape Jelly", 255);
+put("Grape Juice", 60);
+put("Grape Leaves", 93);
+put("Grape Seed Oil", 884);
+put("Grape Seed Oil", 884);
+put("Grape-Nuts", 362);
+put("Grapefruit Juice", 46);
+put("Grapefruit", 42);
+put("Grapes", 69);
+put("Grated Parmesan", 431);
+put("Gravy", 53);
+put("Greek Dressing", 467);
+put("Greek Yogurt", 53);
+put("Green Beans", 31);
+put("Green Beans", 31);
+put("Green Gram", 347);
+put("Green Lentil", 257);
+put("Green Olives", 115);
+put("Green Onion", 32);
+put("Greengage", 41);
+put("Grilled Cheese Sandwich", 288);
+put("Grilled Cheese", 350);
+put("Grilled Chicken Salad", 88);
+put("Grilled Pizza", 226);
+put("Grissini", 408);
+put("Ground Beef", 241);
+put("Ground Beef", 246);
+put("Ground Chuck", 250);
+put("Ground Cinnamon", 247);
+put("Ground Ginger", 335);
+put("Ground Pork", 263);
+put("Ground Round", 212);
+put("Ground Round", 246);
+put("Grouper", 118);
+put("Gruyere", 413);
+put("Guava", 68);
+put("Guava", 68);
+put("Guinea-Fowl", 158);
+put("Guinness", 35);
+put("Gumdrops", 321);
+put("Gummi Bears", 316);
+put("Haddock", 90);
+put("Hake", 71);
+put("Halibut", 111);
+put("Halloumi", 321);
+put("Ham Sandwich", 241);
+put("Ham Sausage", 164);
+put("Ham and Cheese Sandwich", 241);
+put("Ham", 145);
+put("Ham", 163);
+put("Hamburger Sauce", 383);
+put("Hamburger", 254);
+put("Hanuta", 541);
+put("Harissa", 52);
+put("Havarti", 371);
+put("Havarti", 371);
+put("Hawaiian Pizza", 115);
+put("Hawaiian Punch", 31);
+put("Hazelnut Oil", 889);
+put("Hazelnut", 628);
+put("Hazelnuts", 628);
+put("Head Cheese", 157);
+put("Healthy Choice", 125);
+put("Heavy Cream", 345);
+put("Heineken", 35);
+put("Hemp Oil", 807);
+put("Herring Oil", 902);
+put("Herring", 203);
+put("Hershey Kisses", 471);
+put("Hi-C", 49);
+put("Hickory Ham", 188);
+put("Hickory Nuts", 657);
+put("Hog Maws", 157);
+put("Hog Maws", 250);
+put("Hoki", 121);
+put("Hollandaise Sauce", 535);
+put("Honey Brown", 42);
+put("Honey Ham", 122);
+put("Honey Mustard Dressing", 464);
+put("Honey Nut Cheerios", 393);
+put("Honey Smacks", 370);
+put("Honey", 304);
+put("Honeycomb", 397);
+put("Honeydew", 36);
+put("Horchata", 54);
+put("Horseradish", 48);
+put("Horseradish", 48);
+put("Horseradish", 48);
+put("Horseradish", 48);
+put("Hot Chocolate", 89);
+put("Hot Chocolate", 89);
+put("Hot Dog Buns", 279);
+put("Hot Dog", 269);
+put("Hot Dogs", 278);
+put("Hot Fudge Sundae", 186);
+put("Hot Pepper", 318);
+put("Hot Sausage", 259);
+put("Hummus", 177);
+put("Hurricane High Gravity", 39);
+put("I can\’t believe it\’s not Butter", 357);
+put("IPA", 51);
+put("Ice Cream Cake", 200);
+put("Ice Cream Sandwich", 237);
+put("Ice Cream Sundae", 142);
+put("Ice Milk", 159);
+put("Ice Tea", 27);
+put("Ice Tea", 27);
+put("Iced Tea", 27);
+put("Instant Ramen", 436);
+put("Iodized Salt", 0);
+put("Irish Whiskey", 233);
+put("Italian BMT", 183);
+put("Italian Bread", 271);
+put("Italian Cheese", 397);
+put("Italian Dressing", 293);
+put("Italian Sausage", 149);
+put("Jack Daniel’s", 146);
+put("Jackfruit", 95);
+put("Jackfruit", 95);
+put("Jagermeister", 250);
+put("Jaggery", 383);
+put("Jalapeno", 13);
+put("Jambalaya", 100);
+put("Japanese Sweet Potatoes", 87);
+put("Jarlsberg", 352);
+put("Jelly Beans", 354);
+put("Jelly Belly", 354);
+put("Jelly", 278);
+put("Jerky", 410);
+put("Jif Peanut Butter", 580);
+put("Jim Beam", 222);
+put("Jolly Ranchers", 385);
+put("Jolt Cola", 44);
+put("Jordan Almonds", 429);
+put("Jujube", 79);
+put("Juniper", 45);
+put("Just Right", 391);
+put("Kahlua", 180);
+put("Kale", 49);
+put("Kamut", 337);
+put("Karamalz", 37);
+put("Kashi", 377);
+put("Kebab", 215);
+put("Kefir", 55);
+put("Kelloggs Corn Flakes", 357);
+put("Ketchup", 100);
+put("Key Lime Pie", 359);
+put("Keystone Ice", 40);
+put("Keystone Light", 29);
+put("Kidney Beans", 337);
+put("Kielbasa", 309);
+put("King Cake", 377);
+put("Kipper", 217);
+put("Kit Kat", 521);
+put("Kiwi", 61);
+put("Kiwi", 61);
+put("Kix", 367);
+put("Knackwurst", 307);
+put("Koelsch", 43);
+put("Kohlrabi", 27);
+put("Kombucha", 13);
+put("Kool-Aid", 26);
+put("Kool-Aid", 26);
+put("Krave", 372);
+put("Kumara", 86);
+put("Kumquat", 71);
+put("Labatt", 43);
+put("Lactose-free Milk", 52);
+put("Lacy Swiss Cheese", 321);
+put("Laffy Taffy", 372);
+put("Lager Beer", 43);
+put("Lamb Meat", 202);
+put("Lamb", 202);
+put("Land Shark", 42);
+put("Landjaeger", 352);
+put("Lard", 898);
+put("Lard", 902);
+put("Lasagna", 132);
+put("Lasagne Sheets", 271);
+put("Lasagne", 132);
+put("Lassi", 104);
+put("Lassi", 75);
+put("Latkes", 189);
+put("Latte Macchiato", 57);
+put("Layer Cake", 402);
+put("Leek", 61);
+put("Leerdammer Cheese", 284);
+put("Leerdammer", 284);
+put("Lemon Cake", 352);
+put("Lemon Grass", 99);
+put("Lemon Juice", 21);
+put("Lemon Meringue Pie", 268);
+put("Lemon Pie Filling", 143);
+put("Lemon", 29);
+put("Lemonade", 42);
+put("Lemonade", 42);
+put("Lemonade", 50);
+put("Lentil Soup", 56);
+put("Lentils", 353);
+put("Lettuce", 15);
+put("Licorice", 375);
+put("Licorice", 375);
+put("Life Cereal", 375);
+put("LifeSavers", 500);
+put("Light Beer", 29);
+put("Lima Beans", 71);
+put("Lima Beans", 71);
+put("Lime Juice", 21);
+put("Lime", 30);
+put("Limeade", 128);
+put("Lindt Chocolate", 548);
+put("Ling", 109);
+put("Linguica", 282);
+put("Linguine", 357);
+put("Linseed Oil", 837);
+put("Liqueur", 250);
+put("Liquor", 250);
+put("Liquorice", 375);
+put("Liver Pate", 319);
+put("Liverwurst", 305);
+put("Liverwurst", 326);
+put("Liverwurst", 326);
+put("Lobster Bisque Soup", 100);
+put("Lobster", 89);
+put("Lollipop", 392);
+put("Lotus Seed", 89);
+put("Low Carb Pasta", 282);
+put("Low-Fat Yogurt", 63);
+put("Lowenbrau", 45);
+put("Lucky Charms", 406);
+put("Luncheon Meat", 117);
+put("Lychee", 66);
+put("Lychees", 66);
+put("M&M’s", 479);
+put("Maasdam Cheese", 344);
+put("Maasdam Cheese", 344);
+put("Mac and Cheese", 370);
+put("Macadamia Nuts", 718);
+put("Macadamia Oil", 819);
+put("Macaroni and Cheese", 370);
+put("Macaroni", 370);
+put("Mackerel", 262);
+put("Madeira Cake", 394);
+put("Maggi", 104);
+put("Magnolia", 230);
+put("Magnum Almond", 315);
+put("Magnum Double Caramel", 355);
+put("Magnum Double Chocolate", 380);
+put("Magnum Gold", 341);
+put("Magnum White", 297);
+put("Magnum", 300);
+put("Malbec Wine", 82);
+put("Malbec", 82);
+put("Mallard Duck Meat", 211);
+put("Mallard Meat", 211);
+put("Malt Beer", 37);
+put("Malt Beer", 37);
+put("Malt Powder", 361);
+put("Malt-O-Meal", 51);
+put("Malted Milk", 405);
+put("Maltesers", 498);
+put("Maltitol", 210);
+put("Maltodextrin", 375);
+put("Maltose", 344);
+put("Manchego Cheese", 320);
+put("Mandarin Oranges", 53);
+put("Mandarin Oranges", 53);
+put("Mango Lassi", 66);
+put("Mango", 60);
+put("Mango", 60);
+put("Mangosteen", 73);
+put("Manicotti", 357);
+put("Maple Syrup", 270);
+put("Maracuya", 97);
+put("Maraschino Cherries", 165);
+put("Marble Cake", 339);
+put("Margarine", 717);
+put("Margarine", 717);
+put("Margherita Pizza", 275);
+put("Marjoram", 271);
+put("Marmite", 225);
+put("Marron", 210);
+put("Marrow Dumplings", 424);
+put("Mars Bar", 448);
+put("Marsala Wine", 100);
+put("Marshmallow Fluff", 666);
+put("Marshmallows", 318);
+put("Marzipan", 411);
+put("Mascarpone", 450);
+put("Mashed Potatoes", 83);
+put("Mashed Potatoes", 89);
+put("Matzo Bread", 351);
+put("Mayonnaise", 692);
+put("McDonald’s Big Mac", 256);
+put("McDonald’s Cheeseburger", 263);
+put("McDonald’s Chicken Nuggets", 297);
+put("McDonald’s Double Cheeseburger", 282);
+put("McDonald’s Filet-o-Fish", 275);
+put("McDonald’s McChicken", 251);
+put("McDonald’s McDouble", 252);
+put("McDonald’s McMuffi Egg", 225);
+put("McDonald’s McRib", 265);
+put("McDonald’s Mighty Wings", 308);
+put("McFlurry Oreo", 186);
+put("McFlurry", 153);
+put("McRib", 265);
+put("Meat Pie", 242);
+put("Meatball Sandwich", 161);
+put("Meatball Soup", 49);
+put("Meatloaf", 254);
+put("Meatloaf", 89);
+put("Mello Yello", 49);
+put("Menhaden Oil", 911);
+put("Meringue", 285);
+put("Merlot Wine", 83);
+put("Merlot", 83);
+put("Mettwurst", 310);
+put("Michelob Amber Bock", 47);
+put("Michelob Lager", 44);
+put("Michelob Light", 32);
+put("Michelob Ultra Amber", 26);
+put("Michelob Ultra Lime Cactus", 27);
+put("Michelob Ultra", 27);
+put("Midori", 267);
+put("Mike and Ike", 360);
+put("Milk Duds", 422);
+put("Milk", 61);
+put("Milk", 61);
+put("Milkfish", 190);
+put("Milkshake (dry)", 329);
+put("Milky Way", 449);
+put("Miller Chill", 31);
+put("Miller Genuine Draft", 40);
+put("Miller High Life Light", 31);
+put("Miller High Life", 40);
+put("Miller Lite", 27);
+put("Millet Flour", 372);
+put("Millet Gruel", 46);
+put("Millet", 378);
+put("Milo", 409);
+put("Milwaukee’s Best Light", 28);
+put("Milwaukee’s Best", 36);
+put("Minced Onion", 40);
+put("Minced Veal", 143);
+put("Minestrone", 34);
+put("Mini Milk", 120);
+put("Mini-Wheats", 353);
+put("Minneola", 64);
+put("Mint Chocolate Chip Ice Cream", 239);
+put("Mint", 70);
+put("Minute Maid Light", 2);
+put("Minute Maid", 46);
+put("Miso", 199);
+put("Mocca Yogurt", 100);
+put("Molasses", 290);
+put("Molson", 42);
+put("Monkey Bread", 290);
+put("Monkfish", 97);
+put("Monterey Jack Cheese", 373);
+put("Monterey Jack Cheese", 373);
+put("Monterey", 373);
+put("Moose Meat", 134);
+put("Moose", 134);
+put("Mortadella", 311);
+put("Moscato Wine", 76);
+put("Mostaccioli", 184);
+put("Mozzarella Pizza", 249);
+put("Mozzarella", 280);
+put("Mozzarella", 280);
+put("Muenster Cheese", 368);
+put("Muenster Cheese", 368);
+put("Muesli", 336);
+put("Muffin", 296);
+put("Mug Root Beer", 42);
+put("Mulberries", 43);
+put("Mulled Wine", 196);
+put("Mullet", 150);
+put("Multi-Grain Bread", 265);
+put("Multigrain Cheerios", 380);
+put("Mung Beans", 12);
+put("Mushroom Pizza", 212);
+put("Mushroom Soup", 35);
+put("Mushrooms", 22);
+put("Muskmelon", 34);
+put("Mussel", 172);
+put("Mustard Greens", 27);
+put("Mustard Oil", 884);
+put("Mustard Oil", 884);
+put("Mustard Sauce", 645);
+put("Mustard Seed", 508);
+put("Mustard", 60);
+put("Mutton Meat", 234);
+put("Mutton", 234);
+put("Naan", 275);
+put("Naan", 310);
+put("Nachos with Cheese", 306);
+put("Napoli Pizza", 202);
+put("Natto", 212);
+put("Natural Ice", 44);
+put("Natural Light", 27);
+put("Navy Bean", 337);
+put("Nectar", 53);
+put("Nectarine", 44);
+put("Nestea", 21);
+put("Nestea", 36);
+put("Neufchatel", 253);
+put("New York Strip Steak", 199);
+put("New York Style Pizza", 169);
+put("Newcastle", 39);
+put("Non-alcoholic Beer", 37);
+put("Non-alcoholic Beer", 37);
+put("Noni", 53);
+put("Nonpareils", 475);
+put("Noodle Soup", 34);
+put("Nori", 35);
+put("Norland Red Potatoes", 89);
+put("Nutella", 544);
+put("Nutmeg", 525);
+put("Nutri-Grain", 351);
+put("Oat Bran", 246);
+put("Oat Oil", 884);
+put("Oatibix", 421);
+put("Oatmeal Cookies", 450);
+put("Oatmeal Raisin Cookies", 435);
+put("Oatmeal", 375);
+put("Obatzda", 303);
+put("Octopus", 164);
+put("Okara", 77);
+put("Okra", 33);
+put("Okra", 33);
+put("Okra", 33);
+put("Old Milwaukee N.A.", 16);
+put("Old Milwaukee", 41);
+put("Olde English", 45);
+put("Olive Cream Cheese", 342);
+put("Olive Loaf", 232);
+put("Olive Oil", 800);
+put("Olive Oil", 884);
+put("Olive Spread", 550);
+put("Olives", 115);
+put("Olives", 115);
+put("Omelette", 154);
+put("Onion Powder", 341);
+put("Onion Rings", 411);
+put("Onion Soup", 23);
+put("Onion", 40);
+put("Onion", 40);
+put("Opera Cake", 320);
+put("Orange Chicken", 259);
+put("Orange Juice", 46);
+put("Orange Peel", 97);
+put("Orange Sauce", 179);
+put("Orange Soda", 48);
+put("Orange", 47);
+put("Orecchiette", 370);
+put("Oregano", 265);
+put("Organic Yogurt", 75);
+put("Orzo", 357);
+put("Ostrich Meat", 145);
+put("Ostrich Meat", 175);
+put("Ostrich", 145);
+put("Ostrich", 145);
+put("Ostrich", 175);
+put("Oven-Roasted Turkey Breast", 104);
+put("Oxtail Soup", 28);
+put("O’Doul’s (N.A.)", 19);
+put("Pabst Blue Ribbon", 41);
+put("Paczki", 336);
+put("Pad Thai", 150);
+put("Paella", 156);
+put("Pale Ale", 42);
+put("Palm Kernel Oil", 882);
+put("Palm Oil", 882);
+put("Palm Oil", 882);
+put("Pan de Sal", 293);
+put("Pancake", 227);
+put("Pancake", 233);
+put("Pandesal", 293);
+put("Panettone", 318);
+put("Panettone", 360);
+put("Papaya Juice", 58);
+put("Papaya", 43);
+put("Paprika", 282);
+put("Paratha", 325);
+put("Parma Ham", 261);
+put("Parma Ham", 345);
+put("Parmesan", 431);
+put("Parsley", 36);
+put("Parsnip", 75);
+put("Parsnips", 75);
+put("Passion Fruit Juice", 48);
+put("Passion Fruit", 97);
+put("Passion Fruit", 97);
+put("Pastrami", 133);
+put("Pastrami", 133);
+put("Pavlova", 294);
+put("PayDay", 462);
+put("Pea Soup", 75);
+put("Pea Soup", 75);
+put("Peach Cobbler", 65);
+put("Peach Juice", 54);
+put("Peach Nectar", 54);
+put("Peach Pie", 223);
+put("Peach Yogurt", 97);
+put("Peach", 39);
+put("Peanut Bar", 533);
+put("Peanut Brittle", 183);
+put("Peanut Butter Bars", 379);
+put("Peanut Butter Cookies", 475);
+put("Peanut Butter Sandwich", 408);
+put("Peanut Butter Toast Crunch", 431);
+put("Peanut Butter", 589);
+put("Peanut Oil", 857);
+put("Peanut Oil", 857);
+put("Peanuts", 567);
+put("Peanuts", 567);
+put("Pear Juice", 60);
+put("Pear Nectar", 60);
+put("Pear", 57);
+put("Pearl Barley", 352);
+put("Peas", 42);
+put("Peas", 81);
+put("Peas", 81);
+put("Pecan Nuts", 691);
+put("Pecan Pie", 407);
+put("Pecan", 691);
+put("Pecans", 691);
+put("Pecorino", 387);
+put("Peking Duck", 225);
+put("Penne Rigate", 370);
+put("Penne", 351);
+put("Pepper Cheese", 100);
+put("Pepper", 251);
+put("Pepper", 27);
+put("Peppermint Extract", 0);
+put("Peppermint bark", 500);
+put("Pepperoni Pizza", 255);
+put("Pepperoni", 494);
+put("Pepperoni", 494);
+put("Pepsi", 44);
+put("Persimmon", 127);
+put("Pesto Cream Cheese", 342);
+put("Pesto", 458);
+put("Peter Pan Peanut Butter", 609);
+put("Pez", 427);
+put("Pheasant Breast", 133);
+put("Pheasant Leg", 239);
+put("Pheasant Meat", 239);
+put("Pheasant", 239);
+put("Pheasant", 239);
+put("Philadelphia Cream Cheese", 342);
+put("Philadelphia Cream Cheese", 342);
+put("Philly Cheese Steak", 250);
+put("Physalis", 49);
+put("Pibb Xtra", 40);
+put("Pickerel", 111);
+put("Pickled Herring", 262);
+put("Pide", 268);
+put("Pie", 237);
+put("Pierogi", 200);
+put("Pig Brain", 138);
+put("Pig Ear", 166);
+put("Pig Fat", 638);
+put("Pig Heart", 148);
+put("Pig Kidney", 151);
+put("Pig Lung", 99);
+put("Pigeon", 142);
+put("Pig’s Tail", 396);
+put("Pig’s Trotter", 243);
+put("Pike", 113);
+put("Pili Nuts", 719);
+put("Pilsner", 43);
+put("Pimento Loaf", 265);
+put("Pine Nuts", 673);
+put("Pineapple Cream Cheese", 342);
+put("Pineapple Juice", 53);
+put("Pineapple Orange Juice", 50);
+put("Pineapple Upside-Down Cake", 319);
+put("Pineapple", 50);
+put("Pineapple", 50);
+put("Pink Grapefruit", 42);
+put("Pinot Gris", 83);
+put("Pinot Noir", 75);
+put("Pinto Beans", 347);
+put("Pinto Beans", 347);
+put("Pistachios", 562);
+put("Pita Bread", 275);
+put("Pizza Dough", 228);
+put("Pizza Hut Stuffed Crust Pizza", 255);
+put("Pizza Hut Supreme Pizza", 248);
+put("Pizza Rolls", 247);
+put("Pizza", 267);
+put("Plaice", 91);
+put("Plain Yogurt", 61);
+put("Plain Yogurt", 61);
+put("Plantain", 122);
+put("Plantains", 122);
+put("Plum Cake", 109);
+put("Plum Jam", 250);
+put("Plum Juice", 71);
+put("Plum Wine", 163);
+put("Plum", 46);
+put("Polenta", 366);
+put("Polish Sausage", 301);
+put("Pollack", 111);
+put("Pomegranate Juice", 66);
+put("Pomegranate", 83);
+put("Pomegranate", 83);
+put("Pomelo", 38);
+put("Pop Rocks", 358);
+put("Popcorn", 582);
+put("Poppy Seed Oil", 884);
+put("Poppy Seed", 525);
+put("Poppy Seeds", 525);
+put("Poppy Seeds", 525);
+put("Poppy-Seed Cake", 394);
+put("Pork Baby Back Ribs", 212);
+put("Pork Bacon", 407);
+put("Pork Belly", 518);
+put("Pork Blade Steak", 232);
+put("Pork Chop", 123);
+put("Pork Chop", 225);
+put("Pork Chops", 196);
+put("Pork Country-Style Ribs", 133);
+put("Pork Country-Style Ribs", 247);
+put("Pork Crown Roast", 212);
+put("Pork Cutlet", 131);
+put("Pork Cutlets", 131);
+put("Pork Leg", 201);
+put("Pork Liver", 165);
+put("Pork Loin", 143);
+put("Pork Loin", 204);
+put("Pork Meatloaf", 243);
+put("Pork Melt", 219);
+put("Pork Ragout", 73);
+put("Pork Rib Roast", 159);
+put("Pork Ribs", 292);
+put("Pork Roast", 194);
+put("Pork Roast", 247);
+put("Pork Roast", 254);
+put("Pork Roll", 302);
+put("Pork Sausage", 339);
+put("Pork Shank", 172);
+put("Pork Shoulder Blade", 232);
+put("Pork Shoulder", 269);
+put("Pork Steaks", 196);
+put("Pork Stomach", 250);
+put("Pork Tongue", 271);
+put("Pork", 196);
+put("Pork", 247);
+put("Port Wine", 160);
+put("Porter", 54);
+put("Porterhouse Steak", 247);
+put("Post Raisin Bran", 322);
+put("Post Shredded Wheat", 347);
+put("Potato Bread", 266);
+put("Potato Dumpling", 124);
+put("Potato Fritter", 185);
+put("Potato Gratin", 132);
+put("Potato Pancakes", 268);
+put("Potato Salad", 143);
+put("Potato Salad", 143);
+put("Potato Soup", 80);
+put("Potato Starch", 331);
+put("Potato Sticks", 522);
+put("Potato Waffles", 167);
+put("Potato Wedges", 123);
+put("Potato", 77);
+put("Potato", 77);
+put("Potatoes au Gratin", 132);
+put("Poularde", 200);
+put("Poultry Seasoning", 307);
+put("Pound Cake", 390);
+put("Poutine", 227);
+put("Powdered Milk", 496);
+put("Powdered Milk", 496);
+put("Powdered Sugar", 389);
+put("Powerade", 120);
+put("Powerade", 16);
+put("Prawn Crackers", 527);
+put("Pretzel Roll", 338);
+put("Pretzel Sticks", 380);
+put("Pretzel", 338);
+put("Prickly Pear", 41);
+put("Probiotic Yogurt", 80);
+put("Profiterole", 334);
+put("Prosciutto", 195);
+put("Prosciutto", 195);
+put("Prosecco", 66);
+put("Prosecco", 71);
+put("Protein Powder", 411);
+put("Provolone", 351);
+put("Puff Pastry", 558);
+put("Puff Pastry", 558);
+put("Puff", 367);
+put("Puffed Rice", 383);
+put("Puffed Wheat", 367);
+put("Pulled Pork Sandwich", 211);
+put("Pumpernickel", 250);
+put("Pumpkin Bread", 298);
+put("Pumpkin Cheesecake", 340);
+put("Pumpkin Pie Spice", 342);
+put("Pumpkin Pie", 243);
+put("Pumpkin Seed Oil", 880);
+put("Pumpkin Seeds", 559);
+put("Pumpkin Seeds", 560);
+put("Pumpkin Soup", 29);
+put("Pumpkin", 26);
+put("Punch", 62);
+put("Purple Majesty Potatoes", 72);
+put("Puy Lentils", 345);
+put("Pâté (720), Pate", 319);
+put("Quail Breast", 123);
+put("Quail", 227);
+put("Quaker Grits", 344);
+put("Quaker Oatmeal Squares", 400);
+put("Quaker Oatmeal", 375);
+put("Quark", 145);
+put("Quattro Formaggi Pizza", 248);
+put("Quince", 57);
+put("Quinoa", 368);
+put("Rabbit", 197);
+put("Rack of Pork", 241);
+put("Raclette Cheese", 357);
+put("Racoon Meat", 255);
+put("Racoon", 255);
+put("Radish Seeds", 43);
+put("Radishes", 16);
+put("Raisin Bran Crunch", 355);
+put("Raisin Bran Crunch", 355);
+put("Raisin Bran", 322);
+put("Raisin Bread", 274);
+put("Raisin Nut Bran", 367);
+put("Raisins", 299);
+put("Raisins", 474);
+put("Rajma", 140);
+put("Rambutan", 82);
+put("Rambutan", 82);
+put("Ramen", 436);
+put("Ramen", 447);
+put("Ranch Dressing", 510);
+put("Raspberries", 52);
+put("Raspberry Pie", 240);
+put("Ravioli", 203);
+put("Ravioli", 77);
+put("Ready Brek", 359);
+put("Real Butter", 720);
+put("Red Beans", 124);
+put("Red Cabbage", 31);
+put("Red Gold Potatoes", 89);
+put("Red Kidney Bean", 337);
+put("Red Lentils", 329);
+put("Red Pepper Pizza", 192);
+put("Red Pepper", 251);
+put("Red Potatoes", 89);
+put("Red Snapper", 128);
+put("Red Velvet Cake", 367);
+put("Red Wine Vinegar", 19);
+put("Red Wine", 85);
+put("Red Wine", 85);
+put("Red Wines", 85);
+put("Redbridge (Gluten-free)", 45);
+put("Redfish", 94);
+put("Reeses Peanut Butter Cups", 536);
+put("Refried Beans", 91);
+put("Reindeer Meat", 200);
+put("Reindeer", 200);
+put("Remoulade Sauce", 635);
+put("Reuben Sandwich", 208);
+put("Rhea", 160);
+put("Rhubarb Pie", 245);
+put("Rhubarb", 21);
+put("Rib Eye Steak", 217);
+put("Rice Bran Oil", 889);
+put("Rice Bran Oil", 889);
+put("Rice Chex", 387);
+put("Rice Krispies", 394);
+put("Rice Milk", 49);
+put("Rice Milk", 49);
+put("Rice Pudding", 118);
+put("Rice Pudding", 134);
+put("Ricotta", 174);
+put("Riesling Wine", 80);
+put("Riesling", 80);
+put("Rigatoni", 353);
+put("Ring Bologna", 286);
+put("Roast Beef", 111);
+put("Roast Beef", 140);
+put("Roast Beef", 187);
+put("Roast Beef", 267);
+put("Roast Dinner", 198);
+put("Roast Potatoes", 149);
+put("Roasted Almonds", 452);
+put("Roasted Soybeans", 471);
+put("Rock Sugar", 625);
+put("Rocky Road Ice Cream", 257);
+put("Roll", 316);
+put("Rolled Oats", 384);
+put("Rolling Rock Light", 30);
+put("Rolling Rock", 37);
+put("Rollmops", 171);
+put("Rolo", 474);
+put("Romano", 387);
+put("Root Beer", 41);
+put("Roquefort", 369);
+put("Rose Wine", 71);
+put("Rose Wine", 71);
+put("Rosemary Potatoes", 93);
+put("Rosemary", 131);
+put("Roti", 264);
+put("Rotini", 353);
+put("Round Steak", 182);
+put("Rum Cake", 351);
+put("Rum", 231);
+put("Rum", 246);
+put("Rump Steak", 171);
+put("Rusk", 410);
+put("Russet Potatoes", 97);
+put("Russian Banana Potatoes", 67);
+put("Russian Dressing", 400);
+put("Rutabaga", 38);
+put("Rye Bran", 281);
+put("Rye Bread", 259);
+put("Rösti", 138);
+put("Sacher Torte", 352);
+put("Safflower Oil", 857);
+put("Safflower Oil", 857);
+put("Safflower Seeds", 517);
+put("Saffron", 310);
+put("Sage", 315);
+put("Sago", 354);
+put("Salad Dressing", 449);
+put("Salami Pizza", 255);
+put("Salami", 336);
+put("Salami", 336);
+put("Salmon Cream Cheese", 342);
+put("Salmon Oil", 911);
+put("Salmon", 206);
+put("Salt Meat", 286);
+put("Salt Pork", 286);
+put("Salt", 0);
+put("Salted Butter", 717);
+put("Sambal Oelek", 21);
+put("Sambuca", 333);
+put("Samosa", 214);
+put("Samuel Adams", 45);
+put("Sandwich Bread", 251);
+put("Sandwich Cheese", 148);
+put("Sandwich", 304);
+put("Sangria", 132);
+put("Sangria", 96);
+put("Sapodilla", 83);
+put("Sardine Oil", 902);
+put("Sardines", 208);
+put("Sauerkraut Juice", 14);
+put("Sausage Pizza", 246);
+put("Sausage Roll", 350);
+put("Sausage Rolls", 297);
+put("Sausage", 230);
+put("Sauvignon Blanc", 81);
+put("Savory", 272);
+put("Savoury Biscuits", 347);
+put("Scallops", 111);
+put("Scampi", 84);
+put("Schnitzel", 156);
+put("Schwan’s", 246);
+put("Schweppes Ginger Ale", 38);
+put("Scone", 362);
+put("Scooters", 367);
+put("Scotch Broth", 33);
+put("Scotch", 222);
+put("Sea Bass", 124);
+put("Sea Salt", 0);
+put("Seafood Pizza", 245);
+put("Semi-skimmed Milk", 50);
+put("Semolina Flour", 350);
+put("Semolina Pudding", 67);
+put("Semolina", 340);
+put("Serrano Ham", 300);
+put("Serrano Ham", 339);
+put("Serrano Pepper", 32);
+put("Sesame Ginger Dressing", 464);
+put("Sesame Oil", 884);
+put("Sesame Oil", 889);
+put("Sesame Paste", 595);
+put("Sesame Seeds", 573);
+put("Sesame Seeds", 573);
+put("Sesame Seeds", 573);
+put("Shad", 252);
+put("Shallots", 72);
+put("Shark", 130);
+put("Shea Oil", 884);
+put("Sheep Cheese", 364);
+put("Shells", 353);
+put("Shepherds Pie", 70);
+put("Sherry", 116);
+put("Sherry", 116);
+put("Shirataki Noodles", 18);
+put("Shiraz", 71);
+put("Shock Top Raspberry Wheat", 50);
+put("Shock Top", 47);
+put("Shortbread", 502);
+put("Shortcrust Pastry", 544);
+put("Shredded Coconut", 501);
+put("Shredded Wheat", 340);
+put("Shreddies", 351);
+put("Shrimp Cocktail", 464);
+put("Shrimp Pizza", 209);
+put("Sicilian Pizza", 241);
+put("Sierra Nevada Strong", 62);
+put("Silken Tofu", 55);
+put("Skim Milk Yogurt", 56);
+put("Skim Milk", 35);
+put("Skippy Peanut Butter", 594);
+put("Skirt Steak", 205);
+put("Skittles", 405);
+put("Sloe Gin", 332);
+put("Sloppy Joe", 71);
+put("Sloppy Joes", 154);
+put("Slurpee", 4);
+put("Slush Puppie", 50);
+put("Smart Start", 371);
+put("Smarties McFlurry", 198);
+put("Smarties", 357);
+put("Smelt", 124);
+put("Smoked Almonds", 575);
+put("Smoked Cheese", 410);
+put("Smoked Ham", 107);
+put("Smoked Salmon", 158);
+put("Smoked Sausage", 301);
+put("Smoked Turkey Breast", 104);
+put("Smoothie", 37);
+put("Smores", 500);
+put("Smuckers Strawberry Jam", 250);
+put("Snickers Ice Cream", 360);
+put("Snickers", 484);
+put("Soda Bread", 290);
+put("Soda", 53);
+put("Soft Cheese", 268);
+put("Soft Serve", 222);
+put("Soft Tofu", 61);
+put("Sole", 86);
+put("Solero", 100);
+put("Sorbitol", 375);
+put("Soufflé", 204);
+put("Sour Cream Sauce", 60);
+put("Sour Cream", 181);
+put("Sour Cream", 217);
+put("Sour Patch Kids", 363);
+put("Sourdough Bread", 289);
+put("Soursop Fruit", 66);
+put("Souse", 157);
+put("Southern Comfort", 247);
+put("Soy Beans", 147);
+put("Soy Cheese", 235);
+put("Soy Mayonnaise", 322);
+put("Soy Milk", 41);
+put("Soy Milk", 45);
+put("Soy Milk", 45);
+put("Soy Noodles", 216);
+put("Soy Nut Butter", 562);
+put("Soy Nuts", 471);
+put("Soy Oil", 882);
+put("Soy Protein Powder", 338);
+put("Soy Sauce", 67);
+put("Soy Yogurt", 66);
+put("Soya Cheese", 235);
+put("Soybean Oil", 889);
+put("Soybeans", 147);
+put("Soynut Butter", 562);
+put("Spaetzle", 368);
+put("Spaghetti Bolognese", 132);
+put("Spaghetti", 370);
+put("Spam", 315);
+put("Spanakopita", 246);
+put("Spare Ribs", 238);
+put("Spare Ribs", 396);
+put("Spareribs", 238);
+put("Sparkling Wine", 190);
+put("Sparks", 74);
+put("Special K Chocolatey Delight", 388);
+put("Special K Protein Plus", 375);
+put("Special K Red Berries", 345);
+put("Special K", 377);
+put("Speculoos", 469);
+put("Spelt Bran", 177);
+put("Spelt Semolina", 360);
+put("Spelt", 338);
+put("Spice Cake", 332);
+put("Spicy Italian", 219);
+put("Spinach Feta Pizza", 242);
+put("Spinach Pizza", 234);
+put("Spinach Tortellini", 314);
+put("Spinach", 23);
+put("Spirelli", 367);
+put("Sponge Cake", 289);
+put("Spring Roll", 250);
+put("Spring Rolls", 250);
+put("Sprinkles", 500);
+put("Sprite Zero", 0);
+put("Sprite", 37);
+put("Spritz Cookies", 500);
+put("Squash", 45);
+put("Squid", 92);
+put("Squirrel Meat", 173);
+put("Squirrel", 173);
+put("Squirt", 44);
+put("St. Pauli Girl", 42);
+put("Standing Rib Roast", 333);
+put("Star Fruit", 31);
+put("Starch", 381);
+put("Starfruit", 31);
+put("Steel Reserve", 63);
+put("Stevia", 0);
+put("Stew Beef", 191);
+put("Stilton Cheese", 393);
+put("Stout Beer", 51);
+put("Stout", 51);
+put("Stracciatella Yogurt", 139);
+put("Strawberries", 32);
+put("Strawberry Cheesecake", 327);
+put("Strawberry Ice Cream", 236);
+put("Strawberry Jam", 250);
+put("Strawberry Jelly", 250);
+put("Strawberry Milkshake", 113);
+put("Strawberry Pie", 230);
+put("Strawberry Preserves", 278);
+put("Strawberry Rhubarb Pie", 281);
+put("Strawberry Sundae", 158);
+put("Strawberry Yogurt", 100);
+put("String Cheese", 250);
+put("Strip Steak", 117);
+put("Strong Beer", 55);
+put("Stuffed Crust Pizza", 255);
+put("Sturgeon", 135);
+put("Subway Club Sandwich", 131);
+put("Succotash", 115);
+put("Sucrose", 387);
+put("Sugar Peas", 42);
+put("Sugar Puffs", 379);
+put("Sugar", 405);
+put("Summer Sausage", 298);
+put("Sunbutter", 617);
+put("Sundae", 215);
+put("Sunflower Butter", 617);
+put("Sunflower Oil", 884);
+put("Sunflower Oil", 884);
+put("Sunflower Seeds", 117);
+put("Sunflower Seeds", 584);
+put("Sunflower Seeds", 584);
+put("Sunkist", 25);
+put("Surge", 48);
+put("Sushi", 150);
+put("Sweet Chestnut", 194);
+put("Sweet Peas", 48);
+put("Sweet Potato Pie", 260);
+put("Sweet Potato", 86);
+put("Sweet Potato", 92);
+put("Sweet Red Wine", 81);
+put("Sweet Rolls", 333);
+put("Sweet White Wine", 82);
+put("Sweet Wines", 83);
+put("Sweet and Sour Sauce", 179);
+put("Sweetened Condensed Milk", 321);
+put("Sweetened Condensed Milk", 321);
+put("Sweetener", 360);
+put("Swiss Cheese", 380);
+put("Swiss Roll", 313);
+put("Swiss Roll", 439);
+put("Swordfish", 172);
+put("S’mores", 500);
+put("T-Bone Steak", 202);
+put("T-Bone-Steak", 221);
+put("TaB", 0);
+put("Tabasco", 70);
+put("Taco", 217);
+put("Tagliatelle", 370);
+put("Take 5", 476);
+put("Tamarind", 239);
+put("Tamarind", 239);
+put("Tamarind", 239);
+put("Tandoori Chicken", 113);
+put("Tang", 381);
+put("Tangerine Juice", 43);
+put("Tangerine", 53);
+put("Tap Water", 0);
+put("Tapenade", 233);
+put("Taro", 112);
+put("Tarragon", 295);
+put("Tarte Flambée", 253);
+put("Tarte Tatin", 210);
+put("Tea", 1);
+put("Tempeh", 193);
+put("Tequila", 110);
+put("Teriyaki Sauce", 89);
+put("Textured Soy Protein", 571);
+put("Textured Vegetable Protein", 333);
+put("Thai Curry Paste", 155);
+put("Thai Soup", 60);
+put("Thin Crust Pizza", 261);
+put("Thyme", 276);
+put("Tilsit", 340);
+put("Tilt", 64);
+put("Tiramisu Cake", 291);
+put("Tiramisu", 283);
+put("Toast", 261);
+put("Toasties", 361);
+put("Toblerone", 525);
+put("Tofu", 76);
+put("Tomato Juice", 17);
+put("Tomato Paste", 82);
+put("Tomato Puree", 38);
+put("Tomato Rice Soup", 47);
+put("Tomato Sauce", 24);
+put("Tomato Seed Oil", 884);
+put("Tomato Soup", 30);
+put("Tomato", 18);
+put("Tongue", 284);
+put("Tonic Water", 35);
+put("Tortellini", 291);
+put("Tortilla Bread", 265);
+put("Tortilla Chips", 499);
+put("Tortilla Wrap", 271);
+put("Tortilla", 237);
+put("Tortilla", 297);
+put("Treacle Tart", 369);
+put("Tres Leches Cake", 246);
+put("Trifle", 180);
+put("Trifle", 186);
+put("Triggerfish", 93);
+put("Triple Sec", 153);
+put("Trix", 400);
+put("Trout", 190);
+put("Tuna Pizza", 254);
+put("Tuna Salad", 187);
+put("Tuna", 132);
+put("Tuna", 86);
+put("Turbot", 122);
+put("Turkey Breast", 104);
+put("Turkey Breast", 135);
+put("Turkey Breast", 135);
+put("Turkey Cutlet", 189);
+put("Turkey Drumsticks", 208);
+put("Turkey Giblets", 173);
+put("Turkey Ham", 126);
+put("Turkey Heart", 174);
+put("Turkey Hill", 271);
+put("Turkey Legs", 208);
+put("Turkey Legs", 208);
+put("Turkey Liver", 189);
+put("Turkey Salami", 152);
+put("Turkey Steak", 189);
+put("Turkey Steak", 189);
+put("Turkey Stomach", 148);
+put("Turkey Wings", 221);
+put("Turkey Wings", 221);
+put("Turkey", 104);
+put("Turkey", 189);
+put("Turkey", 189);
+put("Turmeric", 354);
+put("Turnip Greens", 20);
+put("Turnips", 28);
+put("Twix", 495);
+put("Tzatziki", 117);
+put("Tzatziki", 94);
+put("Unsalted Butter", 717);
+put("Unsalted Butter", 717);
+put("Vanilla Bean", 250);
+put("Vanilla Coke", 45);
+put("Vanilla Cone", 162);
+put("Vanilla Extract", 288);
+put("Vanilla Extract", 288);
+put("Vanilla Ice Cream", 201);
+put("Vanilla Milkshake", 149);
+put("Vanilla Sugar", 357);
+put("Vanilla Yogurt", 101);
+put("Veal Breast", 282);
+put("Veal Heart", 186);
+put("Veal Kidney", 163);
+put("Veal Leg", 211);
+put("Veal Roast Beef", 175);
+put("Veal Shank", 177);
+put("Veal Shoulder", 183);
+put("Veal Sirloin", 204);
+put("Veal Tenderloin", 217);
+put("Veal Tongue", 202);
+put("Veal", 282);
+put("Vegemite", 180);
+put("Vegetable Beef Soup", 31);
+put("Vegetable Broth", 5);
+put("Vegetable Cream Cheese", 342);
+put("Vegetable Juice", 21);
+put("Vegetable Oil", 800);
+put("Vegetable Oil", 884);
+put("Vegetable Pizza", 256);
+put("Vegetable Shortening", 884);
+put("Vegetable Soup", 28);
+put("Vegetable Stock", 5);
+put("Vegetarian Pizza", 256);
+put("Veggie Burger", 181);
+put("Veggie Delight", 138);
+put("Veggie Patty", 390);
+put("Veggie Pizza", 231);
+put("Venison Sirloin", 158);
+put("Venison", 164);
+put("Vermicelli", 368);
+put("Vermouth", 108);
+put("Vermouth", 130);
+put("Victoria Sponge Cake", 257);
+put("Vinaigrette", 120);
+put("Vinegar", 18);
+put("Vodka", 231);
+put("Volvic", 0);
+put("Waffles", 272);
+put("Waffles", 312);
+put("Wahoo", 167);
+put("Walnut Cream Cheese", 342);
+put("Walnut Oil", 889);
+put("Walnut Oil", 889);
+put("Walnuts", 131);
+put("Walnuts", 654);
+put("Wasabi", 109);
+put("Water", 0);
+put("Watermelon", 30);
+put("Watermelon", 30);
+put("Watermelon", 30);
+put("Wedding Cake", 381);
+put("Wedding Soup", 53);
+put("Weet-Bix", 353);
+put("Weetabix", 358);
+put("Weetos", 378);
+put("Weisswurst", 313);
+put("Wendy’s Baconator", 304);
+put("Wendy’s Jr. Bacon Cheeseburger", 261);
+put("Wendy’s Jr. Cheeseburger", 225);
+put("Wendy’s Son of Baconator", 321);
+put("Wheat Beer", 45);
+put("Wheat Bran", 216);
+put("Wheat Germ Oil", 929);
+put("Wheat Germ", 382);
+put("Wheat Gluten", 325);
+put("Wheat Semolina", 360);
+put("Wheat Starch", 351);
+put("Wheaties", 367);
+put("Whipped Cream", 257);
+put("Whisky", 250);
+put("White American", 148);
+put("White Beans", 336);
+put("White Bread", 238);
+put("White Cheddar", 403);
+put("White Cheddar", 403);
+put("White Grape Juice", 75);
+put("White Pepper", 296);
+put("White Pizza", 246);
+put("White Potatoes", 94);
+put("White Wine", 82);
+put("White Wine", 82);
+put("White Zinfandel", 88);
+put("Whitefish", 172);
+put("Whiting", 116);
+put("Whole Grain Noodles", 347);
+put("Whole Grain Spaghetti", 351);
+put("Whole Grain Wheat", 339);
+put("Whole Milk", 61);
+put("Whole Milk", 61);
+put("Whole Wheat Bread", 247);
+put("Whole Wheat Flour", 340);
+put("Wholegrain Oat", 375);
+put("Whoopie Pie", 400);
+put("Whopper", 231);
+put("Wild Boar Meat", 160);
+put("Wild Boar", 160);
+put("Wild Duck", 211);
+put("Wild Honey", 286);
+put("Wine", 83);
+put("Wine", 83);
+put("Winter Squash", 34);
+put("Wisconsin Cheese", 389);
+put("Worcestershire Sauce", 78);
+put("Xylitol", 240);
+put("Yam Bean", 38);
+put("Yam", 118);
+put("Yams", 116);
+put("Yeast (dry)", 325);
+put("Yellow Lentils", 304);
+put("Yellow Tail Wine", 71);
+put("Yerba Mate", 62);
+put("Yogurt Corner", 119);
+put("Yogurt Dressing", 45);
+put("Yogurt", 61);
+put("Yogurt", 61);
+put("Yoplait Boston Cream Pie", 90);
+put("Yoplait French Vanilla", 100);
+put("Yoplait Greek Blueberry", 100);
+put("Yoplait Greek Coconut", 100);
+put("Yoplait Greek Strawberry", 100);
+put("Yoplait Greek Vanilla", 100);
+put("Yoplait Harvest Peach", 100);
+put("Yoplait Key Lime Pie", 100);
+put("Yoplait Mango", 100);
+put("Yoplait Mixed Berry", 100);
+put("Yoplait Pina Colada", 100);
+put("Yoplait Strawberry Banana", 100);
+put("Yoplait Strawberry Cheesecake", 100);
+put("Yoplait Strawberry", 100);
+put("Yorkshire Pudding", 553);
+put("Young Gouda", 356);
+put("Yuba", 176);
+put("Yukon Gold Potatoes", 82);
+put("Zander", 84);
+put("Zesty Italian Dressing", 267);
+put("Zinfandel", 88);
+put("Zinger Burger", 256);
+put("Zinger", 256);
+put("Ziti", 352);
+put("Zucchini", 17);
