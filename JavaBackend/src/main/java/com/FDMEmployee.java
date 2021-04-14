@@ -6,7 +6,7 @@ import java.time.format.DateTimeFormatter;
 public class FDMEmployee extends User {
 
 	private ArrayList<MindfulnessExerciseAttempt> mindfulnessExerciseAttempts;
-	private HealthHistory health;
+	HealthHistory health;
 	private ArrayList<AmbientSounds> ambientSoundExercises;
 	private ArrayList<WorkoutExcerciseAttempt> workoutExcerciseAttempts;
 	private LocalDateTime dateOfBirth;
@@ -16,8 +16,9 @@ public class FDMEmployee extends User {
 	/**
 	 *
 	 */
-	public FDMEmployee(String nname, String password, String userName, String email, LocalDateTime ddate, int height, int weight) {
-		super(nname, password, userName, email);
+	public FDMEmployee(String nname, String userName, String email, LocalDateTime ddate, int height, int weight) {
+		//String nname, String ppassword, String uuserName, String eemail, String iid
+		super(nname, userName, email);
 		this.dateOfBirth = ddate;
 		this.health = new HealthHistory(height, weight);
 		mindfulnessExerciseAttempts = new ArrayList<MindfulnessExerciseAttempt>() ;

@@ -21,6 +21,27 @@
     font-family: "Cairo", sans-serif;
 }
 
+.inputLabel{
+    color: #073f51;
+    /*border: 1px solid red;*/
+    /* padding: 0 11vw;
+    margin-top: 0;
+    margin-bottom: 0; */
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#username{
+    margin-bottom: 0;
+}
+
+#dob{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 .button_L {
     display: block;
     margin: 4vh auto 4vh auto;
@@ -102,6 +123,17 @@
         background: rgb(189, 237, 255, 0.5);
         border-radius: 10%;
     }
+
+    .btnContainer {
+        width: 50vw;
+        margin: auto;
+        /*padding: 24px 0;*/
+        /* border: 1px solid red; */
+        background: rgb(189, 237, 255, 0.5);
+        border-radius: 10%;
+        padding-bottom: 20px;
+    }
+
     .input_L {
         display: block;
         margin: 3vh auto;

@@ -1,0 +1,161 @@
+this format goes like:
+"""documentName {
+	send:
+		boolean start
+		Type1 fieldName1
+		Type2 fieldName2 
+		
+	recieve:
+		Type3 fieldname3
+		
+	description:
+}"""
+
+login {
+	send:
+		boolean start
+		String email
+		
+	recieve:
+		boolean confirmation
+		
+	description: when logging in
+}
+
+setupAccount {
+	send:
+		boolean start
+		String email
+		String username
+		String name
+		String dob
+		int height 
+		int weight
+
+	recieve:
+		boolean confirmation
+		
+	description: when signing up
+}
+
+findEmail {
+	send:
+		boolean start
+		String username
+		
+	recieve:
+		boolean confirmation
+		String email
+		
+	description: when user enters username instead of email on login
+}
+
+addCalories {
+	send:
+		boolean start
+		String food
+		int weight
+		int calories
+		String date
+		
+	recieve:
+		boolean confirmation
+		
+	description: when user enters the calories for a food
+}
+
+searchFood {
+	send:
+		boolean start
+		String startOfFood
+		
+	recieve:
+		boolean confirmation
+		ArrayList<String> food
+		
+	description: when user searches for food, give them options for food already there
+}
+
+getTotalCalories {
+	send:
+		boolean start
+		
+	recieve:
+		boolean confirmation
+		ArrayList<String> food
+		ArrayList<String> dates
+		ArrayList<int> ids
+		String overallStats
+		
+	description: send all the intake information with daily, weekly, and overall statistics for the user
+}
+
+editCalories {
+	send:
+		boolean start
+		String food
+		int weight
+		int calories
+		String date
+		int id
+
+	recieve:
+		boolean confirmation
+		
+	description: changing some of the fields from calories, similar to addCalories
+}
+
+updateBMI {
+	send:
+		boolean start
+		int height
+		int weight
+		
+	recieve:
+		boolean confirmation
+		
+	description: updates the height and weight. only logs as new if there's an actual change
+}
+
+getBMI {
+	send:
+		boolean start
+		
+	recieve:
+		boolean confirmation
+		int bmi
+		String bmiType
+		int height
+		int weight
+		
+	description: gets the current BMI of the user
+}
+
+getBMIHistory {
+	send:
+		boolean start
+		
+	recieve:
+		boolean confirmation
+		ArrayList<int> height
+		ArrayList<int> weight
+		ArrayList<int> bmi
+		ArrayList<String> dates
+		String overallStats
+		
+	description: gets the historical height, weight, and BMI of the user with dates
+}
+
+logout {
+	send:
+		boolean start
+		
+	recieve:
+		boolean confirmation
+		
+	description: updates the backend that it's logging out, so it can take the focus off the current user
+}
+
+Mindfulness:
+This entire section needs to be worked on. Our focus will primarily be on everything
+else beforehand tho, so this isn't even a priority until everything else is done!

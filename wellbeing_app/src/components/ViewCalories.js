@@ -1,13 +1,47 @@
 import styled from 'styled-components';
 import React from 'react';
 import '../stylesheets/ViewCalories.css';
+import firebase from "../fire";
+
+
+
 
 export default class ViewCalories extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            caloriesList: null
+        }
+    }
 
+    // componentDidMount() {
+    //     const db = firebase.firestore();
+    //     db.collection("communications").doc("response")
+    //         .get()
+    //         .then( snapshot => {
+    //             const caloriesList = []
+    //             snapshot.forEach( doc => {
+    //                 const data = doc.data()
+    //                 caloriesList.push(data)
+    //             })
+    //             this.setState({ caloriesList: caloriesList })
+    //         })
+    //         .catch( error => console.log(error))
+    // }
+        
+ 
     render() {
         return (
             <div>
                 <h3 class="pagetext">View your Calorie Intake! Keep going, you're on the right track!</h3>
+
+                 <input className="input4"
+                    type='date'
+                    name='date'
+                    placeholder = "Date"
+                    
+                />
+
                 <div class="grid-container">
                     <div class="heading5">Food</div>
                     <div class="heading5">Calories (kcal)</div>
@@ -26,12 +60,22 @@ export default class ViewCalories extends React.Component {
                     <div class="total">Total</div>
                     <div class="total">809</div>
                 </div>
+
+                {/* {
+                    this.state.caloriesList &&
+                    this.state.caloriesList.map( calorie => {
+                        return (
+                            <div>
+                                <p>{calorie.food} - {calorie.calorie}</p>
+                                <p>{calorie.date}</p>
+                            </div>
+                        )
+                    })
+                } */}
             </div>
         )
     }
 }
-
-
 
 
 

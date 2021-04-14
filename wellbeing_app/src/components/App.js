@@ -19,22 +19,27 @@ const App = (props) => {
       userID,
       setID,
       IDcount,
-      setIDcount
+      setIDcount,
+      email,
+      username
     } = props
 
-    const IDsetUp = () => {
+    /****** const IDsetUp = () => {
       const db = fire.firestore();
-      setIDcount(IDcount+1);
+      setIDcount(IDcount);
       var IDstring = IDcount.toString();
-      const signUpInfo = db.collection("signUpTest").doc(IDstring).update({
-          //userID: fire.auth().currentUser.uid,
-          userID: {IDstring},
-      });
-    }
+      // var emailString = email.toString();
+      //alert(fire.auth().currentUser.uid); // alert(this.props.email);
+      //const signUpInfo = db.collection("signupTest2").doc(username).update({
+      const signUpInfo = db.collection("signupTest2").doc(IDstring).update({
+          userID: fire.auth().currentUser.uid,
+          //userID: {IDstring},
+       });
+    } ***********/
 
-    useEffect(() => {
+    /****** useEffect(() => {
       IDsetUp();
-    }, []);
+    }, []);  ******/
 
     return (
         <Router>

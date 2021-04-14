@@ -6,7 +6,8 @@ public class Calorie extends HealthProperty {
 	private Food food;
 
 	//need to calculate weight of food
-	public Calorie(Food food, double weightOfFood) {
+	public Calorie(long id, Food food, double weightOfFood) {
+		super(id);
 		this.calories = food.calculateTotalCalories(weightOfFood);
 		this.food = food;
 	}
@@ -31,6 +32,7 @@ public class Calorie extends HealthProperty {
 	//firebase stuff!!
 
 	public Calorie() {
+		super(0);
 	}
     
 	public void setFood(Food food) {

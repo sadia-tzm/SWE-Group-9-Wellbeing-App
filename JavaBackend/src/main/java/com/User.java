@@ -3,20 +3,16 @@ package com;
 /**
  * @author Shannon
  */
-public class User {
+public abstract class User {
 	
-	private long id;
+	private String userName;
+	private String email;
 	private String name;
-	Security security;
 
-	public User(String nname, String password, String userName, String email) {
-		this.id = 10;
+	public User(String nname, String uuserName, String eemail) {
 		this.name = nname;
-		this.security = new Security(password, userName, email);
-	}
-
-	public User() {
-		//empty constructor for firestore database
+		this.userName = uuserName;
+		this.email = eemail;
 	}
 
 	/**
@@ -35,18 +31,30 @@ public class User {
 
 	}
 
-	/**
-	 * getter for user ID
-	 */
-	public long getid() {
-		return this.id;
+	//---------------------------------------------------------------------------------------------
+	//firebase stuff
+	public User() {
+		//empty constructor for firestore database
 	}
 
-	/**
-	 * getter for user name
-	 */
-	public Security getSecurity() {
-		return this.security;
+	public String getUserName() {
+		return this.userName;
 	}
+
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+
+	public String getEmail() {
+		return this.email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+
 
 }

@@ -15,6 +15,9 @@ const FirstPage = () => {
     const [weight, setWeight] = useState("");
     const [userID, setID] = useState("");
     const [IDcount, setIDcount] = useState(0);
+    const [name, setName] = useState("");
+    const [dob, setDOB] = useState("");
+    // const [start, setStart] = useState(false);
 
     const clearInputs = () => {
         setEmail('');
@@ -65,17 +68,27 @@ const FirstPage = () => {
         const db = fire.firestore();
         setIDcount(IDcount+1);
         var IDstring = IDcount.toString();
-        const signUpInfo = db.collection("signUpTest").doc(IDstring).set({
-            email: {email},
-            password: {password},
-            username: {username},
-            userID: {IDstring},
-            height: {height},
-            weight: {weight}
+        const signUpInfo = db.collection("communications").doc("setupAccount").set({
+        /* const signUpInfo = db.collection("signupTest2").doc(username).set({ */
+            email: email,
+            //password: {password},
+            username: username,
+            // userID: {IDstring},
+            // userID: {username},
+            // id: email,
+            height: parseInt(height, 10),
+            weight: parseInt(weight, 10),
+            name: name,
+            dob: dob,
+            start: true
         });
         setUsername('');
         setHeight('');
         setWeight('');
+        setID('');
+        setName('');
+        setDOB('');
+        // setStart(false);
     }
 
     const handleLogout = () => {
@@ -107,6 +120,8 @@ const FirstPage = () => {
                     setID={setID}
                     IDcount={IDcount}
                     setIDcount={setIDcount}
+                    email={email}
+                    username={username}
                 />
             ) : (
                 <Login
@@ -130,6 +145,10 @@ const FirstPage = () => {
                     setID={setID}
                     IDcount={IDcount}
                     setIDcount={setIDcount}
+                    name={name}
+                    setName={setName}
+                    dob={dob}
+                    setDOB={setDOB}
                 />
             )}
         </div>
