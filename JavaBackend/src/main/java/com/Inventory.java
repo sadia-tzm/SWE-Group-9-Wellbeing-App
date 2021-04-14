@@ -141,6 +141,14 @@ public class Inventory {
 
 	}
 
+	private void LogMindfulAttempt(String Type) {
+		DocumentSnapshot document = this.fbdb.getItems("communications", "LogMindfulAttempts");
+	}
+
+	private void getMindfulHistory() {
+		DocumentSnapshot document = this.fbdb.getItems("communications", "getMindfulHistory");
+	}
+
 	private void getBMI() {
 
 	}

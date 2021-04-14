@@ -146,6 +146,28 @@ getBMIHistory {
 	description: gets the historical height, weight, and BMI of the user with dates
 }
 
+getMindfulHistory {
+	send:
+		boolean start
+		
+	recieve:
+		boolean confirmation
+		ArrayList<MindfulnessExerciseAttempt> mindfulnessExerciseAttempts
+		
+	description: past mindfulness excercise attempts
+}
+LogMindfulAttempt{
+	send:
+		boolean start
+		String Type
+		String Date
+		
+	recieve:
+		boolean confirmation
+		
+	description: adds new mindfulness excercise attempt
+}
+
 logout {
 	send:
 		boolean start
