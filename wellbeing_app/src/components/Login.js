@@ -22,7 +22,11 @@ const Login = (props) => {
         userID,
         setID,
         IDcount,
-        setIDcount
+        setIDcount,
+        name,
+        setName,
+        dob,
+        setDOB
     } = props;
 
     return (
@@ -31,7 +35,7 @@ const Login = (props) => {
                 <h5 className="heading_L">Welcome</h5>
                 { /* <label>Username</label> */}
                 <input className="input_L"
-                    type="text"
+                    type="email"
                     autoFocus
                     required
                     value={email}
@@ -60,11 +64,26 @@ const Login = (props) => {
                     ) : (
                         <>
                             <input className="input_L"
-                                type="username"
+                                type="text"
+                                required
+                                value={name}
+                                onChange={(e) => setName(e.target.value)}
+                                placeholder="Name"
+                            />
+                            <input className="input_L" id="username"
+                                type="text"
                                 required
                                 value={username}
                                 onChange={(e) => setUsername(e.target.value)}
                                 placeholder="Username"
+                            />
+                            <label className="inputLabel">Date of Birth</label>
+                            <input className="input_L" id="dob"
+                                type="date"
+                                required
+                                value={dob}
+                                onChange={(e) => setDOB(e.target.value)}
+                                placeholder="Date of Birth"
                             />
                             <input className="input_L"
                                 type="height"
