@@ -36,8 +36,8 @@ export default class AddCalories extends React.Component {
         });*/
         const addCaloriesRef = db.collection("communications").doc("addCalories").set({
             food: this.state.food,
-            weight: this.state.weight,
-            calories: this.state.calories,
+            weight: parseInt(this.state.weight, 10),
+            calories: parseInt(this.state.calories, 10),
             date: this.state.date.toString(),
             start: true
         });
