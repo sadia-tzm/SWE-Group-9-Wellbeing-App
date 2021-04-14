@@ -57,12 +57,10 @@ public class HealthHistory {
 	 * calculates BMI for for most recently entered height and weight. 
 	 */
 	public void setBMI() {
-
 		double weight = (double) weightHistory.get(weightHistory.size() - 1).getWeight();
 		double height = (double) heightHistory.get(heightHistory.size() - 1).getHeight() / 100;
 		double b = (double) Math.round((weight / (height * height)) * 10.0) / 10.0;
 		bmiHistory.add(b);
-
 	}
 	/**
 	 * 
@@ -113,6 +111,11 @@ public class HealthHistory {
 		long id = (size != 0) ? weightHistory.get(size-1).getId()+1 : 0;
 		weightHistory.add(new Weight(id, weight));
 		this.setBMI();
+	}
+
+	public void logHeightAndWeight(int height, int weight) {
+		this.logHeight(height);
+		this.logWeight(weight);
 	}
 
 	public List<Calorie> getCalorieHistory() {

@@ -4,9 +4,11 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Comparator;
 
 import com.extra.Appointment;
 import com.extra.Query;
@@ -135,8 +137,43 @@ public class Inventory {
 		}
 	}
 
-	private void searchFood() {
+	public Food findFood(String nameToSearch) {
+		int mid = searchableFood.size()-1/2; int first = 0; int last = searchableFood.size()-1;
+		while (first<=last){
+			mid = (first +last)/2;
+			if(searchableFood.get(mid).getName().compareTo(nameToSearch)<0){first = mid+1;}
+			else if(searchableFood.get(mid).getName().compareTo(nameToSearch)>0){last = mid -1;}
+			else return searchableFood.get(mid);
+		}
+		return null;
+	}
 
+	public void searchFood() {
+	}
+
+	public static Comparator<Food> FoodNameComparator = new Comparator<Food>() {
+		public int compare(Food f1, Food f2) {
+		   String FoodName1 = f1.getName();
+		   String FoodName2 = f2.getName();
+		   return FoodName1.compareTo(FoodName2);
+		}
+	};
+
+	public ArrayList<Food> searchFoodSuggestor(String nameToSearch){
+		nameToSearch = nameToSearch.toLowerCase();
+		ArrayList<Food> searchAbleFoodSuggestor = new ArrayList<Food>();
+		int counter =0; int counter2 =0;
+		while(counter2< searchableFood.size() && counter<20){
+			for(int i=0; i<searchableFood.size();i++){
+				if(searchableFood.get(i).getName().toLowerCase().startsWith(nameToSearch)){
+					searchAbleFoodSuggestor.add(searchableFood.get(i)); 
+					counter+=1;
+				}
+				counter2+=1;
+				if(counter == 20){break;}
+			}
+		}
+		return searchAbleFoodSuggestor;
 	}
 
 	private void getTotalCalories() {
@@ -164,15 +201,23 @@ public class Inventory {
 		DocumentSnapshot document = this.fbdb.getItems("communications", "editCalories");
 		EditCalories calorieInfo = document.toObject(EditCalories.class);
 		if (this.currentFDMEmployee != null) {
-			
-			//TODO - 
-
+			//TODO - search calories
 		}
-
 	}
 
 	private void updateBMI() {
-		
+		if (this.currentFDMEmployee != null) {
+			DocumentSnapshot document = this.fbdb.getItems("communications", "updateBMI");
+			UpdateBMI bmiInfo = document.toObject(UpdateBMI.class);
+			HealthHistory health = this.currentFDMEmployee.getHealthHistory();
+			Height currentH = health.getCurrentHeight();
+			Weight currentW = health.getCurrentWeight();
+			if (currentH.getHeight() != bmiInfo.getHeight() || currentW.getWeight() != bmiInfo.getWeight()) {
+				health.logHeightAndWeight(bmiInfo.getHeight(), bmiInfo.getWeight());
+			}
+			updateCurrentEmployee();
+		}
+		finalResponse(true);
 	}
 
 	private void logMindfulAttempt() {
@@ -187,27 +232,66 @@ public class Inventory {
 	}
 
 	private void getMindfulHistory() {
-		
-		ArrayList<MindfulnessExerciseAttempt> allattempts = this.currentFDMEmployee.getMindfulnessExerciseAttempts();
-		ArrayList<Integer> attemptno = new ArrayList<Integer>();
-		ArrayList<String> dates = new ArrayList<String>();
-		for (MindfulnessExerciseAttempt m : allattempts){
-			attemptno.add(m.getAttemptNumber());
-			dates.add(m.getDateCompleted());
+		if (this.currentFDMEmployee != null) {
+			ArrayList<MindfulnessExerciseAttempt> allattempts = this.currentFDMEmployee.getMindfulnessExerciseAttempts();
+			ArrayList<Integer> attemptno = new ArrayList<Integer>();
+			ArrayList<String> dates = new ArrayList<String>();
+			for (MindfulnessExerciseAttempt m : allattempts){
+				attemptno.add(m.getAttemptNumber());
+				dates.add(m.getDateCompleted());
+			}
+			fbdb.addToResponse("attemptNos", attemptno);
+			fbdb.addToResponse("attemptDates", dates);
 		}
-		fbdb.addToResponse("attemptNos", attemptno);
-		fbdb.addToResponse("attemptDates", dates);
 		finalResponse(true);
-		
 	}
 
 	private void getBMI() {
-
-
+		if (this.currentFDMEmployee != null) {
+			HealthHistory health = this.currentFDMEmployee.getHealthHistory();
+			int height = health.getCurrentHeight().getHeight();
+			int weight = health.getCurrentWeight().getWeight();
+			Double bmi = health.getCurrentBMI();
+			String bmiType = health.getCurrentBMIStatus(bmi);
+			fbdb.addToResponse("height", height);
+			fbdb.addToResponse("weight", weight);
+			fbdb.addToResponse("bmi", bmi);
+			fbdb.addToResponse("bmiType", bmiType);
+		}
+		finalResponse(true);
 	}
 
 	private void getBMIHistory() {
+		if (this.currentFDMEmployee != null) {
+			HealthHistory health = this.currentFDMEmployee.getHealthHistory();
+			ArrayList<Integer> heights = new ArrayList<Integer>();
+			ArrayList<Integer> weights = new ArrayList<Integer>();
+			ArrayList<Double> bmis = new ArrayList<Double>();
+			ArrayList<String> dates = new ArrayList<String>();
+			//TODO overallStats of healthHistory
+			String overallStats = "WIP, not a priority atm";
 
+			List<Height> listOfHeights = health.getHeightHistory();
+			List<Weight> listOfWeights = health.getWeightHistory();
+			Integer currentHeight;
+			Integer currentWeight;
+			Double currentBMI;
+			for (int n = 0; n < listOfHeights.size(); n++) {
+				currentHeight = listOfHeights.get(n).getHeight();
+				currentWeight = listOfWeights.get(n).getWeight();
+				heights.add(currentHeight);
+				weights.add(currentWeight);
+				currentBMI = (Math.round((currentWeight/((currentHeight/100)*(currentHeight/100)))*10.0)/10.0);
+				bmis.add(currentBMI);
+				dates.add(listOfHeights.get(n).getDateLogged());
+			}
+			fbdb.addToResponse("heights", heights);
+			fbdb.addToResponse("weights", weights);
+			fbdb.addToResponse("bmis", bmis);
+			fbdb.addToResponse("dates", dates);
+			fbdb.addToResponse("overallStats", overallStats);
+		}
+		finalResponse(true);
 	}
 
 	private void logout() {
@@ -2476,6 +2560,7 @@ public class Inventory {
 			put("Zucchini", 17);
 		}};
 		map.forEach((name, calories) -> addNewFood(name, calories));
+		this.searchableFood.sort(FoodNameComparator);
 	}
 
 	public long findFoodData(String foodName, ArrayList<Food> allFood) {
@@ -2521,11 +2606,4 @@ public class Inventory {
 
 	// public boolean setTargetProperties(List<String> newTargetProperties) {
 	// }
-
-
-
-
-
-
-
 }
