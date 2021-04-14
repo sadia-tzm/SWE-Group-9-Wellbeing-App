@@ -28,7 +28,7 @@ public class Inventory {
 	private List<String> targetAttribute;
 	private String currentTask;
 	private FirebaseDatabase fbdb;
-	private FDMEmployee currentFDMEmployee;
+	private FDMEmployee currentFDMEmployee = null;
 	private static DateTimeFormatter formatter = DateTimeFormatter.ISO_DATE_TIME;
 
 	private Inventory() throws InterruptedException{
@@ -100,7 +100,7 @@ public class Inventory {
 		SetupAccount fdmEmployeeData = document.toObject(SetupAccount.class);
 		createFDMEmployee(fdmEmployeeData.getName(), fdmEmployeeData.getUsername(), fdmEmployeeData.getEmail(),
 			stringToDate(fdmEmployeeData.getDob()), fdmEmployeeData.getHeight(), fdmEmployeeData.getWeight());
-		normalResponse();
+		normalResponse(true);
 	}
 
 	private void login() {
@@ -108,21 +108,25 @@ public class Inventory {
 		Login fdmEmployeeData = document.toObject(Login.class);
 		DocumentSnapshot employeeDocument = this.fbdb.getItems("employees", fdmEmployeeData.getEmail());
 		this.currentFDMEmployee = employeeDocument.toObject(FDMEmployee.class);
-		normalResponse();
+		normalResponse(true);
 	}
 
 	private void findEmail() {
 		DocumentSnapshot document = this.fbdb.getItems("communications", "findEmail");
 		FindEmail fdmEmployeeData = document.toObject(FindEmail.class);
 		String email = this.fbdb.findEmployeeEmail(fdmEmployeeData.getUsername());
-		fbdb.addToResponse("confirmation", true);
 		fbdb.addToResponse("email", email);
-		this.fbdb.sendResponse();
+		normalResponse(true);
 	}
 
 	private void addCalories() {
 		DocumentSnapshot document = this.fbdb.getItems("communications", "addCalories");
 		AddCalories calorieInfo = document.toObject(AddCalories.class);
+		if (this.currentFDMEmployee != null) {
+			//search database calories
+			//search user calories
+			//this.currentFDMEmployee.getHealthHistory().logCalories(calories, nameOfFood, weightOfFood);
+		}
 	}
 
 	private void searchFood() {
@@ -171,8 +175,8 @@ public class Inventory {
 		return LocalDateTime.parse(date, formatter);
 	}
 
-	private void normalResponse() {
-		this.fbdb.addToResponse("confirmation", true);
+	private void normalResponse(boolean confirm) {
+		this.fbdb.addToResponse("confirmation", confirm);
 		this.fbdb.sendResponse();
 	}
 
@@ -181,7 +185,7 @@ public class Inventory {
 		tempFood.setCaloriesPer100g(calories);
 		tempFood.setName(name);
 		tempFood.setWeight(100);
-		searchableFood.add(tempFood);
+		this.searchableFood.add(tempFood);
 	}
 
 	public void addManyFood() {
@@ -2413,6 +2417,11 @@ public class Inventory {
 			put("Zucchini", 17);
 		}};
 		map.forEach((name, calories) -> addNewFood(name, calories));
+	}
+
+	public long findFoodData(String foodName, ArrayList<Food> allFood) {
+		int maxSize = allFood.size();
+		return 0;
 	}
 
 	//TODO - complete inventory
