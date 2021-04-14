@@ -14,6 +14,11 @@ public class MindfulnessExerciseAttempt extends ExerciseAttempt {
 	// public MindfulnessExercise getMindfulnessExercise(){
 	// 	return this.mindfulnessExercise;
 	// }
+
+	//firebase empty constructor
+	public MindfulnessExerciseAttempt() {
+		super(0);
+	}
 	
 
 }
