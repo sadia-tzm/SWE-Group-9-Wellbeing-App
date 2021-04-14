@@ -14,7 +14,7 @@ import com.firebaseStuff.*;
 import com.google.cloud.firestore.DocumentSnapshot;
 
 public class Inventory {
-	
+
 	private static Inventory inventory = null;
 	private Collection<User> listOfUsers;
 	private Collection<Appointment> appointments;
@@ -53,10 +53,14 @@ public class Inventory {
 	}
 
 	public void completeTask() {
-		String task = this.currentTask;
-		this.currentTask = null;
-		this.fbdb.updateStartFalse(task);
-		switch(task) {
+		this.fbdb.updateStartFalse(this.currentTask);
+		switch(this.currentTask) {
+			case "logMindfulAttempt":
+				logMindfulAttempt();
+				break;
+			case "getMindfulHistory":
+				getMindfulHistory();
+				break;
 			case "setupAccount":
 				setupAccount();
 				break;
@@ -91,16 +95,18 @@ public class Inventory {
 				login();
 				break;
 			default:
+				System.out.println("Invalid communications: "+this.currentTask);
+				this.currentTask = null;
 				break;
 		}
 	}
-	
+
 	private void setupAccount() {
 		DocumentSnapshot document = this.fbdb.getItems("communications", "setupAccount");
 		SetupAccount fdmEmployeeData = document.toObject(SetupAccount.class);
 		createFDMEmployee(fdmEmployeeData.getName(), fdmEmployeeData.getUsername(), fdmEmployeeData.getEmail(),
 			stringToDate(fdmEmployeeData.getDob()), fdmEmployeeData.getHeight(), fdmEmployeeData.getWeight());
-		normalResponse(true);
+		finalResponse(true);
 	}
 
 	private void login() {
@@ -108,7 +114,7 @@ public class Inventory {
 		Login fdmEmployeeData = document.toObject(Login.class);
 		DocumentSnapshot employeeDocument = this.fbdb.getItems("employees", fdmEmployeeData.getEmail());
 		this.currentFDMEmployee = employeeDocument.toObject(FDMEmployee.class);
-		normalResponse(true);
+		finalResponse(true);
 	}
 
 	private void findEmail() {
@@ -116,7 +122,7 @@ public class Inventory {
 		FindEmail fdmEmployeeData = document.toObject(FindEmail.class);
 		String email = this.fbdb.findEmployeeEmail(fdmEmployeeData.getUsername());
 		fbdb.addToResponse("email", email);
-		normalResponse(true);
+		finalResponse(true);
 	}
 
 	private void addCalories() {
@@ -134,18 +140,69 @@ public class Inventory {
 	}
 
 	private void getTotalCalories() {
-
+		HealthHistory health = this.currentFDMEmployee.getHealthHistory();
+		ArrayList<String> food = new ArrayList<String>();
+		ArrayList<String> dates = new ArrayList<String>();
+		ArrayList<Integer> calories = new ArrayList<Integer>();
+		ArrayList<Integer> ids = new ArrayList<Integer>();
+		for (Calorie calorie : health.getCalorieHistory()) {
+			food.add(calorie.getFood().getName());
+			dates.add(calorie.getDateLogged());
+			calories.add(calorie.getCalories());
+			ids.add((int)(long)calorie.getId());
+		}
+		String overallStats = "This is work in progress, not a priority atm";
+		fbdb.addToResponse("food", food);
+		fbdb.addToResponse("dates", dates);
+		fbdb.addToResponse("calories", calories);
+		fbdb.addToResponse("ids", ids);
+		fbdb.addToResponse("overallStats", overallStats);
+		finalResponse(true);
 	}
 
 	private void editCalories() {
+		DocumentSnapshot document = this.fbdb.getItems("communications", "editCalories");
+		EditCalories calorieInfo = document.toObject(EditCalories.class);
+		if (this.currentFDMEmployee != null) {
+			
+			//TODO - 
+
+		}
 
 	}
 
 	private void updateBMI() {
+		
+	}
 
+	private void logMindfulAttempt() {
+		DocumentSnapshot document = this.fbdb.getItems("communications", "logMindfulAttempt");
+		LogMindfulAttempt logAttempt = document.toObject(LogMindfulAttempt.class);
+		//DocumentSnapshot employeeDocument = this.fbdb.getItems("employees", fdmEmployeeData.getEmail());
+		if (this.currentFDMEmployee != null) {
+			this.currentFDMEmployee.attemptMindfulnessExercise();
+			updateCurrentEmployee();
+		}
+		finalResponse(true);
+	}
+
+	private void getMindfulHistory() {
+		
+		ArrayList<MindfulnessExerciseAttempt> allattempts = this.currentFDMEmployee.getMindfulnessExerciseAttempts();
+		ArrayList<Integer> attemptno = new ArrayList<Integer>();
+		ArrayList<String> dates = new ArrayList<String>();
+		for (MindfulnessExerciseAttempt m : allattempts){
+			attemptno.add(m.getAttemptNumber());
+			dates.add(m.getDateCompleted());
+		}
+		fbdb.addToResponse("attemptNos", attemptno);
+		fbdb.addToResponse("attemptDates", dates);
+		finalResponse(true);
+		
 	}
 
 	private void getBMI() {
+
 
 	}
 
@@ -175,9 +232,11 @@ public class Inventory {
 		return LocalDateTime.parse(date, formatter);
 	}
 
-	private void normalResponse(boolean confirm) {
+	private void finalResponse(boolean confirm) {
+		this.fbdb.addToResponse("task", this.currentTask);
 		this.fbdb.addToResponse("confirmation", confirm);
 		this.fbdb.sendResponse();
+		this.currentTask = null;
 	}
 
 	private void addNewFood(String name, int calories) {
@@ -2463,10 +2522,10 @@ public class Inventory {
 	// public boolean setTargetProperties(List<String> newTargetProperties) {
 	// }
 
-	
 
 
-	
+
+
 
 
 }
