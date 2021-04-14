@@ -17,6 +17,7 @@ const FirstPage = () => {
     const [IDcount, setIDcount] = useState(0);
     const [name, setName] = useState("");
     const [dob, setDOB] = useState("");
+    // const [start, setStart] = useState(false);
 
     const clearInputs = () => {
         setEmail('');

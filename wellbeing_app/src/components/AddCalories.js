@@ -15,7 +15,8 @@ export default class AddCalories extends React.Component {
             food: "",
             weight: "",
             calories: "",
-            date: ""
+            date: "",
+            start: false
         };
     }
 
