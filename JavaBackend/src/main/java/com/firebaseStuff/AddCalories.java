@@ -7,6 +7,9 @@ public class AddCalories {
     int calories;
     String date;
 
+    public AddCalories() {
+    }
+
     public boolean getStart() {
         return this.start;
     }
@@ -46,5 +49,5 @@ public class AddCalories {
     public void setDate(String date) {
         this.date = date;
     }
-    
+
 }
