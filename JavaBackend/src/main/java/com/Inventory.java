@@ -53,8 +53,6 @@ public class Inventory {
 	}
 
 	public void completeTask() {
-		String task = this.currentTask;
-		this.currentTask = null;
 		this.fbdb.updateStartFalse(task);
 		switch(task) {
 			case "setupAccount":
@@ -91,6 +89,8 @@ public class Inventory {
 				login();
 				break;
 			default:
+				System.out.println("Invalid communications: "+this.currentTask);
+				this.currentTask = null;
 				break;
 		}
 	}
@@ -100,7 +100,7 @@ public class Inventory {
 		SetupAccount fdmEmployeeData = document.toObject(SetupAccount.class);
 		createFDMEmployee(fdmEmployeeData.getName(), fdmEmployeeData.getUsername(), fdmEmployeeData.getEmail(),
 			stringToDate(fdmEmployeeData.getDob()), fdmEmployeeData.getHeight(), fdmEmployeeData.getWeight());
-		normalResponse(true);
+		finalResponse(true);
 	}
 
 	private void login() {
@@ -108,7 +108,7 @@ public class Inventory {
 		Login fdmEmployeeData = document.toObject(Login.class);
 		DocumentSnapshot employeeDocument = this.fbdb.getItems("employees", fdmEmployeeData.getEmail());
 		this.currentFDMEmployee = employeeDocument.toObject(FDMEmployee.class);
-		normalResponse(true);
+		finalResponse(true);
 	}
 
 	private void findEmail() {
@@ -116,7 +116,7 @@ public class Inventory {
 		FindEmail fdmEmployeeData = document.toObject(FindEmail.class);
 		String email = this.fbdb.findEmployeeEmail(fdmEmployeeData.getUsername());
 		fbdb.addToResponse("email", email);
-		normalResponse(true);
+		finalResponse(true);
 	}
 
 	private void addCalories() {
@@ -134,7 +134,8 @@ public class Inventory {
 	}
 
 	private void getTotalCalories() {
-
+		DocumentSnapshot document = this.fbdb.getItems("communications", "addCalories");
+		AddCalories calorieInfo = document.toObject(AddCalories.class);
 	}
 
 	private void editCalories() {
@@ -175,9 +176,11 @@ public class Inventory {
 		return LocalDateTime.parse(date, formatter);
 	}
 
-	private void normalResponse(boolean confirm) {
+	private void finalResponse(boolean confirm) {
+		this.fbdb.addToResponse("task", this.currentTask);
 		this.fbdb.addToResponse("confirmation", confirm);
 		this.fbdb.sendResponse();
+		this.currentTask = null;
 	}
 
 	private void addNewFood(String name, int calories) {
