@@ -85,6 +85,7 @@ getTotalCalories {
 		boolean confirmation
 		ArrayList<String> food
 		ArrayList<String> dates
+		ArrayList<int> ids
 		String overallStats
 		
 	description: send all the intake information with daily, weekly, and overall statistics for the user
@@ -97,7 +98,8 @@ editCalories {
 		int weight
 		int calories
 		String date
-		
+		int id
+
 	recieve:
 		boolean confirmation
 		

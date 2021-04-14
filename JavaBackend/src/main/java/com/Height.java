@@ -4,7 +4,8 @@ public class Height extends HealthProperty {
 
 	private int height;
 
-	public Height(int height) {
+	public Height(long id, int height) {
+		super(id);
 		this.height = height;
 	}
 
@@ -19,5 +20,6 @@ public class Height extends HealthProperty {
 	//----------------------------------------------------------------------------------------------------------------------------------------
 	//firebase stuff!!
 	public Height() {
+		super(0);
 	}
 }

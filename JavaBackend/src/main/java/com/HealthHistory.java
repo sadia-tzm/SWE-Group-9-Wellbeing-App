@@ -25,8 +25,8 @@ public class HealthHistory {
 	 * @param weight
 	 */
 	private void intialWeight(int height, int weight) {
-		heightHistory.add(new Height(height));
-		weightHistory.add(new Weight(weight));
+		heightHistory.add(new Height(0, height));
+		weightHistory.add(new Weight(0, weight));
 	}
 
 	/**
@@ -39,7 +39,9 @@ public class HealthHistory {
 		Food foodItem = new Food(nameOfFood, calories, weightOfFood);
 		// System.out.println(foodItem.getCalories());
 		foodHistory.add(foodItem);
-		calorieHistory.add(new Calorie(foodItem, weightOfFood));
+		int size = calorieHistory.size();
+		long id = (size != 0) ? calorieHistory.get(size).getId()+1 : 0;
+		calorieHistory.add(new Calorie(id, foodItem, weightOfFood));
 	}
 	/**
 	 * logs calories for an already predetermied food object.
@@ -47,7 +49,9 @@ public class HealthHistory {
 	 * @param weight
 	 */
 	public void logCalories(Food food, double weight) {
-		calorieHistory.add(new Calorie(food, weight));
+		int size = calorieHistory.size();
+		long id = (size != 0) ? calorieHistory.get(size).getId()+1 : 0;
+		calorieHistory.add(new Calorie(id, food, weight));
 	}
 	/**
 	 * calculates BMI for for most recently entered height and weight. 
@@ -94,7 +98,9 @@ public class HealthHistory {
 	 * @param height
 	 */
 	public void logHeight(int height) {
-		heightHistory.add(new Height(height));
+		int size = heightHistory.size();
+		long id = (size != 0) ? heightHistory.get(size).getId()+1 : 0;
+		heightHistory.add(new Height(id, height));
 		this.setBMI();
 
 	}
@@ -103,7 +109,9 @@ public class HealthHistory {
 	 * @param weight
 	 */
 	public void logWeight(int weight) {
-		weightHistory.add(new Weight(weight));
+		int size = weightHistory.size();
+		long id = (size != 0) ? weightHistory.get(size).getId()+1 : 0;
+		weightHistory.add(new Weight(id, weight));
 		this.setBMI();
 	}
 
@@ -187,6 +195,34 @@ public class HealthHistory {
 
 	public boolean checkEntry(Double b) {
 		return bmiHistory.contains(b);
+	}
+
+	public Food findFood(String name) {
+		for(Food food : foodHistory) {
+			if (food.getName() == name) return food;
+		}
+		return null;
+	}
+
+	public Weight findWeight(int id) {
+		for(Weight weight : weightHistory) {
+			if (weight.getId() == id) return weight;
+		}
+		return null;
+	}
+
+	public Height findHeight(int id) {
+		for(Height height : heightHistory) {
+			if (height.getId() == id) return height;
+		}
+		return null;
+	}
+
+	public Calorie findCalorie(int id) {
+		for(Calorie calorie : calorieHistory) {
+			if (calorie.getId() == id) return calorie;
+		}
+		return null;
 	}
 
 	//----------------------------------------------------------------------------------------------------------------------------------------

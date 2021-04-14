@@ -7,8 +7,7 @@ import java.util.List;
 
 import com.extra.Appointment;
 import com.extra.Query;
-import com.firebaseStuff.FirebaseDatabase;
-import com.firebaseStuff.SetupAccount;
+import com.firebaseStuff.*;
 import com.google.cloud.firestore.DocumentSnapshot;
 
 public class Inventory {
@@ -51,6 +50,7 @@ public class Inventory {
 	public void completeTask() {
 		String task = this.currentTask;
 		this.currentTask = null;
+		this.fbdb.updateStartFalse(task);
 		switch(task) {
 			case "setupAccount":
 				setupAccount();
@@ -82,56 +82,69 @@ public class Inventory {
 			case "logout":
 				logout();
 				break;
+			case "login":
+				login();
+				break;
 			default:
 				break;
 		}
 	}
 	
-	private void setupAccount(){
-		DocumentSnapshot document = fbdb.getItems("communications", "setupAccount");
+	private void setupAccount() {
+		DocumentSnapshot document = this.fbdb.getItems("communications", "setupAccount");
 		SetupAccount fdmEmployeeData = document.toObject(SetupAccount.class);
 		createFDMEmployee(fdmEmployeeData.getName(), fdmEmployeeData.getUsername(), fdmEmployeeData.getEmail(), 
 			fdmEmployeeData.getId(), stringToDate(fdmEmployeeData.getDob()), fdmEmployeeData.getHeight(), fdmEmployeeData.getWeight());
 		normalResponse();
 	}
 
-	private void login(){
-		
+	private void login() {
+		DocumentSnapshot document = this.fbdb.getItems("communications", "login");
+		Login fdmEmployeeData = document.toObject(Login.class);
+		DocumentSnapshot employeeDocument = this.fbdb.getItems("employees", fdmEmployeeData.getId());
+		this.currentFDMEmployee = employeeDocument.toObject(FDMEmployee.class);
+		normalResponse();
 	}
 
-	private void findEmail(){
-
+	private void findEmail() {
+		DocumentSnapshot document = this.fbdb.getItems("communications", "findEmail");
+		FindEmail fdmEmployeeData = document.toObject(FindEmail.class);
+		String email = this.fbdb.findEmployeeEmail(fdmEmployeeData.getUsername());
+		fbdb.addToResponse("confirmation", true);
+		fbdb.addToResponse("email", email);
+		this.fbdb.sendResponse();
 	}
 
-	private void addCalories(){
-
+	private void addCalories() {
+		DocumentSnapshot document = this.fbdb.getItems("communications", "addCalories");
+		AddCalories calorieInfo = document.toObject(AddCalories.class);
 	}
 
-	private void searchFood(){
-
-	}
-
-	private void getTotalCalories(){
-
-	}
-
-	private void editCalories(){
-
-	}
-
-	private void updateBMI(){
-
-	}
-
-	private void getBMI(){
+	private void searchFood() {
 
 	}
 
-	private void getBMIHistory(){
+	private void getTotalCalories() {
 
 	}
 
-	private void logout(){
+	private void editCalories() {
+
+	}
+
+	private void updateBMI() {
+
+	}
+
+	private void getBMI() {
+
+	}
+
+	private void getBMIHistory() {
+
+	}
+
+	private void logout() {
 
 	}
 

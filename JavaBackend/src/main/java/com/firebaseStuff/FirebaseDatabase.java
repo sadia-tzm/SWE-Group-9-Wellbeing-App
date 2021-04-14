@@ -8,6 +8,7 @@ import java.util.concurrent.ExecutionException;
 import com.Inventory;
 import com.google.api.core.ApiFuture;
 import com.google.auth.oauth2.GoogleCredentials;
+import com.google.cloud.firestore.DocumentReference;
 import com.google.cloud.firestore.DocumentSnapshot;
 import com.google.cloud.firestore.Firestore;
 import com.google.cloud.firestore.WriteResult;
@@ -17,6 +18,7 @@ import com.google.firebase.FirebaseOptions;
 
 import com.google.cloud.firestore.EventListener;
 import com.google.cloud.firestore.FirestoreException;
+import com.google.cloud.firestore.Query;
 import com.google.cloud.firestore.QuerySnapshot;
 import javax.annotation.Nullable;
 
@@ -80,9 +82,6 @@ public class FirebaseDatabase {
     */
     public void setItems(String collection, String id, Object object) {
         try {
-            System.out.println(collection);
-            System.out.println(id);
-            System.out.println(object);
             ApiFuture<WriteResult> collectionsApiFuture =
                 db.collection(collection).document(id).set(object);
             System.out.println("Set "+id+
@@ -179,11 +178,31 @@ public class FirebaseDatabase {
 
     public void sendResponse() {
         ApiFuture<WriteResult> future = db.collection("communications").document("response").set(this.docData);
-        this.docData = new HashMap<>();
         try {
-            System.out.println("Update time : " + future.get().getUpdateTime());
+            System.out.println("Sent "+this.docData+" response to backend at " + future.get().getUpdateTime());
         } catch (InterruptedException | ExecutionException e) {
             e.printStackTrace();
         }
+        this.docData = new HashMap<>();
     }
+
+    public void updateStartFalse(String doc) {
+        DocumentReference docRef = db.collection("communications").document(doc);
+        docRef.update("start", false);
+    }
+
+    public String findEmployeeEmail(String username) {
+        Query query = db.collection("employees").whereEqualTo("userName", username);
+        ApiFuture<QuerySnapshot> querySnapshot = query.get();
+        try {
+            for(DocumentSnapshot document : querySnapshot.get().getDocuments()) {
+                return document.getString("email");
+              }
+        } catch (InterruptedException | ExecutionException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+
 }   
