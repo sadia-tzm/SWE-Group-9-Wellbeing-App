@@ -10,7 +10,10 @@ export default class ViewCalories extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            caloriesList: null
+            food: [],
+            calories: [],
+            date: [],
+            ids: []
         }
     }
 
@@ -28,6 +31,24 @@ export default class ViewCalories extends React.Component {
     //         })
     //         .catch( error => console.log(error))
     // }
+
+    componentDidMount() {
+        const db = firebase.firestore();
+        db.collection("communications").doc("getTotalCalories").set({
+            start: true
+        })
+        db.collection("communications").doc("response")
+            .onSnapshot((doc) => {
+                console.log("Current data: ", doc.data());
+                const data = doc.data();
+                this.setState({
+                    food: data.food,
+                    calories: data.calories,
+                    date: data.date,
+                    id: data.id
+                });
+            });
+    }
         
  
     render() {
@@ -72,6 +93,40 @@ export default class ViewCalories extends React.Component {
                         )
                     })
                 } */}
+
+                {
+                    this.state.food &&
+                    this.state.food.map( food2 => {
+                        return (
+                            <div>
+                                <h1>food</h1>
+                                <p>{food2}</p>
+                            </div>
+                        )
+                    })
+                }
+                {
+                    this.state.calories &&
+                    this.state.calories.map( calorie => {
+                        return (
+                            <div>
+                                <h1>Calories</h1>
+                                <p>{calorie}</p>
+                            </div>
+                        )
+                    })
+                }
+                {
+                    this.state.dates &&
+                    this.state.dates.map( date => {
+                        return (
+                            <div>
+                                <h1>Dates</h1>
+                                <p>{date}</p>
+                            </div>
+                        )
+                    })
+                }
             </div>
         )
     }
