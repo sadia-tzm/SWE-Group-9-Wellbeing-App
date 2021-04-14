@@ -3,7 +3,8 @@ package com;
 public class Main{
     public static void main(String[] args) throws InterruptedException {
         Inventory inventory = Inventory.getInstance();
-        inventory.downloadFoodData();
+        inventory.addManyFood();
+        System.out.println("We added all food objects");
         while (true) {
             if (inventory.getCurrentTask() != null) {
                 inventory.completeTask();
