@@ -1,13 +1,8 @@
-import styled from 'styled-components';
 import React from 'react';
 import '../stylesheets/AddCalories.css';
 import firebase from "../fire";
-import { Redirect } from "react-router-dom";
 
-
-
-
-
+// Add Calories page - Input food, calories, weight, date
 export default class AddCalories extends React.Component {
     constructor(props){
         super(props);
@@ -26,14 +21,9 @@ export default class AddCalories extends React.Component {
         });
     }
 
-
-
     add_calories = e => {
         e.preventDefault();
         const db = firebase.firestore();
-        /*db.settings({
-            timestampsInSnapshots: true
-        });*/
         const date = new Date(this.state.date);
         const addCaloriesRef = db.collection("communications").doc("addCalories").set({
             food: this.state.food,
@@ -48,27 +38,13 @@ export default class AddCalories extends React.Component {
             calories: "",
             date: ""
         });
-        // this.changePage();
     };
 
-    // changePage = e => {
-    //     return <Redirect to='viewcalories' />
-    // }
 
     render() {
         return (
             <form className="form4" onSubmit={this.add_calories}>
                 <h5 className="heading4">Add Calories</h5>
-                {/* <input list ="food" className="input4"  placeholder ="Food"/>
-
-                    
-                    <datalist id="food">
-                        <option value="Apple"/>
-                        <option value="Banana"/>
-                        <option value="Pear"/>
-                        <option value="Orange"/>
-                        <option value="Apricot"/>
-                    </datalist> */}
                 <input className="input4"
                     type='text'
                     name='food'
@@ -76,7 +52,6 @@ export default class AddCalories extends React.Component {
                     onChange={this.updateInput}
                     value={this.state.food}
                 />
-                
                 <input className="input4"
                     type='number'
                     name='weight'
@@ -97,7 +72,6 @@ export default class AddCalories extends React.Component {
                     placeholder = "Date"
                     onChange={this.updateInput}
                     value={this.state.date}
-                    
                 />
                 <input className="submit4"
                     type="submit"

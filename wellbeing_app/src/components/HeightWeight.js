@@ -1,8 +1,8 @@
-import styled from 'styled-components';
 import React from 'react';
 import '../stylesheets/HeightWeight.css';
 import firebase from '../fire';
 
+// Height and Weight Page - display height, weight and bmi history
 export default class HeightWeight extends React.Component {
     constructor(props) {
         super(props);
@@ -37,9 +37,7 @@ export default class HeightWeight extends React.Component {
     }
 
     componentDidMount() {
-        //if(!this.state.empty){
         this.getHistory();
-        // }
     }
 
     showHeightItems() {
@@ -65,78 +63,13 @@ export default class HeightWeight extends React.Component {
     render() {
         return (
             <div>
-                {/* <h3 class="pagetext2">View your previously recorded health details</h3>
-                <div class="grid-container2">
-                    <div class="heading6">Height (cm)</div>
-                    <div class="heading6">Weight (Kg)</div>
-                    <div class="heading6">BMI</div>
-                    <div class="heading6">Date</div>
-                    <div class="text6">190</div>
-                    <div class="text6">70</div>
-                    <div class="text6">25</div>
-                    <div class="text6">07/04/21</div>
-                    <div class="text6">190</div>
-                    <div class="text6">70</div>
-                    <div class="text6">25</div>
-                    <div class="text6">07/04/21</div>
-                    <div class="text6">190</div>
-                    <div class="text6">70</div>
-                    <div class="text6">25</div>
-                    <div class="text6">07/04/21</div>
-                    <div class="text6">190</div>
-                    <div class="text6">70</div>
-                    <div class="text6">25</div>
-                    <div class="text6">07/04/21</div>
-                </div> */}
-                {/* <button onClick={this.getHistory}>Get History</button> */}
-                {/* <h4>
-                    {this.state.heights.map((heights) =>
-                        <h4>Heights: {heights}</h4>
-                    )}
-                </h4>
-                <h4>
-                    {this.state.weights.map((weights) =>
-                        <h4>Weights: {weights}</h4>
-                    )}
-                </h4>
-                <h4>
-                    {this.state.bmis.map((bmis) =>
-                        <h4>BMIs: {bmis}</h4>
-                    )}
-                </h4>
-                <h4>
-                    {this.state.dates.map((dates) =>
-                        <h4>Dates: {dates}</h4>
-                    )}
-                </h4> */}
-                <table className="styling2" /*className={!this.state.empty ? "historyTable" : ""}*/>
+                <table className="styling2">
                     <tr >
                         <th className="firstRow2">Height</th>
                         <th className="firstRow2">Weight</th>
                         <th className="firstRow2">BMI</th>
-                        {/* <th>Date</th> */}
                     </tr>
                     <tr>
-                        {/* <td /*className={!this.state.empty ? "historyTexts" : ""}>
-                            {this.state.heights.map((heights) =>
-                                <h4>{heights}</h4>
-                            )}
-                        </td>
-                        <td /*className={!this.state.empty ? "historyTexts" : ""}>
-                            {this.state.weights.map((weights) =>
-                                <h4>{weights}</h4>
-                            )}
-                        </td>
-                        <td /*className={!this.state.empty ? "historyTexts" : ""}>
-                            {this.state.bmis.map((bmis) =>
-                                <h4>{bmis}</h4>
-                            )}
-                        </td>
-                        <td /*className={!this.state.empty ? "historyTexts" : ""}>
-                            {this.state.dates.map((dates) =>
-                                <h4>{dates}</h4>
-                            )}
-                        </td> */}
                         <td className="secondRow2">{this.showHeightItems()}</td>
                         <td className="secondRow2">{this.showWeightItems()}</td>
                         <td className="secondRow2">{this.showBMIItems()}</td>

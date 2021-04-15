@@ -3,6 +3,7 @@ import fire from '../fire';
 import Login from './Login';
 import App from './App';
 
+// First Page / Weclome Page - User to login or sign up
 const FirstPage = () => {
     const [user, setUser] = useState("");
     const [email, setEmail] = useState("");
@@ -17,7 +18,6 @@ const FirstPage = () => {
     const [IDcount, setIDcount] = useState(0);
     const [name, setName] = useState("");
     const [dob, setDOB] = useState("");
-    // const [start, setStart] = useState(false);
 
     const clearInputs = () => {
         setEmail('');
@@ -31,7 +31,6 @@ const FirstPage = () => {
 
     const handleLogin = () => {
         clearErrors();
-        //email = convertUsernameToEmail();
         fire
             .auth()
             .signInWithEmailAndPassword(email, password)
@@ -94,7 +93,6 @@ const FirstPage = () => {
         setID('');
         setName('');
         setDOB('');
-        // setStart(false);
         db.collection("communications").doc("response")
             .onSnapshot((doc) => {
                 console.log("Current data: ", doc.data());
@@ -113,7 +111,6 @@ const FirstPage = () => {
             if (user) {
                 clearInputs();
                 setUser(user);
-                //const id = fire.auth().currentUser.uid;
             } else {
                 setUser("");
             }
@@ -129,12 +126,6 @@ const FirstPage = () => {
             {user ? (
                 <App
                     handleLogout={handleLogout}
-                    userID={userID}
-                    setID={setID}
-                    IDcount={IDcount}
-                    setIDcount={setIDcount}
-                    email={email}
-                    username={username}
                 />
             ) : (
                 <Login

@@ -1,5 +1,4 @@
-import styled from 'styled-components';
-import React, { useEffect } from 'react';
+import React from 'react';
 import NavBar from './NavBar';
 import Home from './Home';
 import OldLogin from './OldLogin';
@@ -7,39 +6,16 @@ import CalorieTracker from './CalorieTracker';
 import HealthInfo from './HealthInfo';
 import Mindfulness from './Mindfulness';
 import SignUp from './SignUp';
-import fire from '../fire';
-import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "../stylesheets/App.css";
 
-/*const App = ({ handleLogout }) => { */
+// Main App page - accessed once logged in 
 const App = (props) => {
 
     const {
       handleLogout,
-      userID,
-      setID,
-      IDcount,
-      setIDcount,
-      email,
-      username
     } = props
 
-    /****** const IDsetUp = () => {
-      const db = fire.firestore();
-      setIDcount(IDcount);
-      var IDstring = IDcount.toString();
-      // var emailString = email.toString();
-      //alert(fire.auth().currentUser.uid); // alert(this.props.email);
-      //const signUpInfo = db.collection("signupTest2").doc(username).update({
-      const signUpInfo = db.collection("signupTest2").doc(IDstring).update({
-          userID: fire.auth().currentUser.uid,
-          //userID: {IDstring},
-       });
-    } ***********/
-
-    /****** useEffect(() => {
-      IDsetUp();
-    }, []);  ******/
 
     return (
         <Router>

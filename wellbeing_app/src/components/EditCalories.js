@@ -1,7 +1,7 @@
-import styled from 'styled-components';
 import React from 'react';
 import '../stylesheets/EditCalories.css';
 
+// Edit Calories Page
 export default class EditCalories extends React.Component {
 
     render() {

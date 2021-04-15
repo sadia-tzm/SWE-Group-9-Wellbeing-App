@@ -1,8 +1,8 @@
-import styled from 'styled-components';
 import React, { useState } from 'react';
 import "../stylesheets/HealthInfoNavBar.css";
 import { NavLink } from "react-router-dom";
 
+// Health Info Navbar
 function HealthInfoNavBar() {
 
     const [click, setClick] = useState(false);

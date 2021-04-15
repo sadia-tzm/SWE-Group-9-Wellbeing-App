@@ -1,9 +1,9 @@
-import styled from 'styled-components';
 import React from 'react';
 import "../stylesheets/FocusMusic.css";
 import ReactPlayer from 'react-player/youtube';
 import firebase from '../fire';
 
+// Breathing Exercises Page 
 export default class BreathingExercises extends React.Component {
     constructor(props){
         super(props);

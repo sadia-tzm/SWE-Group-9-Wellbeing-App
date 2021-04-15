@@ -1,9 +1,8 @@
-import styled from 'styled-components';
 import React from 'react';
 import '../stylesheets/Bmi.css';
-import { Link } from "react-router-dom";
 import firebase from '../fire';
 
+// BMI Page - Input Height, Weight and Calculate BMI 
 export default class BMI extends React.Component {
 
   constructor(props) {
@@ -17,11 +16,6 @@ export default class BMI extends React.Component {
       calculate: false
     };
   }
-
-  // handleSubmit(event) {
-  //   alert('TESTING : ' + this.state.value);
-  //   event.preventDefault();
-  // }
 
   updateInput = e => {
     this.setState({
@@ -42,7 +36,6 @@ export default class BMI extends React.Component {
       weight: "",
     });
     alert("Your details have been submitted. Click Calculate BMI to see your results!");
-    // this.calculate_BMI();
   };
 
   calculate_BMI = e => {

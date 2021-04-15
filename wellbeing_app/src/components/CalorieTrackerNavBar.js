@@ -1,8 +1,8 @@
-import styled from 'styled-components';
 import React, { useState } from 'react';
 import "../stylesheets/CalorieTrackerNavBar.css";
 import { NavLink } from "react-router-dom";
 
+// Calorie Tracker Navbar
 function CalorieTrackerNavBar() {
 
     const [click, setClick] = useState(false);

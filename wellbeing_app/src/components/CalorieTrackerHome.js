@@ -1,7 +1,7 @@
-import styled from 'styled-components';
 import React from 'react';
 import '../stylesheets/CalorieTrackerHome.css';
 
+// Calorie Tracker Home Page
 export default class CalorieTrackerHome extends React.Component {
 
     render() {

@@ -1,7 +1,7 @@
-import styled from 'styled-components';
 import React from 'react';
 import '../stylesheets/Home.css';
 
+// Main Home Page
 export default class Home extends React.Component {
 
   render() {

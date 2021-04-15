@@ -1,13 +1,12 @@
-import styled from 'styled-components';
 import React from 'react';
 import HealthInfoNavBar from './HealthInfoNavBar';
 import HealthInfoHome from './HealthInfoHome';
 import Bmi from './Bmi';
 import HeightWeight from './HeightWeight';
-import { NavLink } from "react-router-dom";
 import { Redirect } from "react-router-dom";
-import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
+// Health Info Page
 export default class HealthInfo extends React.Component {
 
   render() {
