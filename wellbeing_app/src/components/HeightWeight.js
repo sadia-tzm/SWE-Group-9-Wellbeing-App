@@ -49,7 +49,17 @@ export default class HeightWeight extends React.Component {
 
     showWeightItems() {
         let weightData = this.state.weights;
-        return weightData.map((weightData2) => <li>{calorieData2}</li>)
+        return weightData.map((weightData2) => <li>{weightData2}</li>)
+    }
+
+    showBMIItems() {
+        let bmiData = this.state.bmis;
+        return bmiData.map((bmiData2) => <li>{bmiData2}</li>)
+    }
+
+    showDateItems() {
+        let dateData = this.state.dates;
+        return dateData.map((dateData2) => <li>{dateData2}</li>)
     }
 
     render() {
@@ -100,11 +110,11 @@ export default class HeightWeight extends React.Component {
                     )}
                 </h4> */}
                 <table /*className={!this.state.empty ? "historyTable" : ""}*/>
-                    <tr className="historyHeadings">
-                        <th>Height</th>
-                        <th>Weight</th>
-                        <th>BMI</th>
-                        <th>Date</th>
+                    <tr className="styling">
+                        <th className="firstRow">Height</th>
+                        <th className="firstRow">Weight</th>
+                        <th className="firstRow">BMI</th>
+                        {/* <th>Date</th> */}
                     </tr>
                     <tr>
                         {/* <td /*className={!this.state.empty ? "historyTexts" : ""}>
@@ -127,6 +137,9 @@ export default class HeightWeight extends React.Component {
                                 <h4>{dates}</h4>
                             )}
                         </td> */}
+                        <td className="secondRow">{this.showHeightItems()}</td>
+                        <td className="secondRow">{this.showWeightItems()}</td>
+                        <td className="secondRow">{this.showBMIItems()}</td>
                     </tr>
                 </table>
             </div>
