@@ -55,3 +55,26 @@
     font-size: calc(16px + 2vmin);
     width: 80vw;
 }
+
+.styling{
+    margin: auto;
+    border: 2px solid  #fffd7a;
+    padding: 10px;
+    list-style-type: none;
+    color: #073f51;
+    font-size: 26px;
+    background-color: rgb(189, 237, 255, 0.5);
+}
+
+.firstRow{
+    padding: 5px;
+    text-align: center;
+    color: #073f51;
+    border-bottom: 2px solid lightslategrey;
+}
+
+.secondRow{
+    padding: 5px;
+    text-align: center;
+    color: #073f51;
+}

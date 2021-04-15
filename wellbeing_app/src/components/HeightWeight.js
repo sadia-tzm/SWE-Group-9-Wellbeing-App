@@ -42,6 +42,16 @@ export default class HeightWeight extends React.Component {
         // }
     }
 
+    showHeightItems() {
+        let heightData = this.state.heights;
+        return heightData.map((heightData2) => <li>{heightData2}</li>)
+    }
+
+    showWeightItems() {
+        let weightData = this.state.weights;
+        return weightData.map((weightData2) => <li>{calorieData2}</li>)
+    }
+
     render() {
         return (
             <div>
@@ -89,7 +99,7 @@ export default class HeightWeight extends React.Component {
                         <h4>Dates: {dates}</h4>
                     )}
                 </h4> */}
-                <table className={!this.state.empty ? "historyTable" : ""}>
+                <table /*className={!this.state.empty ? "historyTable" : ""}*/>
                     <tr className="historyHeadings">
                         <th>Height</th>
                         <th>Weight</th>
@@ -97,26 +107,26 @@ export default class HeightWeight extends React.Component {
                         <th>Date</th>
                     </tr>
                     <tr>
-                        <td /*className={!this.state.empty ? "historyTexts" : ""}*/>
+                        {/* <td /*className={!this.state.empty ? "historyTexts" : ""}>
                             {this.state.heights.map((heights) =>
                                 <h4>{heights}</h4>
                             )}
                         </td>
-                        <td /*className={!this.state.empty ? "historyTexts" : ""}*/>
+                        <td /*className={!this.state.empty ? "historyTexts" : ""}>
                             {this.state.weights.map((weights) =>
                                 <h4>{weights}</h4>
                             )}
                         </td>
-                        <td /*className={!this.state.empty ? "historyTexts" : ""}*/>
+                        <td /*className={!this.state.empty ? "historyTexts" : ""}>
                             {this.state.bmis.map((bmis) =>
                                 <h4>{bmis}</h4>
                             )}
                         </td>
-                        <td /*className={!this.state.empty ? "historyTexts" : ""}*/>
+                        <td /*className={!this.state.empty ? "historyTexts" : ""}>
                             {this.state.dates.map((dates) =>
                                 <h4>{dates}</h4>
                             )}
-                        </td>
+                        </td> */}
                     </tr>
                 </table>
             </div>

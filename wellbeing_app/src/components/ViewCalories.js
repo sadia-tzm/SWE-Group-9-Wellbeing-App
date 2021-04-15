@@ -55,6 +55,23 @@ export default class ViewCalories extends React.Component {
     componentDidMount() {
         this.calorieHistory();
     }
+
+    showFoodItems() {
+        let foodData = this.state.food;
+        return foodData.map((foodData2) => <li>{foodData2}</li>)
+    }
+
+    showCalorieItems() {
+        let calorieData = this.state.calories;
+        return calorieData.map((calorieData2) => <li>{calorieData2}</li>)
+    }
+
+    // showDateItems() {
+    //     let dateData = this.state.date;
+    //     return dateData.map((dateData2) => <li>{dateData2}</li>)
+    // }
+
+    
         
  
     render() {
@@ -62,14 +79,14 @@ export default class ViewCalories extends React.Component {
             <div>
                 <h3 class="pagetext">View your Calorie Intake! Keep going, you're on the right track!</h3>
 
-                 <input className="input4"
+                 {/* <input className="input4"
                     type='date'
                     name='date'
                     placeholder = "Date"
                     
-                />
+                /> */}
 
-                <div class="grid-container">
+                {/* <div class="grid-container">
                     <div class="heading5">Food</div>
                     <div class="heading5">Calories (kcal)</div>
                     <div class="text5">Weetabix</div>
@@ -86,7 +103,7 @@ export default class ViewCalories extends React.Component {
                     <div class="text5">89</div>
                     <div class="total">Total</div>
                     <div class="total">809</div>
-                </div>
+                </div> */}
 
                 {/* {
                     this.state.caloriesList &&
@@ -111,31 +128,35 @@ export default class ViewCalories extends React.Component {
                         )
                     })
                  */}
-
-                <table /*className={!this.state.empty ? "calorieTable" : ""}*/>
-                    <tr /*className="calorieHeadings"*/>
-                        <th>Food</th>
-                        <th>Calories</th>
-                        <th>Date</th>
-                    </tr>
-                    <tr>
-                        <td /*className={!this.state.empty ? "calorieTexts" : ""}*/>
-                            {this.state.food.map((food) =>
-                                <h4>{food}</h4>
-                            )}
-                        </td>
-                        <td /*className={!this.state.empty ? "calorieTexts" : ""}*/>
-                            {this.state.calories.map((calories) =>
-                                <h4>{calories}</h4>
-                            )}
-                        </td>
-                        {/* <td /*className={!this.state.empty ? "calorieTexts" : ""}>
-                            {this.state.date.map((date) =>
-                                <h4>{date}</h4>
-                            )}
-                        </td> */}
-                    </tr>
-                </table>
+                <div >
+                    <table className="styling" /*className={!this.state.empty ? "calorieTable" : ""}*/>
+                        <tr /*className="calorieHeadings"*/>
+                            <th className="firstRow">Food</th>
+                            <th className="firstRow">Calories</th>
+                            {/* <th>Date</th> */}
+                        </tr>
+                        <tr >
+                            {/* <td /*className={!this.state.empty ? "calorieTexts" : ""}>
+                                {this.state.food.map((food) =>
+                                    <h4>{food}</h4>
+                                )}
+                            </td>
+                            <td /*className={!this.state.empty ? "calorieTexts" : ""}>
+                                {this.state.calories.map((calories) =>
+                                    <h4>{calories}</h4>
+                                )}
+                            </td> */}
+                            {/* <td /*className={!this.state.empty ? "calorieTexts" : ""}>
+                                {this.state.date.map((date) =>
+                                    <h4>{date}</h4>
+                                )}
+                            </td> */}
+                            <td className="secondRow">{this.showFoodItems()}</td>
+                            <td className="secondRow">{this.showCalorieItems()}</td>
+                            {/* <td>{this.showDateItems()}</td> */}
+                        </tr>
+                    </table>
+                </div>
 
             </div>
         )
