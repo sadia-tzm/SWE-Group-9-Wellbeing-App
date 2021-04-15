@@ -5,6 +5,7 @@ Pre-requisites to run:
 Need firebase database set up with authenticator for web, then put:
 
 SFE_Group_9\wellbeing_app\src     <-    fire.js
+
 SFE_Group_9\wellbeing_app         <-    ServiceAccountKey.json
 
 Where fire.js holds firebaseConfig from firebase->settings->general->scroll down (and copy into local file. make sure to set up imports, as it's just a variable)
