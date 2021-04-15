@@ -172,8 +172,8 @@ getMindfulHistory {
 logMindfulAttempt {
 	send:
 		boolean start
-		String Type
-		String Date
+		String type
+		String date
 		
 	recieve:
 		String task

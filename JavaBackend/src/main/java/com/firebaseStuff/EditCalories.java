@@ -6,6 +6,7 @@ public class EditCalories {
     int weight;
     int calories;
     String date;
+    int id;
 
     public boolean getStart() {
         return this.start;
@@ -46,4 +47,13 @@ public class EditCalories {
     public void setDate(String date) {
         this.date = date;
     }
+
+    public int getId() {
+        return this.id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
 }
