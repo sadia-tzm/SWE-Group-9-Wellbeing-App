@@ -2,7 +2,6 @@
     margin: 5vh auto;
     width: 25vw;
     height: 85vh;
-    /*background: rgb(224, 255, 255, 0.5);*/
     background: rgb(189, 237, 255, 0.3);
     border-radius: 10%;
 }
@@ -43,7 +42,6 @@
         margin: 5vh auto;
         width: 50vw;
         height: 85vh;
-        /*background: rgb(224, 255, 255, 0.5);*/
         background: rgb(189, 237, 255, 0.3);
         border-radius: 10%;
     }
