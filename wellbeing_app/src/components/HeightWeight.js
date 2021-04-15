@@ -97,22 +97,22 @@ export default class HeightWeight extends React.Component {
                         <th>Date</th>
                     </tr>
                     <tr>
-                        <td className="historyTexts">
+                        <td /*className={!this.state.empty ? "historyTexts" : ""}*/>
                             {this.state.heights.map((heights) =>
                                 <h4>{heights}</h4>
                             )}
                         </td>
-                        <td className="historyTexts">
+                        <td /*className={!this.state.empty ? "historyTexts" : ""}*/>
                             {this.state.weights.map((weights) =>
                                 <h4>{weights}</h4>
                             )}
                         </td>
-                        <td className="historyTexts">
+                        <td /*className={!this.state.empty ? "historyTexts" : ""}*/>
                             {this.state.bmis.map((bmis) =>
                                 <h4>{bmis}</h4>
                             )}
                         </td>
-                        <td className="historyTexts">
+                        <td /*className={!this.state.empty ? "historyTexts" : ""}*/>
                             {this.state.dates.map((dates) =>
                                 <h4>{dates}</h4>
                             )}

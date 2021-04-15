@@ -252,7 +252,7 @@ public class Inventory {
                 heights.add(currentHeight);
                 weights.add(currentWeight);
                 //squareHeight = (currentHeight/100)(currentHeight/100);
-                currentBMI = Math.round((currentWeight/(currentHeight/100)(currentHeight/100))*10.0)/10.0;
+                currentBMI = Math.round((currentWeight/(currentHeight/100)*(currentHeight/100))*10.0)/10.0;
                 bmis.add(currentBMI);
                 dates.add(listOfHeights.get(n).getDateLogged());
             }
