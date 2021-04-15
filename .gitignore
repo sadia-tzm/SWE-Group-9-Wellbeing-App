@@ -1,4 +1,2 @@
-#
-# Firebase
-#
-.ServiceAccountKey.json
+ServiceAccountKey.json
+wellbeing_app/src/fire.js
