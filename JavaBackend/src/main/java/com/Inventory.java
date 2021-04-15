@@ -285,9 +285,10 @@ public class Inventory {
 		LogMindfulAttempt logAttempt = document.toObject(LogMindfulAttempt.class);
 		//DocumentSnapshot employeeDocument = this.fbdb.getItems("employees", fdmEmployeeData.getEmail());
 		if (this.currentFDMEmployee != null) {
-			this.currentFDMEmployee.attemptMindfulnessExercise();
-			// this.currentFDMEmployee.attemptMindfulnessExercise(logAttempt.getType()); <- TODO: implement this
+			//this.currentFDMEmployee.attemptMindfulnessExercise();
+			this.currentFDMEmployee.attemptMindfulnessExercise(logAttempt.getType());
 			updateCurrentEmployee();
+			System.out.println(this.currentFDMEmployee.getMindfulnessExerciseAttempts().get(this.currentFDMEmployee.getMindfulnessExerciseAttempts().size()-1));
 		}
 		finalResponse(true);
 	}
