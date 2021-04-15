@@ -1,7 +1,7 @@
-import styled from 'styled-components';
 import React from 'react';
 import '../stylesheets/OldLogin.css';
 
+// Old login page - no longer used
 export default class Login extends React.Component {
   constructor(props) {
     super(props);

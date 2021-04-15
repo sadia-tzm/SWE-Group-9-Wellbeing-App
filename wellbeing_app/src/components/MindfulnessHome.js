@@ -1,7 +1,7 @@
-import styled from 'styled-components';
 import React from 'react';
 import '../stylesheets/MindfulnessHome.css';
 
+// Mindfulness Home Page
 export default class MindfulnessHome extends React.Component {
 
   render() {

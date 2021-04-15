@@ -1,14 +1,13 @@
-import styled from 'styled-components';
 import React from 'react';
 import MindfulnessNavBar from './MindfulnessNavBar';
 import FocusMusic from './FocusMusic';
 import GuidedMeditation from './GuidedMeditation';
 import BreathingExercises from './BreathingExercises';
 import MindfulnessHome from './MindfulnessHome';
-import { NavLink } from "react-router-dom";
 import { Redirect } from "react-router-dom";
-import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
+// Mindfulness Main Page
 export default class Mindfulness extends React.Component {
 
   render() {

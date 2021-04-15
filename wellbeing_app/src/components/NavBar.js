@@ -1,8 +1,8 @@
-import styled from 'styled-components';
 import React, { useState } from 'react';
 import "../stylesheets/NavBar.css";
 import { NavLink } from "react-router-dom";
 
+// Main Navbar
 function NavBar({handleLogout}) {
 
     const [click, setClick] = useState(false);
@@ -47,7 +47,6 @@ function NavBar({handleLogout}) {
                             </NavLink>
                         </li>
                         <li className="nav-item">
-                            {/* <button className="nav-links" onClick={handleLogout} id="logoutButton">Logout</button> */}
                             <button activeClassName="active" className="nav-links" id="logoutButton" onClick={handleLogout}> 
                                 Logout
                             </button>

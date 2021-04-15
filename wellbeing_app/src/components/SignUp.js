@@ -1,7 +1,7 @@
-import styled from 'styled-components';
 import React from 'react';
 import '../stylesheets/SignUp.css';
 
+// Old Sign up page - no longer used
 export default class SignUp extends React.Component {
   constructor(props) {
     super(props);

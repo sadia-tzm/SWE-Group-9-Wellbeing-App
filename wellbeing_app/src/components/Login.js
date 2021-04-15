@@ -1,6 +1,7 @@
 import React from 'react';
 import '../stylesheets/Login.css'
 
+// Login Page
 const Login = (props) => {
     const {
         email,
@@ -33,7 +34,6 @@ const Login = (props) => {
         <section className="login">
             <div className="form_L">
                 <h5 className="heading_L">Welcome</h5>
-                { /* <label>Username</label> */}
                 <input className="input_L"
                     type="email"
                     autoFocus
@@ -43,7 +43,6 @@ const Login = (props) => {
                     placeholder="Email"
                 />
                 <p className="errorMsg_L">{emailError}</p>
-                {/* <label>Password</label> */}
                 <input className="input_L"
                     type="password"
                     required

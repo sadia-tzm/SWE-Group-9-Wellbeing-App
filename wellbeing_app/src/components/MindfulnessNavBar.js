@@ -1,8 +1,8 @@
-import styled from 'styled-components';
 import React, { useState } from 'react';
 import "../stylesheets/MindfulnessNavBar.css";
 import { NavLink } from "react-router-dom";
 
+// Mindfulness Navbar
 function MindfulnessNavBar() {
 
     const [click, setClick] = useState(false);
