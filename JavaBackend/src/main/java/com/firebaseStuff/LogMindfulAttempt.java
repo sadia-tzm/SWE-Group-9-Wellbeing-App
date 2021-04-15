@@ -2,8 +2,8 @@ package com.firebaseStuff;
 
 public class LogMindfulAttempt {
     boolean start;
-	String Type;
-    String Date;
+	String type;
+    String date;
 
     public LogMindfulAttempt() {
     }
@@ -17,19 +17,19 @@ public class LogMindfulAttempt {
     }
 
     public String getType() {
-        return this.Type;
+        return this.type;
     }
 
-    public void setType(String Type) {
-        this.Type = Type;
+    public void setType(String type) {
+        this.type = type;
     }
 
     public String getDate() {
-        return this.Date;
+        return this.date;
     }
 
-    public void setDate(String Date) {
-        this.Date = Date;
+    public void setDate(String date) {
+        this.date = date;
     }
 	
 
