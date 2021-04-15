@@ -51,7 +51,13 @@ public class HealthHistory {
 	public void logCalories(Food food, double weight) {
 		int size = calorieHistory.size();
 		long id = (size != 0) ? calorieHistory.get(size-1).getId()+1 : 0;
+		System.out.println(id);
 		calorieHistory.add(new Calorie(id, food, weight));
+	}
+
+	public void logNewFood(int calories, String nameOfFood, int weightOfFood) {
+		Food foodItem = new Food(nameOfFood, calories, weightOfFood);
+		foodHistory.add(foodItem);
 	}
 	/**
 	 * calculates BMI for for most recently entered height and weight. 

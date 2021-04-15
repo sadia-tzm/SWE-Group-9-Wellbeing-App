@@ -4,7 +4,6 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -24,7 +23,7 @@ public class Inventory {
 	private Collection<WorkoutExercise> availableWorkoutExercises;
 	private Collection<MindfulnessExercise> availableMindfulnessExercises;
 	private Collection<Query> queries;
-	private ArrayList<Food> searchableFood;
+	private List<Food> searchableFood;
 	private List<String> workoutDifficulties;
 	private List<String> statusList;
 	private List<String> targetAttribute;
@@ -32,6 +31,7 @@ public class Inventory {
 	private FirebaseDatabase fbdb;
 	private FDMEmployee currentFDMEmployee = null;
 	private static DateTimeFormatter formatter = DateTimeFormatter.ISO_DATE_TIME;
+	private int[] foodIndices = {3, 83, 283, 623, 674, 699, 771, 853, 904, 920, 940, 967, 1026, 1174, 1197, 1236, 1448, 1457, 1546, 1775, 1856, 1857, 1900, 1957, 1958, 1986};
 
 	private Inventory() throws InterruptedException{
 		this.fbdb = FirebaseDatabase.fbdbGetInstance();
@@ -57,11 +57,8 @@ public class Inventory {
 	public void completeTask() {
 		this.fbdb.updateStartFalse(this.currentTask);
 		switch(this.currentTask) {
-			case "logMindfulAttempt":
-				logMindfulAttempt();
-				break;
-			case "getMindfulHistory":
-				getMindfulHistory();
+			case "login":
+				login();
 				break;
 			case "setupAccount":
 				setupAccount();
@@ -90,11 +87,14 @@ public class Inventory {
 			case "getBMIHistory":
 				getBMIHistory();
 				break;
+			case "logMindfulAttempt":
+				logMindfulAttempt();
+				break;
+			case "getMindfulHistory":
+				getMindfulHistory();
+				break;
 			case "logout":
 				logout();
-				break;
-			case "login":
-				login();
 				break;
 			default:
 				System.out.println("Invalid communications: "+this.currentTask);
@@ -131,49 +131,24 @@ public class Inventory {
 		DocumentSnapshot document = this.fbdb.getItems("communications", "addCalories");
 		AddCalories calorieInfo = document.toObject(AddCalories.class);
 		if (this.currentFDMEmployee != null) {
-			//search database calories
-			//search user calories
-			//this.currentFDMEmployee.getHealthHistory().logCalories(calories, nameOfFood, weightOfFood);
+			HealthHistory health = this.currentFDMEmployee.getHealthHistory();
+			Food foundFood = this.findFoodData(calorieInfo.getFood(), health.getFoodHistory());
+			if (foundFood == null) foundFood = this.findFoodData(calorieInfo.getFood(), this.searchableFood);
+			if (foundFood == null) health.logCalories(calorieInfo.getCalories(), calorieInfo.getFood(), calorieInfo.getWeight());
+			else health.logCalories(foundFood, calorieInfo.getWeight());
+			updateCurrentEmployee();
 		}
-	}
-
-	public Food findFood(String nameToSearch) {
-		int mid = searchableFood.size()-1/2; int first = 0; int last = searchableFood.size()-1;
-		while (first<=last){
-			mid = (first +last)/2;
-			if(searchableFood.get(mid).getName().compareTo(nameToSearch)<0){first = mid+1;}
-			else if(searchableFood.get(mid).getName().compareTo(nameToSearch)>0){last = mid -1;}
-			else return searchableFood.get(mid);
-		}
-		return null;
+		finalResponse(true);
 	}
 
 	public void searchFood() {
-	}
-
-	public static Comparator<Food> FoodNameComparator = new Comparator<Food>() {
-		public int compare(Food f1, Food f2) {
-		   String FoodName1 = f1.getName();
-		   String FoodName2 = f2.getName();
-		   return FoodName1.compareTo(FoodName2);
-		}
-	};
-
-	public ArrayList<Food> searchFoodSuggestor(String nameToSearch){
-		nameToSearch = nameToSearch.toLowerCase();
-		ArrayList<Food> searchAbleFoodSuggestor = new ArrayList<Food>();
-		int counter =0; int counter2 =0;
-		while(counter2< searchableFood.size() && counter<20){
-			for(int i=0; i<searchableFood.size();i++){
-				if(searchableFood.get(i).getName().toLowerCase().startsWith(nameToSearch)){
-					searchAbleFoodSuggestor.add(searchableFood.get(i)); 
-					counter+=1;
-				}
-				counter2+=1;
-				if(counter == 20){break;}
-			}
-		}
-		return searchAbleFoodSuggestor;
+		DocumentSnapshot document = this.fbdb.getItems("communications", "searchFood");
+		SearchFood startOfFood = document.toObject(SearchFood.class);
+		List<Food> foods = this.searchFoodSuggestor(startOfFood.getStartOfFood());
+		List<String> foodNames = new ArrayList<String>();
+		for (Food food : foods) foodNames.add(food.getName());
+		fbdb.addToResponse("food", foodNames);
+		finalResponse(true);
 	}
 
 	private void getTotalCalories() {
@@ -198,11 +173,31 @@ public class Inventory {
 	}
 
 	private void editCalories() {
-		DocumentSnapshot document = this.fbdb.getItems("communications", "editCalories");
-		EditCalories calorieInfo = document.toObject(EditCalories.class);
 		if (this.currentFDMEmployee != null) {
-			//TODO - search calories
+			DocumentSnapshot document = this.fbdb.getItems("communications", "editCalories");
+			EditCalories calorieInfo = document.toObject(EditCalories.class);
+			HealthHistory health = this.currentFDMEmployee.getHealthHistory();
+			List<Calorie> userCalorieList = health.getCalorieHistory();
+			Calorie currentCalorie;
+			for (Calorie calorie : userCalorieList) {
+				if (calorie.getId() == calorieInfo.getId()) {
+					currentCalorie = calorie;
+					if (currentCalorie.getFood().getName() != calorieInfo.getFood()) {
+						Food foundFood = this.findFoodData(calorieInfo.getFood(), health.getFoodHistory());
+						if (foundFood == null) foundFood = this.findFoodData(calorieInfo.getFood(), this.searchableFood);
+						if (foundFood == null) {
+							health.logNewFood(calorieInfo.getCalories(), calorieInfo.getFood(), calorieInfo.getWeight());
+							foundFood = health.getFoodHistory().get(health.getFoodHistory().size()-1);
+						}
+						health.editCalorieEntry(currentCalorie, calorieInfo.getWeight(), foundFood);
+					}
+					health.editCalorieEntry(currentCalorie, calorieInfo.getWeight());
+					break;
+				}
+			}
+			updateCurrentEmployee();
 		}
+		finalResponse(true);
 	}
 
 	private void updateBMI() {
@@ -216,32 +211,6 @@ public class Inventory {
 				health.logHeightAndWeight(bmiInfo.getHeight(), bmiInfo.getWeight());
 			}
 			updateCurrentEmployee();
-		}
-		finalResponse(true);
-	}
-
-	private void logMindfulAttempt() {
-		DocumentSnapshot document = this.fbdb.getItems("communications", "logMindfulAttempt");
-		LogMindfulAttempt logAttempt = document.toObject(LogMindfulAttempt.class);
-		//DocumentSnapshot employeeDocument = this.fbdb.getItems("employees", fdmEmployeeData.getEmail());
-		if (this.currentFDMEmployee != null) {
-			this.currentFDMEmployee.attemptMindfulnessExercise();
-			updateCurrentEmployee();
-		}
-		finalResponse(true);
-	}
-
-	private void getMindfulHistory() {
-		if (this.currentFDMEmployee != null) {
-			ArrayList<MindfulnessExerciseAttempt> allattempts = this.currentFDMEmployee.getMindfulnessExerciseAttempts();
-			ArrayList<Integer> attemptno = new ArrayList<Integer>();
-			ArrayList<String> dates = new ArrayList<String>();
-			for (MindfulnessExerciseAttempt m : allattempts){
-				attemptno.add(m.getAttemptNumber());
-				dates.add(m.getDateCompleted());
-			}
-			fbdb.addToResponse("attemptNos", attemptno);
-			fbdb.addToResponse("attemptDates", dates);
 		}
 		finalResponse(true);
 	}
@@ -294,8 +263,81 @@ public class Inventory {
 		finalResponse(true);
 	}
 
-	private void logout() {
+	private void getMindfulHistory() {
+		if (this.currentFDMEmployee != null) {
+			ArrayList<MindfulnessExerciseAttempt> allattempts = this.currentFDMEmployee.getMindfulnessExerciseAttempts();
+			ArrayList<Integer> attemptno = new ArrayList<Integer>();
+			ArrayList<String> dates = new ArrayList<String>();
+			for (MindfulnessExerciseAttempt m : allattempts){
+				attemptno.add(m.getAttemptNumber());
+				dates.add(m.getDateCompleted());
+			}
+			fbdb.addToResponse("attemptNos", attemptno);
+			fbdb.addToResponse("attemptDates", dates);
+		}
+		finalResponse(true);
+	}
 
+	private void logMindfulAttempt() {
+		DocumentSnapshot document = this.fbdb.getItems("communications", "logMindfulAttempt");
+		LogMindfulAttempt logAttempt = document.toObject(LogMindfulAttempt.class);
+		//DocumentSnapshot employeeDocument = this.fbdb.getItems("employees", fdmEmployeeData.getEmail());
+		if (this.currentFDMEmployee != null) {
+			this.currentFDMEmployee.attemptMindfulnessExercise();
+			updateCurrentEmployee();
+		}
+		finalResponse(true);
+	}
+
+	private void logout() {
+		this.currentFDMEmployee = null;
+		finalResponse(true);
+	}
+
+	//--------------------------------------------------------------------------------
+
+	private Food findFoodData(String nameToSearch, List<Food> list) {
+		int mid = list.size()-1/2; int first = 0; int last = list.size()-1;
+		int compare;
+		while (first<=last){
+			mid = (first +last)/2;
+			compare = list.get(mid).getName().toLowerCase().compareTo(nameToSearch.toLowerCase());
+			if(compare<0){first = mid+1;}
+			else if(compare>0){last = mid -1;}
+			else return list.get(mid);
+		}
+		return null;
+	}
+
+	public Food findFood(String nameToSearch) {
+		return findFoodData(nameToSearch, this.searchableFood);
+	}
+	
+	public static Comparator<Food> FoodNameComparator = new Comparator<Food>() {
+		public int compare(Food f1, Food f2) {
+		   String FoodName1 = f1.getName();
+		   String FoodName2 = f2.getName();
+		   return FoodName1.compareTo(FoodName2);
+		}
+	};
+
+	public ArrayList<Food> searchFoodSuggestor(String nameToSearch){
+		nameToSearch = nameToSearch.toLowerCase();
+		ArrayList<Food> searchAbleFoodSuggestor = new ArrayList<Food>();
+		int counter = 0;
+		int letter = ((int) nameToSearch.charAt(0))-97;
+		int start = this.foodIndices[letter];
+		boolean noMore = false;
+		for(int i=start; i<searchableFood.size(); i++){
+			if(searchableFood.get(i).getName().toLowerCase().startsWith(nameToSearch)){
+				searchAbleFoodSuggestor.add(searchableFood.get(i));
+				counter++;
+				noMore = true;
+			}
+			else if (noMore) break;
+			if(counter == 20) break;
+		}
+		return searchAbleFoodSuggestor;
 	}
 
 	private void createFDMEmployee(String nname, String userName, String email, LocalDateTime ddate, int height, int weight) {
@@ -2561,11 +2603,6 @@ public class Inventory {
 		}};
 		map.forEach((name, calories) -> addNewFood(name, calories));
 		this.searchableFood.sort(FoodNameComparator);
-	}
-
-	public long findFoodData(String foodName, ArrayList<Food> allFood) {
-		int maxSize = allFood.size();
-		return 0;
 	}
 
 	//TODO - complete inventory
