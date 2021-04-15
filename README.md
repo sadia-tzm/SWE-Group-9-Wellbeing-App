@@ -58,15 +58,16 @@ And ServiceAccountKey.json is firebase->settings->Service accounts->java->genera
 
 <h2>Mindfulness</h2>
 
-![Alt Text](https://github.research.its.qmul.ac.uk/ec19181/SFE_Group_9/blob/master/images/9.1mindfulness.png)
+![Alt Text](https://github.research.its.qmul.ac.uk/ec19181/SFE_Group_9/blob/master/images/9mindfulness.png)
+
 
 <h3>Mindfulness page example</h3>
 
-![Alt Text](https://github.research.its.qmul.ac.uk/ec19181/SFE_Group_9/blob/master/images/9.2mindfulness.png)
+![Alt Text](https://github.research.its.qmul.ac.uk/ec19181/SFE_Group_9/blob/master/images/9.1mindfulness.png)
 
 <h3>Mindfulness page logging</h3>
 
-![Alt Text](https://github.research.its.qmul.ac.uk/ec19181/SFE_Group_9/blob/master/images/9mindfulness.png)
+![Alt Text](https://github.research.its.qmul.ac.uk/ec19181/SFE_Group_9/blob/master/images/9.3mindfulness.gif)
 
 <h2>Typical terminal outputs</h2>
 
