@@ -4,7 +4,7 @@
 //--------------------------------------------------------
 
 
-package com;
+package com.extra;
 public class Exercise {
 
 	private String exerciseName;
