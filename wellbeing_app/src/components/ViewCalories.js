@@ -13,7 +13,8 @@ export default class ViewCalories extends React.Component {
             food: [],
             calories: [],
             date: [],
-            ids: []
+            ids: [],
+            empty: true
         }
     }
 
@@ -32,7 +33,7 @@ export default class ViewCalories extends React.Component {
     //         .catch( error => console.log(error))
     // }
 
-    componentDidMount() {
+    calorieHistory = e =>  {
         const db = firebase.firestore();
         db.collection("communications").doc("getTotalCalories").set({
             start: true
@@ -45,9 +46,14 @@ export default class ViewCalories extends React.Component {
                     food: data.food,
                     calories: data.calories,
                     date: data.date,
-                    id: data.id
+                    id: data.id, 
+                    empty: false
                 });
             });
+    }
+
+    componentDidMount() {
+        this.calorieHistory();
     }
         
  
@@ -104,29 +110,33 @@ export default class ViewCalories extends React.Component {
                             </div>
                         )
                     })
-                }
-                {
-                    this.state.calories &&
-                    this.state.calories.map( calorie => {
-                        return (
-                            <div>
-                                <h1>Calories</h1>
-                                <p>{calorie}</p>
-                            </div>
-                        )
-                    })
-                }
-                {
-                    this.state.dates &&
-                    this.state.dates.map( date => {
-                        return (
-                            <div>
-                                <h1>Dates</h1>
-                                <p>{date}</p>
-                            </div>
-                        )
-                    })
-                } */}
+                 */}
+
+                <table className={!this.state.empty ? "calorieTable" : ""}>
+                    <tr className="calorieHeadings">
+                        <th>Food</th>
+                        <th>Calories</th>
+                        <th>Date</th>
+                    </tr>
+                    <tr>
+                        <td className="calorieTexts">
+                            {this.state.food.map((food) =>
+                                <h4>{food}</h4>
+                            )}
+                        </td>
+                        <td className="calorieTexts">
+                            {this.state.calories.map((calories) =>
+                                <h4>{calories}</h4>
+                            )}
+                        </td>
+                        <td className="calorieTexts">
+                            {this.state.date.map((date) =>
+                                <h4>{date}</h4>
+                            )}
+                        </td>
+                    </tr>
+                </table>
+
             </div>
         )
     }

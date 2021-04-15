@@ -231,42 +231,39 @@ public class Inventory {
 	}
 
 	private void getBMIHistory() {
-		if (this.currentFDMEmployee != null) {
-			HealthHistory health = this.currentFDMEmployee.getHealthHistory();
-			ArrayList<Integer> heights = new ArrayList<Integer>();
-			ArrayList<Integer> weights = new ArrayList<Integer>();
-			ArrayList<Double> bmis = new ArrayList<Double>();
-			ArrayList<String> dates = new ArrayList<String>();
-			//TODO overallStats of healthHistory
-			String overallStats = "WIP, not a priority atm";
+        if (this.currentFDMEmployee != null) {
+            HealthHistory health = this.currentFDMEmployee.getHealthHistory();
+            ArrayList<Integer> heights = new ArrayList<Integer>();
+            ArrayList<Integer> weights = new ArrayList<Integer>();
+            ArrayList<Double> bmis = new ArrayList<Double>();
+            ArrayList<String> dates = new ArrayList<String>();
+            //TODO overallStats of healthHistory
+            String overallStats = "WIP, not a priority atm";
 
-			List<Height> listOfHeights = health.getHeightHistory();
-			List<Weight> listOfWeights = health.getWeightHistory();
-			Integer currentHeight;
-			Integer currentWeight;
-			double currentBMI;
-			double squareHeight;
-			for (int n = 0; n < listOfHeights.size(); n++) {
-				currentHeight = listOfHeights.get(n).getHeight();
-				currentWeight = listOfWeights.get(n).getWeight();
-				heights.add(currentHeight);
-				weights.add(currentWeight);
-				squareHeight = (currentHeight/100)*(currentHeight/100);
-				currentBMI = Math.round((currentWeight/squareHeight)*10.0)/10.0;
-				System.out.println("CH "+currentHeight);
-				System.out.println("SH "+squareHeight);
-				System.out.println("CBMI "+currentBMI);
-				bmis.add(currentBMI);
-				dates.add(listOfHeights.get(n).getDateLogged());
-			}
-			fbdb.addToResponse("heights", heights);
-			fbdb.addToResponse("weights", weights);
-			fbdb.addToResponse("bmis", bmis);
-			fbdb.addToResponse("dates", dates);
-			fbdb.addToResponse("overallStats", overallStats);
-		}
-		finalResponse(true);
-	}
+            List<Height> listOfHeights = health.getHeightHistory();
+            List<Weight> listOfWeights = health.getWeightHistory();
+            Integer currentHeight;
+            Integer currentWeight;
+            double currentBMI;
+            double squareHeight;
+            for (int n = 0; n < listOfHeights.size(); n++) {
+                currentHeight = listOfHeights.get(n).getHeight();
+                currentWeight = listOfWeights.get(n).getWeight();
+                heights.add(currentHeight);
+                weights.add(currentWeight);
+                //squareHeight = (currentHeight/100)(currentHeight/100);
+                currentBMI = Math.round((currentWeight/(currentHeight/100)(currentHeight/100))*10.0)/10.0;
+                bmis.add(currentBMI);
+                dates.add(listOfHeights.get(n).getDateLogged());
+            }
+            fbdb.addToResponse("heights", heights);
+            fbdb.addToResponse("weights", weights);
+            fbdb.addToResponse("bmis", bmis);
+            fbdb.addToResponse("dates", dates);
+            fbdb.addToResponse("overallStats", overallStats);
+        }
+        finalResponse(true);
+    }
 
 	private void getMindfulHistory() {
 		if (this.currentFDMEmployee != null) {
