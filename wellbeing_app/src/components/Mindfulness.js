@@ -4,6 +4,7 @@ import MindfulnessNavBar from './MindfulnessNavBar';
 import FocusMusic from './FocusMusic';
 import GuidedMeditation from './GuidedMeditation';
 import BreathingExercises from './BreathingExercises';
+import MindfulnessHistory from './MindfulnessHistory';
 import MindfulnessHome from './MindfulnessHome';
 import { NavLink } from "react-router-dom";
 import { Redirect } from "react-router-dom";
@@ -21,6 +22,7 @@ export default class Mindfulness extends React.Component {
             <Route exact path="/focusmusic" component={FocusMusic}/>
             <Route exact path="/guidedmeditation" component={GuidedMeditation}/>
             <Route exact path="/breathingexercises" component={BreathingExercises}/>
+            <Route exact path="/mindfulnesshistory" component={MindfulnessHistory}/>
           </Switch>
         </div>
         <Redirect to='mindfulnesshome'/>

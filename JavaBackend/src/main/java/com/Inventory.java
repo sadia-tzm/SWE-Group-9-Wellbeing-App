@@ -252,7 +252,7 @@ public class Inventory {
                 heights.add(currentHeight);
                 weights.add(currentWeight);
                 //squareHeight = (currentHeight/100)(currentHeight/100);
-                currentBMI = Math.round((currentWeight/(currentHeight/100)(currentHeight/100))*10.0)/10.0;
+                currentBMI = Math.round((currentWeight/(currentHeight/100)*(currentHeight/100))*10.0)/10.0;
                 bmis.add(currentBMI);
                 dates.add(listOfHeights.get(n).getDateLogged());
             }
@@ -269,12 +269,15 @@ public class Inventory {
 		if (this.currentFDMEmployee != null) {
 			ArrayList<MindfulnessExerciseAttempt> allattempts = this.currentFDMEmployee.getMindfulnessExerciseAttempts();
 			ArrayList<Integer> attemptno = new ArrayList<Integer>();
+			ArrayList<String> tpes = new ArrayList<String>();
 			ArrayList<String> dates = new ArrayList<String>();
 			for (MindfulnessExerciseAttempt m : allattempts){
 				attemptno.add(m.getAttemptNumber());
 				dates.add(m.getDateCompleted());
+				tpes.add(m.getType());
 			}
 			fbdb.addToResponse("attemptNos", attemptno);
+			fbdb.addToResponse("attemptTypes", tpes);
 			fbdb.addToResponse("attemptDates", dates);
 		}
 		finalResponse(true);

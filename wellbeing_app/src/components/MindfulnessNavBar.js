@@ -33,6 +33,11 @@ function MindfulnessNavBar() {
                                 Breathing Exercises
                             </NavLink>
                         </li>
+                        <li className="M_nav-item">
+                            <NavLink exact to="/mindfulnesshistory" activeClassName="active" className="M_nav-links" onClick={handleClick}>
+                                History
+                            </NavLink>
+                        </li>
                     </ul>
                     <div className="M_nav-icon" onClick={handleClick}>
                     <i className={click ? "fas fa-times" : "fas fa-bars"}></i>
