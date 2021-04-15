@@ -48,23 +48,14 @@ const FirstPage = () => {
                 }
             });
         const db = fire.firestore();
-        const updateDB1 = db.collection("communications").doc("login").set({
-            start: false
-        })
         const signUpInfo = db.collection("communications").doc("login").set({
             email: email,
             start: true
         });
-        // const responseRef = db.collection("communications").doc("response").set({
-        //     confirmation: false
-        // })
         db.collection("communications").doc("response")
             .onSnapshot((doc) => {
                 console.log("Current data: ", doc.data());
             });
-        const updateDB3 = db.collection("communications").doc("login").set({
-            start: false
-        })
     };
 
     const handleSignup = () => {
@@ -84,18 +75,13 @@ const FirstPage = () => {
                 }
             });
         const db = fire.firestore();
-        // setIDcount(IDcount+1);
-        // var IDstring = IDcount.toString();
         const updateDB = db.collection("communications").doc("setupAccount").update({
             start: false
         })
         const date = new Date(dob);
         const signUpInfo = db.collection("communications").doc("setupAccount").set({
-            /* const signUpInfo = db.collection("signupTest2").doc(username).set({ */
             email: email,
-            //password: {password},
             username: username,
-            // userID: {IDstring}, // userID: {username}, // id: email,
             height: parseInt(height, 10),
             weight: parseInt(weight, 10),
             name: name,

@@ -36,7 +36,7 @@ export default class ViewCalories extends React.Component {
         const db = firebase.firestore();
         db.collection("communications").doc("getTotalCalories").set({
             start: true
-        })
+        });
         db.collection("communications").doc("response")
             .onSnapshot((doc) => {
                 console.log("Current data: ", doc.data());
