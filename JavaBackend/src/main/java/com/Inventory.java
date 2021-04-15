@@ -242,8 +242,8 @@ public class Inventory {
 
             List<Height> listOfHeights = health.getHeightHistory();
             List<Weight> listOfWeights = health.getWeightHistory();
-            Integer currentHeight;
-            Integer currentWeight;
+            int currentHeight;
+            int currentWeight;
             double currentBMI;
             double squareHeight;
             for (int n = 0; n < listOfHeights.size(); n++) {
@@ -251,8 +251,8 @@ public class Inventory {
                 currentWeight = listOfWeights.get(n).getWeight();
                 heights.add(currentHeight);
                 weights.add(currentWeight);
-                //squareHeight = (currentHeight/100)(currentHeight/100);
-                currentBMI = Math.round((currentWeight/(currentHeight/100)(currentHeight/100))*10.0)/10.0;
+                squareHeight = (currentHeight/100)*(currentHeight/100);
+                currentBMI = Math.round((currentWeight/squareHeight)*10)/10;
                 bmis.add(currentBMI);
                 dates.add(listOfHeights.get(n).getDateLogged());
             }
