@@ -42,6 +42,26 @@ export default class HeightWeight extends React.Component {
         // }
     }
 
+    showHeightItems() {
+        let heightData = this.state.heights;
+        return heightData.map((heightData2) => <li>{heightData2}</li>)
+    }
+
+    showWeightItems() {
+        let weightData = this.state.weights;
+        return weightData.map((weightData2) => <li>{weightData2}</li>)
+    }
+
+    showBMIItems() {
+        let bmiData = this.state.bmis;
+        return bmiData.map((bmiData2) => <li>{bmiData2}</li>)
+    }
+
+    showDateItems() {
+        let dateData = this.state.dates;
+        return dateData.map((dateData2) => <li>{dateData2}</li>)
+    }
+
     render() {
         return (
             <div>
@@ -89,34 +109,37 @@ export default class HeightWeight extends React.Component {
                         <h4>Dates: {dates}</h4>
                     )}
                 </h4> */}
-                <table className={!this.state.empty ? "historyTable" : ""}>
-                    <tr className="historyHeadings">
-                        <th>Height</th>
-                        <th>Weight</th>
-                        <th>BMI</th>
-                        <th>Date</th>
+                <table /*className={!this.state.empty ? "historyTable" : ""}*/>
+                    <tr className="styling">
+                        <th className="firstRow">Height</th>
+                        <th className="firstRow">Weight</th>
+                        <th className="firstRow">BMI</th>
+                        {/* <th>Date</th> */}
                     </tr>
                     <tr>
-                        <td className="historyTexts">
+                        {/* <td /*className={!this.state.empty ? "historyTexts" : ""}>
                             {this.state.heights.map((heights) =>
                                 <h4>{heights}</h4>
                             )}
                         </td>
-                        <td className="historyTexts">
+                        <td /*className={!this.state.empty ? "historyTexts" : ""}>
                             {this.state.weights.map((weights) =>
                                 <h4>{weights}</h4>
                             )}
                         </td>
-                        <td className="historyTexts">
+                        <td /*className={!this.state.empty ? "historyTexts" : ""}>
                             {this.state.bmis.map((bmis) =>
                                 <h4>{bmis}</h4>
                             )}
                         </td>
-                        <td className="historyTexts">
+                        <td /*className={!this.state.empty ? "historyTexts" : ""}>
                             {this.state.dates.map((dates) =>
                                 <h4>{dates}</h4>
                             )}
-                        </td>
+                        </td> */}
+                        <td className="secondRow">{this.showHeightItems()}</td>
+                        <td className="secondRow">{this.showWeightItems()}</td>
+                        <td className="secondRow">{this.showBMIItems()}</td>
                     </tr>
                 </table>
             </div>
