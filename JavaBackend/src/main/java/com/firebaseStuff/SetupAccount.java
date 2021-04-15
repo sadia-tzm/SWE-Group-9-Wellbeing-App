@@ -1,5 +1,6 @@
 package com.firebaseStuff;
 
+//basic class to facilitate built-in firebase code when converting documents to objects
 public class SetupAccount {
     private boolean start;
     private String email;

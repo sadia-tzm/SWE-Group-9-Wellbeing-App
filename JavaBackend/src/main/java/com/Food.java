@@ -1,7 +1,6 @@
 package com;
 
-import java.lang.Math.*;
-
+//This is class food, containing food information for the user
 public class Food {
     private String name;
     private int caloriesPer100g;

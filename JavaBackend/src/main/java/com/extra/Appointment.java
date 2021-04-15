@@ -1,8 +1,13 @@
+//framework for unused class Appointment:
+
+
+//--------------------------------------------------------
+
+
 package com.extra;
 import java.time.LocalDateTime;
 
 import com.FDMEmployee;
-import com.TimeSlot;
 
 public class Appointment extends TimeSlot {
 
@@ -14,7 +19,4 @@ public class Appointment extends TimeSlot {
 		this.mentalHealthAmbassador = mmentalHealthAmbassador;
 		this.fdmEmployee = ffdmEmployee;
 	}
-
-	//TODO - rest of Appointment
-
 }

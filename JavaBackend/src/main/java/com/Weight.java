@@ -1,5 +1,6 @@
 package com;
 
+//holds individual weight information
 public class Weight extends HealthProperty {
 
 	private int weight;

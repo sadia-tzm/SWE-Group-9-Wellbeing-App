@@ -1,8 +1,14 @@
 package com;
 import java.util.*;
+
+import com.extra.AmbientSounds;
+import com.extra.WorkoutExcerciseAttempt;
+
 import java.time.*;
 import java.time.format.DateTimeFormatter;
 
+
+//This is class FDMEmployee, that contains all the FDMEmployee's information
 public class FDMEmployee extends User {
 
 	private ArrayList<MindfulnessExerciseAttempt> mindfulnessExerciseAttempts;
@@ -17,15 +23,12 @@ public class FDMEmployee extends User {
 	 *
 	 */
 	public FDMEmployee(String nname, String userName, String email, LocalDateTime ddate, int height, int weight) {
-		//String nname, String ppassword, String uuserName, String eemail, String iid
 		super(nname, userName, email);
 		this.dateOfBirth = ddate;
 		this.health = new HealthHistory(height, weight);
 		mindfulnessExerciseAttempts = new ArrayList<MindfulnessExerciseAttempt>() ;
 		ambientSoundExercises = new ArrayList<AmbientSounds>();
 		workoutExcerciseAttempts = new ArrayList<WorkoutExcerciseAttempt>();
-		//TODO targets
-		// targets = new ArrayList<Target>();
 	}
 
 
@@ -39,27 +42,14 @@ public class FDMEmployee extends User {
 		this.mindfulnessExerciseAttempts.add(attempt);
 	}
 
-	// /**
-	//  *
-	//  * @param availableWorkoutExercise the excercise the user is attempted / to be added as a reference in the ne wobject
-	//  */
-	// public void attemptWorkoutExercise(WorkoutExercise availableWorkoutExercise) {
-	// 	WorkoutExcerciseAttempt attempt; //const
-	// 	//if (availableWorkoutExercise instanceof StepExercise){
-	// 		//attempt = new StepExerciseAttempt(workoutExcerciseAttempts.get(workoutExcerciseAttempts.size()-1).getAttemptNumber()+1, availableWorkoutExercise);
-	// 	// TODO step ex constructor
-	// 		//attempt = new StepExerciseAttempt(availableWorkoutExercise); //step ex constructor
-
-	// 	attempt = new WorkoutExcerciseAttempt(0, availableWorkoutExercise, workoutExcerciseAttempts.size()+1);
-	// 	this.workoutExcerciseAttempts.add(attempt);
-	// }
-
 	/**
 	 *
 	 * returns a set of statistics for the employee
 	 */
 	public String viewStatistics() {
-		 String stats = "\n";
+		String stats = "\n";
+		//unfinished code for viewStatistics
+		
 		// //throw new UnsupportedOperationException();
 		// stats+= Double.toString(this.health.getCurrentBMI());
 		// stats+= " - current BMI: " + this.health.getCurrentBMIStatus(this.health.getCurrentBMI())+"\n";
@@ -80,25 +70,11 @@ public class FDMEmployee extends User {
 		// 	stats+="\n";
 		// }
 
-		/**
-		 * this.mentalHealthAmbassador = mmentalHealthAmbassador;
-		this.fdmEmployee = ffdmEmployee;
-		this.exercise = eexercise;
-		this.attribute = aattribute;
-		this.value = vvalue;
-		ismet
-		 * */
-		 // TODO implement targets
 		// for (Target t : targets) {
 		// 	stats+=("Name - "+t.getExercise().getName()+ "attribute" +t.getAttribute()+ "value " +Integer.toString(t.getValue()));
 		// 	stats+= (t.targetMet(); ? "target Met!" : "target not yet met");//setters for targets
 		// }
 
-		//looping attempt ist....
-		//targets acheived
-		//how am I to get the targets as theres no list....
-		//add list of targers -
-		//getter for list and setter - add another
 		System.out.println(stats);
 		return stats;
 	}
@@ -191,10 +167,7 @@ public class FDMEmployee extends User {
 	}
 
 	//----------------------------------------------------------------------------------------------------------------------------------------
-
-
-	
-	// TODO implement appointemnt
+	// Unfinished appointment framework for FDMEmployee
 	// /**
 	//  *
 	//  * @param mentalHealthAmbassador the mental health ambassador that the appointment will be with
@@ -223,10 +196,5 @@ public class FDMEmployee extends User {
 	// public void rescheduleAppointment(Appointment appointment, TimeSlot newbooking) {
 	// 	appointment.setTimeslot(newbooking); // add to appointment / timeslot????
 	// }
-
-	// TODO Targets
-	//public ArrayList<Target> getTargets() {
-	//	return targets;
-	//}
 
 }

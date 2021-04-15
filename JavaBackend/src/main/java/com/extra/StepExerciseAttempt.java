@@ -1,28 +1,35 @@
-package com.extra;
+//framework for unused class StepExercise:
 
-import com.WorkoutExcerciseAttempt;
-import com.WorkoutExercise;
+
+//--------------------------------------------------------
+
+package com.extra;
 
 public class StepExerciseAttempt extends WorkoutExcerciseAttempt {
 
-	//private int stepsTaken;
+	private int stepsTaken;
+	private int duration;
 
 	public StepExerciseAttempt(int ccaloriesBurnt, WorkoutExercise wworkoutExercise, int aattemptNumber) {
 		super(ccaloriesBurnt, wworkoutExercise, aattemptNumber);
 	}
 
-	//TODO - complete step exercise attempt
 
-	// public int setSteps(int sstepsTaken) {
-	// }
+	public void setSteps(int sstepsTaken) {
+		this.stepsTaken = sstepsTaken;
+	}
 
-	// public int getSteps() {
-	// }
+	public int getSteps() {
+		return this.stepsTaken;
+	}
 
-	// public int addSteps(int additionalSteps) {
-	// }
+	public void addSteps(int additionalSteps) {
+		this.stepsTaken += additionalSteps;
+	}
 
-	// public boolean editEntry(int newDuration, int newStepsTaken) {
-	// }
+	public void editEntry(int newDuration, int newStepsTaken) {
+		this.stepsTaken = newStepsTaken;
+		this.duration = newDuration;
+	}
 
 }

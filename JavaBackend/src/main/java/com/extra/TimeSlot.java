@@ -1,11 +1,15 @@
-package com;
+//framework for unused class QueryRole:
+
+
+//--------------------------------------------------------
+
+package com.extra;
 import java.time.LocalDateTime;
 
 public class TimeSlot {
 
 	private LocalDateTime dateAndTime;
 	private boolean busy;
-	// private int timeSlotID;
 
 	public TimeSlot(LocalDateTime dateAndTime) {
 		this.dateAndTime = dateAndTime;

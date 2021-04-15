@@ -1,3 +1,9 @@
+//framework for unused class Query:
+
+
+//--------------------------------------------------------
+
+
 package com.extra;
 
 import java.time.LocalDateTime;
@@ -21,17 +27,15 @@ public class Query {
 		
 	}
 
-	//TODO - complete query class
-
-	// public void changeRole(String role) {
-	// 	if(role.equals("SupportQuery")){
-	// 		this.queryRole = new SupportQuery() ;
-	// 	} else if (role.equals("AdminstratorQuery")){
-	// 		this.queryRole = new AdminstratorQuery();
-	// 	} else {
-	// 		// error ? 
-	// 	}
-	// }
+	public void changeRole(String role) {
+		if(role.equals("SupportQuery")){
+			this.queryRole = new SupportQuery(this, (CustomerSupport) this.user) ;
+		} else if (role.equals("AdminstratorQuery")){
+			this.queryRole = new AdministratorQuery(this, role, role, dateLogged);
+		} else {
+			// error ? 
+		}
+	}
 
 	public String getID() {
 		return this.queryID;

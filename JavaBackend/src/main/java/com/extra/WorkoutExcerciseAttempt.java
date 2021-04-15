@@ -1,4 +1,11 @@
-package com;
+//framework for unused class WorkoutExcerciseAttempt:
+
+
+//--------------------------------------------------------
+
+package com.extra;
+
+import com.ExerciseAttempt;
 
 public class WorkoutExcerciseAttempt extends ExerciseAttempt {
 
@@ -6,7 +13,6 @@ public class WorkoutExcerciseAttempt extends ExerciseAttempt {
 	private int caloriesBurnt;
 
 	public WorkoutExcerciseAttempt(int caloriesBurnt, WorkoutExercise wworkoutExercise, int attemptNumber) {
-		//super(attemptNumber, wworkoutExercise);
 		super(attemptNumber);
 		this.caloriesBurnt = caloriesBurnt;
 	}

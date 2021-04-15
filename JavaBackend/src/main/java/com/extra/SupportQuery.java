@@ -1,19 +1,17 @@
+//framework for unused class QueryRole:
+
+
+//--------------------------------------------------------
+
 package com.extra;
 public class SupportQuery extends QueryRole {
 
 	CustomerSupport customerSupport;
-	private Query query;
 
 
-	public SupportQuery(Query qquery) {
-		this.query = qquery;
+	public SupportQuery(Query qquery, CustomerSupport customerSupport) {
+		super(qquery);
+		this.customerSupport = customerSupport;
 	}
-
-	//TODO - rest of SupportQuery class
-	// public boolean sendUserMessage(String title, String message) {
-	// }
-
-	// public void forwardToAdministrator() {
-	// }
 
 }
