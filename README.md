@@ -13,7 +13,9 @@ And ServiceAccountKey.json is firebase->settings->Service accounts->java->genera
 <h1>Application overview</h1>
 
 <h2>Home page</h2>
+
 ![Alt Text](https://github.research.its.qmul.ac.uk/ec19181/SFE_Group_9/blob/master/images/home.png)
+
 <h2>Login page</h2>
 ![Alt Text](https://github.research.its.qmul.ac.uk/ec19181/SFE_Group_9/blob/master/images/1Login.png)
 <h3>Showing this working:</h3>
