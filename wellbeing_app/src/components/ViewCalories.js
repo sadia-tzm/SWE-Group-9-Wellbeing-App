@@ -94,7 +94,7 @@ export default class ViewCalories extends React.Component {
                     })
                 } */}
 
-                {
+                {/* VERSION 2  { 
                     this.state.food &&
                     this.state.food.map( food2 => {
                         return (
@@ -126,7 +126,7 @@ export default class ViewCalories extends React.Component {
                             </div>
                         )
                     })
-                }
+                } */}
             </div>
         )
     }
