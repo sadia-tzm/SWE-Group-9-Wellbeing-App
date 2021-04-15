@@ -23,14 +23,6 @@ public class LogMindfulAttempt {
     public void setType(String Type) {
         this.Type = Type;
     }
-
-    public String getDate() {
-        return this.Date;
-    }
-
-    public void setDate(String Date) {
-        this.Date = Date;
-    }
 	
 
 

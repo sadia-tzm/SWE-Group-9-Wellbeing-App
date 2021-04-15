@@ -284,6 +284,7 @@ public class Inventory {
 		//DocumentSnapshot employeeDocument = this.fbdb.getItems("employees", fdmEmployeeData.getEmail());
 		if (this.currentFDMEmployee != null) {
 			this.currentFDMEmployee.attemptMindfulnessExercise();
+			// this.currentFDMEmployee.attemptMindfulnessExercise(logAttempt.getType()); <- TODO: implement this
 			updateCurrentEmployee();
 		}
 		finalResponse(true);
