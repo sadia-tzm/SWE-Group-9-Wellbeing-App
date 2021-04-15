@@ -9,6 +9,10 @@ import java.time.format.DateTimeFormatter;
 
 
 //This is class FDMEmployee, that contains all the FDMEmployee's information
+/**
+ * 
+ * @author Shannon
+ */
 public class FDMEmployee extends User {
 
 	private ArrayList<MindfulnessExerciseAttempt> mindfulnessExerciseAttempts;
@@ -20,7 +24,7 @@ public class FDMEmployee extends User {
 
 
 	/**
-	 *
+	 *constructor
 	 */
 	public FDMEmployee(String nname, String userName, String email, LocalDateTime ddate, int height, int weight) {
 		super(nname, userName, email);
@@ -47,33 +51,8 @@ public class FDMEmployee extends User {
 	 * returns a set of statistics for the employee
 	 */
 	public String viewStatistics() {
-		String stats = "\n";
-		//unfinished code for viewStatistics
-		
-		// //throw new UnsupportedOperationException();
-		// stats+= Double.toString(this.health.getCurrentBMI());
-		// stats+= " - current BMI: " + this.health.getCurrentBMIStatus(this.health.getCurrentBMI())+"\n";
-		// stats+= Integer.toString(health.getCurrentHeight().getHeight());//get current height shoul
-		// stats+= " - current height\n";
-		// stats+= Integer.toString(health.getCurrentWeight().getWeight());
-		// stats+= " - current weight\n";
-		// //potential averages or something?
-
-		// if (mindfulnessExerciseAttempts != null) for (MindfulnessExerciseAttempt m : mindfulnessExerciseAttempts) {
-		// 	stats+=("attempt number - " + Integer.toString(m.getAttemptNumber()) +"duration - " + Long.toString(m.getDuration()) +"name - "
-		// 	+ m.getExercise().getExerciseName()+ "Date" + m.getDateLogged().toString()+"\n");
-		// }
-
-		// if (workoutExcerciseAttempts != null) for (WorkoutExcerciseAttempt w : workoutExcerciseAttempts) {
-		// 	stats+=("attempt number - " + Integer.toString(w.getAttemptNumber()) +"duration - " + Long.toString(w.getDuration()) +"name - "
-		// 	+ w.getExercise().getExerciseName()+ "Date" + w.getDateLogged().toString());
-		// 	stats+="\n";
-		// }
-
-		// for (Target t : targets) {
-		// 	stats+=("Name - "+t.getExercise().getName()+ "attribute" +t.getAttribute()+ "value " +Integer.toString(t.getValue()));
-		// 	stats+= (t.targetMet(); ? "target Met!" : "target not yet met");//setters for targets
-		// }
+		 String stats = "\n";
+		 // TODO implement stats
 
 		System.out.println(stats);
 		return stats;
@@ -165,36 +144,5 @@ public class FDMEmployee extends User {
 	public void setDateOfBirth(String dateOfBirth) {
 		this.dateOfBirth = LocalDateTime.parse(dateOfBirth, formatter);
 	}
-
-	//----------------------------------------------------------------------------------------------------------------------------------------
-	// Unfinished appointment framework for FDMEmployee
-	// /**
-	//  *
-	//  * @param mentalHealthAmbassador the mental health ambassador that the appointment will be with
-	//  * @param booking the timeslot that contains the time that the appointment will be at
-	//  */
-	// public void bookAppointment(MentalHealthAmbassador mentalHealthAmbassador, TimeSlot booking) {
-	// 	Appointment app = new Appointment(mentalHealthAmbassador, this, booking.getDateandTime());
-	// 	appointments.add(app);
-
-	// }
-
-	// /**
-	//  * cancels an appointment
-	//  * @param appointment the appointment to be cancelled.
-	//  */
-	// public void cancelAppointment(Appointment appointment) {
-	// 	appointments.remove(appointment);
-	// 	Inventory.getInstance().getListOfUsers().remove(appointment);
-	// }
-
-	// /**
-	//  *
-	//  * @param appointment the appoiintment to be scheduled.
-	//  * @param newbooking the timeslot that contains the time that the appointment will now be at
-	//  */
-	// public void rescheduleAppointment(Appointment appointment, TimeSlot newbooking) {
-	// 	appointment.setTimeslot(newbooking); // add to appointment / timeslot????
-	// }
-
 }
+	//----------------------------------------------------------------------------------------------------------------------------------------

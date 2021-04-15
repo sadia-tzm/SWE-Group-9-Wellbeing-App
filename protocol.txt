@@ -132,11 +132,11 @@ getBMI {
 		
 	recieve:
 		boolean confirmation
-		String task
 		int bmi
 		String bmiType
 		int height
 		int weight
+		String task
 		
 	description: gets the current BMI of the user
 }
@@ -147,9 +147,9 @@ getBMIHistory {
 		
 	recieve:
 		boolean confirmation
-		ArrayList<int> heights
-		ArrayList<int> weights
-		ArrayList<int> bmis
+		ArrayList<int> height
+		ArrayList<int> weight
+		ArrayList<int> bmi
 		ArrayList<String> dates
 		String overallStats
 		String task
@@ -165,7 +165,9 @@ getMindfulHistory {
 		String task
 		boolean confirmation
 		ArrayList<Integer> attemptNos
+		ArrayList<String> attemptTypes
 		ArrayList<String> attemptDates
+		
 		
 	description: past mindfulness excercise attempts
 }

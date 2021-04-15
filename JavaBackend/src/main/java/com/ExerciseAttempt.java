@@ -8,6 +8,7 @@ public abstract class ExerciseAttempt {
 
 	//-------------------------------------------------------------------------------
 	//declaring class variables
+	//
 	private LocalDateTime dateCompleted;
 	private int attemptNumber;
 	private static DateTimeFormatter formatter = DateTimeFormatter.ISO_DATE_TIME;
@@ -18,6 +19,7 @@ public abstract class ExerciseAttempt {
 		this.attemptNumber = aattemptNumber;
 		this.dateCompleted = LocalDateTime.now();
 	}
+
 
 	//-------------------------------------------------------------------------------
 	//getters:
@@ -30,7 +32,6 @@ public abstract class ExerciseAttempt {
 		return this.attemptNumber;
 	}
 
-
 	public void setDateCompleted(String dateCompleted) {
 		this.dateCompleted = LocalDateTime.parse(dateCompleted, formatter);
 	}
@@ -38,6 +39,9 @@ public abstract class ExerciseAttempt {
 	public void setAttemptNumber(int attemptNumber) {
 		this.attemptNumber = attemptNumber;
 	}
+
+
+
 
 	//-------------------------------------------------------------------------------
 	//manually editing the entry:
@@ -47,60 +51,4 @@ public abstract class ExerciseAttempt {
 		return true;
 	}
 
-	//-------------------------------------------------------------------------------
-	//unfinished exerciseAttempt code:
-	//the user chooses between manually entering the results or based on a timer:
-
-	//completing based on a timer
-	// public Boolean completeAttempt() {
-	// 	this.dateCompleted = LocalDateTime.now();
-	// 	this.endTime = Instant.now();
-	// 	this.duration = (Duration.between(startTime, endTime)).toMillis();
-	// 	return true;
-	// }
-
-	//completing by manually entering results
-	// public Boolean completeAttempt(long dduration, LocalDateTime ddateCompleted) {
-	// 	this.dateCompleted = ddateCompleted;
-	// 	this.duration = dduration;
-	// 	return true;
-	// }
-
-	// public LocalDateTime getDateLogged() {
-	// 	return this.dateLogged;
-	// }
-
-	// public long getDuration() {
-	// 	return this.duration;
-	// }
-
-	// public Exercise getExercise() {
-	// 	return this.exercise;
-	// }
-
-	// public void setDateLogged(LocalDateTime dateLogged) {
-	// 	this.dateLogged = dateLogged;
-	// }
-	// public void setDuration(long duration) {
-	// 	this.duration = duration;
-	// }
-
-	// public Instant getStartTime() {
-	// 	return this.startTime;
-	// }
-
-	// public void setStartTime(Instant startTime) {
-	// 	this.startTime = startTime;
-	// }
-
-	// public Instant getEndTime() {
-	// 	return this.endTime;
-	// }
-
-	// public void setEndTime(Instant endTime) {
-	// 	this.endTime = endTime;
-	// }
-	// public void setExercise(Exercise exercise) {
-	// 	this.exercise = exercise;
-	// }	
 }

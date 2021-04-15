@@ -257,12 +257,15 @@ public class Inventory {
 		if (this.currentFDMEmployee != null) {
 			ArrayList<MindfulnessExerciseAttempt> allattempts = this.currentFDMEmployee.getMindfulnessExerciseAttempts();
 			ArrayList<Integer> attemptno = new ArrayList<Integer>();
+			ArrayList<String> tpes = new ArrayList<String>();
 			ArrayList<String> dates = new ArrayList<String>();
 			for (MindfulnessExerciseAttempt m : allattempts){
 				attemptno.add(m.getAttemptNumber());
 				dates.add(m.getDateCompleted());
+				tpes.add(m.getType());
 			}
 			fbdb.addToResponse("attemptNos", attemptno);
+			fbdb.addToResponse("attemptTypes", tpes);
 			fbdb.addToResponse("attemptDates", dates);
 		}
 		finalResponse(true);
@@ -304,7 +307,7 @@ public class Inventory {
 	public Food findFood(String nameToSearch) {
 		return findFoodData(nameToSearch, this.searchableFood);
 	}
-	
+
 	public static Comparator<Food> FoodNameComparator = new Comparator<Food>() {
 		public int compare(Food f1, Food f2) {
 		   String FoodName1 = f1.getName();
