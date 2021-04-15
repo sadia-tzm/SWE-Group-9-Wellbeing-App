@@ -12,6 +12,7 @@ And ServiceAccountKey.json is firebase->settings->Service accounts->java->genera
 <br/>
 <h1>Application overview</h1>
 
+<h2>Application overview</h2>
 ![Alt Text](https://github.research.its.qmul.ac.uk/ec19181/SFE_Group_9/blob/master/images/1Login.png)
 
 ![Alt Text](https://github.research.its.qmul.ac.uk/ec19181/SFE_Group_9/blob/master/images/2Login.gif)
