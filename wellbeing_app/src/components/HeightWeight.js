@@ -109,11 +109,11 @@ export default class HeightWeight extends React.Component {
                         <h4>Dates: {dates}</h4>
                     )}
                 </h4> */}
-                <table /*className={!this.state.empty ? "historyTable" : ""}*/>
-                    <tr className="styling">
-                        <th className="firstRow">Height</th>
-                        <th className="firstRow">Weight</th>
-                        <th className="firstRow">BMI</th>
+                <table className="styling2" /*className={!this.state.empty ? "historyTable" : ""}*/>
+                    <tr >
+                        <th className="firstRow2">Height</th>
+                        <th className="firstRow2">Weight</th>
+                        <th className="firstRow2">BMI</th>
                         {/* <th>Date</th> */}
                     </tr>
                     <tr>
@@ -137,9 +137,9 @@ export default class HeightWeight extends React.Component {
                                 <h4>{dates}</h4>
                             )}
                         </td> */}
-                        <td className="secondRow">{this.showHeightItems()}</td>
-                        <td className="secondRow">{this.showWeightItems()}</td>
-                        <td className="secondRow">{this.showBMIItems()}</td>
+                        <td className="secondRow2">{this.showHeightItems()}</td>
+                        <td className="secondRow2">{this.showWeightItems()}</td>
+                        <td className="secondRow2">{this.showBMIItems()}</td>
                     </tr>
                 </table>
             </div>
