@@ -2,7 +2,10 @@ package com;
 import java.util.*;
 import java.time.*;
 import java.time.format.DateTimeFormatter;
-
+/**
+ * 
+ * @author Shannon
+ */
 public class FDMEmployee extends User {
 
 	private ArrayList<MindfulnessExerciseAttempt> mindfulnessExerciseAttempts;
@@ -14,7 +17,7 @@ public class FDMEmployee extends User {
 
 
 	/**
-	 *
+	 *constructor
 	 */
 	public FDMEmployee(String nname, String userName, String email, LocalDateTime ddate, int height, int weight) {
 		//String nname, String ppassword, String uuserName, String eemail, String iid
@@ -25,7 +28,6 @@ public class FDMEmployee extends User {
 		ambientSoundExercises = new ArrayList<AmbientSounds>();
 		workoutExcerciseAttempts = new ArrayList<WorkoutExcerciseAttempt>();
 		//TODO targets
-		// targets = new ArrayList<Target>();
 	}
 
 
@@ -39,20 +41,6 @@ public class FDMEmployee extends User {
 		this.mindfulnessExerciseAttempts.add(attempt);
 	}
 
-	// /**
-	//  *
-	//  * @param availableWorkoutExercise the excercise the user is attempted / to be added as a reference in the ne wobject
-	//  */
-	// public void attemptWorkoutExercise(WorkoutExercise availableWorkoutExercise) {
-	// 	WorkoutExcerciseAttempt attempt; //const
-	// 	//if (availableWorkoutExercise instanceof StepExercise){
-	// 		//attempt = new StepExerciseAttempt(workoutExcerciseAttempts.get(workoutExcerciseAttempts.size()-1).getAttemptNumber()+1, availableWorkoutExercise);
-	// 	// TODO step ex constructor
-	// 		//attempt = new StepExerciseAttempt(availableWorkoutExercise); //step ex constructor
-
-	// 	attempt = new WorkoutExcerciseAttempt(0, availableWorkoutExercise, workoutExcerciseAttempts.size()+1);
-	// 	this.workoutExcerciseAttempts.add(attempt);
-	// }
 
 	/**
 	 *
@@ -60,45 +48,8 @@ public class FDMEmployee extends User {
 	 */
 	public String viewStatistics() {
 		 String stats = "\n";
-		// //throw new UnsupportedOperationException();
-		// stats+= Double.toString(this.health.getCurrentBMI());
-		// stats+= " - current BMI: " + this.health.getCurrentBMIStatus(this.health.getCurrentBMI())+"\n";
-		// stats+= Integer.toString(health.getCurrentHeight().getHeight());//get current height shoul
-		// stats+= " - current height\n";
-		// stats+= Integer.toString(health.getCurrentWeight().getWeight());
-		// stats+= " - current weight\n";
-		// //potential averages or something?
+		 // TODO implement stats
 
-		// if (mindfulnessExerciseAttempts != null) for (MindfulnessExerciseAttempt m : mindfulnessExerciseAttempts) {
-		// 	stats+=("attempt number - " + Integer.toString(m.getAttemptNumber()) +"duration - " + Long.toString(m.getDuration()) +"name - "
-		// 	+ m.getExercise().getExerciseName()+ "Date" + m.getDateLogged().toString()+"\n");
-		// }
-
-		// if (workoutExcerciseAttempts != null) for (WorkoutExcerciseAttempt w : workoutExcerciseAttempts) {
-		// 	stats+=("attempt number - " + Integer.toString(w.getAttemptNumber()) +"duration - " + Long.toString(w.getDuration()) +"name - "
-		// 	+ w.getExercise().getExerciseName()+ "Date" + w.getDateLogged().toString());
-		// 	stats+="\n";
-		// }
-
-		/**
-		 * this.mentalHealthAmbassador = mmentalHealthAmbassador;
-		this.fdmEmployee = ffdmEmployee;
-		this.exercise = eexercise;
-		this.attribute = aattribute;
-		this.value = vvalue;
-		ismet
-		 * */
-		 // TODO implement targets
-		// for (Target t : targets) {
-		// 	stats+=("Name - "+t.getExercise().getName()+ "attribute" +t.getAttribute()+ "value " +Integer.toString(t.getValue()));
-		// 	stats+= (t.targetMet(); ? "target Met!" : "target not yet met");//setters for targets
-		// }
-
-		//looping attempt ist....
-		//targets acheived
-		//how am I to get the targets as theres no list....
-		//add list of targers -
-		//getter for list and setter - add another
 		System.out.println(stats);
 		return stats;
 	}
@@ -189,44 +140,5 @@ public class FDMEmployee extends User {
 	public void setDateOfBirth(String dateOfBirth) {
 		this.dateOfBirth = LocalDateTime.parse(dateOfBirth, formatter);
 	}
-
-	//----------------------------------------------------------------------------------------------------------------------------------------
-
-
-	
-	// TODO implement appointemnt
-	// /**
-	//  *
-	//  * @param mentalHealthAmbassador the mental health ambassador that the appointment will be with
-	//  * @param booking the timeslot that contains the time that the appointment will be at
-	//  */
-	// public void bookAppointment(MentalHealthAmbassador mentalHealthAmbassador, TimeSlot booking) {
-	// 	Appointment app = new Appointment(mentalHealthAmbassador, this, booking.getDateandTime());
-	// 	appointments.add(app);
-
-	// }
-
-	// /**
-	//  * cancels an appointment
-	//  * @param appointment the appointment to be cancelled.
-	//  */
-	// public void cancelAppointment(Appointment appointment) {
-	// 	appointments.remove(appointment);
-	// 	Inventory.getInstance().getListOfUsers().remove(appointment);
-	// }
-
-	// /**
-	//  *
-	//  * @param appointment the appoiintment to be scheduled.
-	//  * @param newbooking the timeslot that contains the time that the appointment will now be at
-	//  */
-	// public void rescheduleAppointment(Appointment appointment, TimeSlot newbooking) {
-	// 	appointment.setTimeslot(newbooking); // add to appointment / timeslot????
-	// }
-
-	// TODO Targets
-	//public ArrayList<Target> getTargets() {
-	//	return targets;
-	//}
-
 }
+	//----------------------------------------------------------------------------------------------------------------------------------------
