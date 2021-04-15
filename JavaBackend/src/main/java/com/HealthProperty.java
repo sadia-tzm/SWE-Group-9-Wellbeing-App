@@ -3,6 +3,7 @@ package com;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
+//class HealthProperty holds invidual information about each health property, framework for subclasses mostly tho
 public abstract class HealthProperty {
 
 	private long id;

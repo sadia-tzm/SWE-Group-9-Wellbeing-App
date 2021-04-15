@@ -1,6 +1,10 @@
+//framework for unused class Target:
+
+
+//--------------------------------------------------------
+
 package com.extra;
 
-import com.Exercise;
 import com.FDMEmployee;
 
 public class Target {

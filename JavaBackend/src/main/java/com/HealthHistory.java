@@ -2,6 +2,7 @@ package com;
 
 import java.util.*;
 
+//class HealthHistory contains the historical health data of FDMEmployee
 public class HealthHistory {
 
 	private ArrayList<Weight> weightHistory;

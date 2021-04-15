@@ -1,3 +1,9 @@
+//framework for unused class Exercise:
+
+
+//--------------------------------------------------------
+
+
 package com;
 public class Exercise {
 

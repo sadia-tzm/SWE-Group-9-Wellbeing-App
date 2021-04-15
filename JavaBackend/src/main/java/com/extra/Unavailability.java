@@ -1,8 +1,11 @@
+//framework for unused class Unavailability:
+
+
+//--------------------------------------------------------
+
 package com.extra;
 
 import java.time.LocalDateTime;
-
-import com.TimeSlot;
 
 public class Unavailability extends TimeSlot {
 

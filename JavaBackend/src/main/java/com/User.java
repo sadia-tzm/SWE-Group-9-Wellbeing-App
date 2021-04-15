@@ -3,6 +3,7 @@ package com;
 /**
  * @author Shannon
  */
+//user holds information to abstract subclasses FDMEmployee, MentalHealthAmbassador and CustomerSupport
 public abstract class User {
 	
 	private String userName;

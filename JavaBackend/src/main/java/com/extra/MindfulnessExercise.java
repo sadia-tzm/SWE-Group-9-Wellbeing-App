@@ -1,4 +1,10 @@
-package com;
+//framework for unused class MindfulnessExercise:
+
+
+//--------------------------------------------------------
+
+package com.extra;
+
 public abstract class MindfulnessExercise extends Exercise {
 
 	private String soundPath;
@@ -11,7 +17,5 @@ public abstract class MindfulnessExercise extends Exercise {
 	public String getSoundPath() {
 		return this.soundPath;
 	}
-
-	//TODO - rest of MindfulnessExercise
 
 }

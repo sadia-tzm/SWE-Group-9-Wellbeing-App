@@ -3,30 +3,18 @@ package com;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Comparator;
-
-import com.extra.Appointment;
-import com.extra.Query;
 import com.firebaseStuff.*;
 import com.google.cloud.firestore.DocumentSnapshot;
 
+//inventory communicates with the database and relays information throughout the backend.
 public class Inventory {
 
 	private static Inventory inventory = null;
-	private Collection<User> listOfUsers;
-	private Collection<Appointment> appointments;
-	private Collection<TimeSlot> weekSchedule;
-	private Collection<WorkoutExercise> availableWorkoutExercises;
-	private Collection<MindfulnessExercise> availableMindfulnessExercises;
-	private Collection<Query> queries;
 	private List<Food> searchableFood;
-	private List<String> workoutDifficulties;
-	private List<String> statusList;
-	private List<String> targetAttribute;
 	private String currentTask;
 	private FirebaseDatabase fbdb;
 	private FDMEmployee currentFDMEmployee = null;
@@ -269,12 +257,15 @@ public class Inventory {
 		if (this.currentFDMEmployee != null) {
 			ArrayList<MindfulnessExerciseAttempt> allattempts = this.currentFDMEmployee.getMindfulnessExerciseAttempts();
 			ArrayList<Integer> attemptno = new ArrayList<Integer>();
+			ArrayList<String> tpes = new ArrayList<String>();
 			ArrayList<String> dates = new ArrayList<String>();
 			for (MindfulnessExerciseAttempt m : allattempts){
 				attemptno.add(m.getAttemptNumber());
 				dates.add(m.getDateCompleted());
+				tpes.add(m.getType());
 			}
 			fbdb.addToResponse("attemptNos", attemptno);
+			fbdb.addToResponse("attemptTypes", tpes);
 			fbdb.addToResponse("attemptDates", dates);
 		}
 		finalResponse(true);
@@ -288,7 +279,7 @@ public class Inventory {
 			//this.currentFDMEmployee.attemptMindfulnessExercise();
 			this.currentFDMEmployee.attemptMindfulnessExercise(logAttempt.getType());
 			updateCurrentEmployee();
-			System.out.println(this.currentFDMEmployee.getMindfulnessExerciseAttempts().get(this.currentFDMEmployee.getMindfulnessExerciseAttempts().size()-1));
+			System.out.println(this.currentFDMEmployee.getMindfulnessExerciseAttempts().get(this.currentFDMEmployee.getMindfulnessExerciseAttempts().size()-1).getType());
 		}
 		finalResponse(true);
 	}
@@ -316,7 +307,7 @@ public class Inventory {
 	public Food findFood(String nameToSearch) {
 		return findFoodData(nameToSearch, this.searchableFood);
 	}
-	
+
 	public static Comparator<Food> FoodNameComparator = new Comparator<Food>() {
 		public int compare(Food f1, Food f2) {
 		   String FoodName1 = f1.getName();
@@ -352,10 +343,6 @@ public class Inventory {
 
 	private void updateCurrentEmployee() {
 		this.fbdb.setItems("employees", this.currentFDMEmployee.getEmail(), this.currentFDMEmployee);
-	}
-
-	private String dateToString(LocalDateTime date) {
-		return date.format(formatter);
 	}
 
 	private LocalDateTime stringToDate(String date) {
@@ -2609,42 +2596,4 @@ public class Inventory {
 		this.searchableFood.sort(FoodNameComparator);
 	}
 
-	//TODO - complete inventory
-
-	// public static Inventory getInstance() {
-	// }
-
-	// public List<User> getListOfUsers() {
-	// }
-
-	// public List<TimeSlot> getWeekSchedule() {
-	// }
-
-	// public List<MindfulnessExercise> getAvailableMindfulnessExercises() {
-	// }
-
-	// public List<WorkoutExercises> getAvailableWorkoutExercises() {
-	// }
-
-	// public String getWorkoutDifficulty(int difficulty) {
-	// }
-
-	// public List<String> getTargetAttribute() {
-	// 	return this.targetAttribute;
-	// }
-
-	// public boolean setWeekSchedule(List<TimeSlot> newWeekSchedule) {
-	// }
-
-	// public boolean setWorkoutDifficulties(List<String> newWorkoutDifficulties) {
-	// }
-
-	// public boolean setStatusList(List<String> newStatusList) {
-	// }
-
-	// public boolean setTargetTypes(List<String> newTargetTypes) {
-	// }
-
-	// public boolean setTargetProperties(List<String> newTargetProperties) {
-	// }
 }

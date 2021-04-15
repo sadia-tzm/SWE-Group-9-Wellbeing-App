@@ -1,5 +1,6 @@
 package com.firebaseStuff;
 
+//basic class to facilitate built-in firebase code when converting documents to objects
 public class GetBMI {
     boolean start;
 

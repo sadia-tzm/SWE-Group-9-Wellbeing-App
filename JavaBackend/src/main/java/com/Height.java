@@ -1,5 +1,6 @@
 package com;
 
+//holds invidual information about the FDMEmployee's height
 public class Height extends HealthProperty {
 
 	private int height;

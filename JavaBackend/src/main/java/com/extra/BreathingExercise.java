@@ -1,4 +1,11 @@
-package com;
+//framework for unused class BreathingExercise:
+
+
+//--------------------------------------------------------
+
+
+package com.extra;
+
 public class BreathingExercise extends MindfulnessExercise {
 
 	private int tempo;
@@ -11,6 +18,4 @@ public class BreathingExercise extends MindfulnessExercise {
 	public int getTempo() {
 		return this.tempo;
 	}
-
-	//TODO - rest of BreathExercise
 }

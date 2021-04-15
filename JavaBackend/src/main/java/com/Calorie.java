@@ -1,5 +1,7 @@
 package com;
 
+//This is class calorie for calculating the users calories from having a certain
+//amount of food
 public class Calorie extends HealthProperty {
 
 	private int calories;
@@ -28,7 +30,6 @@ public class Calorie extends HealthProperty {
 		this.calories = newCalories;
 		this.food = newfood;
 	}
-	//----------------------------------------------------------------------------------------------------------------------------------------
 	//--------------------------------------------------------------
 	//firebase stuff!!
 

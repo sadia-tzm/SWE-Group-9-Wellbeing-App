@@ -1,5 +1,7 @@
 package com.firebaseStuff;
 
+
+//basic class to facilitate built-in firebase code when converting documents to objects
 public class AddCalories {
     boolean start;
     String food;

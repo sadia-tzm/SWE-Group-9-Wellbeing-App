@@ -1,3 +1,9 @@
+//framework for unused class CustomerSupport:
+
+
+//--------------------------------------------------------
+
+
 package com.extra;
 import java.util.*;
 
@@ -5,24 +11,15 @@ import com.User;
 
 public class CustomerSupport extends User {
 
-	private String password;
 	private String userName;
 	private String email;
 	Collection<SupportQuery> supportQueries;
 
 
-	public CustomerSupport(String nname, String ppassword, String uuserName, String eemail) {
-		super(nname, ppassword, uuserName, eemail);
-		this.password = ppassword;
+	public CustomerSupport(String nname, String uuserName, String eemail) {
+		super(nname, uuserName, eemail);
 		this.userName = uuserName;
 		this.email = eemail;
-
-
 	}
-	
-	// TODO - rest of CustomerSupport
-
-	// public List<SupportQuery> checkQueries() {
-	// }
 
 }

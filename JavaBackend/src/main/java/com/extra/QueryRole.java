@@ -1,15 +1,15 @@
+//framework for unused class QueryRole:
+
+
+//--------------------------------------------------------
+
 package com.extra;
 public abstract class QueryRole {
 
 	Query query;
 
-	public void QueryRole(Query qquery) {
+	public QueryRole(Query qquery) {
 		this.query = qquery;
 	}
-
-	//TODO: the rest of query
-
-	// public void querySolved() {
-	// }
 
 }

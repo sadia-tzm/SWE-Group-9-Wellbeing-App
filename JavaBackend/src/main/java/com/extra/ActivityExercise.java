@@ -1,4 +1,10 @@
-package com;
+//framework for unused class ActivityExercise:
+
+
+//--------------------------------------------------------
+
+
+package com.extra;
 
 public class ActivityExercise extends WorkoutExercise {
 

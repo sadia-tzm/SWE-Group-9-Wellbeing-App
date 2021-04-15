@@ -1,3 +1,9 @@
+//framework for unused class AdministratorQuery:
+
+
+//--------------------------------------------------------
+
+
 package com.extra;
 
 import java.time.LocalDateTime;
@@ -7,7 +13,8 @@ public class AdministratorQuery extends QueryRole {
 	SystemAdministrator systemAdministrator;
 	private String progress;
 
-	public AdministratorQuery(String queryText, String queryTitle, LocalDateTime ddateLogged) {
+	public AdministratorQuery(Query query, String queryText, String queryTitle, LocalDateTime ddateLogged) {
+		super(query);
 		query = new Query(queryText,queryTitle,ddateLogged);
 	}
 
