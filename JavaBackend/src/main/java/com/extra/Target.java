@@ -20,8 +20,6 @@ public class Target {
 		this.attribute = attribute;
 		this.value = value;
 		isMet = false;
-		
-		
 	}
 
 	public Exercise getExercise() {
