@@ -1,6 +1,15 @@
-# SFE_Group_9
+# FDM Wellbeing Application
 Mindfulness Application for FDM Employees
+
+Pre-requisites to run:
+Need firebase database set up with authenticator for web, then put:
+
+SFE_Group_9\wellbeing_app\src     <-    fire.js
+SFE_Group_9\wellbeing_app         <-    ServiceAccountKey.json
+
+Where fire.js holds firebaseConfig from firebase->settings->general->scroll down (and copy into local file. make sure to set up imports, as it's just a variable)
+And ServiceAccountKey.json is firebase->settings->Service accounts->java->generate new private key
 <br/>
-<h1>Find to-do's in issues (and please update anything that needs to be done there too)</h1>
-Mustafa will be looking at this github repository so we need to try and clean it up and make it look good if possible!!
+<h1>Application overview</h1>
+![Alt Text](/images/1Login.png)
 </ul>
