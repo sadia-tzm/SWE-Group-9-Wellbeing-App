@@ -1,6 +1,10 @@
 # FDM Wellbeing Application
 Mindfulness Application for FDM Employees
 
+## *Group 9*
+### *Contributors: Sadia, Oliver, Shannon, Isaac, Ali*
+---
+
 Pre-requisites to run:
 Need firebase database set up with authenticator for web, then put:
 
